@@ -13,7 +13,7 @@
 </span><span id="line-13"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="TCMError"><span class="annot"><a href="Agda.Interaction.ExitCode.html#TCMError"><span class="hs-identifier hs-var">TCMError</span></a></span></span><span>          </span><span class="hs-comment">-- ^ 42</span><span>
 </span><span id="line-14"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="OptionError"><span class="annot"><a href="Agda.Interaction.ExitCode.html#OptionError"><span class="hs-identifier hs-var">OptionError</span></a></span></span><span>       </span><span class="hs-comment">-- ^ 71</span><span>
 </span><span id="line-15"></span><span>               </span><span class="hs-glyph">|</span><span> </span><span id="ImpossibleError"><span class="annot"><a href="Agda.Interaction.ExitCode.html#ImpossibleError"><span class="hs-identifier hs-var">ImpossibleError</span></a></span></span><span>   </span><span class="hs-comment">-- ^ 154</span><span>
-</span><span id="line-16"></span><span>               </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680457860"><span id="local-6989586621680457862"><span id="local-6989586621680457864"><span class="annot"><span class="annottext">Int -&gt; AgdaError -&gt; ShowS
+</span><span id="line-16"></span><span>               </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680457845"><span id="local-6989586621680457847"><span id="local-6989586621680457849"><span class="annot"><span class="annottext">Int -&gt; AgdaError -&gt; ShowS
 [AgdaError] -&gt; ShowS
 AgdaError -&gt; String
 (Int -&gt; AgdaError -&gt; ShowS)
@@ -28,7 +28,7 @@ show :: AgdaError -&gt; String
 $cshow :: AgdaError -&gt; String
 showsPrec :: Int -&gt; AgdaError -&gt; ShowS
 $cshowsPrec :: Int -&gt; AgdaError -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457855"><span id="local-6989586621680457857"><span class="annot"><span class="annottext">AgdaError -&gt; AgdaError -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457840"><span id="local-6989586621680457842"><span class="annot"><span class="annottext">AgdaError -&gt; AgdaError -&gt; Bool
 (AgdaError -&gt; AgdaError -&gt; Bool)
 -&gt; (AgdaError -&gt; AgdaError -&gt; Bool) -&gt; Eq AgdaError
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -36,7 +36,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: AgdaError -&gt; AgdaError -&gt; Bool
 == :: AgdaError -&gt; AgdaError -&gt; Bool
 $c== :: AgdaError -&gt; AgdaError -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457838"><span id="local-6989586621680457840"><span id="local-6989586621680457842"><span id="local-6989586621680457844"><span id="local-6989586621680457846"><span id="local-6989586621680457848"><span id="local-6989586621680457850"><span id="local-6989586621680457852"><span class="annot"><span class="annottext">Int -&gt; AgdaError
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457823"><span id="local-6989586621680457825"><span id="local-6989586621680457827"><span id="local-6989586621680457829"><span id="local-6989586621680457831"><span id="local-6989586621680457833"><span id="local-6989586621680457835"><span id="local-6989586621680457837"><span class="annot"><span class="annottext">Int -&gt; AgdaError
 AgdaError -&gt; Int
 AgdaError -&gt; [AgdaError]
 AgdaError -&gt; AgdaError
@@ -77,7 +77,7 @@ pred :: AgdaError -&gt; AgdaError
 $cpred :: AgdaError -&gt; AgdaError
 succ :: AgdaError -&gt; AgdaError
 $csucc :: AgdaError -&gt; AgdaError
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457833"><span id="local-6989586621680457835"><span class="annot"><span class="annottext">AgdaError
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680457818"><span id="local-6989586621680457820"><span class="annot"><span class="annottext">AgdaError
 AgdaError -&gt; AgdaError -&gt; Bounded AgdaError
 forall a. a -&gt; a -&gt; Bounded a
 maxBound :: AgdaError
@@ -114,10 +114,10 @@ forall a b c. (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
 forall a b. Eq a =&gt; a -&gt; [(a, b)] -&gt; Maybe b
 </span><span class="hs-identifier hs-var">lookup</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="annottext">AgdaError -&gt; Int
 </span><a href="Agda.Interaction.ExitCode.html#agdaErrorToInt"><span class="hs-identifier hs-var">agdaErrorToInt</span></a></span><span> </span><span class="annot"><span class="annottext">AgdaError
-</span><a href="#local-6989586621680457829"><span class="hs-identifier hs-var">error</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">AgdaError
-</span><a href="#local-6989586621680457829"><span class="hs-identifier hs-var">error</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-30"></span><span>                               </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680457829"><span class="annot"><span class="annottext">AgdaError
-</span><a href="#local-6989586621680457829"><span class="hs-identifier hs-var">error</span></a></span></span><span>  </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">AgdaError
+</span><a href="#local-6989586621680457814"><span class="hs-identifier hs-var">error</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">AgdaError
+</span><a href="#local-6989586621680457814"><span class="hs-identifier hs-var">error</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-30"></span><span>                               </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680457814"><span class="annot"><span class="annottext">AgdaError
+</span><a href="#local-6989586621680457814"><span class="hs-identifier hs-var">error</span></a></span></span><span>  </span><span class="hs-glyph">&lt;-</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">AgdaError
 forall a. Bounded a =&gt; a
 </span><span class="hs-identifier hs-var">minBound</span></span><span class="hs-glyph">..</span><span class="annot"><span class="annottext">AgdaError
 forall a. Bounded a =&gt; a
