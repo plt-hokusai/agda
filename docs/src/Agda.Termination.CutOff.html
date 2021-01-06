@@ -14,7 +14,7 @@
 </span><span id="line-14"></span><span class="hs-keyword">data</span><span> </span><span id="CutOff"><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-var">CutOff</span></a></span></span><span>
 </span><span id="line-15"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="CutOff"><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-var">CutOff</span></a></span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-comment">-- ^ @c &gt;= 0@ means: record decrease up to including @c+1@.</span><span>
 </span><span id="line-16"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="DontCutOff"><span class="annot"><a href="Agda.Termination.CutOff.html#DontCutOff"><span class="hs-identifier hs-var">DontCutOff</span></a></span></span><span>
-</span><span id="line-17"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680458084"><span id="local-6989586621680458086"><span class="annot"><span class="annottext">CutOff -&gt; CutOff -&gt; Bool
+</span><span id="line-17"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680458128"><span id="local-6989586621680458130"><span class="annot"><span class="annottext">CutOff -&gt; CutOff -&gt; Bool
 (CutOff -&gt; CutOff -&gt; Bool)
 -&gt; (CutOff -&gt; CutOff -&gt; Bool) -&gt; Eq CutOff
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -22,7 +22,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: CutOff -&gt; CutOff -&gt; Bool
 == :: CutOff -&gt; CutOff -&gt; Bool
 $c== :: CutOff -&gt; CutOff -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680458068"><span id="local-6989586621680458070"><span id="local-6989586621680458072"><span id="local-6989586621680458074"><span id="local-6989586621680458076"><span id="local-6989586621680458078"><span id="local-6989586621680458080"><span class="annot"><span class="annottext">Eq CutOff
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680458112"><span id="local-6989586621680458114"><span id="local-6989586621680458116"><span id="local-6989586621680458118"><span id="local-6989586621680458120"><span id="local-6989586621680458122"><span id="local-6989586621680458124"><span class="annot"><span class="annottext">Eq CutOff
 Eq CutOff
 -&gt; (CutOff -&gt; CutOff -&gt; Ordering)
 -&gt; (CutOff -&gt; CutOff -&gt; Bool)
@@ -62,13 +62,13 @@ $ccompare :: CutOff -&gt; CutOff -&gt; Ordering
 $cp1Ord :: Eq CutOff
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-18"></span><span>
-</span><span id="line-19"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680458062"><span id="local-6989586621680458065"><span class="annot"><span class="hs-identifier hs-type">Show</span></span><span> </span><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-type">CutOff</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-20"></span><span>  </span><span id="local-6989586621680458060"><span class="annot"><span class="annottext">show :: CutOff -&gt; String
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">show</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-type">CutOff</span></a></span><span> </span><span id="local-6989586621680458058"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680458058"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String
+</span><span id="line-19"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680458106"><span id="local-6989586621680458109"><span class="annot"><span class="hs-identifier hs-type">Show</span></span><span> </span><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-type">CutOff</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-20"></span><span>  </span><span id="local-6989586621680458104"><span class="annot"><span class="annottext">show :: CutOff -&gt; String
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">show</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Termination.CutOff.html#CutOff"><span class="hs-identifier hs-type">CutOff</span></a></span><span> </span><span id="local-6989586621680458102"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680458102"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; String
 forall a. Show a =&gt; a -&gt; String
 </span><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680458058"><span class="hs-identifier hs-var">k</span></a></span><span>
+</span><a href="#local-6989586621680458102"><span class="hs-identifier hs-var">k</span></a></span><span>
 </span><span id="line-21"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">show</span></span><span> </span><span class="annot"><span class="annottext">CutOff
 </span><a href="Agda.Termination.CutOff.html#DontCutOff"><span class="hs-identifier hs-var">DontCutOff</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&#8734;&quot;</span></span><span>
