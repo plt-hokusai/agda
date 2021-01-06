@@ -1,4 +1,0 @@
-TestOptions
-  { forCompilers   = [(MAlonzo, CompilerOptions {extraAgdaArgs = ["--ghc-flag=-rtsopts"]})]
-  , runtimeOptions = ["+RTS", "-M100M"]
-  , executeProg    = True }
