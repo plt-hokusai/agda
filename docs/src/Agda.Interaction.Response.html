@@ -229,15 +229,15 @@ forall a. HasCallStack =&gt; a
 forall a. HasCallStack =&gt; a
 </span><a href="Agda.Utils.Impossible.html#__IMPOSSIBLE__"><span class="hs-identifier hs-var">__IMPOSSIBLE__</span></a></span><span>
 </span><span id="line-206"></span><span>  </span><span class="annot"><a href="Agda.Interaction.Response.html#Resp_RunningInfo"><span class="hs-identifier hs-type">Resp_RunningInfo</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680548329"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680548329"><span class="hs-identifier hs-var">s</span></a></span></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; TCMT IO ()
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680548334"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680548334"><span class="hs-identifier hs-var">s</span></a></span></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; TCMT IO ()
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO () -&gt; TCMT IO ()) -&gt; IO () -&gt; TCMT IO ()
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-207"></span><span>                                 </span><span class="annot"><span class="annottext">String -&gt; IO ()
 </span><span class="hs-identifier hs-var">putStr</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680548329"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680548334"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-208"></span><span>                                 </span><span class="annot"><span class="annottext">Handle -&gt; IO ()
 </span><span class="hs-identifier hs-var">hFlush</span></span><span> </span><span class="annot"><span class="annottext">Handle
 </span><span class="hs-identifier hs-var">stdout</span></span><span>

@@ -36,7 +36,7 @@
 </span><span id="line-33"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="metaNameSuggestion"><span class="annot"><span class="annottext">MetaInfo -&gt; String
 </span><a href="Agda.Syntax.Info.html#metaNameSuggestion"><span class="hs-identifier hs-var hs-var">metaNameSuggestion</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-34"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-35"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cMetaInfo"><span id="%24tMetaInfo"><span id="local-6989586621680507679"><span id="local-6989586621680507681"><span id="local-6989586621680507683"><span id="local-6989586621680507685"><span id="local-6989586621680507687"><span id="local-6989586621680507689"><span id="local-6989586621680507691"><span id="local-6989586621680507693"><span id="local-6989586621680507695"><span id="local-6989586621680507697"><span id="local-6989586621680507699"><span id="local-6989586621680507701"><span id="local-6989586621680507703"><span id="local-6989586621680507705"><span class="annot"><span class="annottext">Typeable MetaInfo
+</span><span id="line-35"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cMetaInfo"><span id="%24tMetaInfo"><span id="local-6989586621680507684"><span id="local-6989586621680507686"><span id="local-6989586621680507688"><span id="local-6989586621680507690"><span id="local-6989586621680507692"><span id="local-6989586621680507694"><span id="local-6989586621680507696"><span id="local-6989586621680507698"><span id="local-6989586621680507700"><span id="local-6989586621680507702"><span id="local-6989586621680507704"><span id="local-6989586621680507706"><span id="local-6989586621680507708"><span id="local-6989586621680507710"><span class="annot"><span class="annottext">Typeable MetaInfo
 DataType
 Constr
 Typeable MetaInfo
@@ -192,7 +192,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; MetaInfo -&gt; c MetaInfo
 $cp1Data :: Typeable MetaInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507670"><span id="local-6989586621680507672"><span id="local-6989586621680507674"><span class="annot"><span class="annottext">Int -&gt; MetaInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507675"><span id="local-6989586621680507677"><span id="local-6989586621680507679"><span class="annot"><span class="annottext">Int -&gt; MetaInfo -&gt; ShowS
 [MetaInfo] -&gt; ShowS
 MetaInfo -&gt; String
 (Int -&gt; MetaInfo -&gt; ShowS)
@@ -205,7 +205,7 @@ show :: MetaInfo -&gt; String
 $cshow :: MetaInfo -&gt; String
 showsPrec :: Int -&gt; MetaInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; MetaInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507665"><span id="local-6989586621680507667"><span class="annot"><span class="annottext">MetaInfo -&gt; MetaInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507670"><span id="local-6989586621680507672"><span class="annot"><span class="annottext">MetaInfo -&gt; MetaInfo -&gt; Bool
 (MetaInfo -&gt; MetaInfo -&gt; Bool)
 -&gt; (MetaInfo -&gt; MetaInfo -&gt; Bool) -&gt; Eq MetaInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -236,15 +236,15 @@ forall a. Maybe a
 </span><span id="line-43"></span><span>  </span><span class="hs-special">}</span><span>
 </span><span id="line-44"></span><span>
 </span><span id="line-45"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MetaInfo"><span class="hs-identifier hs-type">MetaInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-46"></span><span>  </span><span id="local-6989586621680507659"><span class="annot"><span class="annottext">getRange :: MetaInfo -&gt; Range
+</span><span id="line-46"></span><span>  </span><span id="local-6989586621680507664"><span class="annot"><span class="annottext">getRange :: MetaInfo -&gt; Range
 </span><a href="Agda.Syntax.Position.html#getRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MetaInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#metaRange"><span class="hs-identifier hs-var hs-var">metaRange</span></a></span><span>
 </span><span id="line-47"></span><span>
 </span><span id="line-48"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MetaInfo"><span class="hs-identifier hs-type">MetaInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-49"></span><span>  </span><span id="local-6989586621680507655"><span class="annot"><span class="annottext">killRange :: MetaInfo -&gt; MetaInfo
-</span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507653"><span class="annot"><span class="annottext">MetaInfo
-</span><a href="#local-6989586621680507653"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MetaInfo
-</span><a href="#local-6989586621680507653"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">metaRange :: Range
+</span><span id="line-49"></span><span>  </span><span id="local-6989586621680507660"><span class="annot"><span class="annottext">killRange :: MetaInfo -&gt; MetaInfo
+</span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507658"><span class="annot"><span class="annottext">MetaInfo
+</span><a href="#local-6989586621680507658"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MetaInfo
+</span><a href="#local-6989586621680507658"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">metaRange :: Range
 </span><a href="Agda.Syntax.Info.html#metaRange"><span class="hs-identifier hs-var">metaRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span> </span><span class="hs-special">}</span><span>
@@ -254,7 +254,7 @@ forall a. Range' a
  --------------------------------------------------------------------------}</span><span>
 </span><span id="line-54"></span><span>
 </span><span id="line-55"></span><span class="hs-keyword">newtype</span><span> </span><span id="ExprInfo"><span class="annot"><a href="Agda.Syntax.Info.html#ExprInfo"><span class="hs-identifier hs-var">ExprInfo</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="ExprRange"><span class="annot"><a href="Agda.Syntax.Info.html#ExprRange"><span class="hs-identifier hs-var">ExprRange</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
-</span><span id="line-56"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cExprRange"><span id="%24tExprInfo"><span id="local-6989586621680507623"><span id="local-6989586621680507625"><span id="local-6989586621680507627"><span id="local-6989586621680507629"><span id="local-6989586621680507631"><span id="local-6989586621680507633"><span id="local-6989586621680507635"><span id="local-6989586621680507637"><span id="local-6989586621680507639"><span id="local-6989586621680507641"><span id="local-6989586621680507643"><span id="local-6989586621680507645"><span id="local-6989586621680507647"><span id="local-6989586621680507649"><span class="annot"><span class="annottext">Typeable ExprInfo
+</span><span id="line-56"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cExprRange"><span id="%24tExprInfo"><span id="local-6989586621680507628"><span id="local-6989586621680507630"><span id="local-6989586621680507632"><span id="local-6989586621680507634"><span id="local-6989586621680507636"><span id="local-6989586621680507638"><span id="local-6989586621680507640"><span id="local-6989586621680507642"><span id="local-6989586621680507644"><span id="local-6989586621680507646"><span id="local-6989586621680507648"><span id="local-6989586621680507650"><span id="local-6989586621680507652"><span id="local-6989586621680507654"><span class="annot"><span class="annottext">Typeable ExprInfo
 DataType
 Constr
 Typeable ExprInfo
@@ -410,7 +410,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; ExprInfo -&gt; c ExprInfo
 $cp1Data :: Typeable ExprInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507615"><span id="local-6989586621680507617"><span id="local-6989586621680507619"><span class="annot"><span class="annottext">Int -&gt; ExprInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507620"><span id="local-6989586621680507622"><span id="local-6989586621680507624"><span class="annot"><span class="annottext">Int -&gt; ExprInfo -&gt; ShowS
 [ExprInfo] -&gt; ShowS
 ExprInfo -&gt; String
 (Int -&gt; ExprInfo -&gt; ShowS)
@@ -423,7 +423,7 @@ show :: ExprInfo -&gt; String
 $cshow :: ExprInfo -&gt; String
 showsPrec :: Int -&gt; ExprInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; ExprInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507611"><span id="local-6989586621680507613"><span class="annot"><span class="annottext">ExprInfo -&gt; ExprInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507616"><span id="local-6989586621680507618"><span class="annot"><span class="annottext">ExprInfo -&gt; ExprInfo -&gt; Bool
 (ExprInfo -&gt; ExprInfo -&gt; Bool)
 -&gt; (ExprInfo -&gt; ExprInfo -&gt; Bool) -&gt; Eq ExprInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -431,7 +431,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ExprInfo -&gt; ExprInfo -&gt; Bool
 == :: ExprInfo -&gt; ExprInfo -&gt; Bool
 $c== :: ExprInfo -&gt; ExprInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507607"><span id="local-6989586621680507609"><span class="annot"><span class="annottext">ExprInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507612"><span id="local-6989586621680507614"><span class="annot"><span class="annottext">ExprInfo
 ExprInfo -&gt; Bool
 ExprInfo -&gt; (ExprInfo -&gt; Bool) -&gt; Null ExprInfo
 forall a. a -&gt; (a -&gt; Bool) -&gt; Null a
@@ -449,15 +449,15 @@ forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span>
 </span><span id="line-60"></span><span>
 </span><span id="line-61"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ExprInfo"><span class="hs-identifier hs-type">ExprInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-62"></span><span>  </span><span id="local-6989586621680507603"><span class="annot"><span class="annottext">getRange :: ExprInfo -&gt; Range
-</span><a href="#local-6989586621680507603"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ExprRange"><span class="hs-identifier hs-type">ExprRange</span></a></span><span> </span><span id="local-6989586621680507602"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507602"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507602"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><span id="line-62"></span><span>  </span><span id="local-6989586621680507608"><span class="annot"><span class="annottext">getRange :: ExprInfo -&gt; Range
+</span><a href="#local-6989586621680507608"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ExprRange"><span class="hs-identifier hs-type">ExprRange</span></a></span><span> </span><span id="local-6989586621680507607"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507607"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507607"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-63"></span><span>
 </span><span id="line-64"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ExprInfo"><span class="hs-identifier hs-type">ExprInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-65"></span><span>  </span><span id="local-6989586621680507600"><span class="annot"><span class="annottext">killRange :: ExprInfo -&gt; ExprInfo
-</span><a href="#local-6989586621680507600"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ExprRange"><span class="hs-identifier hs-type">ExprRange</span></a></span><span> </span><span id="local-6989586621680507599"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507599"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ExprInfo
+</span><span id="line-65"></span><span>  </span><span id="local-6989586621680507605"><span class="annot"><span class="annottext">killRange :: ExprInfo -&gt; ExprInfo
+</span><a href="#local-6989586621680507605"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ExprRange"><span class="hs-identifier hs-type">ExprRange</span></a></span><span> </span><span id="local-6989586621680507604"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507604"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ExprInfo
 </span><a href="Agda.Syntax.Info.html#exprNoRange"><span class="hs-identifier hs-var">exprNoRange</span></a></span><span>
 </span><span id="line-66"></span><span>
 </span><span id="line-67"></span><span class="hs-comment">{--------------------------------------------------------------------------
@@ -473,7 +473,7 @@ forall a. Range' a
 </span><span id="line-75"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="appParens"><span class="annot"><span class="annottext">AppInfo -&gt; ParenPreference
 </span><a href="Agda.Syntax.Info.html#appParens"><span class="hs-identifier hs-var hs-var">appParens</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Fixity.html#ParenPreference"><span class="hs-identifier hs-type">ParenPreference</span></a></span><span> </span><span class="hs-comment">-- ^ Do we prefer a lambda argument with or without parens?</span><span>
 </span><span id="line-76"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-77"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cAppInfo"><span id="%24tAppInfo"><span id="local-6989586621680507566"><span id="local-6989586621680507568"><span id="local-6989586621680507570"><span id="local-6989586621680507572"><span id="local-6989586621680507574"><span id="local-6989586621680507576"><span id="local-6989586621680507578"><span id="local-6989586621680507580"><span id="local-6989586621680507582"><span id="local-6989586621680507584"><span id="local-6989586621680507586"><span id="local-6989586621680507588"><span id="local-6989586621680507590"><span id="local-6989586621680507592"><span class="annot"><span class="annottext">Typeable AppInfo
+</span><span id="line-77"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cAppInfo"><span id="%24tAppInfo"><span id="local-6989586621680507571"><span id="local-6989586621680507573"><span id="local-6989586621680507575"><span id="local-6989586621680507577"><span id="local-6989586621680507579"><span id="local-6989586621680507581"><span id="local-6989586621680507583"><span id="local-6989586621680507585"><span id="local-6989586621680507587"><span id="local-6989586621680507589"><span id="local-6989586621680507591"><span id="local-6989586621680507593"><span id="local-6989586621680507595"><span id="local-6989586621680507597"><span class="annot"><span class="annottext">Typeable AppInfo
 DataType
 Constr
 Typeable AppInfo
@@ -629,7 +629,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; AppInfo -&gt; c AppInfo
 $cp1Data :: Typeable AppInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507558"><span id="local-6989586621680507560"><span id="local-6989586621680507562"><span class="annot"><span class="annottext">Int -&gt; AppInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507563"><span id="local-6989586621680507565"><span id="local-6989586621680507567"><span class="annot"><span class="annottext">Int -&gt; AppInfo -&gt; ShowS
 [AppInfo] -&gt; ShowS
 AppInfo -&gt; String
 (Int -&gt; AppInfo -&gt; ShowS)
@@ -642,7 +642,7 @@ show :: AppInfo -&gt; String
 $cshow :: AppInfo -&gt; String
 showsPrec :: Int -&gt; AppInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; AppInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507554"><span id="local-6989586621680507556"><span class="annot"><span class="annottext">AppInfo -&gt; AppInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507559"><span id="local-6989586621680507561"><span class="annot"><span class="annottext">AppInfo -&gt; AppInfo -&gt; Bool
 (AppInfo -&gt; AppInfo -&gt; Bool)
 -&gt; (AppInfo -&gt; AppInfo -&gt; Bool) -&gt; Eq AppInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -650,7 +650,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: AppInfo -&gt; AppInfo -&gt; Bool
 == :: AppInfo -&gt; AppInfo -&gt; Bool
 $c== :: AppInfo -&gt; AppInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507539"><span id="local-6989586621680507541"><span id="local-6989586621680507543"><span id="local-6989586621680507545"><span id="local-6989586621680507547"><span id="local-6989586621680507549"><span id="local-6989586621680507551"><span class="annot"><span class="annottext">Eq AppInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507544"><span id="local-6989586621680507546"><span id="local-6989586621680507548"><span id="local-6989586621680507550"><span id="local-6989586621680507552"><span id="local-6989586621680507554"><span id="local-6989586621680507556"><span class="annot"><span class="annottext">Eq AppInfo
 Eq AppInfo
 -&gt; (AppInfo -&gt; AppInfo -&gt; Ordering)
 -&gt; (AppInfo -&gt; AppInfo -&gt; Bool)
@@ -693,11 +693,11 @@ $cp1Ord :: Eq AppInfo
 </span><span id="line-79"></span><span class="hs-comment">-- | Default is system inserted and prefer parens.</span><span>
 </span><span id="line-80"></span><span class="annot"><a href="Agda.Syntax.Info.html#defaultAppInfo"><span class="hs-identifier hs-type">defaultAppInfo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span>
 </span><span id="line-81"></span><span id="defaultAppInfo"><span class="annot"><span class="annottext">defaultAppInfo :: Range -&gt; AppInfo
-</span><a href="Agda.Syntax.Info.html#defaultAppInfo"><span class="hs-identifier hs-var hs-var">defaultAppInfo</span></a></span></span><span> </span><span id="local-6989586621680507536"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507536"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo :: Range -&gt; Origin -&gt; ParenPreference -&gt; AppInfo
+</span><a href="Agda.Syntax.Info.html#defaultAppInfo"><span class="hs-identifier hs-var hs-var">defaultAppInfo</span></a></span></span><span> </span><span id="local-6989586621680507541"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507541"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo :: Range -&gt; Origin -&gt; ParenPreference -&gt; AppInfo
 </span><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">appRange :: Range
 </span><a href="Agda.Syntax.Info.html#appRange"><span class="hs-identifier hs-var">appRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507536"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">appOrigin :: Origin
+</span><a href="#local-6989586621680507541"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">appOrigin :: Origin
 </span><a href="Agda.Syntax.Info.html#appOrigin"><span class="hs-identifier hs-var">appOrigin</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Origin
 </span><a href="Agda.Syntax.Common.html#Inserted"><span class="hs-identifier hs-var">Inserted</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">appParens :: ParenPreference
 </span><a href="Agda.Syntax.Info.html#appParens"><span class="hs-identifier hs-var">appParens</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ParenPreference
@@ -712,36 +712,36 @@ forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span>
 </span><span id="line-86"></span><span>
 </span><span id="line-87"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-88"></span><span>  </span><span id="local-6989586621680507531"><span class="annot"><span class="annottext">getRange :: AppInfo -&gt; Range
-</span><a href="#local-6989586621680507531"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo -&gt; Range
+</span><span id="line-88"></span><span>  </span><span id="local-6989586621680507536"><span class="annot"><span class="annottext">getRange :: AppInfo -&gt; Range
+</span><a href="#local-6989586621680507536"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#appRange"><span class="hs-identifier hs-var hs-var">appRange</span></a></span><span>
 </span><span id="line-89"></span><span>
 </span><span id="line-90"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-91"></span><span>  </span><span id="local-6989586621680507529"><span class="annot"><span class="annottext">killRange :: AppInfo -&gt; AppInfo
-</span><a href="#local-6989586621680507529"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span> </span><span id="local-6989586621680507528"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507528"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507527"><span class="annot"><span class="annottext">Origin
-</span><a href="#local-6989586621680507527"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span id="local-6989586621680507526"><span class="annot"><span class="annottext">ParenPreference
-</span><a href="#local-6989586621680507526"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Origin -&gt; ParenPreference -&gt; AppInfo
+</span><span id="line-91"></span><span>  </span><span id="local-6989586621680507534"><span class="annot"><span class="annottext">killRange :: AppInfo -&gt; AppInfo
+</span><a href="#local-6989586621680507534"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span><span> </span><span id="local-6989586621680507533"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507533"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507532"><span class="annot"><span class="annottext">Origin
+</span><a href="#local-6989586621680507532"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span id="local-6989586621680507531"><span class="annot"><span class="annottext">ParenPreference
+</span><a href="#local-6989586621680507531"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Origin -&gt; ParenPreference -&gt; AppInfo
 </span><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-var">AppInfo</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">KillRangeT Range
 forall a. KillRange a =&gt; KillRangeT a
 </span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var">killRange</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507528"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Origin
-</span><a href="#local-6989586621680507527"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">ParenPreference
-</span><a href="#local-6989586621680507526"><span class="hs-identifier hs-var">p</span></a></span><span>
+</span><a href="#local-6989586621680507533"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Origin
+</span><a href="#local-6989586621680507532"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">ParenPreference
+</span><a href="#local-6989586621680507531"><span class="hs-identifier hs-var">p</span></a></span><span>
 </span><span id="line-92"></span><span>
-</span><span id="line-93"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680507523"><span class="annot"><a href="Agda.Syntax.Common.html#LensOrigin"><span class="hs-identifier hs-type">LensOrigin</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-94"></span><span>  </span><span id="local-6989586621680507520"><span class="annot"><span class="annottext">getOrigin :: AppInfo -&gt; Origin
+</span><span id="line-93"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680507528"><span class="annot"><a href="Agda.Syntax.Common.html#LensOrigin"><span class="hs-identifier hs-type">LensOrigin</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#AppInfo"><span class="hs-identifier hs-type">AppInfo</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-94"></span><span>  </span><span id="local-6989586621680507525"><span class="annot"><span class="annottext">getOrigin :: AppInfo -&gt; Origin
 </span><a href="Agda.Syntax.Common.html#getOrigin"><span class="hs-identifier hs-var hs-var hs-var hs-var">getOrigin</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo -&gt; Origin
 </span><a href="Agda.Syntax.Info.html#appOrigin"><span class="hs-identifier hs-var hs-var">appOrigin</span></a></span><span>
-</span><span id="line-95"></span><span>  </span><span id="local-6989586621680507518"><span class="annot"><span class="annottext">mapOrigin :: (Origin -&gt; Origin) -&gt; AppInfo -&gt; AppInfo
-</span><a href="Agda.Syntax.Common.html#mapOrigin"><span class="hs-identifier hs-var hs-var hs-var hs-var">mapOrigin</span></a></span></span><span> </span><span id="local-6989586621680507516"><span class="annot"><span class="annottext">Origin -&gt; Origin
-</span><a href="#local-6989586621680507516"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507515"><span class="annot"><span class="annottext">AppInfo
-</span><a href="#local-6989586621680507515"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo
-</span><a href="#local-6989586621680507515"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">appOrigin :: Origin
+</span><span id="line-95"></span><span>  </span><span id="local-6989586621680507523"><span class="annot"><span class="annottext">mapOrigin :: (Origin -&gt; Origin) -&gt; AppInfo -&gt; AppInfo
+</span><a href="Agda.Syntax.Common.html#mapOrigin"><span class="hs-identifier hs-var hs-var hs-var hs-var">mapOrigin</span></a></span></span><span> </span><span id="local-6989586621680507521"><span class="annot"><span class="annottext">Origin -&gt; Origin
+</span><a href="#local-6989586621680507521"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507520"><span class="annot"><span class="annottext">AppInfo
+</span><a href="#local-6989586621680507520"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">AppInfo
+</span><a href="#local-6989586621680507520"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">appOrigin :: Origin
 </span><a href="Agda.Syntax.Info.html#appOrigin"><span class="hs-identifier hs-var">appOrigin</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Origin -&gt; Origin
-</span><a href="#local-6989586621680507516"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">AppInfo -&gt; Origin
+</span><a href="#local-6989586621680507521"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">AppInfo -&gt; Origin
 </span><a href="Agda.Syntax.Info.html#appOrigin"><span class="hs-identifier hs-var hs-var">appOrigin</span></a></span><span> </span><span class="annot"><span class="annottext">AppInfo
-</span><a href="#local-6989586621680507515"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621680507520"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-96"></span><span>
 </span><span id="line-97"></span><span class="hs-comment">{--------------------------------------------------------------------------
     Module information
@@ -763,7 +763,7 @@ forall a. KillRange a =&gt; KillRangeT a
 </span><a href="Agda.Syntax.Info.html#minfoDirective"><span class="hs-identifier hs-var hs-var">minfoDirective</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#ImportDirective"><span class="hs-identifier hs-type">ImportDirective</span></a></span><span>
 </span><span id="line-110"></span><span>    </span><span class="hs-comment">-- ^ Retained for @abstractToConcrete@ of 'ModuleMacro'.</span><span>
 </span><span id="line-111"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-112"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cModuleInfo"><span id="%24tModuleInfo"><span id="local-6989586621680507480"><span id="local-6989586621680507482"><span id="local-6989586621680507484"><span id="local-6989586621680507486"><span id="local-6989586621680507488"><span id="local-6989586621680507490"><span id="local-6989586621680507492"><span id="local-6989586621680507494"><span id="local-6989586621680507496"><span id="local-6989586621680507498"><span id="local-6989586621680507500"><span id="local-6989586621680507502"><span id="local-6989586621680507504"><span id="local-6989586621680507506"><span class="annot"><span class="annottext">Typeable ModuleInfo
+</span><span id="line-112"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cModuleInfo"><span id="%24tModuleInfo"><span id="local-6989586621680507485"><span id="local-6989586621680507487"><span id="local-6989586621680507489"><span id="local-6989586621680507491"><span id="local-6989586621680507493"><span id="local-6989586621680507495"><span id="local-6989586621680507497"><span id="local-6989586621680507499"><span id="local-6989586621680507501"><span id="local-6989586621680507503"><span id="local-6989586621680507505"><span id="local-6989586621680507507"><span id="local-6989586621680507509"><span id="local-6989586621680507511"><span class="annot"><span class="annottext">Typeable ModuleInfo
 DataType
 Constr
 Typeable ModuleInfo
@@ -921,7 +921,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; ModuleInfo -&gt; c ModuleInfo
 $cp1Data :: Typeable ModuleInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507474"><span id="local-6989586621680507476"><span class="annot"><span class="annottext">ModuleInfo -&gt; ModuleInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507479"><span id="local-6989586621680507481"><span class="annot"><span class="annottext">ModuleInfo -&gt; ModuleInfo -&gt; Bool
 (ModuleInfo -&gt; ModuleInfo -&gt; Bool)
 -&gt; (ModuleInfo -&gt; ModuleInfo -&gt; Bool) -&gt; Eq ModuleInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -929,7 +929,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ModuleInfo -&gt; ModuleInfo -&gt; Bool
 == :: ModuleInfo -&gt; ModuleInfo -&gt; Bool
 $c== :: ModuleInfo -&gt; ModuleInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507468"><span id="local-6989586621680507470"><span id="local-6989586621680507472"><span class="annot"><span class="annottext">Int -&gt; ModuleInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507473"><span id="local-6989586621680507475"><span id="local-6989586621680507477"><span class="annot"><span class="annottext">Int -&gt; ModuleInfo -&gt; ShowS
 [ModuleInfo] -&gt; ShowS
 ModuleInfo -&gt; String
 (Int -&gt; ModuleInfo -&gt; ShowS)
@@ -947,24 +947,24 @@ $cshowsPrec :: Int -&gt; ModuleInfo -&gt; ShowS
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-113"></span><span>
 </span><span id="line-114"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ModuleInfo"><span class="hs-identifier hs-type">ModuleInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-115"></span><span>  </span><span id="local-6989586621680507466"><span class="annot"><span class="annottext">getRange :: ModuleInfo -&gt; Range
-</span><a href="#local-6989586621680507466"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo -&gt; Range
+</span><span id="line-115"></span><span>  </span><span id="local-6989586621680507471"><span class="annot"><span class="annottext">getRange :: ModuleInfo -&gt; Range
+</span><a href="#local-6989586621680507471"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#minfoRange"><span class="hs-identifier hs-var hs-var">minfoRange</span></a></span><span>
 </span><span id="line-116"></span><span>
 </span><span id="line-117"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#SetRange"><span class="hs-identifier hs-type">SetRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ModuleInfo"><span class="hs-identifier hs-type">ModuleInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-118"></span><span>  </span><span id="local-6989586621680507462"><span class="annot"><span class="annottext">setRange :: Range -&gt; ModuleInfo -&gt; ModuleInfo
-</span><a href="Agda.Syntax.Position.html#setRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507460"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507460"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507459"><span class="annot"><span class="annottext">ModuleInfo
-</span><a href="#local-6989586621680507459"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo
-</span><a href="#local-6989586621680507459"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">minfoRange :: Range
+</span><span id="line-118"></span><span>  </span><span id="local-6989586621680507467"><span class="annot"><span class="annottext">setRange :: Range -&gt; ModuleInfo -&gt; ModuleInfo
+</span><a href="Agda.Syntax.Position.html#setRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507465"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507465"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507464"><span class="annot"><span class="annottext">ModuleInfo
+</span><a href="#local-6989586621680507464"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo
+</span><a href="#local-6989586621680507464"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">minfoRange :: Range
 </span><a href="Agda.Syntax.Info.html#minfoRange"><span class="hs-identifier hs-var">minfoRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507460"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621680507465"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-119"></span><span>
 </span><span id="line-120"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ModuleInfo"><span class="hs-identifier hs-type">ModuleInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-121"></span><span>  </span><span id="local-6989586621680507457"><span class="annot"><span class="annottext">killRange :: ModuleInfo -&gt; ModuleInfo
-</span><a href="#local-6989586621680507457"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507456"><span class="annot"><span class="annottext">ModuleInfo
-</span><a href="#local-6989586621680507456"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo
-</span><a href="#local-6989586621680507456"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">minfoRange :: Range
+</span><span id="line-121"></span><span>  </span><span id="local-6989586621680507462"><span class="annot"><span class="annottext">killRange :: ModuleInfo -&gt; ModuleInfo
+</span><a href="#local-6989586621680507462"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507461"><span class="annot"><span class="annottext">ModuleInfo
+</span><a href="#local-6989586621680507461"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ModuleInfo
+</span><a href="#local-6989586621680507461"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">minfoRange :: Range
 </span><a href="Agda.Syntax.Info.html#minfoRange"><span class="hs-identifier hs-var">minfoRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span> </span><span class="hs-special">}</span><span>
@@ -974,7 +974,7 @@ forall a. Range' a
 </span><span id="line-125"></span><span class="hs-comment">---------------------------------------------------------------------------</span><span>
 </span><span id="line-126"></span><span>
 </span><span id="line-127"></span><span class="hs-keyword">newtype</span><span> </span><span id="LetInfo"><span class="annot"><a href="Agda.Syntax.Info.html#LetInfo"><span class="hs-identifier hs-var">LetInfo</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="LetRange"><span class="annot"><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-var">LetRange</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
-</span><span id="line-128"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cLetRange"><span id="%24tLetInfo"><span id="local-6989586621680507426"><span id="local-6989586621680507428"><span id="local-6989586621680507430"><span id="local-6989586621680507432"><span id="local-6989586621680507434"><span id="local-6989586621680507436"><span id="local-6989586621680507438"><span id="local-6989586621680507440"><span id="local-6989586621680507442"><span id="local-6989586621680507444"><span id="local-6989586621680507446"><span id="local-6989586621680507448"><span id="local-6989586621680507450"><span id="local-6989586621680507452"><span class="annot"><span class="annottext">Typeable LetInfo
+</span><span id="line-128"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cLetRange"><span id="%24tLetInfo"><span id="local-6989586621680507431"><span id="local-6989586621680507433"><span id="local-6989586621680507435"><span id="local-6989586621680507437"><span id="local-6989586621680507439"><span id="local-6989586621680507441"><span id="local-6989586621680507443"><span id="local-6989586621680507445"><span id="local-6989586621680507447"><span id="local-6989586621680507449"><span id="local-6989586621680507451"><span id="local-6989586621680507453"><span id="local-6989586621680507455"><span id="local-6989586621680507457"><span class="annot"><span class="annottext">Typeable LetInfo
 DataType
 Constr
 Typeable LetInfo
@@ -1130,7 +1130,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; LetInfo -&gt; c LetInfo
 $cp1Data :: Typeable LetInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507418"><span id="local-6989586621680507420"><span id="local-6989586621680507422"><span class="annot"><span class="annottext">Int -&gt; LetInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507423"><span id="local-6989586621680507425"><span id="local-6989586621680507427"><span class="annot"><span class="annottext">Int -&gt; LetInfo -&gt; ShowS
 [LetInfo] -&gt; ShowS
 LetInfo -&gt; String
 (Int -&gt; LetInfo -&gt; ShowS)
@@ -1143,7 +1143,7 @@ show :: LetInfo -&gt; String
 $cshow :: LetInfo -&gt; String
 showsPrec :: Int -&gt; LetInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; LetInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507414"><span id="local-6989586621680507416"><span class="annot"><span class="annottext">LetInfo -&gt; LetInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507419"><span id="local-6989586621680507421"><span class="annot"><span class="annottext">LetInfo -&gt; LetInfo -&gt; Bool
 (LetInfo -&gt; LetInfo -&gt; Bool)
 -&gt; (LetInfo -&gt; LetInfo -&gt; Bool) -&gt; Eq LetInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -1151,7 +1151,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: LetInfo -&gt; LetInfo -&gt; Bool
 == :: LetInfo -&gt; LetInfo -&gt; Bool
 $c== :: LetInfo -&gt; LetInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507410"><span id="local-6989586621680507412"><span class="annot"><span class="annottext">LetInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507415"><span id="local-6989586621680507417"><span class="annot"><span class="annottext">LetInfo
 LetInfo -&gt; Bool
 LetInfo -&gt; (LetInfo -&gt; Bool) -&gt; Null LetInfo
 forall a. a -&gt; (a -&gt; Bool) -&gt; Null a
@@ -1159,18 +1159,18 @@ null :: LetInfo -&gt; Bool
 $cnull :: LetInfo -&gt; Bool
 empty :: LetInfo
 $cempty :: LetInfo
-</span><a href="#local-6989586621680507410"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Null</span></a></span></span></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680507415"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Null</span></a></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-129"></span><span>
 </span><span id="line-130"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#LetInfo"><span class="hs-identifier hs-type">LetInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-131"></span><span>  </span><span id="local-6989586621680507408"><span class="annot"><span class="annottext">getRange :: LetInfo -&gt; Range
-</span><a href="#local-6989586621680507408"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-type">LetRange</span></a></span><span> </span><span id="local-6989586621680507407"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507407"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507407"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><span id="line-131"></span><span>  </span><span id="local-6989586621680507413"><span class="annot"><span class="annottext">getRange :: LetInfo -&gt; Range
+</span><a href="#local-6989586621680507413"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-type">LetRange</span></a></span><span> </span><span id="local-6989586621680507412"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507412"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507412"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-132"></span><span>
 </span><span id="line-133"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#LetInfo"><span class="hs-identifier hs-type">LetInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-134"></span><span>  </span><span id="local-6989586621680507405"><span class="annot"><span class="annottext">killRange :: LetInfo -&gt; LetInfo
-</span><a href="#local-6989586621680507405"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-type">LetRange</span></a></span><span> </span><span id="local-6989586621680507404"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507404"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; LetInfo
+</span><span id="line-134"></span><span>  </span><span id="local-6989586621680507410"><span class="annot"><span class="annottext">killRange :: LetInfo -&gt; LetInfo
+</span><a href="#local-6989586621680507410"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-type">LetRange</span></a></span><span> </span><span id="local-6989586621680507409"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507409"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; LetInfo
 </span><a href="Agda.Syntax.Info.html#LetRange"><span class="hs-identifier hs-var">LetRange</span></a></span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span>
@@ -1179,7 +1179,7 @@ forall a. Range' a
     Definition information (declarations that actually define something)
  --------------------------------------------------------------------------}</span><span>
 </span><span id="line-139"></span><span>
-</span><span id="line-140"></span><span class="hs-keyword">data</span><span> </span><span id="DefInfo%27"><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-var">DefInfo'</span></a></span></span><span> </span><span id="local-6989586621680507845"><span class="annot"><a href="#local-6989586621680507845"><span class="hs-identifier hs-type">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="DefInfo"><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo"><span class="hs-identifier hs-var">DefInfo</span></a></span></span><span>
+</span><span id="line-140"></span><span class="hs-keyword">data</span><span> </span><span id="DefInfo%27"><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-var">DefInfo'</span></a></span></span><span> </span><span id="local-6989586621680507850"><span class="annot"><a href="#local-6989586621680507850"><span class="hs-identifier hs-type">t</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="DefInfo"><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo"><span class="hs-identifier hs-var">DefInfo</span></a></span></span><span>
 </span><span id="line-141"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="defFixity"><span class="annot"><span class="annottext">DefInfo' t -&gt; Fixity'
 </span><a href="Agda.Syntax.Info.html#defFixity"><span class="hs-identifier hs-var hs-var">defFixity</span></a></span></span><span>   </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Fixity%27"><span class="hs-identifier hs-type">Fixity'</span></a></span><span>
 </span><span id="line-142"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="defAccess"><span class="annot"><span class="annottext">DefInfo' t -&gt; Access
@@ -1193,9 +1193,9 @@ forall a. Range' a
 </span><span id="line-146"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="defInfo"><span class="annot"><span class="annottext">DefInfo' t -&gt; DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var hs-var">defInfo</span></a></span></span><span>     </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DeclInfo"><span class="hs-identifier hs-type">DeclInfo</span></a></span><span>
 </span><span id="line-147"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="defTactic"><span class="annot"><span class="annottext">DefInfo' t -&gt; Maybe t
-</span><a href="Agda.Syntax.Info.html#defTactic"><span class="hs-identifier hs-var hs-var">defTactic</span></a></span></span><span>   </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680507845"><span class="hs-identifier hs-type">t</span></a></span><span>
+</span><a href="Agda.Syntax.Info.html#defTactic"><span class="hs-identifier hs-var hs-var">defTactic</span></a></span></span><span>   </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680507850"><span class="hs-identifier hs-type">t</span></a></span><span>
 </span><span id="line-148"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-149"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cDefInfo"><span id="%24tDefInfo%27"><span id="local-6989586621680507367"><span id="local-6989586621680507369"><span id="local-6989586621680507371"><span id="local-6989586621680507373"><span id="local-6989586621680507375"><span id="local-6989586621680507377"><span id="local-6989586621680507379"><span id="local-6989586621680507381"><span id="local-6989586621680507383"><span id="local-6989586621680507385"><span id="local-6989586621680507387"><span id="local-6989586621680507389"><span id="local-6989586621680507391"><span id="local-6989586621680507393"><span class="annot"><span class="annottext">Typeable (DefInfo' t)
+</span><span id="line-149"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cDefInfo"><span id="%24tDefInfo%27"><span id="local-6989586621680507372"><span id="local-6989586621680507374"><span id="local-6989586621680507376"><span id="local-6989586621680507378"><span id="local-6989586621680507380"><span id="local-6989586621680507382"><span id="local-6989586621680507384"><span id="local-6989586621680507386"><span id="local-6989586621680507388"><span id="local-6989586621680507390"><span id="local-6989586621680507392"><span id="local-6989586621680507394"><span id="local-6989586621680507396"><span id="local-6989586621680507398"><span class="annot"><span class="annottext">Typeable (DefInfo' t)
 DataType
 Constr
 Typeable (DefInfo' t)
@@ -1408,7 +1408,7 @@ Data t =&gt;
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; DefInfo' t -&gt; c (DefInfo' t)
 $cp1Data :: forall t. Data t =&gt; Typeable (DefInfo' t)
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507359"><span id="local-6989586621680507361"><span id="local-6989586621680507363"><span class="annot"><span class="annottext">Int -&gt; DefInfo' t -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507364"><span id="local-6989586621680507366"><span id="local-6989586621680507368"><span class="annot"><span class="annottext">Int -&gt; DefInfo' t -&gt; ShowS
 [DefInfo' t] -&gt; ShowS
 DefInfo' t -&gt; String
 (Int -&gt; DefInfo' t -&gt; ShowS)
@@ -1426,7 +1426,7 @@ show :: DefInfo' t -&gt; String
 $cshow :: forall t. Show t =&gt; DefInfo' t -&gt; String
 showsPrec :: Int -&gt; DefInfo' t -&gt; ShowS
 $cshowsPrec :: forall t. Show t =&gt; Int -&gt; DefInfo' t -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507355"><span id="local-6989586621680507357"><span class="annot"><span class="annottext">DefInfo' t -&gt; DefInfo' t -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507360"><span id="local-6989586621680507362"><span class="annot"><span class="annottext">DefInfo' t -&gt; DefInfo' t -&gt; Bool
 (DefInfo' t -&gt; DefInfo' t -&gt; Bool)
 -&gt; (DefInfo' t -&gt; DefInfo' t -&gt; Bool) -&gt; Eq (DefInfo' t)
 forall t. Eq t =&gt; DefInfo' t -&gt; DefInfo' t -&gt; Bool
@@ -1437,14 +1437,14 @@ $c/= :: forall t. Eq t =&gt; DefInfo' t -&gt; DefInfo' t -&gt; Bool
 $c== :: forall t. Eq t =&gt; DefInfo' t -&gt; DefInfo' t -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-150"></span><span>
-</span><span id="line-151"></span><span id="local-6989586621680507354"><span class="annot"><a href="Agda.Syntax.Info.html#mkDefInfo"><span class="hs-identifier hs-type">mkDefInfo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Name.html#Name"><span class="hs-identifier hs-type">Name</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Fixity%27"><span class="hs-identifier hs-type">Fixity'</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Access"><span class="hs-identifier hs-type">Access</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsAbstract"><span class="hs-identifier hs-type">IsAbstract</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507354"><span class="hs-identifier hs-type">t</span></a></span></span><span>
+</span><span id="line-151"></span><span id="local-6989586621680507359"><span class="annot"><a href="Agda.Syntax.Info.html#mkDefInfo"><span class="hs-identifier hs-type">mkDefInfo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Name.html#Name"><span class="hs-identifier hs-type">Name</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Fixity%27"><span class="hs-identifier hs-type">Fixity'</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Access"><span class="hs-identifier hs-type">Access</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsAbstract"><span class="hs-identifier hs-type">IsAbstract</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507359"><span class="hs-identifier hs-type">t</span></a></span></span><span>
 </span><span id="line-152"></span><span id="mkDefInfo"><span class="annot"><span class="annottext">mkDefInfo :: Name -&gt; Fixity' -&gt; Access -&gt; IsAbstract -&gt; Range -&gt; DefInfo' t
-</span><a href="Agda.Syntax.Info.html#mkDefInfo"><span class="hs-identifier hs-var hs-var">mkDefInfo</span></a></span></span><span> </span><span id="local-6989586621680507352"><span class="annot"><span class="annottext">Name
-</span><a href="#local-6989586621680507352"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621680507351"><span class="annot"><span class="annottext">Fixity'
-</span><a href="#local-6989586621680507351"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507350"><span class="annot"><span class="annottext">Access
-</span><a href="#local-6989586621680507350"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680507349"><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507349"><span class="hs-identifier hs-var">ab</span></a></span></span><span> </span><span id="local-6989586621680507348"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507348"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name
+</span><a href="Agda.Syntax.Info.html#mkDefInfo"><span class="hs-identifier hs-var hs-var">mkDefInfo</span></a></span></span><span> </span><span id="local-6989586621680507357"><span class="annot"><span class="annottext">Name
+</span><a href="#local-6989586621680507357"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621680507356"><span class="annot"><span class="annottext">Fixity'
+</span><a href="#local-6989586621680507356"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507355"><span class="annot"><span class="annottext">Access
+</span><a href="#local-6989586621680507355"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680507354"><span class="annot"><span class="annottext">IsAbstract
+</span><a href="#local-6989586621680507354"><span class="hs-identifier hs-var">ab</span></a></span></span><span> </span><span id="local-6989586621680507353"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507353"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name
 -&gt; Fixity'
 -&gt; Access
 -&gt; IsAbstract
@@ -1462,16 +1462,16 @@ Name
 -&gt; Range
 -&gt; DefInfo' t
 </span><a href="Agda.Syntax.Info.html#mkDefInfoInstance"><span class="hs-identifier hs-var">mkDefInfoInstance</span></a></span><span> </span><span class="annot"><span class="annottext">Name
-</span><a href="#local-6989586621680507352"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Fixity'
-</span><a href="#local-6989586621680507351"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Access
-</span><a href="#local-6989586621680507350"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507349"><span class="hs-identifier hs-var">ab</span></a></span><span> </span><span class="annot"><span class="annottext">IsInstance
+</span><a href="#local-6989586621680507357"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Fixity'
+</span><a href="#local-6989586621680507356"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Access
+</span><a href="#local-6989586621680507355"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">IsAbstract
+</span><a href="#local-6989586621680507354"><span class="hs-identifier hs-var">ab</span></a></span><span> </span><span class="annot"><span class="annottext">IsInstance
 </span><a href="Agda.Syntax.Common.html#NotInstanceDef"><span class="hs-identifier hs-var">NotInstanceDef</span></a></span><span> </span><span class="annot"><span class="annottext">IsMacro
 </span><a href="Agda.Syntax.Common.html#NotMacroDef"><span class="hs-identifier hs-var">NotMacroDef</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507348"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621680507353"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-153"></span><span>
 </span><span id="line-154"></span><span class="hs-comment">-- | Same as @mkDefInfo@ but where we can also give the @IsInstance@</span><span>
-</span><span id="line-155"></span><span id="local-6989586621680507847"><span class="annot"><a href="Agda.Syntax.Info.html#mkDefInfoInstance"><span class="hs-identifier hs-type">mkDefInfoInstance</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Name.html#Name"><span class="hs-identifier hs-type">Name</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Fixity%27"><span class="hs-identifier hs-type">Fixity'</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Access"><span class="hs-identifier hs-type">Access</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsAbstract"><span class="hs-identifier hs-type">IsAbstract</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsInstance"><span class="hs-identifier hs-type">IsInstance</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsMacro"><span class="hs-identifier hs-type">IsMacro</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507847"><span class="hs-identifier hs-type">t</span></a></span></span><span>
+</span><span id="line-155"></span><span id="local-6989586621680507852"><span class="annot"><a href="Agda.Syntax.Info.html#mkDefInfoInstance"><span class="hs-identifier hs-type">mkDefInfoInstance</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Name.html#Name"><span class="hs-identifier hs-type">Name</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Fixity%27"><span class="hs-identifier hs-type">Fixity'</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Access"><span class="hs-identifier hs-type">Access</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsAbstract"><span class="hs-identifier hs-type">IsAbstract</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsInstance"><span class="hs-identifier hs-type">IsInstance</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#IsMacro"><span class="hs-identifier hs-type">IsMacro</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507852"><span class="hs-identifier hs-type">t</span></a></span></span><span>
 </span><span id="line-156"></span><span id="mkDefInfoInstance"><span class="annot"><span class="annottext">mkDefInfoInstance :: Name
 -&gt; Fixity'
 -&gt; Access
@@ -1480,14 +1480,14 @@ Name
 -&gt; IsMacro
 -&gt; Range
 -&gt; DefInfo' t
-</span><a href="Agda.Syntax.Info.html#mkDefInfoInstance"><span class="hs-identifier hs-var hs-var">mkDefInfoInstance</span></a></span></span><span> </span><span id="local-6989586621680507344"><span class="annot"><span class="annottext">Name
-</span><a href="#local-6989586621680507344"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621680507343"><span class="annot"><span class="annottext">Fixity'
-</span><a href="#local-6989586621680507343"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507342"><span class="annot"><span class="annottext">Access
-</span><a href="#local-6989586621680507342"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680507341"><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507341"><span class="hs-identifier hs-var">ab</span></a></span></span><span> </span><span id="local-6989586621680507340"><span class="annot"><span class="annottext">IsInstance
-</span><a href="#local-6989586621680507340"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507339"><span class="annot"><span class="annottext">IsMacro
-</span><a href="#local-6989586621680507339"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621680507338"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507338"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Fixity'
+</span><a href="Agda.Syntax.Info.html#mkDefInfoInstance"><span class="hs-identifier hs-var hs-var">mkDefInfoInstance</span></a></span></span><span> </span><span id="local-6989586621680507349"><span class="annot"><span class="annottext">Name
+</span><a href="#local-6989586621680507349"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span id="local-6989586621680507348"><span class="annot"><span class="annottext">Fixity'
+</span><a href="#local-6989586621680507348"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507347"><span class="annot"><span class="annottext">Access
+</span><a href="#local-6989586621680507347"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680507346"><span class="annot"><span class="annottext">IsAbstract
+</span><a href="#local-6989586621680507346"><span class="hs-identifier hs-var">ab</span></a></span></span><span> </span><span id="local-6989586621680507345"><span class="annot"><span class="annottext">IsInstance
+</span><a href="#local-6989586621680507345"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507344"><span class="annot"><span class="annottext">IsMacro
+</span><a href="#local-6989586621680507344"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621680507343"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507343"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Fixity'
 -&gt; Access
 -&gt; IsAbstract
 -&gt; IsInstance
@@ -1505,20 +1505,20 @@ Fixity'
 -&gt; Maybe t
 -&gt; DefInfo' t
 </span><a href="Agda.Syntax.Info.html#DefInfo"><span class="hs-identifier hs-var">DefInfo</span></a></span><span> </span><span class="annot"><span class="annottext">Fixity'
-</span><a href="#local-6989586621680507343"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Access
-</span><a href="#local-6989586621680507342"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507341"><span class="hs-identifier hs-var">ab</span></a></span><span> </span><span class="annot"><span class="annottext">IsInstance
-</span><a href="#local-6989586621680507340"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">IsMacro
-</span><a href="#local-6989586621680507339"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Name -&gt; Range -&gt; DeclInfo
+</span><a href="#local-6989586621680507348"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Access
+</span><a href="#local-6989586621680507347"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">IsAbstract
+</span><a href="#local-6989586621680507346"><span class="hs-identifier hs-var">ab</span></a></span><span> </span><span class="annot"><span class="annottext">IsInstance
+</span><a href="#local-6989586621680507345"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">IsMacro
+</span><a href="#local-6989586621680507344"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Name -&gt; Range -&gt; DeclInfo
 </span><a href="Agda.Syntax.Info.html#DeclInfo"><span class="hs-identifier hs-var">DeclInfo</span></a></span><span> </span><span class="annot"><span class="annottext">Name
-</span><a href="#local-6989586621680507344"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507338"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Maybe t
+</span><a href="#local-6989586621680507349"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507343"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Maybe t
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-157"></span><span>
-</span><span id="line-158"></span><span id="local-6989586621680507336"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507336"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-159"></span><span>  </span><span id="local-6989586621680507334"><span class="annot"><span class="annottext">getRange :: DefInfo' t -&gt; Range
-</span><a href="#local-6989586621680507334"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo -&gt; Range
+</span><span id="line-158"></span><span id="local-6989586621680507341"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507341"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-159"></span><span>  </span><span id="local-6989586621680507339"><span class="annot"><span class="annottext">getRange :: DefInfo' t -&gt; Range
+</span><a href="#local-6989586621680507339"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo -&gt; Range
 forall a. HasRange a =&gt; a -&gt; Range
 </span><a href="Agda.Syntax.Position.html#getRange"><span class="hs-identifier hs-var">getRange</span></a></span><span> </span><span class="annot"><span class="annottext">(DeclInfo -&gt; Range)
 -&gt; (DefInfo' t -&gt; DeclInfo) -&gt; DefInfo' t -&gt; Range
@@ -1527,25 +1527,25 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 forall t. DefInfo' t -&gt; DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var hs-var">defInfo</span></a></span></span><span>
 </span><span id="line-160"></span><span>
-</span><span id="line-161"></span><span id="local-6989586621680507332"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#SetRange"><span class="hs-identifier hs-type">SetRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507332"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-162"></span><span>  </span><span id="local-6989586621680507329"><span class="annot"><span class="annottext">setRange :: Range -&gt; DefInfo' t -&gt; DefInfo' t
-</span><a href="#local-6989586621680507329"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507328"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507327"><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507327"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507327"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defInfo :: DeclInfo
+</span><span id="line-161"></span><span id="local-6989586621680507337"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#SetRange"><span class="hs-identifier hs-type">SetRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507337"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-162"></span><span>  </span><span id="local-6989586621680507334"><span class="annot"><span class="annottext">setRange :: Range -&gt; DefInfo' t -&gt; DefInfo' t
+</span><a href="#local-6989586621680507334"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507333"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507333"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507332"><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507332"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507332"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defInfo :: DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var">defInfo</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; DeclInfo -&gt; DeclInfo
 forall a. SetRange a =&gt; Range -&gt; a -&gt; a
 </span><a href="Agda.Syntax.Position.html#setRange"><span class="hs-identifier hs-var">setRange</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">DefInfo' t -&gt; DeclInfo
+</span><a href="#local-6989586621680507333"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">DefInfo' t -&gt; DeclInfo
 forall t. DefInfo' t -&gt; DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var hs-var">defInfo</span></a></span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507327"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">}</span></span><span>
+</span><a href="#local-6989586621680507332"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">}</span></span><span>
 </span><span id="line-163"></span><span>
-</span><span id="line-164"></span><span id="local-6989586621680507326"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507326"><span class="hs-identifier hs-type">t</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507326"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-165"></span><span>  </span><span id="local-6989586621680507324"><span class="annot"><span class="annottext">killRange :: KillRangeT (DefInfo' t)
-</span><a href="#local-6989586621680507324"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507323"><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507323"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507323"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defInfo :: DeclInfo
+</span><span id="line-164"></span><span id="local-6989586621680507331"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507331"><span class="hs-identifier hs-type">t</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507331"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-165"></span><span>  </span><span id="local-6989586621680507329"><span class="annot"><span class="annottext">killRange :: KillRangeT (DefInfo' t)
+</span><a href="#local-6989586621680507329"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507328"><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defInfo :: DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var">defInfo</span></a></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo -&gt; DeclInfo
 forall a. KillRange a =&gt; KillRangeT a
 </span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var">killRange</span></a></span><span> </span><span class="annot"><span class="annottext">(DeclInfo -&gt; DeclInfo) -&gt; DeclInfo -&gt; DeclInfo
@@ -1553,7 +1553,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">DefInfo' t -&gt; DeclInfo
 forall t. DefInfo' t -&gt; DeclInfo
 </span><a href="Agda.Syntax.Info.html#defInfo"><span class="hs-identifier hs-var hs-var">defInfo</span></a></span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507323"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">,</span><span>
+</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">,</span><span>
 </span><span id="line-166"></span><span>                    </span><span class="annot"><span class="annottext">defTactic :: Maybe t
 </span><a href="Agda.Syntax.Info.html#defTactic"><span class="hs-identifier hs-var">defTactic</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">KillRangeT (Maybe t)
 forall a. KillRange a =&gt; KillRangeT a
@@ -1562,28 +1562,28 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">DefInfo' t -&gt; Maybe t
 forall t. DefInfo' t -&gt; Maybe t
 </span><a href="Agda.Syntax.Info.html#defTactic"><span class="hs-identifier hs-var hs-var">defTactic</span></a></span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507323"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">}</span></span><span>
+</span><a href="#local-6989586621680507328"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">}</span></span><span>
 </span><span id="line-167"></span><span>
-</span><span id="line-168"></span><span id="local-6989586621680507322"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#LensIsAbstract"><span class="hs-identifier hs-type">LensIsAbstract</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507322"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-169"></span><span>  </span><span id="local-6989586621680507319"><span class="annot"><span class="annottext">lensIsAbstract :: (IsAbstract -&gt; f IsAbstract) -&gt; DefInfo' t -&gt; f (DefInfo' t)
-</span><a href="Agda.Syntax.Common.html#lensIsAbstract"><span class="hs-identifier hs-var hs-var hs-var hs-var">lensIsAbstract</span></a></span></span><span> </span><span id="local-6989586621680507317"><span class="annot"><span class="annottext">IsAbstract -&gt; f IsAbstract
-</span><a href="#local-6989586621680507317"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507316"><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507316"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">IsAbstract -&gt; f IsAbstract
-</span><a href="#local-6989586621680507317"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">(IsAbstract -&gt; f IsAbstract) -&gt; IsAbstract -&gt; f IsAbstract
+</span><span id="line-168"></span><span id="local-6989586621680507327"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#LensIsAbstract"><span class="hs-identifier hs-type">LensIsAbstract</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507327"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-169"></span><span>  </span><span id="local-6989586621680507324"><span class="annot"><span class="annottext">lensIsAbstract :: (IsAbstract -&gt; f IsAbstract) -&gt; DefInfo' t -&gt; f (DefInfo' t)
+</span><a href="Agda.Syntax.Common.html#lensIsAbstract"><span class="hs-identifier hs-var hs-var hs-var hs-var">lensIsAbstract</span></a></span></span><span> </span><span id="local-6989586621680507322"><span class="annot"><span class="annottext">IsAbstract -&gt; f IsAbstract
+</span><a href="#local-6989586621680507322"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680507321"><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507321"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">IsAbstract -&gt; f IsAbstract
+</span><a href="#local-6989586621680507322"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">(IsAbstract -&gt; f IsAbstract) -&gt; IsAbstract -&gt; f IsAbstract
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$!</span></span><span> </span><span class="annot"><span class="annottext">DefInfo' t -&gt; IsAbstract
 forall t. DefInfo' t -&gt; IsAbstract
 </span><a href="Agda.Syntax.Info.html#defAbstract"><span class="hs-identifier hs-var hs-var">defAbstract</span></a></span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507316"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">f IsAbstract -&gt; (IsAbstract -&gt; DefInfo' t) -&gt; f (DefInfo' t)
+</span><a href="#local-6989586621680507321"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">f IsAbstract -&gt; (IsAbstract -&gt; DefInfo' t) -&gt; f (DefInfo' t)
 forall (m :: * -&gt; *) a b. Functor m =&gt; m a -&gt; (a -&gt; b) -&gt; m b
-</span><a href="Agda.Utils.Functor.html#%3C%26%3E"><span class="hs-operator hs-var">&lt;&amp;&gt;</span></a></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680507313"><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507313"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
-</span><a href="#local-6989586621680507316"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defAbstract :: IsAbstract
+</span><a href="Agda.Utils.Functor.html#%3C%26%3E"><span class="hs-operator hs-var">&lt;&amp;&gt;</span></a></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680507318"><span class="annot"><span class="annottext">IsAbstract
+</span><a href="#local-6989586621680507318"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">DefInfo' t
+</span><a href="#local-6989586621680507321"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">defAbstract :: IsAbstract
 </span><a href="Agda.Syntax.Info.html#defAbstract"><span class="hs-identifier hs-var">defAbstract</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IsAbstract
-</span><a href="#local-6989586621680507313"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-special">}</span></span><span>
+</span><a href="#local-6989586621680507318"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-special">}</span></span><span>
 </span><span id="line-170"></span><span>
-</span><span id="line-171"></span><span id="local-6989586621680507312"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#AnyIsAbstract"><span class="hs-identifier hs-type">AnyIsAbstract</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507312"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-172"></span><span>  </span><span id="local-6989586621680507309"><span class="annot"><span class="annottext">anyIsAbstract :: DefInfo' t -&gt; IsAbstract
+</span><span id="line-171"></span><span id="local-6989586621680507317"><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#AnyIsAbstract"><span class="hs-identifier hs-type">AnyIsAbstract</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#DefInfo%27"><span class="hs-identifier hs-type">DefInfo'</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680507317"><span class="hs-identifier hs-type">t</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-172"></span><span>  </span><span id="local-6989586621680507314"><span class="annot"><span class="annottext">anyIsAbstract :: DefInfo' t -&gt; IsAbstract
 </span><a href="Agda.Syntax.Common.html#anyIsAbstract"><span class="hs-identifier hs-var hs-var hs-var hs-var">anyIsAbstract</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DefInfo' t -&gt; IsAbstract
 forall t. DefInfo' t -&gt; IsAbstract
 </span><a href="Agda.Syntax.Info.html#defAbstract"><span class="hs-identifier hs-var hs-var">defAbstract</span></a></span></span><span>
@@ -1599,7 +1599,7 @@ forall t. DefInfo' t -&gt; IsAbstract
 </span><span id="line-181"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="declRange"><span class="annot"><span class="annottext">DeclInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#declRange"><span class="hs-identifier hs-var hs-var">declRange</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
 </span><span id="line-182"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-183"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cDeclInfo"><span id="%24tDeclInfo"><span id="local-6989586621680507277"><span id="local-6989586621680507279"><span id="local-6989586621680507281"><span id="local-6989586621680507283"><span id="local-6989586621680507285"><span id="local-6989586621680507287"><span id="local-6989586621680507289"><span id="local-6989586621680507291"><span id="local-6989586621680507293"><span id="local-6989586621680507295"><span id="local-6989586621680507297"><span id="local-6989586621680507299"><span id="local-6989586621680507301"><span id="local-6989586621680507303"><span class="annot"><span class="annottext">Typeable DeclInfo
+</span><span id="line-183"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cDeclInfo"><span id="%24tDeclInfo"><span id="local-6989586621680507282"><span id="local-6989586621680507284"><span id="local-6989586621680507286"><span id="local-6989586621680507288"><span id="local-6989586621680507290"><span id="local-6989586621680507292"><span id="local-6989586621680507294"><span id="local-6989586621680507296"><span id="local-6989586621680507298"><span id="local-6989586621680507300"><span id="local-6989586621680507302"><span id="local-6989586621680507304"><span id="local-6989586621680507306"><span id="local-6989586621680507308"><span class="annot"><span class="annottext">Typeable DeclInfo
 DataType
 Constr
 Typeable DeclInfo
@@ -1755,7 +1755,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; DeclInfo -&gt; c DeclInfo
 $cp1Data :: Typeable DeclInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507269"><span id="local-6989586621680507271"><span id="local-6989586621680507273"><span class="annot"><span class="annottext">Int -&gt; DeclInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507274"><span id="local-6989586621680507276"><span id="local-6989586621680507278"><span class="annot"><span class="annottext">Int -&gt; DeclInfo -&gt; ShowS
 [DeclInfo] -&gt; ShowS
 DeclInfo -&gt; String
 (Int -&gt; DeclInfo -&gt; ShowS)
@@ -1768,7 +1768,7 @@ show :: DeclInfo -&gt; String
 $cshow :: DeclInfo -&gt; String
 showsPrec :: Int -&gt; DeclInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; DeclInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507265"><span id="local-6989586621680507267"><span class="annot"><span class="annottext">DeclInfo -&gt; DeclInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507270"><span id="local-6989586621680507272"><span class="annot"><span class="annottext">DeclInfo -&gt; DeclInfo -&gt; Bool
 (DeclInfo -&gt; DeclInfo -&gt; Bool)
 -&gt; (DeclInfo -&gt; DeclInfo -&gt; Bool) -&gt; Eq DeclInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -1779,24 +1779,24 @@ $c== :: DeclInfo -&gt; DeclInfo -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-184"></span><span>
 </span><span id="line-185"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DeclInfo"><span class="hs-identifier hs-type">DeclInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-186"></span><span>  </span><span id="local-6989586621680507263"><span class="annot"><span class="annottext">getRange :: DeclInfo -&gt; Range
-</span><a href="#local-6989586621680507263"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo -&gt; Range
+</span><span id="line-186"></span><span>  </span><span id="local-6989586621680507268"><span class="annot"><span class="annottext">getRange :: DeclInfo -&gt; Range
+</span><a href="#local-6989586621680507268"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#declRange"><span class="hs-identifier hs-var hs-var">declRange</span></a></span><span>
 </span><span id="line-187"></span><span>
 </span><span id="line-188"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#SetRange"><span class="hs-identifier hs-type">SetRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DeclInfo"><span class="hs-identifier hs-type">DeclInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-189"></span><span>  </span><span id="local-6989586621680507260"><span class="annot"><span class="annottext">setRange :: Range -&gt; DeclInfo -&gt; DeclInfo
-</span><a href="#local-6989586621680507260"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507259"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507259"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507258"><span class="annot"><span class="annottext">DeclInfo
-</span><a href="#local-6989586621680507258"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo
-</span><a href="#local-6989586621680507258"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">declRange :: Range
+</span><span id="line-189"></span><span>  </span><span id="local-6989586621680507265"><span class="annot"><span class="annottext">setRange :: Range -&gt; DeclInfo -&gt; DeclInfo
+</span><a href="#local-6989586621680507265"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507264"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507264"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507263"><span class="annot"><span class="annottext">DeclInfo
+</span><a href="#local-6989586621680507263"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo
+</span><a href="#local-6989586621680507263"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">declRange :: Range
 </span><a href="Agda.Syntax.Info.html#declRange"><span class="hs-identifier hs-var">declRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507259"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">}</span><span>
+</span><a href="#local-6989586621680507264"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-190"></span><span>
 </span><span id="line-191"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#DeclInfo"><span class="hs-identifier hs-type">DeclInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-192"></span><span>  </span><span id="local-6989586621680507256"><span class="annot"><span class="annottext">killRange :: DeclInfo -&gt; DeclInfo
-</span><a href="#local-6989586621680507256"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507255"><span class="annot"><span class="annottext">DeclInfo
-</span><a href="#local-6989586621680507255"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo
-</span><a href="#local-6989586621680507255"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">declRange :: Range
+</span><span id="line-192"></span><span>  </span><span id="local-6989586621680507261"><span class="annot"><span class="annottext">killRange :: DeclInfo -&gt; DeclInfo
+</span><a href="#local-6989586621680507261"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507260"><span class="annot"><span class="annottext">DeclInfo
+</span><a href="#local-6989586621680507260"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">DeclInfo
+</span><a href="#local-6989586621680507260"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">declRange :: Range
 </span><a href="Agda.Syntax.Info.html#declRange"><span class="hs-identifier hs-var">declRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span> </span><span class="hs-special">}</span><span>
@@ -1815,7 +1815,7 @@ forall a. Range' a
 </span><span id="line-202"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="mutualRange"><span class="annot"><span class="annottext">MutualInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#mutualRange"><span class="hs-identifier hs-var hs-var">mutualRange</span></a></span></span><span>            </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
 </span><span id="line-203"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-204"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cMutualInfo"><span id="%24tMutualInfo"><span id="local-6989586621680507221"><span id="local-6989586621680507223"><span id="local-6989586621680507225"><span id="local-6989586621680507227"><span id="local-6989586621680507229"><span id="local-6989586621680507231"><span id="local-6989586621680507233"><span id="local-6989586621680507235"><span id="local-6989586621680507237"><span id="local-6989586621680507239"><span id="local-6989586621680507241"><span id="local-6989586621680507243"><span id="local-6989586621680507245"><span id="local-6989586621680507247"><span class="annot"><span class="annottext">Typeable MutualInfo
+</span><span id="line-204"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cMutualInfo"><span id="%24tMutualInfo"><span id="local-6989586621680507226"><span id="local-6989586621680507228"><span id="local-6989586621680507230"><span id="local-6989586621680507232"><span id="local-6989586621680507234"><span id="local-6989586621680507236"><span id="local-6989586621680507238"><span id="local-6989586621680507240"><span id="local-6989586621680507242"><span id="local-6989586621680507244"><span id="local-6989586621680507246"><span id="local-6989586621680507248"><span id="local-6989586621680507250"><span id="local-6989586621680507252"><span class="annot"><span class="annottext">Typeable MutualInfo
 DataType
 Constr
 Typeable MutualInfo
@@ -1973,7 +1973,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; MutualInfo -&gt; c MutualInfo
 $cp1Data :: Typeable MutualInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507213"><span id="local-6989586621680507215"><span id="local-6989586621680507217"><span class="annot"><span class="annottext">Int -&gt; MutualInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507218"><span id="local-6989586621680507220"><span id="local-6989586621680507222"><span class="annot"><span class="annottext">Int -&gt; MutualInfo -&gt; ShowS
 [MutualInfo] -&gt; ShowS
 MutualInfo -&gt; String
 (Int -&gt; MutualInfo -&gt; ShowS)
@@ -1988,7 +1988,7 @@ show :: MutualInfo -&gt; String
 $cshow :: MutualInfo -&gt; String
 showsPrec :: Int -&gt; MutualInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; MutualInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507209"><span id="local-6989586621680507211"><span class="annot"><span class="annottext">MutualInfo -&gt; MutualInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507214"><span id="local-6989586621680507216"><span class="annot"><span class="annottext">MutualInfo -&gt; MutualInfo -&gt; Bool
 (MutualInfo -&gt; MutualInfo -&gt; Bool)
 -&gt; (MutualInfo -&gt; MutualInfo -&gt; Bool) -&gt; Eq MutualInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -1999,8 +1999,8 @@ $c== :: MutualInfo -&gt; MutualInfo -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-205"></span><span>
 </span><span id="line-206"></span><span class="hs-comment">-- | Default value for 'MutualInfo'.</span><span>
-</span><span id="line-207"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680507206"><span class="annot"><a href="Agda.Utils.Null.html#Null"><span class="hs-identifier hs-type">Null</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MutualInfo"><span class="hs-identifier hs-type">MutualInfo</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-208"></span><span>  </span><span id="local-6989586621680507205"><span class="annot"><span class="annottext">empty :: MutualInfo
+</span><span id="line-207"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680507211"><span class="annot"><a href="Agda.Utils.Null.html#Null"><span class="hs-identifier hs-type">Null</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MutualInfo"><span class="hs-identifier hs-type">MutualInfo</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-208"></span><span>  </span><span id="local-6989586621680507210"><span class="annot"><span class="annottext">empty :: MutualInfo
 </span><a href="Agda.Utils.Null.html#empty"><span class="hs-identifier hs-var hs-var hs-var hs-var">empty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TerminationCheck Name
 -&gt; CoverageCheck -&gt; PositivityCheck -&gt; Range -&gt; MutualInfo
 </span><a href="Agda.Syntax.Info.html#MutualInfo"><span class="hs-identifier hs-var">MutualInfo</span></a></span><span> </span><span class="annot"><span class="annottext">TerminationCheck Name
@@ -2012,15 +2012,15 @@ forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span>
 </span><span id="line-209"></span><span>
 </span><span id="line-210"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MutualInfo"><span class="hs-identifier hs-type">MutualInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-211"></span><span>  </span><span id="local-6989586621680507199"><span class="annot"><span class="annottext">getRange :: MutualInfo -&gt; Range
-</span><a href="#local-6989586621680507199"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MutualInfo -&gt; Range
+</span><span id="line-211"></span><span>  </span><span id="local-6989586621680507204"><span class="annot"><span class="annottext">getRange :: MutualInfo -&gt; Range
+</span><a href="#local-6989586621680507204"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MutualInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#mutualRange"><span class="hs-identifier hs-var hs-var">mutualRange</span></a></span><span>
 </span><span id="line-212"></span><span>
 </span><span id="line-213"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#MutualInfo"><span class="hs-identifier hs-type">MutualInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-214"></span><span>  </span><span id="local-6989586621680507197"><span class="annot"><span class="annottext">killRange :: MutualInfo -&gt; MutualInfo
-</span><a href="#local-6989586621680507197"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507196"><span class="annot"><span class="annottext">MutualInfo
-</span><a href="#local-6989586621680507196"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MutualInfo
-</span><a href="#local-6989586621680507196"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">mutualRange :: Range
+</span><span id="line-214"></span><span>  </span><span id="local-6989586621680507202"><span class="annot"><span class="annottext">killRange :: MutualInfo -&gt; MutualInfo
+</span><a href="#local-6989586621680507202"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span id="local-6989586621680507201"><span class="annot"><span class="annottext">MutualInfo
+</span><a href="#local-6989586621680507201"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MutualInfo
+</span><a href="#local-6989586621680507201"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">mutualRange :: Range
 </span><a href="Agda.Syntax.Info.html#mutualRange"><span class="hs-identifier hs-var">mutualRange</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span> </span><span class="hs-special">}</span><span>
@@ -2034,7 +2034,7 @@ forall a. Range' a
 </span><a href="Agda.Syntax.Info.html#lhsRange"><span class="hs-identifier hs-var hs-var">lhsRange</span></a></span></span><span>    </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
 </span><span id="line-222"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="lhsEllipsis"><span class="annot"><span class="annottext">LHSInfo -&gt; ExpandedEllipsis
 </span><a href="Agda.Syntax.Info.html#lhsEllipsis"><span class="hs-identifier hs-var hs-var">lhsEllipsis</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#ExpandedEllipsis"><span class="hs-identifier hs-type">ExpandedEllipsis</span></a></span><span>
-</span><span id="line-223"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cLHSInfo"><span id="%24tLHSInfo"><span id="local-6989586621680507164"><span id="local-6989586621680507166"><span id="local-6989586621680507168"><span id="local-6989586621680507170"><span id="local-6989586621680507172"><span id="local-6989586621680507174"><span id="local-6989586621680507176"><span id="local-6989586621680507178"><span id="local-6989586621680507180"><span id="local-6989586621680507182"><span id="local-6989586621680507184"><span id="local-6989586621680507186"><span id="local-6989586621680507188"><span id="local-6989586621680507190"><span class="annot"><span class="annottext">Typeable LHSInfo
+</span><span id="line-223"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cLHSInfo"><span id="%24tLHSInfo"><span id="local-6989586621680507169"><span id="local-6989586621680507171"><span id="local-6989586621680507173"><span id="local-6989586621680507175"><span id="local-6989586621680507177"><span id="local-6989586621680507179"><span id="local-6989586621680507181"><span id="local-6989586621680507183"><span id="local-6989586621680507185"><span id="local-6989586621680507187"><span id="local-6989586621680507189"><span id="local-6989586621680507191"><span id="local-6989586621680507193"><span id="local-6989586621680507195"><span class="annot"><span class="annottext">Typeable LHSInfo
 DataType
 Constr
 Typeable LHSInfo
@@ -2190,7 +2190,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; LHSInfo -&gt; c LHSInfo
 $cp1Data :: Typeable LHSInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507156"><span id="local-6989586621680507158"><span id="local-6989586621680507160"><span class="annot"><span class="annottext">Int -&gt; LHSInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507161"><span id="local-6989586621680507163"><span id="local-6989586621680507165"><span class="annot"><span class="annottext">Int -&gt; LHSInfo -&gt; ShowS
 [LHSInfo] -&gt; ShowS
 LHSInfo -&gt; String
 (Int -&gt; LHSInfo -&gt; ShowS)
@@ -2203,7 +2203,7 @@ show :: LHSInfo -&gt; String
 $cshow :: LHSInfo -&gt; String
 showsPrec :: Int -&gt; LHSInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; LHSInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507152"><span id="local-6989586621680507154"><span class="annot"><span class="annottext">LHSInfo -&gt; LHSInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507157"><span id="local-6989586621680507159"><span class="annot"><span class="annottext">LHSInfo -&gt; LHSInfo -&gt; Bool
 (LHSInfo -&gt; LHSInfo -&gt; Bool)
 -&gt; (LHSInfo -&gt; LHSInfo -&gt; Bool) -&gt; Eq LHSInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -2214,37 +2214,37 @@ $c== :: LHSInfo -&gt; LHSInfo -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-224"></span><span>
 </span><span id="line-225"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-226"></span><span>  </span><span id="local-6989586621680507150"><span class="annot"><span class="annottext">getRange :: LHSInfo -&gt; Range
-</span><a href="#local-6989586621680507150"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span id="local-6989586621680507149"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507149"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="annot"><span class="annottext">ExpandedEllipsis
+</span><span id="line-226"></span><span>  </span><span id="local-6989586621680507155"><span class="annot"><span class="annottext">getRange :: LHSInfo -&gt; Range
+</span><a href="#local-6989586621680507155"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span id="local-6989586621680507154"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507154"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="annot"><span class="annottext">ExpandedEllipsis
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507149"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621680507154"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-227"></span><span>
 </span><span id="line-228"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-229"></span><span>  </span><span id="local-6989586621680507147"><span class="annot"><span class="annottext">killRange :: LHSInfo -&gt; LHSInfo
-</span><a href="#local-6989586621680507147"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span id="local-6989586621680507146"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507146"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507145"><span class="annot"><span class="annottext">ExpandedEllipsis
-</span><a href="#local-6989586621680507145"><span class="hs-identifier hs-var">ell</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; ExpandedEllipsis -&gt; LHSInfo
+</span><span id="line-229"></span><span>  </span><span id="local-6989586621680507152"><span class="annot"><span class="annottext">killRange :: LHSInfo -&gt; LHSInfo
+</span><a href="#local-6989586621680507152"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span id="local-6989586621680507151"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507151"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680507150"><span class="annot"><span class="annottext">ExpandedEllipsis
+</span><a href="#local-6989586621680507150"><span class="hs-identifier hs-var">ell</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; ExpandedEllipsis -&gt; LHSInfo
 </span><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-var">LHSInfo</span></a></span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Range' a
 </span><a href="Agda.Syntax.Position.html#noRange"><span class="hs-identifier hs-var">noRange</span></a></span><span> </span><span class="annot"><span class="annottext">ExpandedEllipsis
-</span><a href="#local-6989586621680507145"><span class="hs-identifier hs-var">ell</span></a></span><span>
+</span><a href="#local-6989586621680507150"><span class="hs-identifier hs-var">ell</span></a></span><span>
 </span><span id="line-230"></span><span>
 </span><span id="line-231"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Utils.Null.html#Null"><span class="hs-identifier hs-type">Null</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-type">LHSInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-232"></span><span>  </span><span id="local-6989586621680507142"><span class="annot"><span class="annottext">null :: LHSInfo -&gt; Bool
-</span><a href="Agda.Utils.Null.html#null"><span class="hs-identifier hs-var hs-var hs-var hs-var">null</span></a></span></span><span> </span><span id="local-6989586621680507140"><span class="annot"><span class="annottext">LHSInfo
-</span><a href="#local-6989586621680507140"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Bool
+</span><span id="line-232"></span><span>  </span><span id="local-6989586621680507147"><span class="annot"><span class="annottext">null :: LHSInfo -&gt; Bool
+</span><a href="Agda.Utils.Null.html#null"><span class="hs-identifier hs-var hs-var hs-var hs-var">null</span></a></span></span><span> </span><span id="local-6989586621680507145"><span class="annot"><span class="annottext">LHSInfo
+</span><a href="#local-6989586621680507145"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Bool
 forall a. Null a =&gt; a -&gt; Bool
 </span><a href="Agda.Utils.Null.html#null"><span class="hs-identifier hs-var">null</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">LHSInfo -&gt; Range
 </span><a href="Agda.Syntax.Info.html#lhsRange"><span class="hs-identifier hs-var hs-var">lhsRange</span></a></span><span> </span><span class="annot"><span class="annottext">LHSInfo
-</span><a href="#local-6989586621680507140"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
+</span><a href="#local-6989586621680507145"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
 </span><span class="hs-operator hs-var">&amp;&amp;</span></span><span> </span><span class="annot"><span class="annottext">ExpandedEllipsis -&gt; Bool
 forall a. Null a =&gt; a -&gt; Bool
 </span><a href="Agda.Utils.Null.html#null"><span class="hs-identifier hs-var">null</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">LHSInfo -&gt; ExpandedEllipsis
 </span><a href="Agda.Syntax.Info.html#lhsEllipsis"><span class="hs-identifier hs-var hs-var">lhsEllipsis</span></a></span><span> </span><span class="annot"><span class="annottext">LHSInfo
-</span><a href="#local-6989586621680507140"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-233"></span><span>  </span><span id="local-6989586621680507138"><span class="annot"><span class="annottext">empty :: LHSInfo
-</span><a href="#local-6989586621680507138"><span class="hs-identifier hs-var hs-var hs-var hs-var">empty</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; ExpandedEllipsis -&gt; LHSInfo
+</span><a href="#local-6989586621680507145"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-233"></span><span>  </span><span id="local-6989586621680507143"><span class="annot"><span class="annottext">empty :: LHSInfo
+</span><a href="#local-6989586621680507143"><span class="hs-identifier hs-var hs-var hs-var hs-var">empty</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; ExpandedEllipsis -&gt; LHSInfo
 </span><a href="Agda.Syntax.Info.html#LHSInfo"><span class="hs-identifier hs-var">LHSInfo</span></a></span><span> </span><span class="annot"><span class="annottext">Range
 forall a. Null a =&gt; a
 </span><a href="Agda.Utils.Null.html#empty"><span class="hs-identifier hs-var">empty</span></a></span><span> </span><span class="annot"><span class="annottext">ExpandedEllipsis
@@ -2258,7 +2258,7 @@ forall a. Null a =&gt; a
 </span><span id="line-239"></span><span class="hs-comment">-- | For a general pattern we remember the source code position.</span><span>
 </span><span id="line-240"></span><span class="hs-keyword">newtype</span><span> </span><span id="PatInfo"><span class="annot"><a href="Agda.Syntax.Info.html#PatInfo"><span class="hs-identifier hs-var">PatInfo</span></a></span></span><span>
 </span><span id="line-241"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="PatRange"><span class="annot"><a href="Agda.Syntax.Info.html#PatRange"><span class="hs-identifier hs-var">PatRange</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span>
-</span><span id="line-242"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cPatRange"><span id="%24tPatInfo"><span id="local-6989586621680507108"><span id="local-6989586621680507110"><span id="local-6989586621680507112"><span id="local-6989586621680507114"><span id="local-6989586621680507116"><span id="local-6989586621680507118"><span id="local-6989586621680507120"><span id="local-6989586621680507122"><span id="local-6989586621680507124"><span id="local-6989586621680507126"><span id="local-6989586621680507128"><span id="local-6989586621680507130"><span id="local-6989586621680507132"><span id="local-6989586621680507134"><span class="annot"><span class="annottext">Typeable PatInfo
+</span><span id="line-242"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cPatRange"><span id="%24tPatInfo"><span id="local-6989586621680507113"><span id="local-6989586621680507115"><span id="local-6989586621680507117"><span id="local-6989586621680507119"><span id="local-6989586621680507121"><span id="local-6989586621680507123"><span id="local-6989586621680507125"><span id="local-6989586621680507127"><span id="local-6989586621680507129"><span id="local-6989586621680507131"><span id="local-6989586621680507133"><span id="local-6989586621680507135"><span id="local-6989586621680507137"><span id="local-6989586621680507139"><span class="annot"><span class="annottext">Typeable PatInfo
 DataType
 Constr
 Typeable PatInfo
@@ -2414,7 +2414,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; PatInfo -&gt; c PatInfo
 $cp1Data :: Typeable PatInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507102"><span id="local-6989586621680507104"><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507107"><span id="local-6989586621680507109"><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo -&gt; Bool
 (PatInfo -&gt; PatInfo -&gt; Bool)
 -&gt; (PatInfo -&gt; PatInfo -&gt; Bool) -&gt; Eq PatInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -2422,7 +2422,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: PatInfo -&gt; PatInfo -&gt; Bool
 == :: PatInfo -&gt; PatInfo -&gt; Bool
 $c== :: PatInfo -&gt; PatInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507098"><span id="local-6989586621680507100"><span class="annot"><span class="annottext">PatInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507103"><span id="local-6989586621680507105"><span class="annot"><span class="annottext">PatInfo
 PatInfo -&gt; Bool
 PatInfo -&gt; (PatInfo -&gt; Bool) -&gt; Null PatInfo
 forall a. a -&gt; (a -&gt; Bool) -&gt; Null a
@@ -2430,7 +2430,7 @@ null :: PatInfo -&gt; Bool
 $cnull :: PatInfo -&gt; Bool
 empty :: PatInfo
 $cempty :: PatInfo
-</span><a href="#local-6989586621680507098"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Null</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507092"><span id="local-6989586621680507094"><span id="local-6989586621680507096"><span class="annot"><span class="annottext">b -&gt; PatInfo -&gt; PatInfo
+</span><a href="#local-6989586621680507103"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Null</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507097"><span id="local-6989586621680507099"><span id="local-6989586621680507101"><span class="annot"><span class="annottext">b -&gt; PatInfo -&gt; PatInfo
 NonEmpty PatInfo -&gt; PatInfo
 PatInfo -&gt; PatInfo -&gt; PatInfo
 (PatInfo -&gt; PatInfo -&gt; PatInfo)
@@ -2449,7 +2449,7 @@ sconcat :: NonEmpty PatInfo -&gt; PatInfo
 $csconcat :: NonEmpty PatInfo -&gt; PatInfo
 &lt;&gt; :: PatInfo -&gt; PatInfo -&gt; PatInfo
 $c&lt;&gt; :: PatInfo -&gt; PatInfo -&gt; PatInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Semigroup</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507084"><span id="local-6989586621680507086"><span id="local-6989586621680507088"><span class="annot"><span class="annottext">Semigroup PatInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Semigroup</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507089"><span id="local-6989586621680507091"><span id="local-6989586621680507093"><span class="annot"><span class="annottext">Semigroup PatInfo
 PatInfo
 Semigroup PatInfo
 -&gt; PatInfo
@@ -2467,7 +2467,7 @@ $cmappend :: PatInfo -&gt; PatInfo -&gt; PatInfo
 mempty :: PatInfo
 $cmempty :: PatInfo
 $cp1Monoid :: Semigroup PatInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Monoid</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507077"><span id="local-6989586621680507079"><span id="local-6989586621680507081"><span class="annot"><span class="annottext">Int -&gt; PatInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Monoid</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507082"><span id="local-6989586621680507084"><span id="local-6989586621680507086"><span class="annot"><span class="annottext">Int -&gt; PatInfo -&gt; ShowS
 [PatInfo] -&gt; ShowS
 PatInfo -&gt; String
 (Int -&gt; PatInfo -&gt; ShowS)
@@ -2480,7 +2480,7 @@ show :: PatInfo -&gt; String
 $cshow :: PatInfo -&gt; String
 showsPrec :: Int -&gt; PatInfo -&gt; ShowS
 $cshowsPrec :: Int -&gt; PatInfo -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507074"><span class="annot"><span class="annottext">HasRange PatInfo
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507079"><span class="annot"><span class="annottext">HasRange PatInfo
 HasRange PatInfo
 -&gt; (Range -&gt; PatInfo -&gt; PatInfo) -&gt; SetRange PatInfo
 Range -&gt; PatInfo -&gt; PatInfo
@@ -2488,17 +2488,17 @@ forall a. HasRange a -&gt; (Range -&gt; a -&gt; a) -&gt; SetRange a
 setRange :: Range -&gt; PatInfo -&gt; PatInfo
 $csetRange :: Range -&gt; PatInfo -&gt; PatInfo
 $cp1SetRange :: HasRange PatInfo
-</span><a href="#local-6989586621680507074"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var">SetRange</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507072"><span class="annot"><span class="annottext">PatInfo -&gt; Range
+</span><a href="#local-6989586621680507079"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var">SetRange</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507077"><span class="annot"><span class="annottext">PatInfo -&gt; Range
 (PatInfo -&gt; Range) -&gt; HasRange PatInfo
 forall a. (a -&gt; Range) -&gt; HasRange a
 getRange :: PatInfo -&gt; Range
 $cgetRange :: PatInfo -&gt; Range
-</span><a href="#local-6989586621680507072"><span class="hs-identifier hs-var hs-var hs-var hs-var">HasRange</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507070"><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo
+</span><a href="#local-6989586621680507077"><span class="hs-identifier hs-var hs-var hs-var hs-var">HasRange</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507075"><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo
 (PatInfo -&gt; PatInfo) -&gt; KillRange PatInfo
 forall a. KillRangeT a -&gt; KillRange a
 killRange :: PatInfo -&gt; PatInfo
 $ckillRange :: PatInfo -&gt; PatInfo
-</span><a href="#local-6989586621680507070"><span class="hs-identifier hs-var hs-var hs-var hs-var">KillRange</span></a></span></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680507075"><span class="hs-identifier hs-var hs-var hs-var hs-var">KillRange</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-243"></span><span>
 </span><span id="line-244"></span><span class="hs-comment">-- | Empty range for patterns.</span><span>
 </span><span id="line-245"></span><span class="annot"><a href="Agda.Syntax.Info.html#patNoRange"><span class="hs-identifier hs-type">patNoRange</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#PatInfo"><span class="hs-identifier hs-type">PatInfo</span></a></span><span>
@@ -2519,7 +2519,7 @@ forall a. Range' a
 </span><span id="line-254"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="conPatLazy"><span class="annot"><span class="annottext">ConPatInfo -&gt; ConPatLazy
 </span><a href="Agda.Syntax.Info.html#conPatLazy"><span class="hs-identifier hs-var hs-var">conPatLazy</span></a></span></span><span>     </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatLazy"><span class="hs-identifier hs-type">ConPatLazy</span></a></span><span>
 </span><span id="line-255"></span><span>  </span><span class="hs-special">}</span><span>
-</span><span id="line-256"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cConPatInfo"><span id="%24tConPatInfo"><span id="local-6989586621680507036"><span id="local-6989586621680507038"><span id="local-6989586621680507040"><span id="local-6989586621680507042"><span id="local-6989586621680507044"><span id="local-6989586621680507046"><span id="local-6989586621680507048"><span id="local-6989586621680507050"><span id="local-6989586621680507052"><span id="local-6989586621680507054"><span id="local-6989586621680507056"><span id="local-6989586621680507058"><span id="local-6989586621680507060"><span id="local-6989586621680507062"><span class="annot"><span class="annottext">Typeable ConPatInfo
+</span><span id="line-256"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cConPatInfo"><span id="%24tConPatInfo"><span id="local-6989586621680507041"><span id="local-6989586621680507043"><span id="local-6989586621680507045"><span id="local-6989586621680507047"><span id="local-6989586621680507049"><span id="local-6989586621680507051"><span id="local-6989586621680507053"><span id="local-6989586621680507055"><span id="local-6989586621680507057"><span id="local-6989586621680507059"><span id="local-6989586621680507061"><span id="local-6989586621680507063"><span id="local-6989586621680507065"><span id="local-6989586621680507067"><span class="annot"><span class="annottext">Typeable ConPatInfo
 DataType
 Constr
 Typeable ConPatInfo
@@ -2677,7 +2677,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; ConPatInfo -&gt; c ConPatInfo
 $cp1Data :: Typeable ConPatInfo
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507030"><span id="local-6989586621680507032"><span class="annot"><span class="annottext">ConPatInfo -&gt; ConPatInfo -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507035"><span id="local-6989586621680507037"><span class="annot"><span class="annottext">ConPatInfo -&gt; ConPatInfo -&gt; Bool
 (ConPatInfo -&gt; ConPatInfo -&gt; Bool)
 -&gt; (ConPatInfo -&gt; ConPatInfo -&gt; Bool) -&gt; Eq ConPatInfo
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -2685,7 +2685,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ConPatInfo -&gt; ConPatInfo -&gt; Bool
 == :: ConPatInfo -&gt; ConPatInfo -&gt; Bool
 $c== :: ConPatInfo -&gt; ConPatInfo -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507024"><span id="local-6989586621680507026"><span id="local-6989586621680507028"><span class="annot"><span class="annottext">Int -&gt; ConPatInfo -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680507029"><span id="local-6989586621680507031"><span id="local-6989586621680507033"><span class="annot"><span class="annottext">Int -&gt; ConPatInfo -&gt; ShowS
 [ConPatInfo] -&gt; ShowS
 ConPatInfo -&gt; String
 (Int -&gt; ConPatInfo -&gt; ShowS)
@@ -2703,8 +2703,8 @@ $cshowsPrec :: Int -&gt; ConPatInfo -&gt; ShowS
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-257"></span><span>
 </span><span id="line-258"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#HasRange"><span class="hs-identifier hs-type">HasRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-259"></span><span>  </span><span id="local-6989586621680507022"><span class="annot"><span class="annottext">getRange :: ConPatInfo -&gt; Range
-</span><a href="#local-6989586621680507022"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PatInfo -&gt; Range
+</span><span id="line-259"></span><span>  </span><span id="local-6989586621680507027"><span class="annot"><span class="annottext">getRange :: ConPatInfo -&gt; Range
+</span><a href="#local-6989586621680507027"><span class="hs-identifier hs-var hs-var hs-var hs-var">getRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">PatInfo -&gt; Range
 forall a. HasRange a =&gt; a -&gt; Range
 </span><a href="Agda.Syntax.Position.html#getRange"><span class="hs-identifier hs-var">getRange</span></a></span><span> </span><span class="annot"><span class="annottext">(PatInfo -&gt; Range)
 -&gt; (ConPatInfo -&gt; PatInfo) -&gt; ConPatInfo -&gt; Range
@@ -2713,36 +2713,36 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><a href="Agda.Syntax.Info.html#conPatInfo"><span class="hs-identifier hs-var hs-var">conPatInfo</span></a></span><span>
 </span><span id="line-260"></span><span>
 </span><span id="line-261"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-262"></span><span>  </span><span id="local-6989586621680507020"><span class="annot"><span class="annottext">killRange :: ConPatInfo -&gt; ConPatInfo
-</span><a href="#local-6989586621680507020"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span id="local-6989586621680507019"><span class="annot"><span class="annottext">ConOrigin
-</span><a href="#local-6989586621680507019"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680507018"><span class="annot"><span class="annottext">PatInfo
-</span><a href="#local-6989586621680507018"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507017"><span class="annot"><span class="annottext">ConPatLazy
-</span><a href="#local-6989586621680507017"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ConOrigin -&gt; PatInfo -&gt; ConPatLazy -&gt; ConPatInfo
+</span><span id="line-262"></span><span>  </span><span id="local-6989586621680507025"><span class="annot"><span class="annottext">killRange :: ConPatInfo -&gt; ConPatInfo
+</span><a href="#local-6989586621680507025"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span id="local-6989586621680507024"><span class="annot"><span class="annottext">ConOrigin
+</span><a href="#local-6989586621680507024"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680507023"><span class="annot"><span class="annottext">PatInfo
+</span><a href="#local-6989586621680507023"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507022"><span class="annot"><span class="annottext">ConPatLazy
+</span><a href="#local-6989586621680507022"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ConOrigin -&gt; PatInfo -&gt; ConPatLazy -&gt; ConPatInfo
 </span><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-var">ConPatInfo</span></a></span><span> </span><span class="annot"><span class="annottext">ConOrigin
-</span><a href="#local-6989586621680507019"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo
+</span><a href="#local-6989586621680507024"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">PatInfo -&gt; PatInfo
 forall a. KillRange a =&gt; KillRangeT a
 </span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var">killRange</span></a></span><span> </span><span class="annot"><span class="annottext">PatInfo
-</span><a href="#local-6989586621680507018"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ConPatLazy
-</span><a href="#local-6989586621680507017"><span class="hs-identifier hs-var">l</span></a></span><span>
+</span><a href="#local-6989586621680507023"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ConPatLazy
+</span><a href="#local-6989586621680507022"><span class="hs-identifier hs-var">l</span></a></span><span>
 </span><span id="line-263"></span><span>
 </span><span id="line-264"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#SetRange"><span class="hs-identifier hs-type">SetRange</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-265"></span><span>  </span><span id="local-6989586621680507014"><span class="annot"><span class="annottext">setRange :: Range -&gt; ConPatInfo -&gt; ConPatInfo
-</span><a href="#local-6989586621680507014"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507013"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507013"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span id="local-6989586621680507012"><span class="annot"><span class="annottext">ConOrigin
-</span><a href="#local-6989586621680507012"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680507011"><span class="annot"><span class="annottext">PatInfo
-</span><a href="#local-6989586621680507011"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507010"><span class="annot"><span class="annottext">ConPatLazy
-</span><a href="#local-6989586621680507010"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ConOrigin -&gt; PatInfo -&gt; ConPatLazy -&gt; ConPatInfo
+</span><span id="line-265"></span><span>  </span><span id="local-6989586621680507019"><span class="annot"><span class="annottext">setRange :: Range -&gt; ConPatInfo -&gt; ConPatInfo
+</span><a href="#local-6989586621680507019"><span class="hs-identifier hs-var hs-var hs-var hs-var">setRange</span></a></span></span><span> </span><span id="local-6989586621680507018"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680507018"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-type">ConPatInfo</span></a></span><span> </span><span id="local-6989586621680507017"><span class="annot"><span class="annottext">ConOrigin
+</span><a href="#local-6989586621680507017"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680507016"><span class="annot"><span class="annottext">PatInfo
+</span><a href="#local-6989586621680507016"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680507015"><span class="annot"><span class="annottext">ConPatLazy
+</span><a href="#local-6989586621680507015"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">ConOrigin -&gt; PatInfo -&gt; ConPatLazy -&gt; ConPatInfo
 </span><a href="Agda.Syntax.Info.html#ConPatInfo"><span class="hs-identifier hs-var">ConPatInfo</span></a></span><span> </span><span class="annot"><span class="annottext">ConOrigin
-</span><a href="#local-6989586621680507012"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; PatInfo
+</span><a href="#local-6989586621680507017"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; PatInfo
 </span><a href="Agda.Syntax.Info.html#PatRange"><span class="hs-identifier hs-var">PatRange</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680507013"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ConPatLazy
-</span><a href="#local-6989586621680507010"><span class="hs-identifier hs-var">l</span></a></span><span>
+</span><a href="#local-6989586621680507018"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">ConPatLazy
+</span><a href="#local-6989586621680507015"><span class="hs-identifier hs-var">l</span></a></span><span>
 </span><span id="line-266"></span><span>
 </span><span id="line-267"></span><span class="hs-comment">-- | Has the constructor pattern a dotted (forced) constructor?</span><span>
 </span><span id="line-268"></span><span class="hs-keyword">data</span><span> </span><span id="ConPatLazy"><span class="annot"><a href="Agda.Syntax.Info.html#ConPatLazy"><span class="hs-identifier hs-var">ConPatLazy</span></a></span></span><span>
 </span><span id="line-269"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="ConPatLazy"><span class="annot"><a href="Agda.Syntax.Info.html#ConPatLazy"><span class="hs-identifier hs-var">ConPatLazy</span></a></span></span><span>   </span><span class="hs-comment">-- ^ Dotted constructor.</span><span>
 </span><span id="line-270"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="ConPatEager"><span class="annot"><a href="Agda.Syntax.Info.html#ConPatEager"><span class="hs-identifier hs-var">ConPatEager</span></a></span></span><span>  </span><span class="hs-comment">-- ^ Ordinary constructor.</span><span>
-</span><span id="line-271"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cConPatEager"><span id="%24cConPatLazy"><span id="%24tConPatLazy"><span id="local-6989586621680506979"><span id="local-6989586621680506981"><span id="local-6989586621680506983"><span id="local-6989586621680506985"><span id="local-6989586621680506987"><span id="local-6989586621680506989"><span id="local-6989586621680506991"><span id="local-6989586621680506993"><span id="local-6989586621680506995"><span id="local-6989586621680506997"><span id="local-6989586621680506999"><span id="local-6989586621680507001"><span id="local-6989586621680507003"><span id="local-6989586621680507005"><span class="annot"><span class="annottext">Typeable ConPatLazy
+</span><span id="line-271"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cConPatEager"><span id="%24cConPatLazy"><span id="%24tConPatLazy"><span id="local-6989586621680506984"><span id="local-6989586621680506986"><span id="local-6989586621680506988"><span id="local-6989586621680506990"><span id="local-6989586621680506992"><span id="local-6989586621680506994"><span id="local-6989586621680506996"><span id="local-6989586621680506998"><span id="local-6989586621680507000"><span id="local-6989586621680507002"><span id="local-6989586621680507004"><span id="local-6989586621680507006"><span id="local-6989586621680507008"><span id="local-6989586621680507010"><span class="annot"><span class="annottext">Typeable ConPatLazy
 DataType
 Constr
 Typeable ConPatLazy
@@ -2901,7 +2901,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; ConPatLazy -&gt; c ConPatLazy
 $cp1Data :: Typeable ConPatLazy
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506972"><span id="local-6989586621680506974"><span class="annot"><span class="annottext">ConPatLazy -&gt; ConPatLazy -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506977"><span id="local-6989586621680506979"><span class="annot"><span class="annottext">ConPatLazy -&gt; ConPatLazy -&gt; Bool
 (ConPatLazy -&gt; ConPatLazy -&gt; Bool)
 -&gt; (ConPatLazy -&gt; ConPatLazy -&gt; Bool) -&gt; Eq ConPatLazy
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -2909,7 +2909,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: ConPatLazy -&gt; ConPatLazy -&gt; Bool
 == :: ConPatLazy -&gt; ConPatLazy -&gt; Bool
 $c== :: ConPatLazy -&gt; ConPatLazy -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506957"><span id="local-6989586621680506959"><span id="local-6989586621680506961"><span id="local-6989586621680506963"><span id="local-6989586621680506965"><span id="local-6989586621680506967"><span id="local-6989586621680506969"><span class="annot"><span class="annottext">Eq ConPatLazy
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506962"><span id="local-6989586621680506964"><span id="local-6989586621680506966"><span id="local-6989586621680506968"><span id="local-6989586621680506970"><span id="local-6989586621680506972"><span id="local-6989586621680506974"><span class="annot"><span class="annottext">Eq ConPatLazy
 Eq ConPatLazy
 -&gt; (ConPatLazy -&gt; ConPatLazy -&gt; Ordering)
 -&gt; (ConPatLazy -&gt; ConPatLazy -&gt; Bool)
@@ -2947,7 +2947,7 @@ $c&lt; :: ConPatLazy -&gt; ConPatLazy -&gt; Bool
 compare :: ConPatLazy -&gt; ConPatLazy -&gt; Ordering
 $ccompare :: ConPatLazy -&gt; ConPatLazy -&gt; Ordering
 $cp1Ord :: Eq ConPatLazy
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506951"><span id="local-6989586621680506953"><span id="local-6989586621680506955"><span class="annot"><span class="annottext">Int -&gt; ConPatLazy -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506956"><span id="local-6989586621680506958"><span id="local-6989586621680506960"><span class="annot"><span class="annottext">Int -&gt; ConPatLazy -&gt; ShowS
 [ConPatLazy] -&gt; ShowS
 ConPatLazy -&gt; String
 (Int -&gt; ConPatLazy -&gt; ShowS)
@@ -2962,14 +2962,14 @@ show :: ConPatLazy -&gt; String
 $cshow :: ConPatLazy -&gt; String
 showsPrec :: Int -&gt; ConPatLazy -&gt; ShowS
 $cshowsPrec :: Int -&gt; ConPatLazy -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506947"><span id="local-6989586621680506949"><span class="annot"><span class="annottext">ConPatLazy
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506952"><span id="local-6989586621680506954"><span class="annot"><span class="annottext">ConPatLazy
 ConPatLazy -&gt; ConPatLazy -&gt; Bounded ConPatLazy
 forall a. a -&gt; a -&gt; Bounded a
 maxBound :: ConPatLazy
 $cmaxBound :: ConPatLazy
 minBound :: ConPatLazy
 $cminBound :: ConPatLazy
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Bounded</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506930"><span id="local-6989586621680506932"><span id="local-6989586621680506934"><span id="local-6989586621680506936"><span id="local-6989586621680506938"><span id="local-6989586621680506940"><span id="local-6989586621680506942"><span id="local-6989586621680506944"><span class="annot"><span class="annottext">Int -&gt; ConPatLazy
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Bounded</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680506935"><span id="local-6989586621680506937"><span id="local-6989586621680506939"><span id="local-6989586621680506941"><span id="local-6989586621680506943"><span id="local-6989586621680506945"><span id="local-6989586621680506947"><span id="local-6989586621680506949"><span class="annot"><span class="annottext">Int -&gt; ConPatLazy
 ConPatLazy -&gt; Int
 ConPatLazy -&gt; [ConPatLazy]
 ConPatLazy -&gt; ConPatLazy
