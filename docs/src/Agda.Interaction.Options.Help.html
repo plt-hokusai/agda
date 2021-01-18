@@ -15,14 +15,14 @@
 </span><span id="line-15"></span><span>  </span><span class="hs-comment">-- ^ General usage information</span><span>
 </span><span id="line-16"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="HelpFor"><span class="annot"><a href="Agda.Interaction.Options.Help.html#HelpFor"><span class="hs-identifier hs-var">HelpFor</span></a></span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Help.html#HelpTopic"><span class="hs-identifier hs-type">HelpTopic</span></a></span><span>
 </span><span id="line-17"></span><span>  </span><span class="hs-comment">-- ^ Specialised usage information about TOPIC</span><span>
-</span><span id="line-18"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680462340"><span id="local-6989586621680462342"><span class="annot"><span class="annottext">Help -&gt; Help -&gt; Bool
+</span><span id="line-18"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680462410"><span id="local-6989586621680462412"><span class="annot"><span class="annottext">Help -&gt; Help -&gt; Bool
 (Help -&gt; Help -&gt; Bool) -&gt; (Help -&gt; Help -&gt; Bool) -&gt; Eq Help
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 /= :: Help -&gt; Help -&gt; Bool
 $c/= :: Help -&gt; Help -&gt; Bool
 == :: Help -&gt; Help -&gt; Bool
 $c== :: Help -&gt; Help -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680462333"><span id="local-6989586621680462335"><span id="local-6989586621680462337"><span class="annot"><span class="annottext">Int -&gt; Help -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680462403"><span id="local-6989586621680462405"><span id="local-6989586621680462407"><span class="annot"><span class="annottext">Int -&gt; Help -&gt; ShowS
 [Help] -&gt; ShowS
 Help -&gt; String
 (Int -&gt; Help -&gt; ShowS)
@@ -43,7 +43,7 @@ $cshowsPrec :: Int -&gt; Help -&gt; ShowS
 </span><span id="line-23"></span><span>
 </span><span id="line-24"></span><span class="hs-keyword">data</span><span> </span><span id="HelpTopic"><span class="annot"><a href="Agda.Interaction.Options.Help.html#HelpTopic"><span class="hs-identifier hs-var">HelpTopic</span></a></span></span><span>
 </span><span id="line-25"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="Warning"><span class="annot"><a href="Agda.Interaction.Options.Help.html#Warning"><span class="hs-identifier hs-var">Warning</span></a></span></span><span>
-</span><span id="line-26"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680462327"><span id="local-6989586621680462329"><span class="annot"><span class="annottext">HelpTopic -&gt; HelpTopic -&gt; Bool
+</span><span id="line-26"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680462397"><span id="local-6989586621680462399"><span class="annot"><span class="annottext">HelpTopic -&gt; HelpTopic -&gt; Bool
 (HelpTopic -&gt; HelpTopic -&gt; Bool)
 -&gt; (HelpTopic -&gt; HelpTopic -&gt; Bool) -&gt; Eq HelpTopic
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -51,7 +51,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: HelpTopic -&gt; HelpTopic -&gt; Bool
 == :: HelpTopic -&gt; HelpTopic -&gt; Bool
 $c== :: HelpTopic -&gt; HelpTopic -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680462321"><span id="local-6989586621680462323"><span id="local-6989586621680462325"><span class="annot"><span class="annottext">Int -&gt; HelpTopic -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680462391"><span id="local-6989586621680462393"><span id="local-6989586621680462395"><span class="annot"><span class="annottext">Int -&gt; HelpTopic -&gt; ShowS
 [HelpTopic] -&gt; ShowS
 HelpTopic -&gt; String
 (Int -&gt; HelpTopic -&gt; ShowS)
@@ -78,9 +78,9 @@ $cshowsPrec :: Int -&gt; HelpTopic -&gt; ShowS
 </span><span id="line-32"></span><span>
 </span><span id="line-33"></span><span class="annot"><a href="Agda.Interaction.Options.Help.html#helpTopicUsage"><span class="hs-identifier hs-type">helpTopicUsage</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Help.html#HelpTopic"><span class="hs-identifier hs-type">HelpTopic</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-34"></span><span id="helpTopicUsage"><span class="annot"><span class="annottext">helpTopicUsage :: HelpTopic -&gt; String
-</span><a href="Agda.Interaction.Options.Help.html#helpTopicUsage"><span class="hs-identifier hs-var hs-var">helpTopicUsage</span></a></span></span><span> </span><span id="local-6989586621680462320"><span class="annot"><span class="annottext">HelpTopic
-</span><a href="#local-6989586621680462320"><span class="hs-identifier hs-var">tp</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">HelpTopic
-</span><a href="#local-6989586621680462320"><span class="hs-identifier hs-var">tp</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="Agda.Interaction.Options.Help.html#helpTopicUsage"><span class="hs-identifier hs-var hs-var">helpTopicUsage</span></a></span></span><span> </span><span id="local-6989586621680462390"><span class="annot"><span class="annottext">HelpTopic
+</span><a href="#local-6989586621680462390"><span class="hs-identifier hs-var">tp</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">HelpTopic
+</span><a href="#local-6989586621680462390"><span class="hs-identifier hs-var">tp</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-35"></span><span>  </span><span class="annot"><span class="annottext">HelpTopic
 </span><a href="Agda.Interaction.Options.Help.html#Warning"><span class="hs-identifier hs-var">Warning</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String
 </span><a href="Agda.Interaction.Options.Warnings.html#usageWarning"><span class="hs-identifier hs-var">usageWarning</span></a></span><span>
@@ -89,11 +89,11 @@ $cshowsPrec :: Int -&gt; HelpTopic -&gt; ShowS
 </span><span id="line-38"></span><span>
 </span><span id="line-39"></span><span class="annot"><a href="Agda.Interaction.Options.Help.html#string2HelpTopic"><span class="hs-identifier hs-type">string2HelpTopic</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Help.html#HelpTopic"><span class="hs-identifier hs-type">HelpTopic</span></a></span><span>
 </span><span id="line-40"></span><span id="string2HelpTopic"><span class="annot"><span class="annottext">string2HelpTopic :: String -&gt; Maybe HelpTopic
-</span><a href="Agda.Interaction.Options.Help.html#string2HelpTopic"><span class="hs-identifier hs-var hs-var">string2HelpTopic</span></a></span></span><span> </span><span id="local-6989586621680462318"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680462318"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; [(String, HelpTopic)] -&gt; Maybe HelpTopic
+</span><a href="Agda.Interaction.Options.Help.html#string2HelpTopic"><span class="hs-identifier hs-var hs-var">string2HelpTopic</span></a></span></span><span> </span><span id="local-6989586621680462388"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680462388"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; [(String, HelpTopic)] -&gt; Maybe HelpTopic
 forall a b. Eq a =&gt; a -&gt; [(a, b)] -&gt; Maybe b
 </span><span class="hs-identifier hs-var">lookup</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680462318"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="annot"><span class="annottext">[(String, HelpTopic)]
+</span><a href="#local-6989586621680462388"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="annot"><span class="annottext">[(String, HelpTopic)]
 </span><a href="Agda.Interaction.Options.Help.html#allHelpTopics"><span class="hs-identifier hs-var">allHelpTopics</span></a></span><span>
 </span><span id="line-41"></span><span>
 </span><span id="line-42"></span><span class="hs-comment">-- UNUSED Liang-Ting Chen 2019-07-15</span><span>
