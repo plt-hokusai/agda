@@ -31,9 +31,9 @@ Char -&gt; (Interval -&gt; String -&gt; Parser tok) -&gt; LexAction tok
 </span><span class="hs-char">'&quot;'</span></span><span> </span><span class="annot"><span class="annottext">((Interval -&gt; String -&gt; Parser Token) -&gt; LexAction Token)
 -&gt; (Interval -&gt; String -&gt; Parser Token) -&gt; LexAction Token
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680510886"><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510886"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680510885"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510885"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680510904"><span class="annot"><span class="annottext">Interval
+</span><a href="#local-6989586621680510904"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680510903"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510903"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-27"></span><span>  </span><span class="annot"><span class="annottext">Token -&gt; Parser Token
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Token -&gt; Parser Token) -&gt; Token -&gt; Parser Token
@@ -46,14 +46,14 @@ forall a. Range -&gt; a -&gt; Ranged a
 </span><a href="Agda.Syntax.Common.html#Ranged"><span class="hs-identifier hs-var">Ranged</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Interval -&gt; Range
 forall a. HasRange a =&gt; a -&gt; Range
 </span><a href="Agda.Syntax.Position.html#getRange"><span class="hs-identifier hs-var">getRange</span></a></span><span> </span><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510886"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Literal -&gt; RLiteral) -&gt; Literal -&gt; RLiteral
+</span><a href="#local-6989586621680510904"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Literal -&gt; RLiteral) -&gt; Literal -&gt; RLiteral
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Literal
 </span><a href="Agda.Syntax.Literal.html#LitString"><span class="hs-identifier hs-var">LitString</span></a></span><span> </span><span class="annot"><span class="annottext">(Text -&gt; Literal) -&gt; Text -&gt; Literal
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Text
 </span><span class="hs-identifier hs-var">T.pack</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510885"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680510903"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-28"></span><span>
 </span><span id="line-29"></span><span class="hs-comment">{-| Lex a character literal. Assumes that a single quote has been lexed.  A
     character literal is lexed in exactly the same way as a string literal.
@@ -70,10 +70,10 @@ Char -&gt; (Interval -&gt; String -&gt; Parser tok) -&gt; LexAction tok
 </span><span class="hs-char">'\''</span></span><span> </span><span class="annot"><span class="annottext">((Interval -&gt; String -&gt; Parser Token) -&gt; LexAction Token)
 -&gt; (Interval -&gt; String -&gt; Parser Token) -&gt; LexAction Token
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680510880"><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510880"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
-</span><span id="line-37"></span><span>  </span><span class="hs-special">[</span><span id="local-6989586621680510879"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510879"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Token -&gt; Parser Token
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680510898"><span class="annot"><span class="annottext">Interval
+</span><a href="#local-6989586621680510898"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
+</span><span id="line-37"></span><span>  </span><span class="hs-special">[</span><span id="local-6989586621680510897"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510897"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Token -&gt; Parser Token
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Token -&gt; Parser Token) -&gt; Token -&gt; Parser Token
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -85,11 +85,11 @@ forall a. Range -&gt; a -&gt; Ranged a
 </span><a href="Agda.Syntax.Common.html#Ranged"><span class="hs-identifier hs-var">Ranged</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Interval -&gt; Range
 forall a. HasRange a =&gt; a -&gt; Range
 </span><a href="Agda.Syntax.Position.html#getRange"><span class="hs-identifier hs-var">getRange</span></a></span><span> </span><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510880"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Literal -&gt; RLiteral) -&gt; Literal -&gt; RLiteral
+</span><a href="#local-6989586621680510898"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Literal -&gt; RLiteral) -&gt; Literal -&gt; RLiteral
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Literal
 </span><a href="Agda.Syntax.Literal.html#LitChar"><span class="hs-identifier hs-var">LitChar</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510879"><span class="hs-identifier hs-var">c</span></a></span><span>
+</span><a href="#local-6989586621680510897"><span class="hs-identifier hs-var">c</span></a></span><span>
 </span><span id="line-38"></span><span>  </span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">_</span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; Parser Token
 forall a. String -&gt; Parser a
@@ -102,10 +102,10 @@ forall a. String -&gt; Parser a
  --------------------------------------------------------------------------}</span><span>
 </span><span id="line-44"></span><span>
 </span><span id="line-45"></span><span class="hs-comment">-- | Custom error function.</span><span>
-</span><span id="line-46"></span><span id="local-6989586621680510876"><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#litError"><span class="hs-identifier hs-type">litError</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510876"><span class="hs-identifier hs-type">a</span></a></span></span><span>
+</span><span id="line-46"></span><span id="local-6989586621680510894"><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#litError"><span class="hs-identifier hs-type">litError</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510894"><span class="hs-identifier hs-type">a</span></a></span></span><span>
 </span><span id="line-47"></span><span id="litError"><span class="annot"><span class="annottext">litError :: String -&gt; LookAhead a
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#litError"><span class="hs-identifier hs-var hs-var">litError</span></a></span></span><span> </span><span id="local-6989586621680510874"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">msg</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#litError"><span class="hs-identifier hs-var hs-var">litError</span></a></span></span><span> </span><span id="local-6989586621680510892"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510892"><span class="hs-identifier hs-var">msg</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-48"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#sync"><span class="hs-identifier hs-var">sync</span></a></span><span>
 </span><span id="line-49"></span><span>        </span><span class="annot"><span class="annottext">Parser a -&gt; LookAhead a
@@ -121,7 +121,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-string">&quot;Lexical error in string or character literal: &quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">msg</span></a></span><span>
+</span><a href="#local-6989586621680510892"><span class="hs-identifier hs-var">msg</span></a></span><span>
 </span><span id="line-51"></span><span>
 </span><span id="line-52"></span><span>
 </span><span id="line-53"></span><span class="hs-comment">{--------------------------------------------------------------------------
@@ -131,14 +131,14 @@ forall a. [a] -&gt; [a] -&gt; [a]
 </span><span id="line-57"></span><span class="hs-comment">-- | The general function to lex a string or character literal token. The</span><span>
 </span><span id="line-58"></span><span class="hs-comment">--   character argument is the delimiter (@\&quot;@ for strings and @\'@ for</span><span>
 </span><span id="line-59"></span><span class="hs-comment">--   characters).</span><span>
-</span><span id="line-60"></span><span id="local-6989586621680510933"><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#stringToken"><span class="hs-identifier hs-type">stringToken</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Position.html#Interval"><span class="hs-identifier hs-type">Interval</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.Monad.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510933"><span class="hs-identifier hs-type">tok</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.Alex.html#LexAction"><span class="hs-identifier hs-type">LexAction</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510933"><span class="hs-identifier hs-type">tok</span></a></span></span><span>
+</span><span id="line-60"></span><span id="local-6989586621680510951"><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#stringToken"><span class="hs-identifier hs-type">stringToken</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Position.html#Interval"><span class="hs-identifier hs-type">Interval</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.Monad.html#Parser"><span class="hs-identifier hs-type">Parser</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510951"><span class="hs-identifier hs-type">tok</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.Alex.html#LexAction"><span class="hs-identifier hs-type">LexAction</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680510951"><span class="hs-identifier hs-type">tok</span></a></span></span><span>
 </span><span id="line-61"></span><span id="stringToken"><span class="annot"><span class="annottext">stringToken :: Char -&gt; (Interval -&gt; String -&gt; Parser tok) -&gt; LexAction tok
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#stringToken"><span class="hs-identifier hs-var hs-var">stringToken</span></a></span></span><span> </span><span id="local-6989586621680510871"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510871"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510870"><span class="annot"><span class="annottext">Interval -&gt; String -&gt; Parser tok
-</span><a href="#local-6989586621680510870"><span class="hs-identifier hs-var">mkTok</span></a></span></span><span> </span><span id="local-6989586621680510869"><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510869"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span id="local-6989586621680510868"><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510868"><span class="hs-identifier hs-var">inp'</span></a></span></span><span> </span><span id="local-6989586621680510867"><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510867"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#stringToken"><span class="hs-identifier hs-var hs-var">stringToken</span></a></span></span><span> </span><span id="local-6989586621680510889"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510889"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510888"><span class="annot"><span class="annottext">Interval -&gt; String -&gt; Parser tok
+</span><a href="#local-6989586621680510888"><span class="hs-identifier hs-var">mkTok</span></a></span></span><span> </span><span id="local-6989586621680510887"><span class="annot"><span class="annottext">PreviousInput
+</span><a href="#local-6989586621680510887"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span id="local-6989586621680510886"><span class="annot"><span class="annottext">PreviousInput
+</span><a href="#local-6989586621680510886"><span class="hs-identifier hs-var">inp'</span></a></span></span><span> </span><span id="local-6989586621680510885"><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510885"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-62"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span class="annot"><span class="annottext">PositionWithoutFile -&gt; Parser ()
 </span><a href="Agda.Syntax.Parser.Monad.html#setLastPos"><span class="hs-identifier hs-var">setLastPos</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">PositionWithoutFile -&gt; PositionWithoutFile
 forall a. Position' a -&gt; Position' a
@@ -147,14 +147,14 @@ forall a. Position' a -&gt; Position' a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">PreviousInput -&gt; PositionWithoutFile
 </span><a href="Agda.Syntax.Parser.Alex.html#lexPos"><span class="hs-identifier hs-var hs-var">lexPos</span></a></span><span> </span><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510868"><span class="hs-identifier hs-var">inp'</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510886"><span class="hs-identifier hs-var">inp'</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-63"></span><span>        </span><span class="annot"><span class="annottext">PreviousInput -&gt; Parser ()
 </span><a href="Agda.Syntax.Parser.Alex.html#setLexInput"><span class="hs-identifier hs-var">setLexInput</span></a></span><span> </span><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510868"><span class="hs-identifier hs-var">inp'</span></a></span><span>
+</span><a href="#local-6989586621680510886"><span class="hs-identifier hs-var">inp'</span></a></span><span>
 </span><span id="line-64"></span><span>        </span><span class="hs-comment">-- TODO: Should setPrevToken be run here? Compare with</span><span>
 </span><span id="line-65"></span><span>        </span><span class="hs-comment">-- Agda.Syntax.Parser.LexActions.token.</span><span>
-</span><span id="line-66"></span><span>        </span><span id="local-6989586621680510862"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510862"><span class="hs-identifier hs-var">tok</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(forall b. String -&gt; LookAhead b)
+</span><span id="line-66"></span><span>        </span><span id="local-6989586621680510880"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510880"><span class="hs-identifier hs-var">tok</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(forall b. String -&gt; LookAhead b)
 -&gt; LookAhead String -&gt; Parser String
 forall a.
 (forall b. String -&gt; LookAhead b) -&gt; LookAhead a -&gt; Parser a
@@ -164,37 +164,37 @@ forall a.
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var">lexString</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510871"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510889"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span>
-</span><span id="line-67"></span><span>        </span><span id="local-6989586621680510859"><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510859"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser Interval
+</span><span id="line-67"></span><span>        </span><span id="local-6989586621680510877"><span class="annot"><span class="annottext">Interval
+</span><a href="#local-6989586621680510877"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Parser Interval
 </span><a href="Agda.Syntax.Parser.Monad.html#getParseInterval"><span class="hs-identifier hs-var">getParseInterval</span></a></span><span>
 </span><span id="line-68"></span><span>        </span><span class="annot"><span class="annottext">Interval -&gt; String -&gt; Parser tok
-</span><a href="#local-6989586621680510870"><span class="hs-identifier hs-var">mkTok</span></a></span><span> </span><span class="annot"><span class="annottext">Interval
-</span><a href="#local-6989586621680510859"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510862"><span class="hs-identifier hs-var">tok</span></a></span><span>
+</span><a href="#local-6989586621680510888"><span class="hs-identifier hs-var">mkTok</span></a></span><span> </span><span class="annot"><span class="annottext">Interval
+</span><a href="#local-6989586621680510877"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510880"><span class="hs-identifier hs-var">tok</span></a></span><span>
 </span><span id="line-69"></span><span>
 </span><span id="line-70"></span><span>
 </span><span id="line-71"></span><span class="hs-comment">-- | This is where the work happens. The string argument is an accumulating</span><span>
 </span><span id="line-72"></span><span class="hs-comment">--   parameter for the string being lexed.</span><span>
 </span><span id="line-73"></span><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-type">lexString</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-74"></span><span id="lexString"><span class="annot"><span class="annottext">lexString :: Char -&gt; String -&gt; LookAhead String
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var hs-var">lexString</span></a></span></span><span> </span><span id="local-6989586621680510857"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510856"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510856"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var hs-var">lexString</span></a></span></span><span> </span><span id="local-6989586621680510875"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510875"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510874"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-75"></span><span>
-</span><span id="line-76"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510855"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510855"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-76"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510873"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510873"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#nextChar"><span class="hs-identifier hs-var">nextChar</span></a></span><span>
 </span><span id="line-77"></span><span>        </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510855"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680510873"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-78"></span><span>
-</span><span id="line-79"></span><span>            </span><span id="local-6989586621680510853"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510853"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510853"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><span id="line-79"></span><span>            </span><span id="local-6989586621680510871"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510871"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510871"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">del</span></a></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead ()
+</span><a href="#local-6989586621680510875"><span class="hs-identifier hs-var">del</span></a></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#sync"><span class="hs-identifier hs-var">sync</span></a></span><span> </span><span class="annot"><span class="annottext">LookAhead () -&gt; LookAhead String -&gt; LookAhead String
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; LookAhead String
@@ -202,81 +202,81 @@ forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; String
 forall a. [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">reverse</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510856"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-80"></span><span>
 </span><span id="line-81"></span><span>            </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'\\'</span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
-</span><span id="line-82"></span><span>                </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510851"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510851"><span class="hs-identifier hs-var">c'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-82"></span><span>                </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510869"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510869"><span class="hs-identifier hs-var">c'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#nextChar"><span class="hs-identifier hs-var">nextChar</span></a></span><span>
 </span><span id="line-83"></span><span>                    </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510851"><span class="hs-identifier hs-var">c'</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680510869"><span class="hs-identifier hs-var">c'</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-84"></span><span>                        </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'&amp;'</span></span><span>             </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#sync"><span class="hs-identifier hs-var">sync</span></a></span><span> </span><span class="annot"><span class="annottext">LookAhead () -&gt; LookAhead String -&gt; LookAhead String
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var">lexString</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510856"><span class="hs-identifier hs-var">s</span></a></span><span>
-</span><span id="line-85"></span><span>                        </span><span id="local-6989586621680510850"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510850"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><a href="#local-6989586621680510875"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><span id="line-85"></span><span>                        </span><span id="local-6989586621680510868"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510868"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
 </span><span class="hs-identifier hs-var">isSpace</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510850"><span class="hs-identifier hs-var">c</span></a></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead ()
+</span><a href="#local-6989586621680510868"><span class="hs-identifier hs-var">c</span></a></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#sync"><span class="hs-identifier hs-var">sync</span></a></span><span> </span><span class="annot"><span class="annottext">LookAhead () -&gt; LookAhead String -&gt; LookAhead String
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexStringGap"><span class="hs-identifier hs-var">lexStringGap</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510856"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680510875"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-86"></span><span>                        </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span>               </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead String
-</span><a href="#local-6989586621680510847"><span class="hs-identifier hs-var">normalChar</span></a></span><span>
+</span><a href="#local-6989586621680510865"><span class="hs-identifier hs-var">normalChar</span></a></span><span>
 </span><span id="line-87"></span><span>
 </span><span id="line-88"></span><span>            </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead String
-</span><a href="#local-6989586621680510847"><span class="hs-identifier hs-var">normalChar</span></a></span><span>
+</span><a href="#local-6989586621680510865"><span class="hs-identifier hs-var">normalChar</span></a></span><span>
 </span><span id="line-89"></span><span>    </span><span class="hs-keyword">where</span><span>
-</span><span id="line-90"></span><span>        </span><span id="local-6989586621680510847"><span class="annot"><span class="annottext">normalChar :: LookAhead String
-</span><a href="#local-6989586621680510847"><span class="hs-identifier hs-var hs-var">normalChar</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-90"></span><span>        </span><span id="local-6989586621680510865"><span class="annot"><span class="annottext">normalChar :: LookAhead String
+</span><a href="#local-6989586621680510865"><span class="hs-identifier hs-var hs-var">normalChar</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-91"></span><span>            </span><span class="hs-keyword">do</span><span>  </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#rollback"><span class="hs-identifier hs-var">rollback</span></a></span><span>
-</span><span id="line-92"></span><span>                </span><span id="local-6989586621680510845"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510845"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-92"></span><span>                </span><span id="local-6989586621680510863"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510863"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexChar"><span class="hs-identifier hs-var">lexChar</span></a></span><span>
 </span><span id="line-93"></span><span>                </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var">lexString</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510845"><span class="hs-identifier hs-var">c</span></a></span><span class="annot"><span class="annottext">Char -&gt; String -&gt; String
+</span><a href="#local-6989586621680510875"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510863"><span class="hs-identifier hs-var">c</span></a></span><span class="annot"><span class="annottext">Char -&gt; String -&gt; String
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510856"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510874"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-94"></span><span>
 </span><span id="line-95"></span><span>
 </span><span id="line-96"></span><span class="hs-comment">-- | A string gap consists of whitespace (possibly including line breaks)</span><span>
 </span><span id="line-97"></span><span class="hs-comment">--   enclosed in backslashes. The gap is not part of the resulting string.</span><span>
 </span><span id="line-98"></span><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#lexStringGap"><span class="hs-identifier hs-type">lexStringGap</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-99"></span><span id="lexStringGap"><span class="annot"><span class="annottext">lexStringGap :: Char -&gt; String -&gt; LookAhead String
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#lexStringGap"><span class="hs-identifier hs-var hs-var">lexStringGap</span></a></span></span><span> </span><span id="local-6989586621680510843"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510842"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510842"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-100"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510841"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510841"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#lexStringGap"><span class="hs-identifier hs-var hs-var">lexStringGap</span></a></span></span><span> </span><span id="local-6989586621680510861"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510861"><span class="hs-identifier hs-var">del</span></a></span></span><span> </span><span id="local-6989586621680510860"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510860"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-100"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510859"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510859"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#eatNextChar"><span class="hs-identifier hs-var">eatNextChar</span></a></span><span>
 </span><span id="line-101"></span><span>        </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510841"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680510859"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-102"></span><span>            </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'\\'</span></span><span>            </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexString"><span class="hs-identifier hs-var">lexString</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510842"><span class="hs-identifier hs-var">s</span></a></span><span>
-</span><span id="line-103"></span><span>            </span><span id="local-6989586621680510839"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510839"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><a href="#local-6989586621680510861"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510860"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><span id="line-103"></span><span>            </span><span id="local-6989586621680510857"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
 </span><span class="hs-identifier hs-var">isSpace</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510839"><span class="hs-identifier hs-var">c</span></a></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
+</span><a href="#local-6989586621680510857"><span class="hs-identifier hs-var">c</span></a></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Char -&gt; String -&gt; LookAhead String
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexStringGap"><span class="hs-identifier hs-var">lexStringGap</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680510842"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680510861"><span class="hs-identifier hs-var">del</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680510860"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-104"></span><span>            </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span>               </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String -&gt; LookAhead String
 forall b. String -&gt; LookAhead b
@@ -287,11 +287,11 @@ forall b. String -&gt; LookAhead b
 </span><span id="line-107"></span><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#lexChar"><span class="hs-identifier hs-type">lexChar</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span>
 </span><span id="line-108"></span><span id="lexChar"><span class="annot"><span class="annottext">lexChar :: LookAhead Char
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexChar"><span class="hs-identifier hs-var hs-var">lexChar</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-109"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510837"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510837"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-109"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510855"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510855"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#eatNextChar"><span class="hs-identifier hs-var">eatNextChar</span></a></span><span>
 </span><span id="line-110"></span><span>        </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510837"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680510855"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-111"></span><span>            </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'\\'</span></span><span>    </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexEscape"><span class="hs-identifier hs-var">lexEscape</span></a></span><span>
@@ -299,28 +299,28 @@ forall b. String -&gt; LookAhead b
 </span><span class="hs-identifier">_</span></span><span>       </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Char -&gt; LookAhead Char
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510837"><span class="hs-identifier hs-var">c</span></a></span><span>
+</span><a href="#local-6989586621680510855"><span class="hs-identifier hs-var">c</span></a></span><span>
 </span><span id="line-113"></span><span>
 </span><span id="line-114"></span><span class="hs-comment">-- | Lex an escaped character. Assumes the backslash has been lexed.</span><span>
 </span><span id="line-115"></span><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#lexEscape"><span class="hs-identifier hs-type">lexEscape</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span>
 </span><span id="line-116"></span><span id="lexEscape"><span class="annot"><span class="annottext">lexEscape :: LookAhead Char
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#lexEscape"><span class="hs-identifier hs-var hs-var">lexEscape</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-117"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510835"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510835"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-117"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510853"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510853"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#eatNextChar"><span class="hs-identifier hs-var">eatNextChar</span></a></span><span>
 </span><span id="line-118"></span><span>        </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510835"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680510853"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-119"></span><span>            </span><span class="annot"><span class="annottext">Char
-</span><span class="hs-char">'^'</span></span><span>     </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span> </span><span id="local-6989586621680510834"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span class="hs-char">'^'</span></span><span>     </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span> </span><span id="local-6989586621680510852"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510852"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#eatNextChar"><span class="hs-identifier hs-var">eatNextChar</span></a></span><span>
 </span><span id="line-120"></span><span>                          </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><a href="#local-6989586621680510852"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;=</span></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'@'</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
 </span><span class="hs-operator hs-var">&amp;&amp;</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
+</span><a href="#local-6989586621680510852"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&lt;=</span></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'_'</span></span><span>
@@ -329,7 +329,7 @@ forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TokenLength -&gt; Char
 </span><span class="hs-identifier hs-var">chr</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">ord</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
+</span><a href="#local-6989586621680510852"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">ord</span></span><span> </span><span class="annot"><span class="annottext">Char
@@ -353,10 +353,10 @@ forall b. String -&gt; LookAhead b
 </span><span class="hs-identifier hs-var">isOctDigit</span></span><span>  </span><span class="annot"><span class="annottext">TokenLength
 </span><span class="hs-number">8</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">digitToInt</span></span><span>
-</span><span id="line-126"></span><span>            </span><span id="local-6989586621680510825"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510825"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><span id="line-126"></span><span>            </span><span id="local-6989586621680510843"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
 </span><span class="hs-identifier hs-var">isDigit</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510825"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-127"></span><span>                    </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Bool)
 -&gt; TokenLength
 -&gt; (Char -&gt; TokenLength)
@@ -367,19 +367,19 @@ forall b. String -&gt; LookAhead b
 </span><span class="hs-number">10</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">digitToInt</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">digitToInt</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510825"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510843"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-128"></span><span>
-</span><span id="line-129"></span><span>            </span><span id="local-6989586621680510822"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510822"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-129"></span><span>            </span><span id="local-6989586621680510840"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510840"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-130"></span><span>                </span><span class="hs-comment">-- Try to match the input (starting with c) against the</span><span>
 </span><span id="line-131"></span><span>                </span><span class="hs-comment">-- silly escape codes.</span><span>
-</span><span id="line-132"></span><span>                </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510821"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510821"><span class="hs-identifier hs-var">esc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Char
+</span><span id="line-132"></span><span>                </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510839"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510839"><span class="hs-identifier hs-var">esc</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Char
 -&gt; [(String, LookAhead Char)] -&gt; LookAhead Char -&gt; LookAhead Char
 forall a.
 Char -&gt; [(String, LookAhead a)] -&gt; LookAhead a -&gt; LookAhead a
 </span><a href="Agda.Syntax.Parser.LookAhead.html#match%27"><span class="hs-identifier hs-var">match'</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510822"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">((String, Char) -&gt; (String, LookAhead Char))
+</span><a href="#local-6989586621680510840"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">((String, Char) -&gt; (String, LookAhead Char))
 -&gt; [(String, Char)] -&gt; [(String, LookAhead Char)]
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Char -&gt; LookAhead Char)
@@ -400,33 +400,33 @@ forall b. String -&gt; LookAhead b
 </span><span id="line-135"></span><span>                    </span><span class="annot"><span class="annottext">Char -&gt; LookAhead Char
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510821"><span class="hs-identifier hs-var">esc</span></a></span><span>
+</span><a href="#local-6989586621680510839"><span class="hs-identifier hs-var">esc</span></a></span><span>
 </span><span id="line-136"></span><span>
 </span><span id="line-137"></span><span class="hs-comment">-- | Read a number in the specified base.</span><span>
 </span><span id="line-138"></span><span class="annot"><a href="Agda.Syntax.Parser.StringLiterals.html#readNum"><span class="hs-identifier hs-type">readNum</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Parser.LookAhead.html#LookAhead"><span class="hs-identifier hs-type">LookAhead</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Char</span></span><span>
 </span><span id="line-139"></span><span id="readNum"><span class="annot"><span class="annottext">readNum :: (Char -&gt; Bool)
 -&gt; TokenLength -&gt; (Char -&gt; TokenLength) -&gt; LookAhead Char
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#readNum"><span class="hs-identifier hs-var hs-var">readNum</span></a></span></span><span> </span><span id="local-6989586621680510817"><span class="annot"><span class="annottext">Char -&gt; Bool
-</span><a href="#local-6989586621680510817"><span class="hs-identifier hs-var">isDigit</span></a></span></span><span> </span><span id="local-6989586621680510816"><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510816"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span id="local-6989586621680510815"><span class="annot"><span class="annottext">Char -&gt; TokenLength
-</span><a href="#local-6989586621680510815"><span class="hs-identifier hs-var">conv</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-140"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510814"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510814"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#readNum"><span class="hs-identifier hs-var hs-var">readNum</span></a></span></span><span> </span><span id="local-6989586621680510835"><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><a href="#local-6989586621680510835"><span class="hs-identifier hs-var">isDigit</span></a></span></span><span> </span><span id="local-6989586621680510834"><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span id="local-6989586621680510833"><span class="annot"><span class="annottext">Char -&gt; TokenLength
+</span><a href="#local-6989586621680510833"><span class="hs-identifier hs-var">conv</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-140"></span><span>    </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510832"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510832"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#eatNextChar"><span class="hs-identifier hs-var">eatNextChar</span></a></span><span>
 </span><span id="line-141"></span><span>        </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
-</span><a href="#local-6989586621680510817"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510814"><span class="hs-identifier hs-var">c</span></a></span><span>
+</span><a href="#local-6989586621680510835"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510832"><span class="hs-identifier hs-var">c</span></a></span><span>
 </span><span id="line-142"></span><span>            </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Bool)
 -&gt; TokenLength
 -&gt; (Char -&gt; TokenLength)
 -&gt; TokenLength
 -&gt; LookAhead Char
 </span><a href="Agda.Syntax.Parser.StringLiterals.html#readNumAcc"><span class="hs-identifier hs-var">readNumAcc</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
-</span><a href="#local-6989586621680510817"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510816"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
-</span><a href="#local-6989586621680510815"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char -&gt; TokenLength
-</span><a href="#local-6989586621680510815"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510814"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510835"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510834"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
+</span><a href="#local-6989586621680510833"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char -&gt; TokenLength
+</span><a href="#local-6989586621680510833"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510832"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-143"></span><span>            </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">String -&gt; LookAhead Char
 forall b. String -&gt; LookAhead b
 </span><a href="Agda.Syntax.Parser.LookAhead.html#lookAheadError"><span class="hs-identifier hs-var">lookAheadError</span></a></span><span> </span><span class="annot"><span class="annottext">String
@@ -439,54 +439,54 @@ forall b. String -&gt; LookAhead b
 -&gt; (Char -&gt; TokenLength)
 -&gt; TokenLength
 -&gt; LookAhead Char
-</span><a href="Agda.Syntax.Parser.StringLiterals.html#readNumAcc"><span class="hs-identifier hs-var hs-var">readNumAcc</span></a></span></span><span> </span><span id="local-6989586621680510813"><span class="annot"><span class="annottext">Char -&gt; Bool
-</span><a href="#local-6989586621680510813"><span class="hs-identifier hs-var">isDigit</span></a></span></span><span> </span><span id="local-6989586621680510812"><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510812"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span id="local-6989586621680510811"><span class="annot"><span class="annottext">Char -&gt; TokenLength
-</span><a href="#local-6989586621680510811"><span class="hs-identifier hs-var">conv</span></a></span></span><span> </span><span id="local-6989586621680510810"><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510810"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; LookAhead Char
-</span><a href="#local-6989586621680510809"><span class="hs-identifier hs-var">scan</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510810"><span class="hs-identifier hs-var">i</span></a></span><span>
+</span><a href="Agda.Syntax.Parser.StringLiterals.html#readNumAcc"><span class="hs-identifier hs-var hs-var">readNumAcc</span></a></span></span><span> </span><span id="local-6989586621680510831"><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><a href="#local-6989586621680510831"><span class="hs-identifier hs-var">isDigit</span></a></span></span><span> </span><span id="local-6989586621680510830"><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510830"><span class="hs-identifier hs-var">base</span></a></span></span><span> </span><span id="local-6989586621680510829"><span class="annot"><span class="annottext">Char -&gt; TokenLength
+</span><a href="#local-6989586621680510829"><span class="hs-identifier hs-var">conv</span></a></span></span><span> </span><span id="local-6989586621680510828"><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510828"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; LookAhead Char
+</span><a href="#local-6989586621680510827"><span class="hs-identifier hs-var">scan</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510828"><span class="hs-identifier hs-var">i</span></a></span><span>
 </span><span id="line-148"></span><span>    </span><span class="hs-keyword">where</span><span>
-</span><span id="line-149"></span><span>        </span><span id="local-6989586621680510809"><span class="annot"><span class="annottext">scan :: TokenLength -&gt; LookAhead Char
-</span><a href="#local-6989586621680510809"><span class="hs-identifier hs-var hs-var">scan</span></a></span></span><span> </span><span id="local-6989586621680510808"><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510808"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-150"></span><span>            </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510807"><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510807"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead PreviousInput
+</span><span id="line-149"></span><span>        </span><span id="local-6989586621680510827"><span class="annot"><span class="annottext">scan :: TokenLength -&gt; LookAhead Char
+</span><a href="#local-6989586621680510827"><span class="hs-identifier hs-var hs-var">scan</span></a></span></span><span> </span><span id="local-6989586621680510826"><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510826"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-150"></span><span>            </span><span class="hs-keyword">do</span><span>  </span><span id="local-6989586621680510825"><span class="annot"><span class="annottext">PreviousInput
+</span><a href="#local-6989586621680510825"><span class="hs-identifier hs-var">inp</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead PreviousInput
 </span><a href="Agda.Syntax.Parser.LookAhead.html#getInput"><span class="hs-identifier hs-var">getInput</span></a></span><span>
-</span><span id="line-151"></span><span>                </span><span id="local-6989586621680510805"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510805"><span class="hs-identifier hs-var">c</span></a></span></span><span>   </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
+</span><span id="line-151"></span><span>                </span><span id="local-6989586621680510823"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510823"><span class="hs-identifier hs-var">c</span></a></span></span><span>   </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">LookAhead Char
 </span><a href="Agda.Syntax.Parser.LookAhead.html#nextChar"><span class="hs-identifier hs-var">nextChar</span></a></span><span>
 </span><span id="line-152"></span><span>                </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510805"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-153"></span><span>                    </span><span id="local-6989586621680510804"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510804"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
-</span><a href="#local-6989586621680510813"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510804"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; LookAhead Char
-</span><a href="#local-6989586621680510809"><span class="hs-identifier hs-var">scan</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510808"><span class="hs-identifier hs-var">i</span></a></span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
+</span><a href="#local-6989586621680510823"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-153"></span><span>                    </span><span id="local-6989586621680510822"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510822"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
+</span><a href="#local-6989586621680510831"><span class="hs-identifier hs-var">isDigit</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510822"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; LookAhead Char
+</span><a href="#local-6989586621680510827"><span class="hs-identifier hs-var">scan</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TokenLength
+</span><a href="#local-6989586621680510826"><span class="hs-identifier hs-var">i</span></a></span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510812"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
+</span><a href="#local-6989586621680510830"><span class="hs-identifier hs-var">base</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; TokenLength
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
-</span><a href="#local-6989586621680510811"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680510804"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510829"><span class="hs-identifier hs-var">conv</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680510822"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-154"></span><span>                    </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span>             </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-155"></span><span>                        </span><span class="hs-keyword">do</span><span>  </span><span class="annot"><span class="annottext">PreviousInput -&gt; LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#setInput"><span class="hs-identifier hs-var">setInput</span></a></span><span> </span><span class="annot"><span class="annottext">PreviousInput
-</span><a href="#local-6989586621680510807"><span class="hs-identifier hs-var">inp</span></a></span><span>
+</span><a href="#local-6989586621680510825"><span class="hs-identifier hs-var">inp</span></a></span><span>
 </span><span id="line-156"></span><span>                            </span><span class="annot"><span class="annottext">LookAhead ()
 </span><a href="Agda.Syntax.Parser.LookAhead.html#sync"><span class="hs-identifier hs-var">sync</span></a></span><span>
 </span><span id="line-157"></span><span>                            </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510808"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; Bool
+</span><a href="#local-6989586621680510826"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&gt;=</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">ord</span></span><span> </span><span class="annot"><span class="annottext">Char
 forall a. Bounded a =&gt; a
 </span><span class="hs-identifier hs-var">minBound</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool -&gt; Bool
 </span><span class="hs-operator hs-var">&amp;&amp;</span></span><span> </span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510808"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; Bool
+</span><a href="#local-6989586621680510826"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">TokenLength -&gt; TokenLength -&gt; Bool
 forall a. Ord a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">&lt;=</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; TokenLength
 </span><span class="hs-identifier hs-var">ord</span></span><span> </span><span class="annot"><span class="annottext">Char
@@ -496,7 +496,7 @@ forall a. Bounded a =&gt; a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TokenLength -&gt; Char
 </span><span class="hs-identifier hs-var">chr</span></span><span> </span><span class="annot"><span class="annottext">TokenLength
-</span><a href="#local-6989586621680510808"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680510826"><span class="hs-identifier hs-var">i</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-159"></span><span>                                </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">String -&gt; LookAhead Char
 forall b. String -&gt; LookAhead b
 </span><a href="Agda.Syntax.Parser.LookAhead.html#lookAheadError"><span class="hs-identifier hs-var">lookAheadError</span></a></span><span> </span><span class="annot"><span class="annottext">String
