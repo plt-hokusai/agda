@@ -28,10 +28,10 @@
 #endif
 </span><span>
 </span><span id="line-30"></span><span class="hs-comment">-- | Interaction monad.</span><span>
-</span><span id="line-31"></span><span class="hs-keyword">newtype</span><span> </span><span id="IM"><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span></span><span> </span><span id="local-6989586621680619649"><span class="annot"><a href="#local-6989586621680619649"><span class="hs-identifier hs-type">a</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="IM"><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span></span><span> </span><span class="hs-special">{</span><span id="unIM"><span class="annot"><span class="annottext">IM a -&gt; TCMT (InputT IO) a
-</span><a href="Agda.Interaction.Monad.html#unIM"><span class="hs-identifier hs-var hs-var">unIM</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCMT"><span class="hs-identifier hs-type">TCMT</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Haskeline.InputT</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680619649"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">}</span><span>
+</span><span id="line-31"></span><span class="hs-keyword">newtype</span><span> </span><span id="IM"><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span></span><span> </span><span id="local-6989586621680619661"><span class="annot"><a href="#local-6989586621680619661"><span class="hs-identifier hs-type">a</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="IM"><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span></span><span> </span><span class="hs-special">{</span><span id="unIM"><span class="annot"><span class="annottext">IM a -&gt; TCMT (InputT IO) a
+</span><a href="Agda.Interaction.Monad.html#unIM"><span class="hs-identifier hs-var hs-var">unIM</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCMT"><span class="hs-identifier hs-type">TCMT</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Haskeline.InputT</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680619661"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">}</span><span>
 </span><span id="line-32"></span><span>  </span><span class="hs-keyword">deriving</span><span>
-</span><span id="line-33"></span><span>  </span><span class="hs-special">(</span><span> </span><span id="local-6989586621680619609"><span id="local-6989586621680619611"><span class="annot"><span class="annottext">a -&gt; IM b -&gt; IM a
+</span><span id="line-33"></span><span>  </span><span class="hs-special">(</span><span> </span><span id="local-6989586621680619621"><span id="local-6989586621680619623"><span class="annot"><span class="annottext">a -&gt; IM b -&gt; IM a
 (a -&gt; b) -&gt; IM a -&gt; IM b
 (forall a b. (a -&gt; b) -&gt; IM a -&gt; IM b)
 -&gt; (forall a b. a -&gt; IM b -&gt; IM a) -&gt; Functor IM
@@ -44,7 +44,7 @@ forall (f :: * -&gt; *).
 $c&lt;$ :: forall a b. a -&gt; IM b -&gt; IM a
 fmap :: (a -&gt; b) -&gt; IM a -&gt; IM b
 $cfmap :: forall a b. (a -&gt; b) -&gt; IM a -&gt; IM b
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Functor</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619597"><span id="local-6989586621680619599"><span id="local-6989586621680619601"><span id="local-6989586621680619603"><span id="local-6989586621680619605"><span class="annot"><span class="annottext">Functor IM
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Functor</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619609"><span id="local-6989586621680619611"><span id="local-6989586621680619613"><span id="local-6989586621680619615"><span id="local-6989586621680619617"><span class="annot"><span class="annottext">Functor IM
 a -&gt; IM a
 Functor IM
 -&gt; (forall a. a -&gt; IM a)
@@ -81,7 +81,7 @@ $c&lt;*&gt; :: forall a b. IM (a -&gt; b) -&gt; IM a -&gt; IM b
 pure :: a -&gt; IM a
 $cpure :: forall a. a -&gt; IM a
 $cp1Applicative :: Functor IM
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Applicative</span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619589"><span id="local-6989586621680619591"><span id="local-6989586621680619593"><span class="annot"><span class="annottext">Applicative IM
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Applicative</span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619601"><span id="local-6989586621680619603"><span id="local-6989586621680619605"><span class="annot"><span class="annottext">Applicative IM
 a -&gt; IM a
 Applicative IM
 -&gt; (forall a b. IM a -&gt; (a -&gt; IM b) -&gt; IM b)
@@ -106,7 +106,7 @@ $c&gt;&gt; :: forall a b. IM a -&gt; IM b -&gt; IM b
 &gt;&gt;= :: IM a -&gt; (a -&gt; IM b) -&gt; IM b
 $c&gt;&gt;= :: forall a b. IM a -&gt; (a -&gt; IM b) -&gt; IM b
 $cp1Monad :: Applicative IM
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Monad</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619585"><span class="annot"><span class="annottext">Monad IM
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Monad</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619597"><span class="annot"><span class="annottext">Monad IM
 Monad IM -&gt; (forall a. IO a -&gt; IM a) -&gt; MonadIO IM
 IO a -&gt; IM a
 forall a. IO a -&gt; IM a
@@ -116,7 +116,7 @@ liftIO :: IO a -&gt; IM a
 $cliftIO :: forall a. IO a -&gt; IM a
 $cp1MonadIO :: Monad IM
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var">MonadIO</span></span></span><span>
-</span><span id="line-34"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619577"><span id="local-6989586621680619579"><span class="annot"><span class="annottext">Monad IM
+</span><span id="line-34"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619589"><span id="local-6989586621680619591"><span class="annot"><span class="annottext">Monad IM
 Functor IM
 Applicative IM
 IM PragmaOptions
@@ -141,7 +141,7 @@ $cpragmaOptions :: IM PragmaOptions
 $cp3HasOptions :: Monad IM
 $cp2HasOptions :: Applicative IM
 $cp1HasOptions :: Functor IM
-</span><a href="Agda.Interaction.Options.HasOptions.html#C%3AHasOptions"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">HasOptions</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619571"><span id="local-6989586621680619573"><span class="annot"><span class="annottext">Monad IM
+</span><a href="Agda.Interaction.Options.HasOptions.html#C%3AHasOptions"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">HasOptions</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619583"><span id="local-6989586621680619585"><span class="annot"><span class="annottext">Monad IM
 IM TCEnv
 Monad IM
 -&gt; IM TCEnv
@@ -159,7 +159,7 @@ $clocalTC :: forall a. (TCEnv -&gt; TCEnv) -&gt; IM a -&gt; IM a
 askTC :: IM TCEnv
 $caskTC :: IM TCEnv
 $cp1MonadTCEnv :: Monad IM
-</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AMonadTCEnv"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var">MonadTCEnv</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619563"><span id="local-6989586621680619565"><span id="local-6989586621680619567"><span class="annot"><span class="annottext">Monad IM
+</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AMonadTCEnv"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var">MonadTCEnv</span></a></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619575"><span id="local-6989586621680619577"><span id="local-6989586621680619579"><span class="annot"><span class="annottext">Monad IM
 IM TCState
 Monad IM
 -&gt; IM TCState
@@ -183,7 +183,7 @@ $clocallyTCState :: forall a b. Lens' a TCState -&gt; (a -&gt; a) -&gt; IM b -&g
 getTCState :: IM TCState
 $cgetTCState :: IM TCState
 $cp1ReadTCState :: Monad IM
-</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AReadTCState"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">ReadTCState</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619555"><span id="local-6989586621680619557"><span id="local-6989586621680619559"><span class="annot"><span class="annottext">Monad IM
+</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AReadTCState"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">ReadTCState</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619567"><span id="local-6989586621680619569"><span id="local-6989586621680619571"><span class="annot"><span class="annottext">Monad IM
 IM TCState
 Monad IM
 -&gt; IM TCState
@@ -205,7 +205,7 @@ $cputTC :: TCState -&gt; IM ()
 getTC :: IM TCState
 $cgetTC :: IM TCState
 $cp1MonadTCState :: Monad IM
-</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AMonadTCState"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">MonadTCState</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619547"><span class="annot"><span class="annottext">Applicative IM
+</span><a href="Agda.TypeChecking.Monad.Base.html#C%3AMonadTCState"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">MonadTCState</span></a></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680619559"><span class="annot"><span class="annottext">Applicative IM
 MonadIO IM
 HasOptions IM
 MonadTCState IM
@@ -236,7 +236,7 @@ $cp2MonadTCM :: MonadIO IM
 $cp1MonadTCM :: Applicative IM
 </span><a href="Agda.TypeChecking.Monad.Base.html#C%3AMonadTCM"><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">MonadTCM</span></a></span></span><span> </span><span class="hs-special">)</span><span>
 </span><span id="line-35"></span><span>
-</span><span id="line-36"></span><span id="local-6989586621680619545"><span class="annot"><a href="Agda.Interaction.Monad.html#runIM"><span class="hs-identifier hs-type">runIM</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680619545"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680619545"><span class="hs-identifier hs-type">a</span></a></span></span><span>
+</span><span id="line-36"></span><span id="local-6989586621680619557"><span class="annot"><a href="Agda.Interaction.Monad.html#runIM"><span class="hs-identifier hs-type">runIM</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680619557"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680619557"><span class="hs-identifier hs-type">a</span></a></span></span><span>
 </span><span id="line-37"></span><span id="runIM"><span class="annot"><span class="annottext">runIM :: IM a -&gt; TCM a
 </span><a href="Agda.Interaction.Monad.html#runIM"><span class="hs-identifier hs-var hs-var">runIM</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(forall a1. InputT IO a1 -&gt; IO a1) -&gt; TCMT (InputT IO) a -&gt; TCM a
 forall (m :: * -&gt; *) (n :: * -&gt; *) a.
@@ -255,7 +255,7 @@ forall a. IM a -&gt; TCMT (InputT IO) a
 </span><a href="Agda.Interaction.Monad.html#unIM"><span class="hs-identifier hs-var hs-var">unIM</span></a></span><span>
 </span><span id="line-38"></span><span>
 </span><span id="line-39"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadError</span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCErr"><span class="hs-identifier hs-type">TCErr</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-40"></span><span>  </span><span id="local-6989586621680619537"><span class="annot"><span class="annottext">throwError :: TCErr -&gt; IM a
+</span><span id="line-40"></span><span>  </span><span id="local-6989586621680619549"><span class="annot"><span class="annottext">throwError :: TCErr -&gt; IM a
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">throwError</span></span></span><span>                </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO a -&gt; IM a
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO a -&gt; IM a) -&gt; (TCErr -&gt; IO a) -&gt; TCErr -&gt; IM a
@@ -263,10 +263,10 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">TCErr -&gt; IO a
 forall e a. Exception e =&gt; e -&gt; IO a
 </span><span class="hs-identifier hs-var">throwIO</span></span><span>
-</span><span id="line-41"></span><span>  </span><span id="local-6989586621680619535"><span class="annot"><span class="annottext">catchError :: IM a -&gt; (TCErr -&gt; IM a) -&gt; IM a
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">catchError</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span id="local-6989586621680619532"><span class="annot"><span class="annottext">IORef TCState -&gt; TCEnv -&gt; InputT IO a
-</span><a href="#local-6989586621680619532"><span class="hs-identifier hs-var">m</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621680619531"><span class="annot"><span class="annottext">TCErr -&gt; IM a
-</span><a href="#local-6989586621680619531"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) a -&gt; IM a
+</span><span id="line-41"></span><span>  </span><span id="local-6989586621680619547"><span class="annot"><span class="annottext">catchError :: IM a -&gt; (TCErr -&gt; IM a) -&gt; IM a
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">catchError</span></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span id="local-6989586621680619544"><span class="annot"><span class="annottext">IORef TCState -&gt; TCEnv -&gt; InputT IO a
+</span><a href="#local-6989586621680619544"><span class="hs-identifier hs-var">m</span></a></span></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span id="local-6989586621680619543"><span class="annot"><span class="annottext">TCErr -&gt; IM a
+</span><a href="#local-6989586621680619543"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) a -&gt; IM a
 forall a. TCMT (InputT IO) a -&gt; IM a
 </span><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span><span> </span><span class="annot"><span class="annottext">(TCMT (InputT IO) a -&gt; IM a)
 -&gt; ((IORef TCState -&gt; TCEnv -&gt; InputT IO a) -&gt; TCMT (InputT IO) a)
@@ -278,33 +278,33 @@ forall (m :: * -&gt; *) a. (IORef TCState -&gt; TCEnv -&gt; m a) -&gt; TCMT m a
 </span><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-var">TCM</span></a></span><span> </span><span class="annot"><span class="annottext">((IORef TCState -&gt; TCEnv -&gt; InputT IO a) -&gt; IM a)
 -&gt; (IORef TCState -&gt; TCEnv -&gt; InputT IO a) -&gt; IM a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621680619530"><span class="annot"><span class="annottext">IORef TCState
-</span><a href="#local-6989586621680619530"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621680619529"><span class="annot"><span class="annottext">TCEnv
-</span><a href="#local-6989586621680619529"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621680619542"><span class="annot"><span class="annottext">IORef TCState
+</span><a href="#local-6989586621680619542"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span id="local-6989586621680619541"><span class="annot"><span class="annottext">TCEnv
+</span><a href="#local-6989586621680619541"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-42"></span><span>    </span><span class="annot"><span class="annottext">IORef TCState -&gt; TCEnv -&gt; InputT IO a
-</span><a href="#local-6989586621680619532"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">IORef TCState
-</span><a href="#local-6989586621680619530"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">TCEnv
-</span><a href="#local-6989586621680619529"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">InputT IO a -&gt; (TCErr -&gt; InputT IO a) -&gt; InputT IO a
+</span><a href="#local-6989586621680619544"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">IORef TCState
+</span><a href="#local-6989586621680619542"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">TCEnv
+</span><a href="#local-6989586621680619541"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">InputT IO a -&gt; (TCErr -&gt; InputT IO a) -&gt; InputT IO a
 forall (m :: * -&gt; *) e a.
 (MonadCatch m, Exception e) =&gt;
 m a -&gt; (e -&gt; m a) -&gt; m a
-</span><span class="hs-operator hs-var">`Haskeline.catch`</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621680619528"><span class="annot"><span class="annottext">TCErr
-</span><a href="#local-6989586621680619528"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) a -&gt; IORef TCState -&gt; TCEnv -&gt; InputT IO a
+</span><span class="hs-operator hs-var">`Haskeline.catch`</span></span><span> </span><span class="hs-glyph">\</span><span id="local-6989586621680619540"><span class="annot"><span class="annottext">TCErr
+</span><a href="#local-6989586621680619540"><span class="hs-identifier hs-var">err</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) a -&gt; IORef TCState -&gt; TCEnv -&gt; InputT IO a
 forall (m :: * -&gt; *) a. TCMT m a -&gt; IORef TCState -&gt; TCEnv -&gt; m a
 </span><a href="Agda.TypeChecking.Monad.Base.html#unTCM"><span class="hs-identifier hs-var hs-var">unTCM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">IM a -&gt; TCMT (InputT IO) a
 forall a. IM a -&gt; TCMT (InputT IO) a
 </span><a href="Agda.Interaction.Monad.html#unIM"><span class="hs-identifier hs-var hs-var">unIM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TCErr -&gt; IM a
-</span><a href="#local-6989586621680619531"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">TCErr
-</span><a href="#local-6989586621680619528"><span class="hs-identifier hs-var">err</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">IORef TCState
-</span><a href="#local-6989586621680619530"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">TCEnv
-</span><a href="#local-6989586621680619529"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><a href="#local-6989586621680619543"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">TCErr
+</span><a href="#local-6989586621680619540"><span class="hs-identifier hs-var">err</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">IORef TCState
+</span><a href="#local-6989586621680619542"><span class="hs-identifier hs-var">s</span></a></span><span> </span><span class="annot"><span class="annottext">TCEnv
+</span><a href="#local-6989586621680619541"><span class="hs-identifier hs-var">e</span></a></span><span>
 </span><span id="line-43"></span><span>
 </span><span id="line-44"></span><span class="hs-comment">-- | Line reader. The line reader history is not stored between</span><span>
 </span><span id="line-45"></span><span class="hs-comment">-- sessions.</span><span>
 </span><span id="line-46"></span><span class="annot"><a href="Agda.Interaction.Monad.html#readline"><span class="hs-identifier hs-type">readline</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-type">IM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">)</span><span>
 </span><span id="line-47"></span><span id="readline"><span class="annot"><span class="annottext">readline :: String -&gt; IM (Maybe String)
-</span><a href="Agda.Interaction.Monad.html#readline"><span class="hs-identifier hs-var hs-var">readline</span></a></span></span><span> </span><span id="local-6989586621680619526"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680619526"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) (Maybe String) -&gt; IM (Maybe String)
+</span><a href="Agda.Interaction.Monad.html#readline"><span class="hs-identifier hs-var hs-var">readline</span></a></span></span><span> </span><span id="local-6989586621680619538"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680619538"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TCMT (InputT IO) (Maybe String) -&gt; IM (Maybe String)
 forall a. TCMT (InputT IO) a -&gt; IM a
 </span><a href="Agda.Interaction.Monad.html#IM"><span class="hs-identifier hs-var">IM</span></a></span><span> </span><span class="annot"><span class="annottext">(TCMT (InputT IO) (Maybe String) -&gt; IM (Maybe String))
 -&gt; TCMT (InputT IO) (Maybe String) -&gt; IM (Maybe String)
@@ -318,5 +318,5 @@ forall (m :: * -&gt; *).
 (MonadIO m, MonadMask m) =&gt;
 String -&gt; InputT m (Maybe String)
 </span><span class="hs-identifier hs-var">Haskeline.getInputLine</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680619526"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680619538"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-48"></span></pre></body></html>
