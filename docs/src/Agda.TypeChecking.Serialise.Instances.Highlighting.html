@@ -8,21 +8,21 @@
 </span><span id="line-8"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html"><span class="hs-identifier">Agda.TypeChecking.Serialise.Base</span></a></span><span>
 </span><span id="line-9"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Instances.Common.html"><span class="hs-identifier">Agda.TypeChecking.Serialise.Instances.Common</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span> </span><span class="hs-comment">--instance only</span><span>
 </span><span id="line-10"></span><span>
-</span><span id="line-11"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680641005"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-type">HR.Range</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-12"></span><span>  </span><span id="local-6989586621680641001"><span class="annot"><span class="annottext">icod_ :: Range -&gt; S Int32
-</span><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-type">HR.Range</span></a></span><span> </span><span id="local-6989586621680640998"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640998"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640997"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640997"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; Int -&gt; Range) -&gt; Int -&gt; Int -&gt; S Int32
+</span><span id="line-11"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640960"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-type">HR.Range</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-12"></span><span>  </span><span id="local-6989586621680640956"><span class="annot"><span class="annottext">icod_ :: Range -&gt; S Int32
+</span><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-type">HR.Range</span></a></span><span> </span><span id="local-6989586621680640953"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680640953"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640952"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680640952"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; Int -&gt; Range) -&gt; Int -&gt; Int -&gt; S Int32
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
  All EmbPrj (Domains t)) =&gt;
 t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN%27"><span class="hs-identifier hs-var">icodeN'</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Range
 </span><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-var">HR.Range</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640998"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640997"><span class="hs-identifier hs-var">b</span></a></span><span>
+</span><a href="#local-6989586621680640953"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680640952"><span class="hs-identifier hs-var">b</span></a></span><span>
 </span><span id="line-13"></span><span>
-</span><span id="line-14"></span><span>  </span><span id="local-6989586621680640995"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Range
+</span><span id="line-14"></span><span>  </span><span id="local-6989586621680640950"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Range
 </span><a href="Agda.TypeChecking.Serialise.Base.html#value"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; Int -&gt; Range)
 -&gt; Int32 -&gt; R (CoDomain (Int -&gt; Int -&gt; Range))
 forall t.
@@ -31,9 +31,9 @@ t -&gt; Int32 -&gt; R (CoDomain t)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valueN"><span class="hs-identifier hs-var">valueN</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Range
 </span><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-var">HR.Range</span></a></span><span>
 </span><span id="line-15"></span><span>
-</span><span id="line-16"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640990"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#NameKind"><span class="hs-identifier hs-type">HP.NameKind</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-17"></span><span>  </span><span id="local-6989586621680640987"><span class="annot"><span class="annottext">icod_ :: NameKind -&gt; S Int32
-</span><a href="#local-6989586621680640987"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">NameKind
+</span><span id="line-16"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640945"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#NameKind"><span class="hs-identifier hs-type">HP.NameKind</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-17"></span><span>  </span><span id="local-6989586621680640942"><span class="annot"><span class="annottext">icod_ :: NameKind -&gt; S Int32
+</span><a href="#local-6989586621680640942"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Bound"><span class="hs-identifier hs-var">HP.Bound</span></a></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind -&gt; Arrows (Domains NameKind) (S Int32)
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
@@ -41,8 +41,8 @@ forall t.
 t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN%27"><span class="hs-identifier hs-var">icodeN'</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Bound"><span class="hs-identifier hs-var">HP.Bound</span></a></span><span>
-</span><span id="line-18"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Constructor"><span class="hs-identifier hs-type">HP.Constructor</span></a></span><span> </span><span id="local-6989586621680640984"><span class="annot"><span class="annottext">Induction
-</span><a href="#local-6989586621680640984"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; (Induction -&gt; NameKind) -&gt; Induction -&gt; S Int32
+</span><span id="line-18"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Constructor"><span class="hs-identifier hs-type">HP.Constructor</span></a></span><span> </span><span id="local-6989586621680640939"><span class="annot"><span class="annottext">Induction
+</span><a href="#local-6989586621680640939"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; (Induction -&gt; NameKind) -&gt; Induction -&gt; S Int32
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
  All EmbPrj (Domains t)) =&gt;
@@ -50,7 +50,7 @@ Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Induction -&gt; NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Constructor"><span class="hs-identifier hs-var">HP.Constructor</span></a></span><span> </span><span class="annot"><span class="annottext">Induction
-</span><a href="#local-6989586621680640984"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><a href="#local-6989586621680640939"><span class="hs-identifier hs-var">a</span></a></span><span>
 </span><span id="line-19"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Datatype"><span class="hs-identifier hs-var">HP.Datatype</span></a></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; () -&gt; Arrows (Domains ()) (S Int32)
 forall t.
@@ -132,13 +132,13 @@ Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">11</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-29"></span><span>
-</span><span id="line-30"></span><span>  </span><span id="local-6989586621680640972"><span class="annot"><span class="annottext">value :: Int32 -&gt; R NameKind
-</span><a href="#local-6989586621680640972"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R NameKind) -&gt; Int32 -&gt; R NameKind
+</span><span id="line-30"></span><span>  </span><span id="local-6989586621680640927"><span class="annot"><span class="annottext">value :: Int32 -&gt; R NameKind
+</span><a href="#local-6989586621680640927"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R NameKind) -&gt; Int32 -&gt; R NameKind
 forall a. EmbPrj a =&gt; (Node -&gt; R a) -&gt; Int32 -&gt; R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#vcase"><span class="hs-identifier hs-var">vcase</span></a></span><span> </span><span class="annot"><span class="annottext">Node -&gt; R NameKind
-</span><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-31"></span><span>    </span><span id="local-6989586621680640970"><span class="annot"><span class="annottext">valu :: Node -&gt; R NameKind
-</span><a href="#local-6989586621680640970"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
+</span><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-31"></span><span>    </span><span id="local-6989586621680640925"><span class="annot"><span class="annottext">valu :: Node -&gt; R NameKind
+</span><a href="#local-6989586621680640925"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
 forall t.
@@ -148,9 +148,9 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Bound"><span class="hs-identifier hs-var">HP.Bound</span></a></span><span>
-</span><span id="line-32"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
-</span><span class="hs-number">1</span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640968"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640968"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Induction -&gt; NameKind) -&gt; Int32 -&gt; R NameKind
+</span><span id="line-32"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span class="hs-number">1</span></span><span> </span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640923"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640923"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Induction -&gt; NameKind) -&gt; Int32 -&gt; R NameKind
 forall t.
 (VALU t (IsBase t),
  Currying (Constant Int32 (Domains t)) (R (CoDomain t)),
@@ -158,8 +158,8 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Induction -&gt; NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Constructor"><span class="hs-identifier hs-var">HP.Constructor</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640968"><span class="hs-identifier hs-var">a</span></a></span><span>
-</span><span id="line-33"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640923"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><span id="line-33"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">2</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -170,7 +170,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Datatype"><span class="hs-identifier hs-var">HP.Datatype</span></a></span><span>
-</span><span id="line-34"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-34"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">3</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -181,7 +181,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Field"><span class="hs-identifier hs-var">HP.Field</span></a></span><span>
-</span><span id="line-35"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-35"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">4</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -192,7 +192,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Function"><span class="hs-identifier hs-var">HP.Function</span></a></span><span>
-</span><span id="line-36"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-36"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">5</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -203,7 +203,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Module"><span class="hs-identifier hs-var">HP.Module</span></a></span><span>
-</span><span id="line-37"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-37"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">6</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -214,7 +214,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Postulate"><span class="hs-identifier hs-var">HP.Postulate</span></a></span><span>
-</span><span id="line-38"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-38"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">7</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -225,7 +225,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Primitive"><span class="hs-identifier hs-var">HP.Primitive</span></a></span><span>
-</span><span id="line-39"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-39"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">8</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -236,7 +236,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Record"><span class="hs-identifier hs-var">HP.Record</span></a></span><span>
-</span><span id="line-40"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-40"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">9</span></span><span class="hs-special">]</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -247,7 +247,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Argument"><span class="hs-identifier hs-var">HP.Argument</span></a></span><span>
-</span><span id="line-41"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-41"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">10</span></span><span class="hs-special">]</span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -258,7 +258,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Macro"><span class="hs-identifier hs-var">HP.Macro</span></a></span><span>
-</span><span id="line-42"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-42"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">11</span></span><span class="hs-special">]</span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">NameKind
 -&gt; Arrows
      (Constant Int32 (Domains NameKind)) (R (CoDomain NameKind))
@@ -269,14 +269,14 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">NameKind
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Generalizable"><span class="hs-identifier hs-var">HP.Generalizable</span></a></span><span>
-</span><span id="line-43"></span><span>    </span><span class="annot"><a href="#local-6989586621680640970"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
+</span><span id="line-43"></span><span>    </span><span class="annot"><a href="#local-6989586621680640925"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
 </span><span class="hs-identifier">_</span></span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R NameKind
 forall a. R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#malformed"><span class="hs-identifier hs-var">malformed</span></a></span><span>
 </span><span id="line-44"></span><span>
-</span><span id="line-45"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640964"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspect"><span class="hs-identifier hs-type">HP.Aspect</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-46"></span><span>  </span><span id="local-6989586621680640961"><span class="annot"><span class="annottext">icod_ :: Aspect -&gt; S Int32
-</span><a href="#local-6989586621680640961"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">Aspect
+</span><span id="line-45"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640919"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspect"><span class="hs-identifier hs-type">HP.Aspect</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-46"></span><span>  </span><span id="local-6989586621680640916"><span class="annot"><span class="annottext">icod_ :: Aspect -&gt; S Int32
+</span><a href="#local-6989586621680640916"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Comment"><span class="hs-identifier hs-var">HP.Comment</span></a></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; () -&gt; Arrows (Domains ()) (S Int32)
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
@@ -324,9 +324,9 @@ forall t.
 Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">4</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
-</span><span id="line-52"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Name"><span class="hs-identifier hs-type">HP.Name</span></a></span><span> </span><span id="local-6989586621680640953"><span class="annot"><span class="annottext">Maybe NameKind
-</span><a href="#local-6989586621680640953"><span class="hs-identifier hs-var">mk</span></a></span></span><span> </span><span id="local-6989586621680640952"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680640952"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32
+</span><span id="line-52"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Name"><span class="hs-identifier hs-type">HP.Name</span></a></span><span> </span><span id="local-6989586621680640908"><span class="annot"><span class="annottext">Maybe NameKind
+</span><a href="#local-6989586621680640908"><span class="hs-identifier hs-var">mk</span></a></span></span><span> </span><span id="local-6989586621680640907"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680640907"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32
 -&gt; (Maybe NameKind -&gt; Bool -&gt; Aspect)
 -&gt; Maybe NameKind
 -&gt; Bool
@@ -338,8 +338,8 @@ Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">5</span></span><span> </span><span class="annot"><span class="annottext">Maybe NameKind -&gt; Bool -&gt; Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Name"><span class="hs-identifier hs-var">HP.Name</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe NameKind
-</span><a href="#local-6989586621680640953"><span class="hs-identifier hs-var">mk</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680640952"><span class="hs-identifier hs-var">b</span></a></span><span>
+</span><a href="#local-6989586621680640908"><span class="hs-identifier hs-var">mk</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680640907"><span class="hs-identifier hs-var">b</span></a></span><span>
 </span><span id="line-53"></span><span>  </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var">icod_</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Pragma"><span class="hs-identifier hs-var">HP.Pragma</span></a></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; () -&gt; Arrows (Domains ()) (S Int32)
 forall t.
@@ -373,13 +373,13 @@ Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">9</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-57"></span><span>
-</span><span id="line-58"></span><span>  </span><span id="local-6989586621680640947"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Aspect
-</span><a href="#local-6989586621680640947"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R Aspect) -&gt; Int32 -&gt; R Aspect
+</span><span id="line-58"></span><span>  </span><span id="local-6989586621680640902"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Aspect
+</span><a href="#local-6989586621680640902"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R Aspect) -&gt; Int32 -&gt; R Aspect
 forall a. EmbPrj a =&gt; (Node -&gt; R a) -&gt; Int32 -&gt; R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#vcase"><span class="hs-identifier hs-var">vcase</span></a></span><span> </span><span class="annot"><span class="annottext">Node -&gt; R Aspect
-</span><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-59"></span><span>    </span><span id="local-6989586621680640946"><span class="annot"><span class="annottext">valu :: Node -&gt; R Aspect
-</span><a href="#local-6989586621680640946"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-59"></span><span>    </span><span id="local-6989586621680640901"><span class="annot"><span class="annottext">valu :: Node -&gt; R Aspect
+</span><a href="#local-6989586621680640901"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">0</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -389,7 +389,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Comment"><span class="hs-identifier hs-var">HP.Comment</span></a></span><span>
-</span><span id="line-60"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-60"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">1</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -399,7 +399,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Keyword"><span class="hs-identifier hs-var">HP.Keyword</span></a></span><span>
-</span><span id="line-61"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-61"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">2</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -409,7 +409,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#String"><span class="hs-identifier hs-var">HP.String</span></a></span><span>
-</span><span id="line-62"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-62"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">3</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -419,7 +419,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Number"><span class="hs-identifier hs-var">HP.Number</span></a></span><span>
-</span><span id="line-63"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>         </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
+</span><span id="line-63"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>         </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
 (VALU t (IsBase t),
@@ -428,7 +428,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Symbol"><span class="hs-identifier hs-var">HP.Symbol</span></a></span><span>
-</span><span id="line-64"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-64"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">4</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -438,10 +438,10 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#PrimitiveType"><span class="hs-identifier hs-var">HP.PrimitiveType</span></a></span><span>
-</span><span id="line-65"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
-</span><span class="hs-number">5</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640945"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640945"><span class="hs-identifier hs-var">mk</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640944"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640944"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe NameKind -&gt; Bool -&gt; Aspect) -&gt; Int32 -&gt; Int32 -&gt; R Aspect
+</span><span id="line-65"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span class="hs-number">5</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640900"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640900"><span class="hs-identifier hs-var">mk</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680640899"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640899"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe NameKind -&gt; Bool -&gt; Aspect) -&gt; Int32 -&gt; Int32 -&gt; R Aspect
 forall t.
 (VALU t (IsBase t),
  Currying (Constant Int32 (Domains t)) (R (CoDomain t)),
@@ -449,9 +449,9 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe NameKind -&gt; Bool -&gt; Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Name"><span class="hs-identifier hs-var">HP.Name</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640945"><span class="hs-identifier hs-var">mk</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680640944"><span class="hs-identifier hs-var">b</span></a></span><span>
-</span><span id="line-66"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640900"><span class="hs-identifier hs-var">mk</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680640899"><span class="hs-identifier hs-var">b</span></a></span><span>
+</span><span id="line-66"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">6</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -461,7 +461,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Pragma"><span class="hs-identifier hs-var">HP.Pragma</span></a></span><span>
-</span><span id="line-67"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-67"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">7</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -471,7 +471,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Background"><span class="hs-identifier hs-var">HP.Background</span></a></span><span>
-</span><span id="line-68"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-68"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">8</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -481,7 +481,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Markup"><span class="hs-identifier hs-var">HP.Markup</span></a></span><span>
-</span><span id="line-69"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
+</span><span id="line-69"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">9</span></span><span class="hs-special">]</span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Aspect
 -&gt; Arrows (Constant Int32 (Domains Aspect)) (R (CoDomain Aspect))
 forall t.
@@ -491,14 +491,14 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">Aspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Hole"><span class="hs-identifier hs-var">HP.Hole</span></a></span><span>
-</span><span id="line-70"></span><span>    </span><span class="annot"><a href="#local-6989586621680640946"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
+</span><span id="line-70"></span><span>    </span><span class="annot"><a href="#local-6989586621680640901"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
 </span><span class="hs-identifier">_</span></span><span>          </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R Aspect
 forall a. R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#malformed"><span class="hs-identifier hs-var">malformed</span></a></span><span>
 </span><span id="line-71"></span><span>
-</span><span id="line-72"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640941"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#OtherAspect"><span class="hs-identifier hs-type">HP.OtherAspect</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-73"></span><span>  </span><span id="local-6989586621680640938"><span class="annot"><span class="annottext">icod_ :: OtherAspect -&gt; S Int32
-</span><a href="#local-6989586621680640938"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">OtherAspect
+</span><span id="line-72"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640896"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#OtherAspect"><span class="hs-identifier hs-type">HP.OtherAspect</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-73"></span><span>  </span><span id="local-6989586621680640893"><span class="annot"><span class="annottext">icod_ :: OtherAspect -&gt; S Int32
+</span><a href="#local-6989586621680640893"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Error"><span class="hs-identifier hs-var">HP.Error</span></a></span><span>                </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; () -&gt; Arrows (Domains ()) (S Int32)
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
@@ -619,14 +619,14 @@ Int32 -&gt; t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN"><span class="hs-identifier hs-var">icodeN</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
 </span><span class="hs-number">13</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-88"></span><span>
-</span><span id="line-89"></span><span>  </span><span id="local-6989586621680640922"><span class="annot"><span class="annottext">value :: Int32 -&gt; R OtherAspect
-</span><a href="#local-6989586621680640922"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R OtherAspect) -&gt; Int32 -&gt; R OtherAspect
+</span><span id="line-89"></span><span>  </span><span id="local-6989586621680640877"><span class="annot"><span class="annottext">value :: Int32 -&gt; R OtherAspect
+</span><a href="#local-6989586621680640877"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R OtherAspect) -&gt; Int32 -&gt; R OtherAspect
 forall a. EmbPrj a =&gt; (Node -&gt; R a) -&gt; Int32 -&gt; R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#vcase"><span class="hs-identifier hs-var">vcase</span></a></span><span> </span><span class="annot"><span class="annottext">Node -&gt; R OtherAspect
 forall a. (Eq a, Num a) =&gt; [a] -&gt; R OtherAspect
-</span><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-90"></span><span>    </span><span id="local-6989586621680640921"><span class="annot"><span class="annottext">valu :: [a] -&gt; R OtherAspect
-</span><a href="#local-6989586621680640921"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-90"></span><span>    </span><span id="local-6989586621680640876"><span class="annot"><span class="annottext">valu :: [a] -&gt; R OtherAspect
+</span><a href="#local-6989586621680640876"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">0</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -637,7 +637,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Error"><span class="hs-identifier hs-var">HP.Error</span></a></span><span>
-</span><span id="line-91"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-91"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">1</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -648,7 +648,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#ErrorWarning"><span class="hs-identifier hs-var">HP.ErrorWarning</span></a></span><span>
-</span><span id="line-92"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
+</span><span id="line-92"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
 forall t.
@@ -658,7 +658,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#DottedPattern"><span class="hs-identifier hs-var">HP.DottedPattern</span></a></span><span>
-</span><span id="line-93"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-93"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">2</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -669,7 +669,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#UnsolvedMeta"><span class="hs-identifier hs-var">HP.UnsolvedMeta</span></a></span><span>
-</span><span id="line-94"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-94"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">3</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -680,7 +680,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#TerminationProblem"><span class="hs-identifier hs-var">HP.TerminationProblem</span></a></span><span>
-</span><span id="line-95"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-95"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">4</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -691,7 +691,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#IncompletePattern"><span class="hs-identifier hs-var">HP.IncompletePattern</span></a></span><span>
-</span><span id="line-96"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-96"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">5</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -702,7 +702,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#TypeChecks"><span class="hs-identifier hs-var">HP.TypeChecks</span></a></span><span>
-</span><span id="line-97"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-97"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">6</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -713,7 +713,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#UnsolvedConstraint"><span class="hs-identifier hs-var">HP.UnsolvedConstraint</span></a></span><span>
-</span><span id="line-98"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-98"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">7</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -724,7 +724,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#PositivityProblem"><span class="hs-identifier hs-var">HP.PositivityProblem</span></a></span><span>
-</span><span id="line-99"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-99"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">8</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -735,7 +735,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Deadcode"><span class="hs-identifier hs-var">HP.Deadcode</span></a></span><span>
-</span><span id="line-100"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-100"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">9</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -746,7 +746,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#CoverageProblem"><span class="hs-identifier hs-var">HP.CoverageProblem</span></a></span><span>
-</span><span id="line-101"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-101"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">10</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -757,7 +757,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#CatchallClause"><span class="hs-identifier hs-var">HP.CatchallClause</span></a></span><span>
-</span><span id="line-102"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-102"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">11</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -768,7 +768,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#ConfluenceProblem"><span class="hs-identifier hs-var">HP.ConfluenceProblem</span></a></span><span>
-</span><span id="line-103"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-103"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">12</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -779,7 +779,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#MissingDefinition"><span class="hs-identifier hs-var">HP.MissingDefinition</span></a></span><span>
-</span><span id="line-104"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><span id="line-104"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">13</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">OtherAspect
 -&gt; Arrows
      (Constant Int32 (Domains OtherAspect)) (R (CoDomain OtherAspect))
@@ -790,19 +790,19 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">OtherAspect
 </span><a href="Agda.Interaction.Highlighting.Precise.html#ShadowingInTelescope"><span class="hs-identifier hs-var">HP.ShadowingInTelescope</span></a></span><span>
-</span><span id="line-105"></span><span>    </span><span class="annot"><a href="#local-6989586621680640921"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">[a]
+</span><span id="line-105"></span><span>    </span><span class="annot"><a href="#local-6989586621680640876"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">[a]
 </span><span class="hs-identifier">_</span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R OtherAspect
 forall a. R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#malformed"><span class="hs-identifier hs-var">malformed</span></a></span><span>
 </span><span id="line-106"></span><span>
-</span><span id="line-107"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640918"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-type">HP.Aspects</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-108"></span><span>  </span><span id="local-6989586621680640915"><span class="annot"><span class="annottext">icod_ :: Aspects -&gt; S Int32
-</span><a href="#local-6989586621680640915"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-type">HP.Aspects</span></a></span><span> </span><span id="local-6989586621680640913"><span class="annot"><span class="annottext">Maybe Aspect
-</span><a href="#local-6989586621680640913"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640912"><span class="annot"><span class="annottext">Set OtherAspect
-</span><a href="#local-6989586621680640912"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680640911"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680640911"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680640910"><span class="annot"><span class="annottext">Maybe DefinitionSite
-</span><a href="#local-6989586621680640910"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span id="local-6989586621680640909"><span class="annot"><span class="annottext">TokenBased
-</span><a href="#local-6989586621680640909"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe Aspect
+</span><span id="line-107"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640873"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-type">HP.Aspects</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-108"></span><span>  </span><span id="local-6989586621680640870"><span class="annot"><span class="annottext">icod_ :: Aspects -&gt; S Int32
+</span><a href="#local-6989586621680640870"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-type">HP.Aspects</span></a></span><span> </span><span id="local-6989586621680640868"><span class="annot"><span class="annottext">Maybe Aspect
+</span><a href="#local-6989586621680640868"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640867"><span class="annot"><span class="annottext">Set OtherAspect
+</span><a href="#local-6989586621680640867"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680640866"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680640866"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680640865"><span class="annot"><span class="annottext">Maybe DefinitionSite
+</span><a href="#local-6989586621680640865"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span id="local-6989586621680640864"><span class="annot"><span class="annottext">TokenBased
+</span><a href="#local-6989586621680640864"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe Aspect
  -&gt; Set OtherAspect
  -&gt; String
  -&gt; Maybe DefinitionSite
@@ -825,14 +825,14 @@ t -&gt; Arrows (Domains t) (S Int32)
 -&gt; TokenBased
 -&gt; Aspects
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-var">HP.Aspects</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe Aspect
-</span><a href="#local-6989586621680640913"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Set OtherAspect
-</span><a href="#local-6989586621680640912"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680640911"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe DefinitionSite
-</span><a href="#local-6989586621680640910"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">TokenBased
-</span><a href="#local-6989586621680640909"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><a href="#local-6989586621680640868"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Set OtherAspect
+</span><a href="#local-6989586621680640867"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680640866"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe DefinitionSite
+</span><a href="#local-6989586621680640865"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">TokenBased
+</span><a href="#local-6989586621680640864"><span class="hs-identifier hs-var">e</span></a></span><span>
 </span><span id="line-109"></span><span>
-</span><span id="line-110"></span><span>  </span><span id="local-6989586621680640908"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Aspects
-</span><a href="#local-6989586621680640908"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe Aspect
+</span><span id="line-110"></span><span>  </span><span id="local-6989586621680640863"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Aspects
+</span><a href="#local-6989586621680640863"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Maybe Aspect
  -&gt; Set OtherAspect
  -&gt; String
  -&gt; Maybe DefinitionSite
@@ -857,13 +857,13 @@ t -&gt; Int32 -&gt; R (CoDomain t)
 -&gt; Aspects
 </span><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-var">HP.Aspects</span></a></span><span>
 </span><span id="line-111"></span><span>
-</span><span id="line-112"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640905"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">HP.DefinitionSite</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-113"></span><span>  </span><span id="local-6989586621680640902"><span class="annot"><span class="annottext">icod_ :: DefinitionSite -&gt; S Int32
-</span><a href="#local-6989586621680640902"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">HP.DefinitionSite</span></a></span><span> </span><span id="local-6989586621680640900"><span class="annot"><span class="annottext">TopLevelModuleName
-</span><a href="#local-6989586621680640900"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640899"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640899"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680640898"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680640898"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680640897"><span class="annot"><span class="annottext">Maybe String
-</span><a href="#local-6989586621680640897"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(TopLevelModuleName
+</span><span id="line-112"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640860"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">HP.DefinitionSite</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-113"></span><span>  </span><span id="local-6989586621680640857"><span class="annot"><span class="annottext">icod_ :: DefinitionSite -&gt; S Int32
+</span><a href="#local-6989586621680640857"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">HP.DefinitionSite</span></a></span><span> </span><span id="local-6989586621680640855"><span class="annot"><span class="annottext">TopLevelModuleName
+</span><a href="#local-6989586621680640855"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680640854"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680640854"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680640853"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680640853"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680640852"><span class="annot"><span class="annottext">Maybe String
+</span><a href="#local-6989586621680640852"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(TopLevelModuleName
  -&gt; Int -&gt; Bool -&gt; Maybe String -&gt; DefinitionSite)
 -&gt; TopLevelModuleName -&gt; Int -&gt; Bool -&gt; Maybe String -&gt; S Int32
 forall t.
@@ -872,13 +872,13 @@ forall t.
 t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN%27"><span class="hs-identifier hs-var">icodeN'</span></a></span><span> </span><span class="annot"><span class="annottext">TopLevelModuleName -&gt; Int -&gt; Bool -&gt; Maybe String -&gt; DefinitionSite
 </span><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-var">HP.DefinitionSite</span></a></span><span> </span><span class="annot"><span class="annottext">TopLevelModuleName
-</span><a href="#local-6989586621680640900"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680640899"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680640898"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe String
-</span><a href="#local-6989586621680640897"><span class="hs-identifier hs-var">d</span></a></span><span>
+</span><a href="#local-6989586621680640855"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680640854"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680640853"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe String
+</span><a href="#local-6989586621680640852"><span class="hs-identifier hs-var">d</span></a></span><span>
 </span><span id="line-114"></span><span>
-</span><span id="line-115"></span><span>  </span><span id="local-6989586621680640896"><span class="annot"><span class="annottext">value :: Int32 -&gt; R DefinitionSite
-</span><a href="#local-6989586621680640896"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(TopLevelModuleName
+</span><span id="line-115"></span><span>  </span><span id="local-6989586621680640851"><span class="annot"><span class="annottext">value :: Int32 -&gt; R DefinitionSite
+</span><a href="#local-6989586621680640851"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(TopLevelModuleName
  -&gt; Int -&gt; Bool -&gt; Maybe String -&gt; DefinitionSite)
 -&gt; Int32
 -&gt; R (CoDomain
@@ -890,10 +890,10 @@ t -&gt; Int32 -&gt; R (CoDomain t)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valueN"><span class="hs-identifier hs-var">valueN</span></a></span><span> </span><span class="annot"><span class="annottext">TopLevelModuleName -&gt; Int -&gt; Bool -&gt; Maybe String -&gt; DefinitionSite
 </span><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-var">HP.DefinitionSite</span></a></span><span>
 </span><span id="line-116"></span><span>
-</span><span id="line-117"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640893"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-type">HP.CompressedFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-118"></span><span>  </span><span id="local-6989586621680640890"><span class="annot"><span class="annottext">icod_ :: CompressedFile -&gt; S Int32
-</span><a href="#local-6989586621680640890"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-type">HP.CompressedFile</span></a></span><span> </span><span id="local-6989586621680640888"><span class="annot"><span class="annottext">[(Range, Aspects)]
-</span><a href="#local-6989586621680640888"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([(Range, Aspects)] -&gt; CompressedFile)
+</span><span id="line-117"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640848"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-type">HP.CompressedFile</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-118"></span><span>  </span><span id="local-6989586621680640845"><span class="annot"><span class="annottext">icod_ :: CompressedFile -&gt; S Int32
+</span><a href="#local-6989586621680640845"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-type">HP.CompressedFile</span></a></span><span> </span><span id="local-6989586621680640843"><span class="annot"><span class="annottext">[(Range, Aspects)]
+</span><a href="#local-6989586621680640843"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([(Range, Aspects)] -&gt; CompressedFile)
 -&gt; [(Range, Aspects)] -&gt; S Int32
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
@@ -901,10 +901,10 @@ forall t.
 t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN%27"><span class="hs-identifier hs-var">icodeN'</span></a></span><span> </span><span class="annot"><span class="annottext">[(Range, Aspects)] -&gt; CompressedFile
 </span><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-var">HP.CompressedFile</span></a></span><span> </span><span class="annot"><span class="annottext">[(Range, Aspects)]
-</span><a href="#local-6989586621680640888"><span class="hs-identifier hs-var">f</span></a></span><span>
+</span><a href="#local-6989586621680640843"><span class="hs-identifier hs-var">f</span></a></span><span>
 </span><span id="line-119"></span><span>
-</span><span id="line-120"></span><span>  </span><span id="local-6989586621680640887"><span class="annot"><span class="annottext">value :: Int32 -&gt; R CompressedFile
-</span><a href="#local-6989586621680640887"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([(Range, Aspects)] -&gt; CompressedFile)
+</span><span id="line-120"></span><span>  </span><span id="local-6989586621680640842"><span class="annot"><span class="annottext">value :: Int32 -&gt; R CompressedFile
+</span><a href="#local-6989586621680640842"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">([(Range, Aspects)] -&gt; CompressedFile)
 -&gt; Int32 -&gt; R (CoDomain ([(Range, Aspects)] -&gt; CompressedFile))
 forall t.
 (VALU t (IsBase t), All EmbPrj (CoDomain t : Domains t)) =&gt;
@@ -912,9 +912,9 @@ t -&gt; Int32 -&gt; R (CoDomain t)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valueN"><span class="hs-identifier hs-var">valueN</span></a></span><span> </span><span class="annot"><span class="annottext">[(Range, Aspects)] -&gt; CompressedFile
 </span><a href="Agda.Interaction.Highlighting.Precise.html#CompressedFile"><span class="hs-identifier hs-var">HP.CompressedFile</span></a></span><span>
 </span><span id="line-121"></span><span>
-</span><span id="line-122"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640884"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">HP.TokenBased</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-123"></span><span>  </span><span id="local-6989586621680640881"><span class="annot"><span class="annottext">icod_ :: TokenBased -&gt; S Int32
-</span><a href="#local-6989586621680640881"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">TokenBased
+</span><span id="line-122"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680640839"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">HP.TokenBased</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-123"></span><span>  </span><span id="local-6989586621680640836"><span class="annot"><span class="annottext">icod_ :: TokenBased -&gt; S Int32
+</span><a href="#local-6989586621680640836"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="annot"><span class="annottext">TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-var">HP.TokenBased</span></a></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int32 -&gt; () -&gt; Arrows (Domains ()) (S Int32)
 forall t.
 (ICODE t (IsBase t), Currying (Domains t) (S Int32),
@@ -931,14 +931,14 @@ t -&gt; Arrows (Domains t) (S Int32)
 </span><a href="Agda.TypeChecking.Serialise.Base.html#icodeN%27"><span class="hs-identifier hs-var">icodeN'</span></a></span><span> </span><span class="annot"><span class="annottext">TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#NotOnlyTokenBased"><span class="hs-identifier hs-var">HP.NotOnlyTokenBased</span></a></span><span>
 </span><span id="line-125"></span><span>
-</span><span id="line-126"></span><span>  </span><span id="local-6989586621680640878"><span class="annot"><span class="annottext">value :: Int32 -&gt; R TokenBased
-</span><a href="#local-6989586621680640878"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R TokenBased) -&gt; Int32 -&gt; R TokenBased
+</span><span id="line-126"></span><span>  </span><span id="local-6989586621680640833"><span class="annot"><span class="annottext">value :: Int32 -&gt; R TokenBased
+</span><a href="#local-6989586621680640833"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R TokenBased) -&gt; Int32 -&gt; R TokenBased
 forall a. EmbPrj a =&gt; (Node -&gt; R a) -&gt; Int32 -&gt; R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#vcase"><span class="hs-identifier hs-var">vcase</span></a></span><span> </span><span class="annot"><span class="annottext">Node -&gt; R TokenBased
 forall a. (Eq a, Num a) =&gt; [a] -&gt; R TokenBased
-</span><a href="#local-6989586621680640877"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-127"></span><span>    </span><span id="local-6989586621680640877"><span class="annot"><span class="annottext">valu :: [a] -&gt; R TokenBased
-</span><a href="#local-6989586621680640877"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680640832"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-127"></span><span>    </span><span id="local-6989586621680640832"><span class="annot"><span class="annottext">valu :: [a] -&gt; R TokenBased
+</span><a href="#local-6989586621680640832"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">0</span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TokenBased
 -&gt; Arrows
      (Constant Int32 (Domains TokenBased)) (R (CoDomain TokenBased))
@@ -949,7 +949,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-var">HP.TokenBased</span></a></span><span>
-</span><span id="line-128"></span><span>    </span><span class="annot"><a href="#local-6989586621680640877"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TokenBased
+</span><span id="line-128"></span><span>    </span><span class="annot"><a href="#local-6989586621680640832"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">TokenBased
 -&gt; Arrows
      (Constant Int32 (Domains TokenBased)) (R (CoDomain TokenBased))
 forall t.
@@ -959,7 +959,7 @@ forall t.
 t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 </span><a href="Agda.TypeChecking.Serialise.Base.html#valuN"><span class="hs-identifier hs-var">valuN</span></a></span><span> </span><span class="annot"><span class="annottext">TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#NotOnlyTokenBased"><span class="hs-identifier hs-var">HP.NotOnlyTokenBased</span></a></span><span>
-</span><span id="line-129"></span><span>    </span><span class="annot"><a href="#local-6989586621680640877"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">[a]
+</span><span id="line-129"></span><span>    </span><span class="annot"><a href="#local-6989586621680640832"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">[a]
 </span><span class="hs-identifier">_</span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R TokenBased
 forall a. R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#malformed"><span class="hs-identifier hs-var">malformed</span></a></span><span>
