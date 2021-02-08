@@ -24,52 +24,52 @@
 </span><span id="line-24"></span><span>     </span><span class="hs-comment">-- ^ Must contain a mapping for the definition site's module, if any.</span><span>
 </span><span id="line-25"></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Range.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#Aspects"><span class="hs-identifier hs-type">Aspects</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
 </span><span id="line-26"></span><span id="showAspects"><span class="annot"><span class="annottext">showAspects :: ModuleToSource -&gt; (Range, Aspects) -&gt; Value
-</span><a href="Agda.Interaction.Highlighting.JSON.html#showAspects"><span class="hs-identifier hs-var hs-var">showAspects</span></a></span></span><span> </span><span id="local-6989586621680624538"><span class="annot"><span class="annottext">ModuleToSource
-</span><a href="#local-6989586621680624538"><span class="hs-identifier hs-var">modFile</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680624537"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680624537"><span class="hs-identifier hs-var">range</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680624536"><span class="annot"><span class="annottext">Aspects
-</span><a href="#local-6989586621680624536"><span class="hs-identifier hs-var">aspect</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
+</span><a href="Agda.Interaction.Highlighting.JSON.html#showAspects"><span class="hs-identifier hs-var hs-var">showAspects</span></a></span></span><span> </span><span id="local-6989586621680624435"><span class="annot"><span class="annottext">ModuleToSource
+</span><a href="#local-6989586621680624435"><span class="hs-identifier hs-var">modFile</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680624434"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680624434"><span class="hs-identifier hs-var">range</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680624433"><span class="annot"><span class="annottext">Aspects
+</span><a href="#local-6989586621680624433"><span class="hs-identifier hs-var">aspect</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
 </span><span class="hs-identifier hs-var">object</span></span><span>
 </span><span id="line-27"></span><span>  </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;range&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; [Int] -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">Range -&gt; Int
 </span><a href="Agda.Interaction.Highlighting.Range.html#from"><span class="hs-identifier hs-var hs-var">from</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680624537"><span class="hs-identifier hs-var">range</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Int
+</span><a href="#local-6989586621680624434"><span class="hs-identifier hs-var">range</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Int
 </span><a href="Agda.Interaction.Highlighting.Range.html#to"><span class="hs-identifier hs-var hs-var">to</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680624537"><span class="hs-identifier hs-var">range</span></a></span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621680624434"><span class="hs-identifier hs-var">range</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-28"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;atoms&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; [String] -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Aspects -&gt; [String]
 </span><a href="Agda.Interaction.Highlighting.Common.html#toAtoms"><span class="hs-identifier hs-var">toAtoms</span></a></span><span> </span><span class="annot"><span class="annottext">Aspects
-</span><a href="#local-6989586621680624536"><span class="hs-identifier hs-var">aspect</span></a></span><span>
+</span><a href="#local-6989586621680624433"><span class="hs-identifier hs-var">aspect</span></a></span><span>
 </span><span id="line-29"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;tokenBased&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; TokenBased -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Aspects -&gt; TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#tokenBased"><span class="hs-identifier hs-var hs-var">tokenBased</span></a></span><span> </span><span class="annot"><span class="annottext">Aspects
-</span><a href="#local-6989586621680624536"><span class="hs-identifier hs-var">aspect</span></a></span><span>
+</span><a href="#local-6989586621680624433"><span class="hs-identifier hs-var">aspect</span></a></span><span>
 </span><span id="line-30"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;note&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; String -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Aspects -&gt; String
 </span><a href="Agda.Interaction.Highlighting.Precise.html#note"><span class="hs-identifier hs-var hs-var">note</span></a></span><span> </span><span class="annot"><span class="annottext">Aspects
-</span><a href="#local-6989586621680624536"><span class="hs-identifier hs-var">aspect</span></a></span><span>
+</span><a href="#local-6989586621680624433"><span class="hs-identifier hs-var">aspect</span></a></span><span>
 </span><span id="line-31"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;definitionSite&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Maybe Value -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">(DefinitionSite -&gt; Value) -&gt; Maybe DefinitionSite -&gt; Maybe Value
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="annot"><span class="annottext">DefinitionSite -&gt; Value
-</span><a href="#local-6989586621680624528"><span class="hs-identifier hs-var">defSite</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Aspects -&gt; Maybe DefinitionSite
+</span><a href="#local-6989586621680624425"><span class="hs-identifier hs-var">defSite</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Aspects -&gt; Maybe DefinitionSite
 </span><a href="Agda.Interaction.Highlighting.Precise.html#definitionSite"><span class="hs-identifier hs-var hs-var">definitionSite</span></a></span><span> </span><span class="annot"><span class="annottext">Aspects
-</span><a href="#local-6989586621680624536"><span class="hs-identifier hs-var">aspect</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680624433"><span class="hs-identifier hs-var">aspect</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-32"></span><span>  </span><span class="hs-special">]</span><span>
 </span><span id="line-33"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-34"></span><span>    </span><span id="local-6989586621680624528"><span class="annot"><span class="annottext">defSite :: DefinitionSite -&gt; Value
-</span><a href="#local-6989586621680624528"><span class="hs-identifier hs-var hs-var">defSite</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">DefinitionSite</span></a></span><span> </span><span id="local-6989586621680624525"><span class="annot"><span class="annottext">TopLevelModuleName
-</span><a href="#local-6989586621680624525"><span class="hs-identifier hs-var">mdl</span></a></span></span><span> </span><span id="local-6989586621680624524"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680624524"><span class="hs-identifier hs-var">position</span></a></span></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><span id="line-34"></span><span>    </span><span id="local-6989586621680624425"><span class="annot"><span class="annottext">defSite :: DefinitionSite -&gt; Value
+</span><a href="#local-6989586621680624425"><span class="hs-identifier hs-var hs-var">defSite</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#DefinitionSite"><span class="hs-identifier hs-type">DefinitionSite</span></a></span><span> </span><span id="local-6989586621680624422"><span class="annot"><span class="annottext">TopLevelModuleName
+</span><a href="#local-6989586621680624422"><span class="hs-identifier hs-var">mdl</span></a></span></span><span> </span><span id="local-6989586621680624421"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680624421"><span class="hs-identifier hs-var">position</span></a></span></span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="annottext">Maybe String
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
 </span><span class="hs-identifier hs-var">object</span></span><span>
@@ -83,18 +83,18 @@ forall k a. Ord k =&gt; a -&gt; k -&gt; Map k a -&gt; a
 </span><span class="hs-identifier hs-var">Map.findWithDefault</span></span><span> </span><span class="annot"><span class="annottext">AbsolutePath
 forall a. HasCallStack =&gt; a
 </span><a href="Agda.Utils.Impossible.html#__IMPOSSIBLE__"><span class="hs-identifier hs-var">__IMPOSSIBLE__</span></a></span><span> </span><span class="annot"><span class="annottext">TopLevelModuleName
-</span><a href="#local-6989586621680624525"><span class="hs-identifier hs-var">mdl</span></a></span><span> </span><span class="annot"><span class="annottext">ModuleToSource
-</span><a href="#local-6989586621680624538"><span class="hs-identifier hs-var">modFile</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680624422"><span class="hs-identifier hs-var">mdl</span></a></span><span> </span><span class="annot"><span class="annottext">ModuleToSource
+</span><a href="#local-6989586621680624435"><span class="hs-identifier hs-var">modFile</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-36"></span><span>      </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;position&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Int -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680624524"><span class="hs-identifier hs-var">position</span></a></span><span>
+</span><a href="#local-6989586621680624421"><span class="hs-identifier hs-var">position</span></a></span><span>
 </span><span id="line-37"></span><span>      </span><span class="hs-special">]</span><span>
 </span><span id="line-38"></span><span>
-</span><span id="line-39"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680624520"><span class="annot"><a href="Agda.Interaction.JSON.html#EncodeTCM"><span class="hs-identifier hs-type">EncodeTCM</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">TokenBased</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-40"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680624512"><span id="local-6989586621680624514"><span id="local-6989586621680624516"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">TokenBased</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-41"></span><span>    </span><span id="local-6989586621680624510"><span class="annot"><span class="annottext">toJSON :: TokenBased -&gt; Value
+</span><span id="line-39"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680624417"><span class="annot"><a href="Agda.Interaction.JSON.html#EncodeTCM"><span class="hs-identifier hs-type">EncodeTCM</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">TokenBased</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-40"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680624409"><span id="local-6989586621680624411"><span id="local-6989586621680624413"><span class="annot"><span class="hs-identifier hs-type">ToJSON</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-type">TokenBased</span></a></span></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-41"></span><span>    </span><span id="local-6989586621680624407"><span class="annot"><span class="annottext">toJSON :: TokenBased -&gt; Value
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">toJSON</span></span></span><span> </span><span class="annot"><span class="annottext">TokenBased
 </span><a href="Agda.Interaction.Highlighting.Precise.html#TokenBased"><span class="hs-identifier hs-var">TokenBased</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Text -&gt; Value
 </span><span class="hs-identifier hs-var">String</span></span><span> </span><span class="annot"><span class="annottext">Text
@@ -117,31 +117,31 @@ forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 -&gt; HighlightingMethod
 -&gt; ModuleToSource
 -&gt; IO Value
-</span><a href="Agda.Interaction.Highlighting.JSON.html#jsonifyHighlightingInfo"><span class="hs-identifier hs-var hs-var">jsonifyHighlightingInfo</span></a></span></span><span> </span><span id="local-6989586621680624505"><span class="annot"><span class="annottext">HighlightingInfo
-</span><a href="#local-6989586621680624505"><span class="hs-identifier hs-var">info</span></a></span></span><span> </span><span id="local-6989586621680624504"><span class="annot"><span class="annottext">RemoveTokenBasedHighlighting
-</span><a href="#local-6989586621680624504"><span class="hs-identifier hs-var">remove</span></a></span></span><span> </span><span id="local-6989586621680624503"><span class="annot"><span class="annottext">HighlightingMethod
-</span><a href="#local-6989586621680624503"><span class="hs-identifier hs-var">method</span></a></span></span><span> </span><span id="local-6989586621680624502"><span class="annot"><span class="annottext">ModuleToSource
-</span><a href="#local-6989586621680624502"><span class="hs-identifier hs-var">modFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Interaction.Highlighting.JSON.html#jsonifyHighlightingInfo"><span class="hs-identifier hs-var hs-var">jsonifyHighlightingInfo</span></a></span></span><span> </span><span id="local-6989586621680624402"><span class="annot"><span class="annottext">HighlightingInfo
+</span><a href="#local-6989586621680624402"><span class="hs-identifier hs-var">info</span></a></span></span><span> </span><span id="local-6989586621680624401"><span class="annot"><span class="annottext">RemoveTokenBasedHighlighting
+</span><a href="#local-6989586621680624401"><span class="hs-identifier hs-var">remove</span></a></span></span><span> </span><span id="local-6989586621680624400"><span class="annot"><span class="annottext">HighlightingMethod
+</span><a href="#local-6989586621680624400"><span class="hs-identifier hs-var">method</span></a></span></span><span> </span><span id="local-6989586621680624399"><span class="annot"><span class="annottext">ModuleToSource
+</span><a href="#local-6989586621680624399"><span class="hs-identifier hs-var">modFile</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-53"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">HighlightingInfo -&gt; HighlightingMethod -&gt; HighlightingMethod
 </span><a href="Agda.Interaction.Highlighting.Common.html#chooseHighlightingMethod"><span class="hs-identifier hs-var">chooseHighlightingMethod</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingInfo
-</span><a href="#local-6989586621680624505"><span class="hs-identifier hs-var">info</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingMethod
-</span><a href="#local-6989586621680624503"><span class="hs-identifier hs-var">method</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680624402"><span class="hs-identifier hs-var">info</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingMethod
+</span><a href="#local-6989586621680624400"><span class="hs-identifier hs-var">method</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-54"></span><span>    </span><span class="annot"><span class="annottext">HighlightingMethod
 </span><a href="Agda.TypeChecking.Monad.Base.html#Direct"><span class="hs-identifier hs-var">Direct</span></a></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO Value
-</span><a href="#local-6989586621680624499"><span class="hs-identifier hs-var">direct</span></a></span><span>
+</span><a href="#local-6989586621680624396"><span class="hs-identifier hs-var">direct</span></a></span><span>
 </span><span id="line-55"></span><span>    </span><span class="annot"><span class="annottext">HighlightingMethod
 </span><a href="Agda.TypeChecking.Monad.Base.html#Indirect"><span class="hs-identifier hs-var">Indirect</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO Value
-</span><a href="#local-6989586621680624497"><span class="hs-identifier hs-var">indirect</span></a></span><span>
+</span><a href="#local-6989586621680624394"><span class="hs-identifier hs-var">indirect</span></a></span><span>
 </span><span id="line-56"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-57"></span><span>    </span><span class="annot"><a href="#local-6989586621680624496"><span class="hs-identifier hs-type">result</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
-</span><span id="line-58"></span><span>    </span><span id="local-6989586621680624496"><span class="annot"><span class="annottext">result :: Value
-</span><a href="#local-6989586621680624496"><span class="hs-identifier hs-var hs-var">result</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
+</span><span id="line-57"></span><span>    </span><span class="annot"><a href="#local-6989586621680624393"><span class="hs-identifier hs-type">result</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
+</span><span id="line-58"></span><span>    </span><span id="local-6989586621680624393"><span class="annot"><span class="annottext">result :: Value
+</span><a href="#local-6989586621680624393"><span class="hs-identifier hs-var hs-var">result</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Pair] -&gt; Value
 </span><span class="hs-identifier hs-var">object</span></span><span>
 </span><span id="line-59"></span><span>      </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">Text
 </span><span class="hs-string">&quot;remove&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; Bool -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">RemoveTokenBasedHighlighting
-</span><a href="#local-6989586621680624504"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680624401"><span class="hs-identifier hs-var">remove</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-60"></span><span>          </span><span class="annot"><span class="annottext">RemoveTokenBasedHighlighting
 </span><a href="Agda.Interaction.Response.html#RemoveHighlighting"><span class="hs-identifier hs-var">RemoveHighlighting</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">True</span></span><span>
@@ -155,14 +155,14 @@ forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ModuleToSource -&gt; (Range, Aspects) -&gt; Value
 </span><a href="Agda.Interaction.Highlighting.JSON.html#showAspects"><span class="hs-identifier hs-var">showAspects</span></a></span><span> </span><span class="annot"><span class="annottext">ModuleToSource
-</span><a href="#local-6989586621680624502"><span class="hs-identifier hs-var">modFile</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">HighlightingInfo -&gt; [(Range, Aspects)]
+</span><a href="#local-6989586621680624399"><span class="hs-identifier hs-var">modFile</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">HighlightingInfo -&gt; [(Range, Aspects)]
 </span><a href="Agda.Interaction.Highlighting.Precise.html#ranges"><span class="hs-identifier hs-var hs-var">ranges</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingInfo
-</span><a href="#local-6989586621680624505"><span class="hs-identifier hs-var">info</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680624402"><span class="hs-identifier hs-var">info</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-63"></span><span>      </span><span class="hs-special">]</span><span>
 </span><span id="line-64"></span><span>
-</span><span id="line-65"></span><span>    </span><span class="annot"><a href="#local-6989586621680624499"><span class="hs-identifier hs-type">direct</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
-</span><span id="line-66"></span><span>    </span><span id="local-6989586621680624499"><span class="annot"><span class="annottext">direct :: IO Value
-</span><a href="#local-6989586621680624499"><span class="hs-identifier hs-var hs-var">direct</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Value -&gt; IO Value
+</span><span id="line-65"></span><span>    </span><span class="annot"><a href="#local-6989586621680624396"><span class="hs-identifier hs-type">direct</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
+</span><span id="line-66"></span><span>    </span><span id="local-6989586621680624396"><span class="annot"><span class="annottext">direct :: IO Value
+</span><a href="#local-6989586621680624396"><span class="hs-identifier hs-var hs-var">direct</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Value -&gt; IO Value
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Value -&gt; IO Value) -&gt; Value -&gt; IO Value
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -183,19 +183,19 @@ forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-string">&quot;info&quot;</span></span><span>   </span><span class="annot"><span class="annottext">Text -&gt; Value -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621680624496"><span class="hs-identifier hs-var">result</span></a></span><span>
+</span><a href="#local-6989586621680624393"><span class="hs-identifier hs-var">result</span></a></span><span>
 </span><span id="line-70"></span><span>      </span><span class="hs-special">]</span><span>
 </span><span id="line-71"></span><span>
-</span><span id="line-72"></span><span>    </span><span class="annot"><a href="#local-6989586621680624497"><span class="hs-identifier hs-type">indirect</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
-</span><span id="line-73"></span><span>    </span><span id="local-6989586621680624497"><span class="annot"><span class="annottext">indirect :: IO Value
-</span><a href="#local-6989586621680624497"><span class="hs-identifier hs-var hs-var">indirect</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-74"></span><span>      </span><span id="local-6989586621680624492"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680624492"><span class="hs-identifier hs-var">filepath</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; IO String
+</span><span id="line-72"></span><span>    </span><span class="annot"><a href="#local-6989586621680624394"><span class="hs-identifier hs-type">indirect</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Value</span></span><span>
+</span><span id="line-73"></span><span>    </span><span id="local-6989586621680624394"><span class="annot"><span class="annottext">indirect :: IO Value
+</span><a href="#local-6989586621680624394"><span class="hs-identifier hs-var hs-var">indirect</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-74"></span><span>      </span><span id="local-6989586621680624389"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680624389"><span class="hs-identifier hs-var">filepath</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">String -&gt; IO String
 </span><a href="Agda.Utils.IO.TempFile.html#writeToTempFile"><span class="hs-identifier hs-var">writeToTempFile</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">ByteString -&gt; String
 </span><span class="hs-identifier hs-var">BS.unpack</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Value -&gt; ByteString
 forall a. ToJSON a =&gt; a -&gt; ByteString
 </span><span class="hs-identifier hs-var">encode</span></span><span> </span><span class="annot"><span class="annottext">Value
-</span><a href="#local-6989586621680624496"><span class="hs-identifier hs-var">result</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680624393"><span class="hs-identifier hs-var">result</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-75"></span><span>      </span><span class="annot"><span class="annottext">Value -&gt; IO Value
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Value -&gt; IO Value) -&gt; Value -&gt; IO Value
@@ -217,6 +217,6 @@ forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-string">&quot;filepath&quot;</span></span><span> </span><span class="annot"><span class="annottext">Text -&gt; String -&gt; Pair
 forall kv v. (KeyValue kv, ToJSON v) =&gt; Text -&gt; v -&gt; kv
 </span><span class="hs-operator hs-var">.=</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680624492"><span class="hs-identifier hs-var">filepath</span></a></span><span>
+</span><a href="#local-6989586621680624389"><span class="hs-identifier hs-var">filepath</span></a></span><span>
 </span><span id="line-79"></span><span>        </span><span class="hs-special">]</span><span>
 </span><span id="line-80"></span></pre></body></html>
