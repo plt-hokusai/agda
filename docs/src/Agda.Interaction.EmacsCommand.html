@@ -20,16 +20,16 @@
 </span><span id="line-20"></span><span>
 </span><span id="line-21"></span><span class="hs-comment">-- | Simple Emacs Lisp expressions.</span><span>
 </span><span id="line-22"></span><span>
-</span><span id="line-23"></span><span class="hs-keyword">data</span><span> </span><span id="Lisp"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-var">Lisp</span></a></span></span><span> </span><span id="local-6989586621680471053"><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span></span><span>
-</span><span id="line-24"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="A"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span></span><span> </span><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span><span>
+</span><span id="line-23"></span><span class="hs-keyword">data</span><span> </span><span id="Lisp"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-var">Lisp</span></a></span></span><span> </span><span id="local-6989586621680471076"><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span></span><span>
+</span><span id="line-24"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="A"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span></span><span> </span><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span><span>
 </span><span id="line-25"></span><span>    </span><span class="hs-comment">-- ^ Atom.</span><span>
-</span><span id="line-26"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Cons"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Cons"><span class="hs-identifier hs-var">Cons</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-26"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Cons"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Cons"><span class="hs-identifier hs-var">Cons</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-27"></span><span>    </span><span class="hs-comment">-- Cons cell.</span><span>
-</span><span id="line-28"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="L"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#L"><span class="hs-identifier hs-var">L</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span>
+</span><span id="line-28"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="L"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#L"><span class="hs-identifier hs-var">L</span></a></span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-29"></span><span>    </span><span class="hs-comment">-- ^ List.</span><span>
-</span><span id="line-30"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Q"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Q"><span class="hs-identifier hs-var">Q</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471053"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-30"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Q"><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Q"><span class="hs-identifier hs-var">Q</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471076"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-31"></span><span>    </span><span class="hs-comment">-- Quoted expression.</span><span>
-</span><span id="line-32"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621680471039"><span id="local-6989586621680471041"><span class="annot"><span class="annottext">Lisp a -&gt; Lisp a -&gt; Bool
+</span><span id="line-32"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span id="local-6989586621680471062"><span id="local-6989586621680471064"><span class="annot"><span class="annottext">Lisp a -&gt; Lisp a -&gt; Bool
 (Lisp a -&gt; Lisp a -&gt; Bool)
 -&gt; (Lisp a -&gt; Lisp a -&gt; Bool) -&gt; Eq (Lisp a)
 forall a. Eq a =&gt; Lisp a -&gt; Lisp a -&gt; Bool
@@ -40,28 +40,28 @@ $c/= :: forall a. Eq a =&gt; Lisp a -&gt; Lisp a -&gt; Bool
 $c== :: forall a. Eq a =&gt; Lisp a -&gt; Lisp a -&gt; Bool
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span>
 </span><span id="line-33"></span><span>
-</span><span id="line-34"></span><span id="local-6989586621680471037"><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680471032"><span id="local-6989586621680471034"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471037"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471037"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-35"></span><span>  </span><span id="local-6989586621680471030"><span class="annot"><span class="annottext">pretty :: Lisp a -&gt; Doc
-</span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-type">A</span></a></span><span> </span><span id="local-6989586621680471028"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680471028"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-special">)</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; Doc
+</span><span id="line-34"></span><span id="local-6989586621680471060"><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680471055"><span id="local-6989586621680471057"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471060"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471060"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-35"></span><span>  </span><span id="local-6989586621680471053"><span class="annot"><span class="annottext">pretty :: Lisp a -&gt; Doc
+</span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-type">A</span></a></span><span> </span><span id="local-6989586621680471051"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680471051"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="hs-special">)</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680471028"><span class="hs-identifier hs-var">a</span></a></span><span>
-</span><span id="line-36"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Cons"><span class="hs-identifier hs-type">Cons</span></a></span><span> </span><span id="local-6989586621680471027"><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471027"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680471026"><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471026"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc
+</span><a href="#local-6989586621680471051"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><span id="line-36"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Cons"><span class="hs-identifier hs-type">Cons</span></a></span><span> </span><span id="local-6989586621680471050"><span class="annot"><span class="annottext">Lisp a
+</span><a href="#local-6989586621680471050"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680471049"><span class="annot"><span class="annottext">Lisp a
+</span><a href="#local-6989586621680471049"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc
 </span><span class="hs-identifier hs-var">parens</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Lisp a -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471027"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
+</span><a href="#local-6989586621680471050"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;.&quot;</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">Lisp a -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471026"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-37"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#L"><span class="hs-identifier hs-type">L</span></a></span><span> </span><span id="local-6989586621680471023"><span class="annot"><span class="annottext">[Lisp a]
-</span><a href="#local-6989586621680471023"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc
+</span><a href="#local-6989586621680471049"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-37"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#L"><span class="hs-identifier hs-type">L</span></a></span><span> </span><span id="local-6989586621680471046"><span class="annot"><span class="annottext">[Lisp a]
+</span><a href="#local-6989586621680471046"><span class="hs-identifier hs-var">xs</span></a></span></span><span class="hs-special">)</span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc
 </span><span class="hs-identifier hs-var">parens</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Doc] -&gt; Doc
 forall (t :: * -&gt; *). Foldable t =&gt; t Doc -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#hsep"><span class="hs-identifier hs-var">hsep</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(Lisp a -&gt; Doc) -&gt; [Lisp a] -&gt; [Doc]
@@ -69,15 +69,15 @@ forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="annot"><span class="annottext">Lisp a -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">[Lisp a]
-</span><a href="#local-6989586621680471023"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
-</span><span id="line-38"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Q"><span class="hs-identifier hs-type">Q</span></a></span><span> </span><span id="local-6989586621680471021"><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471021"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><a href="#local-6989586621680471046"><span class="hs-identifier hs-var">xs</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><span id="line-38"></span><span>  </span><span class="annot"><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Q"><span class="hs-identifier hs-type">Q</span></a></span><span> </span><span id="local-6989586621680471044"><span class="annot"><span class="annottext">Lisp a
+</span><a href="#local-6989586621680471044"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span>      </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;'&quot;</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Lisp a -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">Lisp a
-</span><a href="#local-6989586621680471021"><span class="hs-identifier hs-var">x</span></a></span></span><span>
+</span><a href="#local-6989586621680471044"><span class="hs-identifier hs-var">x</span></a></span></span><span>
 </span><span id="line-39"></span><span>
 </span><span id="line-40"></span><span class="hs-comment">-- instance Show (Lisp String) where</span><span>
 </span><span id="line-41"></span><span class="hs-comment">--   showsPrec _ (A a)      = showString a</span><span>
@@ -103,7 +103,7 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Char) -&gt; String -&gt; String
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Char
-</span><a href="#local-6989586621680471019"><span class="hs-identifier hs-var">replaceNewLines</span></a></span><span> </span><span class="annot"><span class="annottext">(String -&gt; String)
+</span><a href="#local-6989586621680471042"><span class="hs-identifier hs-var">replaceNewLines</span></a></span><span> </span><span class="annot"><span class="annottext">(String -&gt; String)
 -&gt; (Lisp String -&gt; String) -&gt; Lisp String -&gt; String
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; String
@@ -114,13 +114,13 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span>
 </span><span id="line-55"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-56"></span><span>  </span><span id="local-6989586621680471019"><span class="annot"><span class="annottext">replaceNewLines :: Char -&gt; Char
-</span><a href="#local-6989586621680471019"><span class="hs-identifier hs-var hs-var">replaceNewLines</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span id="line-56"></span><span>  </span><span id="local-6989586621680471042"><span class="annot"><span class="annottext">replaceNewLines :: Char -&gt; Char
+</span><a href="#local-6989586621680471042"><span class="hs-identifier hs-var hs-var">replaceNewLines</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'\n'</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">' '</span></span><span>
-</span><span id="line-57"></span><span>  </span><span class="annot"><a href="#local-6989586621680471019"><span class="hs-identifier hs-var">replaceNewLines</span></a></span><span> </span><span id="local-6989586621680471017"><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680471017"><span class="hs-identifier hs-var">c</span></a></span></span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Char
-</span><a href="#local-6989586621680471017"><span class="hs-identifier hs-var">c</span></a></span><span>
+</span><span id="line-57"></span><span>  </span><span class="annot"><a href="#local-6989586621680471042"><span class="hs-identifier hs-var">replaceNewLines</span></a></span><span> </span><span id="local-6989586621680471040"><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680471040"><span class="hs-identifier hs-var">c</span></a></span></span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680471040"><span class="hs-identifier hs-var">c</span></a></span><span>
 </span><span id="line-58"></span><span>
 </span><span id="line-59"></span><span class="hs-comment">-- | Writes a response command to standard output.</span><span>
 </span><span id="line-60"></span><span>
@@ -140,31 +140,31 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span id="line-68"></span><span>
 </span><span id="line-69"></span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#displayInBuffer"><span class="hs-identifier hs-type">displayInBuffer</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-70"></span><span id="displayInBuffer"><span class="annot"><span class="annottext">displayInBuffer :: String -&gt; Bool -&gt; String -&gt; String -&gt; Lisp String
-</span><a href="Agda.Interaction.EmacsCommand.html#displayInBuffer"><span class="hs-identifier hs-var hs-var">displayInBuffer</span></a></span></span><span> </span><span id="local-6989586621680471014"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471014"><span class="hs-identifier hs-var">buffername</span></a></span></span><span> </span><span id="local-6989586621680471013"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680471013"><span class="hs-identifier hs-var">append</span></a></span></span><span> </span><span id="local-6989586621680471012"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471012"><span class="hs-identifier hs-var">header</span></a></span></span><span> </span><span id="local-6989586621680471011"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471011"><span class="hs-identifier hs-var">content</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Interaction.EmacsCommand.html#displayInBuffer"><span class="hs-identifier hs-var hs-var">displayInBuffer</span></a></span></span><span> </span><span id="local-6989586621680471037"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680471037"><span class="hs-identifier hs-var">buffername</span></a></span></span><span> </span><span id="local-6989586621680471036"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680471036"><span class="hs-identifier hs-var">append</span></a></span></span><span> </span><span id="local-6989586621680471035"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680471035"><span class="hs-identifier hs-var">header</span></a></span></span><span> </span><span id="local-6989586621680471034"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680471034"><span class="hs-identifier hs-var">content</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-71"></span><span>    </span><span class="annot"><span class="annottext">[Lisp String] -&gt; Lisp String
 forall a. [Lisp a] -&gt; Lisp a
 </span><a href="Agda.Interaction.EmacsCommand.html#L"><span class="hs-identifier hs-var">L</span></a></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">String -&gt; Lisp String
 forall a. a -&gt; Lisp a
 </span><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471014"><span class="hs-identifier hs-var">buffername</span></a></span><span>
+</span><a href="#local-6989586621680471037"><span class="hs-identifier hs-var">buffername</span></a></span><span>
 </span><span id="line-72"></span><span>      </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String -&gt; Lisp String
 forall a. a -&gt; Lisp a
 </span><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; String
 </span><a href="Agda.Utils.String.html#quote"><span class="hs-identifier hs-var">quote</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471012"><span class="hs-identifier hs-var">header</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680471035"><span class="hs-identifier hs-var">header</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-73"></span><span>      </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String -&gt; Lisp String
 forall a. a -&gt; Lisp a
 </span><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; String
 </span><a href="Agda.Utils.String.html#quote"><span class="hs-identifier hs-var">quote</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471011"><span class="hs-identifier hs-var">content</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680471034"><span class="hs-identifier hs-var">content</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-74"></span><span>      </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String -&gt; Lisp String
 forall a. a -&gt; Lisp a
 </span><a href="Agda.Interaction.EmacsCommand.html#A"><span class="hs-identifier hs-var">A</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680471013"><span class="hs-identifier hs-var">append</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680471036"><span class="hs-identifier hs-var">append</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;t&quot;</span></span><span> </span><span class="hs-keyword">else</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;nil&quot;</span></span><span class="hs-special">)</span><span>
 </span><span id="line-75"></span><span>      </span><span class="hs-special">]</span><span>
@@ -210,11 +210,11 @@ forall a. a -&gt; Lisp a
 </span><span id="line-99"></span><span>
 </span><span id="line-100"></span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#displayRunningInfo"><span class="hs-identifier hs-type">displayRunningInfo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Interaction.EmacsCommand.html#Lisp"><span class="hs-identifier hs-type">Lisp</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-101"></span><span id="displayRunningInfo"><span class="annot"><span class="annottext">displayRunningInfo :: String -&gt; Lisp String
-</span><a href="Agda.Interaction.EmacsCommand.html#displayRunningInfo"><span class="hs-identifier hs-var hs-var">displayRunningInfo</span></a></span></span><span> </span><span id="local-6989586621680471008"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471008"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.Interaction.EmacsCommand.html#displayRunningInfo"><span class="hs-identifier hs-var hs-var">displayRunningInfo</span></a></span></span><span> </span><span id="local-6989586621680471031"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680471031"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-102"></span><span>    </span><span class="annot"><span class="annottext">Bool -&gt; String -&gt; String -&gt; Lisp String
 </span><a href="Agda.Interaction.EmacsCommand.html#display_info%27"><span class="hs-identifier hs-var">display_info'</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">True</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><a href="Agda.Interaction.EmacsCommand.html#runningInfoBufferName"><span class="hs-identifier hs-var">runningInfoBufferName</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680471008"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680471031"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-103"></span></pre></body></html>
