@@ -45,7 +45,7 @@
 </span><span id="line-45"></span><span>    </span><span class="hs-comment">-- includes the main information, and if the first sequence is</span><span>
 </span><span id="line-46"></span><span>    </span><span class="hs-comment">-- non-empty, then it includes information about the context of</span><span>
 </span><span id="line-47"></span><span>    </span><span class="hs-comment">-- the second sequence.</span><span>
-</span><span id="line-48"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680496056"><span id="local-6989586621680496058"><span id="local-6989586621680496060"><span class="annot"><span class="annottext">Int -&gt; OccursWhere -&gt; ShowS
+</span><span id="line-48"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680496022"><span id="local-6989586621680496024"><span id="local-6989586621680496026"><span class="annot"><span class="annottext">Int -&gt; OccursWhere -&gt; ShowS
 [OccursWhere] -&gt; ShowS
 OccursWhere -&gt; String
 (Int -&gt; OccursWhere -&gt; ShowS)
@@ -60,7 +60,7 @@ show :: OccursWhere -&gt; String
 $cshow :: OccursWhere -&gt; String
 showsPrec :: Int -&gt; OccursWhere -&gt; ShowS
 $cshowsPrec :: Int -&gt; OccursWhere -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680496051"><span id="local-6989586621680496053"><span class="annot"><span class="annottext">OccursWhere -&gt; OccursWhere -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680496017"><span id="local-6989586621680496019"><span class="annot"><span class="annottext">OccursWhere -&gt; OccursWhere -&gt; Bool
 (OccursWhere -&gt; OccursWhere -&gt; Bool)
 -&gt; (OccursWhere -&gt; OccursWhere -&gt; Bool) -&gt; Eq OccursWhere
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -68,7 +68,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: OccursWhere -&gt; OccursWhere -&gt; Bool
 == :: OccursWhere -&gt; OccursWhere -&gt; Bool
 $c== :: OccursWhere -&gt; OccursWhere -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680496035"><span id="local-6989586621680496037"><span id="local-6989586621680496039"><span id="local-6989586621680496041"><span id="local-6989586621680496043"><span id="local-6989586621680496045"><span id="local-6989586621680496047"><span class="annot"><span class="annottext">Eq OccursWhere
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680496001"><span id="local-6989586621680496003"><span id="local-6989586621680496005"><span id="local-6989586621680496007"><span id="local-6989586621680496009"><span id="local-6989586621680496011"><span id="local-6989586621680496013"><span class="annot"><span class="annottext">Eq OccursWhere
 Eq OccursWhere
 -&gt; (OccursWhere -&gt; OccursWhere -&gt; Ordering)
 -&gt; (OccursWhere -&gt; OccursWhere -&gt; Bool)
@@ -106,7 +106,7 @@ $c&lt; :: OccursWhere -&gt; OccursWhere -&gt; Bool
 compare :: OccursWhere -&gt; OccursWhere -&gt; Ordering
 $ccompare :: OccursWhere -&gt; OccursWhere -&gt; Ordering
 $cp1Ord :: Eq OccursWhere
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="%24cOccursWhere"><span id="%24tOccursWhere"><span id="local-6989586621680496005"><span id="local-6989586621680496007"><span id="local-6989586621680496009"><span id="local-6989586621680496011"><span id="local-6989586621680496013"><span id="local-6989586621680496015"><span id="local-6989586621680496017"><span id="local-6989586621680496019"><span id="local-6989586621680496021"><span id="local-6989586621680496023"><span id="local-6989586621680496025"><span id="local-6989586621680496027"><span id="local-6989586621680496029"><span id="local-6989586621680496031"><span class="annot"><span class="annottext">Typeable OccursWhere
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="%24cOccursWhere"><span id="%24tOccursWhere"><span id="local-6989586621680495971"><span id="local-6989586621680495973"><span id="local-6989586621680495975"><span id="local-6989586621680495977"><span id="local-6989586621680495979"><span id="local-6989586621680495981"><span id="local-6989586621680495983"><span id="local-6989586621680495985"><span id="local-6989586621680495987"><span id="local-6989586621680495989"><span id="local-6989586621680495991"><span id="local-6989586621680495993"><span id="local-6989586621680495995"><span id="local-6989586621680495997"><span class="annot"><span class="annottext">Typeable OccursWhere
 DataType
 Constr
 Typeable OccursWhere
@@ -282,7 +282,7 @@ $cp1Data :: Typeable OccursWhere
 </span><span id="line-60"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Matched"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Matched"><span class="hs-identifier hs-var">Matched</span></a></span></span><span>          </span><span class="hs-comment">-- ^ matched against in a clause of a defined function</span><span>
 </span><span id="line-61"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="IsIndex"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#IsIndex"><span class="hs-identifier hs-var">IsIndex</span></a></span></span><span>          </span><span class="hs-comment">-- ^ is an index of an inductive family</span><span>
 </span><span id="line-62"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="InDefOf"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#InDefOf"><span class="hs-identifier hs-var">InDefOf</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Abstract.Name.html#QName"><span class="hs-identifier hs-type">QName</span></a></span><span>    </span><span class="hs-comment">-- ^ in the definition of a constant</span><span>
-</span><span id="line-63"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680495984"><span id="local-6989586621680495986"><span id="local-6989586621680495988"><span class="annot"><span class="annottext">Int -&gt; Where -&gt; ShowS
+</span><span id="line-63"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680495950"><span id="local-6989586621680495952"><span id="local-6989586621680495954"><span class="annot"><span class="annottext">Int -&gt; Where -&gt; ShowS
 [Where] -&gt; ShowS
 Where -&gt; String
 (Int -&gt; Where -&gt; ShowS)
@@ -295,14 +295,14 @@ show :: Where -&gt; String
 $cshow :: Where -&gt; String
 showsPrec :: Int -&gt; Where -&gt; ShowS
 $cshowsPrec :: Int -&gt; Where -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495980"><span id="local-6989586621680495982"><span class="annot"><span class="annottext">Where -&gt; Where -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495946"><span id="local-6989586621680495948"><span class="annot"><span class="annottext">Where -&gt; Where -&gt; Bool
 (Where -&gt; Where -&gt; Bool) -&gt; (Where -&gt; Where -&gt; Bool) -&gt; Eq Where
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 /= :: Where -&gt; Where -&gt; Bool
 $c/= :: Where -&gt; Where -&gt; Bool
 == :: Where -&gt; Where -&gt; Bool
 $c== :: Where -&gt; Where -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495965"><span id="local-6989586621680495967"><span id="local-6989586621680495969"><span id="local-6989586621680495971"><span id="local-6989586621680495973"><span id="local-6989586621680495975"><span id="local-6989586621680495977"><span class="annot"><span class="annottext">Eq Where
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495931"><span id="local-6989586621680495933"><span id="local-6989586621680495935"><span id="local-6989586621680495937"><span id="local-6989586621680495939"><span id="local-6989586621680495941"><span id="local-6989586621680495943"><span class="annot"><span class="annottext">Eq Where
 Eq Where
 -&gt; (Where -&gt; Where -&gt; Ordering)
 -&gt; (Where -&gt; Where -&gt; Bool)
@@ -340,7 +340,7 @@ $c&lt; :: Where -&gt; Where -&gt; Bool
 compare :: Where -&gt; Where -&gt; Ordering
 $ccompare :: Where -&gt; Where -&gt; Ordering
 $cp1Ord :: Eq Where
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="%24cInDefOf"><span id="%24cIsIndex"><span id="%24cMatched"><span id="%24cInClause"><span id="%24cIndArgType"><span id="%24cConArgType"><span id="%24cMetaArg"><span id="%24cVarArg"><span id="%24cUnderInf"><span id="%24cDefArg"><span id="%24cLeftOfArrow"><span id="%24tWhere"><span id="local-6989586621680495936"><span id="local-6989586621680495938"><span id="local-6989586621680495940"><span id="local-6989586621680495942"><span id="local-6989586621680495944"><span id="local-6989586621680495946"><span id="local-6989586621680495948"><span id="local-6989586621680495950"><span id="local-6989586621680495952"><span id="local-6989586621680495954"><span id="local-6989586621680495956"><span id="local-6989586621680495958"><span id="local-6989586621680495960"><span id="local-6989586621680495962"><span class="annot"><span class="annottext">Typeable Where
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="%24cInDefOf"><span id="%24cIsIndex"><span id="%24cMatched"><span id="%24cInClause"><span id="%24cIndArgType"><span id="%24cConArgType"><span id="%24cMetaArg"><span id="%24cVarArg"><span id="%24cUnderInf"><span id="%24cDefArg"><span id="%24cLeftOfArrow"><span id="%24tWhere"><span id="local-6989586621680495902"><span id="local-6989586621680495904"><span id="local-6989586621680495906"><span id="local-6989586621680495908"><span id="local-6989586621680495910"><span id="local-6989586621680495912"><span id="local-6989586621680495914"><span id="local-6989586621680495916"><span id="local-6989586621680495918"><span id="local-6989586621680495920"><span id="local-6989586621680495922"><span id="local-6989586621680495924"><span id="local-6989586621680495926"><span id="local-6989586621680495928"><span class="annot"><span class="annottext">Typeable Where
 DataType
 Constr
 Typeable Where
@@ -511,7 +511,7 @@ $cp1Data :: Typeable Where
 </span><span id="line-73"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="StrictPos"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span></span><span> </span><span class="hs-comment">-- ^ Strictly positive occurrence.</span><span>
 </span><span id="line-74"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="GuardPos"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#GuardPos"><span class="hs-identifier hs-var">GuardPos</span></a></span></span><span>  </span><span class="hs-comment">-- ^ Guarded strictly positive occurrence (i.e., under &#8734;).  For checking recursive records.</span><span>
 </span><span id="line-75"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="Unused"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span></span><span>    </span><span class="hs-comment">--  ^ No occurrence.</span><span>
-</span><span id="line-76"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cUnused"><span id="%24cGuardPos"><span id="%24cStrictPos"><span id="%24cJustPos"><span id="%24cJustNeg"><span id="%24cMixed"><span id="%24tOccurrence"><span id="local-6989586621680495889"><span id="local-6989586621680495891"><span id="local-6989586621680495893"><span id="local-6989586621680495895"><span id="local-6989586621680495897"><span id="local-6989586621680495899"><span id="local-6989586621680495901"><span id="local-6989586621680495903"><span id="local-6989586621680495905"><span id="local-6989586621680495907"><span id="local-6989586621680495909"><span id="local-6989586621680495911"><span id="local-6989586621680495913"><span id="local-6989586621680495915"><span class="annot"><span class="annottext">Typeable Occurrence
+</span><span id="line-76"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="%24cUnused"><span id="%24cGuardPos"><span id="%24cStrictPos"><span id="%24cJustPos"><span id="%24cJustNeg"><span id="%24cMixed"><span id="%24tOccurrence"><span id="local-6989586621680495855"><span id="local-6989586621680495857"><span id="local-6989586621680495859"><span id="local-6989586621680495861"><span id="local-6989586621680495863"><span id="local-6989586621680495865"><span id="local-6989586621680495867"><span id="local-6989586621680495869"><span id="local-6989586621680495871"><span id="local-6989586621680495873"><span id="local-6989586621680495875"><span id="local-6989586621680495877"><span id="local-6989586621680495879"><span id="local-6989586621680495881"><span class="annot"><span class="annottext">Typeable Occurrence
 DataType
 Constr
 Typeable Occurrence
@@ -674,7 +674,7 @@ $cgfoldl :: forall (c :: * -&gt; *).
 (forall d b. Data d =&gt; c (d -&gt; b) -&gt; d -&gt; c b)
 -&gt; (forall g. g -&gt; c g) -&gt; Occurrence -&gt; c Occurrence
 $cp1Data :: Typeable Occurrence
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495876"><span id="local-6989586621680495878"><span id="local-6989586621680495880"><span class="annot"><span class="annottext">Int -&gt; Occurrence -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Data</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495842"><span id="local-6989586621680495844"><span id="local-6989586621680495846"><span class="annot"><span class="annottext">Int -&gt; Occurrence -&gt; ShowS
 [Occurrence] -&gt; ShowS
 Occurrence -&gt; String
 (Int -&gt; Occurrence -&gt; ShowS)
@@ -689,7 +689,7 @@ show :: Occurrence -&gt; String
 $cshow :: Occurrence -&gt; String
 showsPrec :: Int -&gt; Occurrence -&gt; ShowS
 $cshowsPrec :: Int -&gt; Occurrence -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495872"><span id="local-6989586621680495874"><span class="annot"><span class="annottext">Occurrence -&gt; Occurrence -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495838"><span id="local-6989586621680495840"><span class="annot"><span class="annottext">Occurrence -&gt; Occurrence -&gt; Bool
 (Occurrence -&gt; Occurrence -&gt; Bool)
 -&gt; (Occurrence -&gt; Occurrence -&gt; Bool) -&gt; Eq Occurrence
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -697,7 +697,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: Occurrence -&gt; Occurrence -&gt; Bool
 == :: Occurrence -&gt; Occurrence -&gt; Bool
 $c== :: Occurrence -&gt; Occurrence -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495857"><span id="local-6989586621680495859"><span id="local-6989586621680495861"><span id="local-6989586621680495863"><span id="local-6989586621680495865"><span id="local-6989586621680495867"><span id="local-6989586621680495869"><span class="annot"><span class="annottext">Eq Occurrence
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495823"><span id="local-6989586621680495825"><span id="local-6989586621680495827"><span id="local-6989586621680495829"><span id="local-6989586621680495831"><span id="local-6989586621680495833"><span id="local-6989586621680495835"><span class="annot"><span class="annottext">Eq Occurrence
 Eq Occurrence
 -&gt; (Occurrence -&gt; Occurrence -&gt; Ordering)
 -&gt; (Occurrence -&gt; Occurrence -&gt; Bool)
@@ -735,7 +735,7 @@ $c&lt; :: Occurrence -&gt; Occurrence -&gt; Bool
 compare :: Occurrence -&gt; Occurrence -&gt; Ordering
 $ccompare :: Occurrence -&gt; Occurrence -&gt; Ordering
 $cp1Ord :: Eq Occurrence
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495841"><span id="local-6989586621680495843"><span id="local-6989586621680495845"><span id="local-6989586621680495847"><span id="local-6989586621680495849"><span id="local-6989586621680495851"><span id="local-6989586621680495853"><span id="local-6989586621680495855"><span class="annot"><span class="annottext">Int -&gt; Occurrence
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495807"><span id="local-6989586621680495809"><span id="local-6989586621680495811"><span id="local-6989586621680495813"><span id="local-6989586621680495815"><span id="local-6989586621680495817"><span id="local-6989586621680495819"><span id="local-6989586621680495821"><span class="annot"><span class="annottext">Int -&gt; Occurrence
 Occurrence -&gt; Int
 Occurrence -&gt; [Occurrence]
 Occurrence -&gt; Occurrence
@@ -776,7 +776,7 @@ pred :: Occurrence -&gt; Occurrence
 $cpred :: Occurrence -&gt; Occurrence
 succ :: Occurrence -&gt; Occurrence
 $csucc :: Occurrence -&gt; Occurrence
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495836"><span id="local-6989586621680495838"><span class="annot"><span class="annottext">Occurrence
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495802"><span id="local-6989586621680495804"><span class="annot"><span class="annottext">Occurrence
 Occurrence -&gt; Occurrence -&gt; Bounded Occurrence
 forall a. a -&gt; a -&gt; Bounded a
 maxBound :: Occurrence
@@ -787,8 +787,8 @@ $cminBound :: Occurrence
 </span><span id="line-77"></span><span>
 </span><span id="line-78"></span><span class="hs-comment">-- Pretty instances.</span><span>
 </span><span id="line-79"></span><span>
-</span><span id="line-80"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495830"><span id="local-6989586621680495832"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-81"></span><span>  </span><span id="local-6989586621680495828"><span class="annot"><span class="annottext">pretty :: Occurrence -&gt; Doc
+</span><span id="line-80"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495796"><span id="local-6989586621680495798"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-81"></span><span>  </span><span id="local-6989586621680495794"><span class="annot"><span class="annottext">pretty :: Occurrence -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Doc
 </span><span class="hs-identifier hs-var">text</span></span><span> </span><span class="annot"><span class="annottext">(String -&gt; Doc) -&gt; (Occurrence -&gt; String) -&gt; Occurrence -&gt; Doc
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
@@ -812,24 +812,24 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#GuardPos"><span class="hs-identifier hs-var">GuardPos</span></a></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;g+&quot;</span></span><span>
 </span><span id="line-88"></span><span>
-</span><span id="line-89"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495820"><span id="local-6989586621680495822"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Where"><span class="hs-identifier hs-type">Where</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-90"></span><span>  </span><span id="local-6989586621680495819"><span class="annot"><span class="annottext">pretty :: Where -&gt; Doc
-</span><a href="#local-6989586621680495819"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
+</span><span id="line-89"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495786"><span id="local-6989586621680495788"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Where"><span class="hs-identifier hs-type">Where</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-90"></span><span>  </span><span id="local-6989586621680495785"><span class="annot"><span class="annottext">pretty :: Where -&gt; Doc
+</span><a href="#local-6989586621680495785"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
 </span><span id="line-91"></span><span>    </span><span class="annot"><span class="annottext">Where
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#LeftOfArrow"><span class="hs-identifier hs-var">LeftOfArrow</span></a></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;LeftOfArrow&quot;</span></span><span>
-</span><span id="line-92"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#DefArg"><span class="hs-identifier hs-type">DefArg</span></a></span><span> </span><span id="local-6989586621680495818"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495818"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span id="local-6989586621680495817"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680495817"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><span id="line-92"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#DefArg"><span class="hs-identifier hs-type">DefArg</span></a></span><span> </span><span id="local-6989586621680495784"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680495784"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span id="local-6989586621680495783"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680495783"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;DefArg&quot;</span></span><span>     </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">QName -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495818"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
+</span><a href="#local-6989586621680495784"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680495817"><span class="hs-identifier hs-var">i</span></a></span><span>
+</span><a href="#local-6989586621680495783"><span class="hs-identifier hs-var">i</span></a></span><span>
 </span><span id="line-93"></span><span>    </span><span class="annot"><span class="annottext">Where
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#UnderInf"><span class="hs-identifier hs-var">UnderInf</span></a></span><span>     </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;UnderInf&quot;</span></span><span>
@@ -839,48 +839,48 @@ forall a. Pretty a =&gt; a -&gt; Doc
 </span><span id="line-95"></span><span>    </span><span class="annot"><span class="annottext">Where
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#MetaArg"><span class="hs-identifier hs-var">MetaArg</span></a></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;MetaArg&quot;</span></span><span>
-</span><span id="line-96"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#ConArgType"><span class="hs-identifier hs-type">ConArgType</span></a></span><span> </span><span id="local-6989586621680495815"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495815"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><span id="line-96"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#ConArgType"><span class="hs-identifier hs-type">ConArgType</span></a></span><span> </span><span id="local-6989586621680495781"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680495781"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;ConArgType&quot;</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">QName -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495815"><span class="hs-identifier hs-var">q</span></a></span><span>
-</span><span id="line-97"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#IndArgType"><span class="hs-identifier hs-type">IndArgType</span></a></span><span> </span><span id="local-6989586621680495814"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495814"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><a href="#local-6989586621680495781"><span class="hs-identifier hs-var">q</span></a></span><span>
+</span><span id="line-97"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#IndArgType"><span class="hs-identifier hs-type">IndArgType</span></a></span><span> </span><span id="local-6989586621680495780"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680495780"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;IndArgType&quot;</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">QName -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495814"><span class="hs-identifier hs-var">q</span></a></span><span>
-</span><span id="line-98"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#InClause"><span class="hs-identifier hs-type">InClause</span></a></span><span> </span><span id="local-6989586621680495813"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680495813"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><a href="#local-6989586621680495780"><span class="hs-identifier hs-var">q</span></a></span><span>
+</span><span id="line-98"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#InClause"><span class="hs-identifier hs-type">InClause</span></a></span><span> </span><span id="local-6989586621680495779"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680495779"><span class="hs-identifier hs-var">i</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;InClause&quot;</span></span><span>   </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680495813"><span class="hs-identifier hs-var">i</span></a></span><span>
+</span><a href="#local-6989586621680495779"><span class="hs-identifier hs-var">i</span></a></span><span>
 </span><span id="line-99"></span><span>    </span><span class="annot"><span class="annottext">Where
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Matched"><span class="hs-identifier hs-var">Matched</span></a></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;Matched&quot;</span></span><span>
 </span><span id="line-100"></span><span>    </span><span class="annot"><span class="annottext">Where
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#IsIndex"><span class="hs-identifier hs-var">IsIndex</span></a></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;IsIndex&quot;</span></span><span>
-</span><span id="line-101"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#InDefOf"><span class="hs-identifier hs-type">InDefOf</span></a></span><span> </span><span id="local-6989586621680495812"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495812"><span class="hs-identifier hs-var">q</span></a></span></span><span>    </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
+</span><span id="line-101"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#InDefOf"><span class="hs-identifier hs-type">InDefOf</span></a></span><span> </span><span id="local-6989586621680495778"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680495778"><span class="hs-identifier hs-var">q</span></a></span></span><span>    </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;InDefOf&quot;</span></span><span>    </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">QName -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680495812"><span class="hs-identifier hs-var">q</span></a></span><span>
+</span><a href="#local-6989586621680495778"><span class="hs-identifier hs-var">q</span></a></span><span>
 </span><span id="line-102"></span><span>
-</span><span id="line-103"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495807"><span id="local-6989586621680495809"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-104"></span><span>  </span><span id="local-6989586621680495806"><span class="annot"><span class="annottext">pretty :: OccursWhere -&gt; Doc
-</span><a href="#local-6989586621680495806"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
-</span><span id="line-105"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span><span> </span><span id="local-6989586621680495805"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680495805"><span class="hs-identifier hs-var">_r</span></a></span></span><span> </span><span id="local-6989586621680495804"><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495804"><span class="hs-identifier hs-var">ws1</span></a></span></span><span> </span><span id="local-6989586621680495803"><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495803"><span class="hs-identifier hs-var">ws2</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-103"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495773"><span id="local-6989586621680495775"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-104"></span><span>  </span><span id="local-6989586621680495772"><span class="annot"><span class="annottext">pretty :: OccursWhere -&gt; Doc
+</span><a href="#local-6989586621680495772"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
+</span><span id="line-105"></span><span>    </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span><span> </span><span id="local-6989586621680495771"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680495771"><span class="hs-identifier hs-var">_r</span></a></span></span><span> </span><span id="local-6989586621680495770"><span class="annot"><span class="annottext">Seq Where
+</span><a href="#local-6989586621680495770"><span class="hs-identifier hs-var">ws1</span></a></span></span><span> </span><span id="local-6989586621680495769"><span class="annot"><span class="annottext">Seq Where
+</span><a href="#local-6989586621680495769"><span class="hs-identifier hs-var">ws2</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-106"></span><span>      </span><span class="annot"><span class="annottext">Doc
 </span><span class="hs-string">&quot;OccursWhere _&quot;</span></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Where] -&gt; Doc
@@ -888,24 +888,24 @@ forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Seq Where -&gt; [Where]
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; [a]
 </span><span class="hs-identifier hs-var">toList</span></span><span> </span><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495804"><span class="hs-identifier hs-var">ws1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
+</span><a href="#local-6989586621680495770"><span class="hs-identifier hs-var">ws1</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 </span><span class="hs-operator hs-var">&lt;+&gt;</span></span><span> </span><span class="annot"><span class="annottext">[Where] -&gt; Doc
 forall a. Pretty a =&gt; a -&gt; Doc
 </span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var">pretty</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Seq Where -&gt; [Where]
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; [a]
 </span><span class="hs-identifier hs-var">toList</span></span><span> </span><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495803"><span class="hs-identifier hs-var">ws2</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680495769"><span class="hs-identifier hs-var">ws2</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-107"></span><span>
 </span><span id="line-108"></span><span class="hs-comment">-- Other instances for 'Occurrence'.</span><span>
 </span><span id="line-109"></span><span>
-</span><span id="line-110"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621680495800"><span class="annot"><span class="annottext">rnf :: Occurrence -&gt; ()
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var">rnf</span></span></span><span> </span><span id="local-6989586621680495798"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495798"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence -&gt; () -&gt; ()
+</span><span id="line-110"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-keyword">where</span><span> </span><span id="local-6989586621680495766"><span class="annot"><span class="annottext">rnf :: Occurrence -&gt; ()
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var">rnf</span></span></span><span> </span><span id="local-6989586621680495764"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495764"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence -&gt; () -&gt; ()
 </span><span class="hs-identifier hs-var">seq</span></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495798"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680495764"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-111"></span><span>
 </span><span id="line-112"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#KillRange"><span class="hs-identifier hs-type">KillRange</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-113"></span><span>  </span><span id="local-6989586621680495795"><span class="annot"><span class="annottext">killRange :: Occurrence -&gt; Occurrence
+</span><span id="line-113"></span><span>  </span><span id="local-6989586621680495761"><span class="annot"><span class="annottext">killRange :: Occurrence -&gt; Occurrence
 </span><a href="Agda.Syntax.Position.html#killRange"><span class="hs-identifier hs-var hs-var hs-var hs-var">killRange</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence -&gt; Occurrence
 forall a. a -&gt; a
 </span><span class="hs-identifier hs-var">id</span></span><span>
@@ -920,14 +920,14 @@ forall a. a -&gt; a
 </span><span id="line-122"></span><span class="hs-comment">--   For 'otimes', 'StrictPos' is neutral (one) and 'Unused' is dominant.</span><span>
 </span><span id="line-123"></span><span>
 </span><span id="line-124"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Utils.SemiRing.html#SemiRing"><span class="hs-identifier hs-type">SemiRing</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-125"></span><span>  </span><span id="local-6989586621680495787"><span class="annot"><span class="annottext">ozero :: Occurrence
+</span><span id="line-125"></span><span>  </span><span id="local-6989586621680495753"><span class="annot"><span class="annottext">ozero :: Occurrence
 </span><a href="Agda.Utils.SemiRing.html#ozero"><span class="hs-identifier hs-var hs-var hs-var hs-var">ozero</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span>
-</span><span id="line-126"></span><span>  </span><span id="local-6989586621680495785"><span class="annot"><span class="annottext">oone :: Occurrence
+</span><span id="line-126"></span><span>  </span><span id="local-6989586621680495751"><span class="annot"><span class="annottext">oone :: Occurrence
 </span><a href="Agda.Utils.SemiRing.html#oone"><span class="hs-identifier hs-var hs-var hs-var hs-var">oone</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span>
 </span><span id="line-127"></span><span>
-</span><span id="line-128"></span><span>  </span><span id="local-6989586621680495783"><span class="annot"><span class="annottext">oplus :: Occurrence -&gt; Occurrence -&gt; Occurrence
+</span><span id="line-128"></span><span>  </span><span id="local-6989586621680495749"><span class="annot"><span class="annottext">oplus :: Occurrence -&gt; Occurrence -&gt; Occurrence
 </span><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var hs-var hs-var hs-var">oplus</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><span class="hs-identifier">_</span></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
@@ -937,47 +937,47 @@ forall a. a -&gt; a
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>           </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>
 </span><span id="line-130"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span> </span><span id="local-6989586621680495781"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495781"><span class="hs-identifier hs-var">o</span></a></span></span><span>          </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495781"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- neutral</span><span>
-</span><span id="line-131"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495780"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495780"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span> </span><span id="local-6989586621680495747"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495747"><span class="hs-identifier hs-var">o</span></a></span></span><span>          </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495747"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- neutral</span><span>
+</span><span id="line-131"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495746"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495746"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span>          </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495780"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><a href="#local-6989586621680495746"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-132"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>  </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>
 </span><span id="line-133"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>  </span><span id="local-6989586621680495779"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495779"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>  </span><span id="local-6989586621680495745"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495745"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>     </span><span class="hs-comment">-- negative and any form of positve</span><span>
-</span><span id="line-134"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495778"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495778"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="annot"><span class="annottext">Occurrence
+</span><span id="line-134"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495744"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495744"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustNeg"><span class="hs-identifier hs-var">JustNeg</span></a></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>
 </span><span id="line-135"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#GuardPos"><span class="hs-identifier hs-var">GuardPos</span></a></span><span> </span><span id="local-6989586621680495777"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495777"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495777"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- second-rank neutral</span><span>
-</span><span id="line-136"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495776"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495776"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#GuardPos"><span class="hs-identifier hs-var">GuardPos</span></a></span><span> </span><span id="local-6989586621680495743"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495743"><span class="hs-identifier hs-var">o</span></a></span></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495743"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- second-rank neutral</span><span>
+</span><span id="line-136"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495742"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495742"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#GuardPos"><span class="hs-identifier hs-var">GuardPos</span></a></span><span>        </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495776"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><a href="#local-6989586621680495742"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-137"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span> </span><span id="local-6989586621680495775"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495775"><span class="hs-identifier hs-var">o</span></a></span></span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495775"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- third-rank neutral</span><span>
-</span><span id="line-138"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495774"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495774"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span> </span><span id="local-6989586621680495741"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495741"><span class="hs-identifier hs-var">o</span></a></span></span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495741"><span class="hs-identifier hs-var">o</span></a></span><span>         </span><span class="hs-comment">-- third-rank neutral</span><span>
+</span><span id="line-138"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span id="local-6989586621680495740"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495740"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495774"><span class="hs-identifier hs-var">o</span></a></span><span>
+</span><a href="#local-6989586621680495740"><span class="hs-identifier hs-var">o</span></a></span><span>
 </span><span id="line-139"></span><span>  </span><span class="annot"><a href="Agda.Utils.SemiRing.html#oplus"><span class="hs-identifier hs-var">oplus</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustPos"><span class="hs-identifier hs-var">JustPos</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustPos"><span class="hs-identifier hs-var">JustPos</span></a></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#JustPos"><span class="hs-identifier hs-var">JustPos</span></a></span><span>
 </span><span id="line-140"></span><span>
-</span><span id="line-141"></span><span>  </span><span id="local-6989586621680495773"><span class="annot"><span class="annottext">otimes :: Occurrence -&gt; Occurrence -&gt; Occurrence
+</span><span id="line-141"></span><span>  </span><span id="local-6989586621680495739"><span class="annot"><span class="annottext">otimes :: Occurrence -&gt; Occurrence -&gt; Occurrence
 </span><a href="Agda.Utils.SemiRing.html#otimes"><span class="hs-identifier hs-var hs-var hs-var hs-var">otimes</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><span class="hs-identifier">_</span></span><span>            </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
@@ -1028,7 +1028,7 @@ forall a. a -&gt; a
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span>  </span><span class="hs-comment">-- neutral</span><span>
 </span><span id="line-153"></span><span>
 </span><span id="line-154"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Utils.SemiRing.html#StarSemiRing"><span class="hs-identifier hs-type">StarSemiRing</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-155"></span><span>  </span><span id="local-6989586621680495768"><span class="annot"><span class="annottext">ostar :: Occurrence -&gt; Occurrence
+</span><span id="line-155"></span><span>  </span><span id="local-6989586621680495734"><span class="annot"><span class="annottext">ostar :: Occurrence -&gt; Occurrence
 </span><a href="Agda.Utils.SemiRing.html#ostar"><span class="hs-identifier hs-var hs-var hs-var hs-var">ostar</span></a></span></span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Mixed"><span class="hs-identifier hs-var">Mixed</span></a></span><span>
@@ -1048,8 +1048,8 @@ forall a. a -&gt; a
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#StrictPos"><span class="hs-identifier hs-var">StrictPos</span></a></span><span>
 </span><span id="line-161"></span><span>
-</span><span id="line-162"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495764"><span class="annot"><a href="Agda.Utils.Null.html#Null"><span class="hs-identifier hs-type">Null</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-163"></span><span>  </span><span id="local-6989586621680495762"><span class="annot"><span class="annottext">empty :: Occurrence
+</span><span id="line-162"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680495730"><span class="annot"><a href="Agda.Utils.Null.html#Null"><span class="hs-identifier hs-type">Null</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-163"></span><span>  </span><span id="local-6989586621680495728"><span class="annot"><span class="annottext">empty :: Occurrence
 </span><a href="Agda.Utils.Null.html#empty"><span class="hs-identifier hs-var hs-var hs-var hs-var">empty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Occurrence
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#Unused"><span class="hs-identifier hs-var">Unused</span></a></span><span>
 </span><span id="line-164"></span><span>
@@ -1059,22 +1059,22 @@ forall a. a -&gt; a
 </span><span id="line-168"></span><span class="hs-comment">-- Agda.TypeChecking.Positivity.</span><span>
 </span><span id="line-169"></span><span>
 </span><span id="line-170"></span><span class="hs-keyword">instance</span><span> </span><span class="annot"><a href="Agda.Utils.Size.html#Sized"><span class="hs-identifier hs-type">Sized</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-171"></span><span>  </span><span id="local-6989586621680495758"><span class="annot"><span class="annottext">size :: OccursWhere -&gt; Int
+</span><span id="line-171"></span><span>  </span><span id="local-6989586621680495724"><span class="annot"><span class="annottext">size :: OccursWhere -&gt; Int
 </span><a href="Agda.Utils.Size.html#size"><span class="hs-identifier hs-var hs-var hs-var hs-var">size</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#OccursWhere"><span class="hs-identifier hs-type">OccursWhere</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680495756"><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495756"><span class="hs-identifier hs-var">cs</span></a></span></span><span> </span><span id="local-6989586621680495755"><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495755"><span class="hs-identifier hs-var">os</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680495722"><span class="annot"><span class="annottext">Seq Where
+</span><a href="#local-6989586621680495722"><span class="hs-identifier hs-var">cs</span></a></span></span><span> </span><span id="local-6989586621680495721"><span class="annot"><span class="annottext">Seq Where
+</span><a href="#local-6989586621680495721"><span class="hs-identifier hs-var">os</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Seq Where -&gt; Int
 forall a. Sized a =&gt; a -&gt; Int
 </span><a href="Agda.Utils.Size.html#size"><span class="hs-identifier hs-var">size</span></a></span><span> </span><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495756"><span class="hs-identifier hs-var">cs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621680495722"><span class="hs-identifier hs-var">cs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Seq Where -&gt; Int
 forall a. Sized a =&gt; a -&gt; Int
 </span><a href="Agda.Utils.Size.html#size"><span class="hs-identifier hs-var">size</span></a></span><span> </span><span class="annot"><span class="annottext">Seq Where
-</span><a href="#local-6989586621680495755"><span class="hs-identifier hs-var">os</span></a></span><span>
+</span><a href="#local-6989586621680495721"><span class="hs-identifier hs-var">os</span></a></span><span>
 </span><span id="line-172"></span><span>
 </span><span id="line-173"></span><span class="hs-comment">-- | The map contains bindings of the form @bound |-&gt; ess@, satisfying</span><span>
 </span><span id="line-174"></span><span class="hs-comment">-- the following property: for every non-empty list @w@,</span><span>
@@ -1148,29 +1148,29 @@ forall a b. a -&gt; b -&gt; a
 </span><span id="line-203"></span><span class="hs-comment">-- There is a property for this function in</span><span>
 </span><span id="line-204"></span><span class="hs-comment">-- Internal.Utils.Graph.AdjacencyMap.Unidirectional.</span><span>
 </span><span id="line-205"></span><span>
-</span><span id="line-206"></span><span id="local-6989586621680495747"><span id="local-6989586621680495748"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#productOfEdgesInBoundedWalk"><span class="hs-identifier hs-type">productOfEdgesInBoundedWalk</span></a></span><span> </span><span class="hs-glyph">::</span><span>
-</span><span id="line-207"></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Utils.SemiRing.html#SemiRing"><span class="hs-identifier hs-type">SemiRing</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495748"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Ord</span></span><span> </span><span class="annot"><a href="#local-6989586621680495747"><span class="hs-identifier hs-type">n</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=&gt;</span><span>
-</span><span id="line-208"></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680495748"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#Graph"><span class="hs-identifier hs-type">Graph</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495747"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495748"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680495747"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680495747"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680495748"><span class="hs-identifier hs-type">e</span></a></span></span></span><span>
+</span><span id="line-206"></span><span id="local-6989586621680495713"><span id="local-6989586621680495714"><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#productOfEdgesInBoundedWalk"><span class="hs-identifier hs-type">productOfEdgesInBoundedWalk</span></a></span><span> </span><span class="hs-glyph">::</span><span>
+</span><span id="line-207"></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Utils.SemiRing.html#SemiRing"><span class="hs-identifier hs-type">SemiRing</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495714"><span class="hs-identifier hs-type">e</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Ord</span></span><span> </span><span class="annot"><a href="#local-6989586621680495713"><span class="hs-identifier hs-type">n</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=&gt;</span><span>
+</span><span id="line-208"></span><span>  </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680495714"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#Graph"><span class="hs-identifier hs-type">Graph</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495713"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680495714"><span class="hs-identifier hs-type">e</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680495713"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680495713"><span class="hs-identifier hs-type">n</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Positivity.Occurrence.html#Occurrence"><span class="hs-identifier hs-type">Occurrence</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680495714"><span class="hs-identifier hs-type">e</span></a></span></span></span><span>
 </span><span id="line-209"></span><span id="productOfEdgesInBoundedWalk"><span class="annot"><span class="annottext">productOfEdgesInBoundedWalk :: (e -&gt; Occurrence) -&gt; Graph n e -&gt; n -&gt; n -&gt; Occurrence -&gt; Maybe e
-</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#productOfEdgesInBoundedWalk"><span class="hs-identifier hs-var hs-var">productOfEdgesInBoundedWalk</span></a></span></span><span> </span><span id="local-6989586621680495746"><span class="annot"><span class="annottext">e -&gt; Occurrence
-</span><a href="#local-6989586621680495746"><span class="hs-identifier hs-var">occ</span></a></span></span><span> </span><span id="local-6989586621680495745"><span class="annot"><span class="annottext">Graph n e
-</span><a href="#local-6989586621680495745"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621680495744"><span class="annot"><span class="annottext">n
-</span><a href="#local-6989586621680495744"><span class="hs-identifier hs-var">u</span></a></span></span><span> </span><span id="local-6989586621680495743"><span class="annot"><span class="annottext">n
-</span><a href="#local-6989586621680495743"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span id="local-6989586621680495742"><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495742"><span class="hs-identifier hs-var">bound</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="Agda.TypeChecking.Positivity.Occurrence.html#productOfEdgesInBoundedWalk"><span class="hs-identifier hs-var hs-var">productOfEdgesInBoundedWalk</span></a></span></span><span> </span><span id="local-6989586621680495712"><span class="annot"><span class="annottext">e -&gt; Occurrence
+</span><a href="#local-6989586621680495712"><span class="hs-identifier hs-var">occ</span></a></span></span><span> </span><span id="local-6989586621680495711"><span class="annot"><span class="annottext">Graph n e
+</span><a href="#local-6989586621680495711"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621680495710"><span class="annot"><span class="annottext">n
+</span><a href="#local-6989586621680495710"><span class="hs-identifier hs-var">u</span></a></span></span><span> </span><span id="local-6989586621680495709"><span class="annot"><span class="annottext">n
+</span><a href="#local-6989586621680495709"><span class="hs-identifier hs-var">v</span></a></span></span><span> </span><span id="local-6989586621680495708"><span class="annot"><span class="annottext">Occurrence
+</span><a href="#local-6989586621680495708"><span class="hs-identifier hs-var">bound</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-210"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Occurrence
 -&gt; Map Occurrence [(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
 -&gt; Maybe [(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
 forall k a. Ord k =&gt; k -&gt; Map k a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Map.lookup</span></span><span> </span><span class="annot"><span class="annottext">Occurrence
-</span><a href="#local-6989586621680495742"><span class="hs-identifier hs-var">bound</span></a></span><span> </span><span class="annot"><span class="annottext">Map Occurrence [(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
+</span><a href="#local-6989586621680495708"><span class="hs-identifier hs-var">bound</span></a></span><span> </span><span class="annot"><span class="annottext">Map Occurrence [(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
 </span><a href="Agda.TypeChecking.Positivity.Occurrence.html#boundToEverySome"><span class="hs-identifier hs-var">boundToEverySome</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-211"></span><span>    </span><span class="annot"><span class="annottext">Maybe [(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe e
 forall a. HasCallStack =&gt; a
 </span><a href="Agda.Utils.Impossible.html#__IMPOSSIBLE__"><span class="hs-identifier hs-var">__IMPOSSIBLE__</span></a></span><span>
-</span><span id="line-212"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680495739"><span class="annot"><span class="annottext">[(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
-</span><a href="#local-6989586621680495739"><span class="hs-identifier hs-var">ess</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-212"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680495705"><span class="annot"><span class="annottext">[(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
+</span><a href="#local-6989586621680495705"><span class="hs-identifier hs-var">ess</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-213"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">[Maybe [Edge n e]] -&gt; Maybe [Edge n e]
 forall (t :: * -&gt; *) (m :: * -&gt; *) a.
 (Foldable t, MonadPlus m) =&gt;
@@ -1183,36 +1183,36 @@ Ord n =&gt;
 -&gt; (Edge n e -&gt; Bool) -&gt; Graph n e -&gt; n -&gt; n -&gt; Maybe [Edge n e]
 </span><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#walkSatisfying"><span class="hs-identifier hs-var">Graph.walkSatisfying</span></a></span><span>
 </span><span id="line-214"></span><span>                    </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Occurrence -&gt; Bool
-</span><a href="#local-6989586621680495736"><span class="hs-identifier hs-var">every</span></a></span><span> </span><span class="annot"><span class="annottext">(Occurrence -&gt; Bool)
+</span><a href="#local-6989586621680495702"><span class="hs-identifier hs-var">every</span></a></span><span> </span><span class="annot"><span class="annottext">(Occurrence -&gt; Bool)
 -&gt; (Edge n e -&gt; Occurrence) -&gt; Edge n e -&gt; Bool
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">e -&gt; Occurrence
-</span><a href="#local-6989586621680495746"><span class="hs-identifier hs-var">occ</span></a></span><span> </span><span class="annot"><span class="annottext">(e -&gt; Occurrence) -&gt; (Edge n e -&gt; e) -&gt; Edge n e -&gt; Occurrence
+</span><a href="#local-6989586621680495712"><span class="hs-identifier hs-var">occ</span></a></span><span> </span><span class="annot"><span class="annottext">(e -&gt; Occurrence) -&gt; (Edge n e -&gt; e) -&gt; Edge n e -&gt; Occurrence
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Edge n e -&gt; e
 forall n e. Edge n e -&gt; e
 </span><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#label"><span class="hs-identifier hs-var hs-var">Graph.label</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-215"></span><span>                    </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Occurrence -&gt; Bool
-</span><a href="#local-6989586621680495734"><span class="hs-identifier hs-var">some</span></a></span><span> </span><span class="annot"><span class="annottext">(Occurrence -&gt; Bool)
+</span><a href="#local-6989586621680495700"><span class="hs-identifier hs-var">some</span></a></span><span> </span><span class="annot"><span class="annottext">(Occurrence -&gt; Bool)
 -&gt; (Edge n e -&gt; Occurrence) -&gt; Edge n e -&gt; Bool
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">e -&gt; Occurrence
-</span><a href="#local-6989586621680495746"><span class="hs-identifier hs-var">occ</span></a></span><span> </span><span class="annot"><span class="annottext">(e -&gt; Occurrence) -&gt; (Edge n e -&gt; e) -&gt; Edge n e -&gt; Occurrence
+</span><a href="#local-6989586621680495712"><span class="hs-identifier hs-var">occ</span></a></span><span> </span><span class="annot"><span class="annottext">(e -&gt; Occurrence) -&gt; (Edge n e -&gt; e) -&gt; Edge n e -&gt; Occurrence
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Edge n e -&gt; e
 forall n e. Edge n e -&gt; e
 </span><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#label"><span class="hs-identifier hs-var hs-var">Graph.label</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-216"></span><span>                    </span><span class="annot"><span class="annottext">Graph n e
-</span><a href="#local-6989586621680495745"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">n
-</span><a href="#local-6989586621680495744"><span class="hs-identifier hs-var">u</span></a></span><span> </span><span class="annot"><span class="annottext">n
-</span><a href="#local-6989586621680495743"><span class="hs-identifier hs-var">v</span></a></span><span>
-</span><span id="line-217"></span><span>                </span><span class="hs-glyph">|</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680495736"><span class="annot"><span class="annottext">Occurrence -&gt; Bool
-</span><a href="#local-6989586621680495736"><span class="hs-identifier hs-var">every</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495734"><span class="annot"><span class="annottext">Occurrence -&gt; Bool
-</span><a href="#local-6989586621680495734"><span class="hs-identifier hs-var">some</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
-</span><a href="#local-6989586621680495739"><span class="hs-identifier hs-var">ess</span></a></span><span>
+</span><a href="#local-6989586621680495711"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">n
+</span><a href="#local-6989586621680495710"><span class="hs-identifier hs-var">u</span></a></span><span> </span><span class="annot"><span class="annottext">n
+</span><a href="#local-6989586621680495709"><span class="hs-identifier hs-var">v</span></a></span><span>
+</span><span id="line-217"></span><span>                </span><span class="hs-glyph">|</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680495702"><span class="annot"><span class="annottext">Occurrence -&gt; Bool
+</span><a href="#local-6989586621680495702"><span class="hs-identifier hs-var">every</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680495700"><span class="annot"><span class="annottext">Occurrence -&gt; Bool
+</span><a href="#local-6989586621680495700"><span class="hs-identifier hs-var">some</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[(Occurrence -&gt; Bool, Occurrence -&gt; Bool)]
+</span><a href="#local-6989586621680495705"><span class="hs-identifier hs-var">ess</span></a></span><span>
 </span><span id="line-218"></span><span>                </span><span class="hs-special">]</span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-219"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680495733"><span class="annot"><span class="annottext">es :: [Edge n e]
-</span><a href="#local-6989586621680495733"><span class="hs-identifier hs-var">es</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Edge n e
+</span><span id="line-219"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680495699"><span class="annot"><span class="annottext">es :: [Edge n e]
+</span><a href="#local-6989586621680495699"><span class="hs-identifier hs-var">es</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Edge n e
 </span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span class="annot"><span class="annottext">[Edge n e]
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">e -&gt; Maybe e
 forall a. a -&gt; Maybe a
@@ -1225,7 +1225,7 @@ forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="annot"><span class="annottext">Edge n e -&gt; e
 forall n e. Edge n e -&gt; e
 </span><a href="Agda.Utils.Graph.AdjacencyMap.Unidirectional.html#label"><span class="hs-identifier hs-var hs-var">Graph.label</span></a></span><span> </span><span class="annot"><span class="annottext">[Edge n e]
-</span><a href="#local-6989586621680495733"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680495699"><span class="hs-identifier hs-var">es</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-220"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span>         </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe e
 forall a. HasCallStack =&gt; a
 </span><a href="Agda.Utils.Impossible.html#__IMPOSSIBLE__"><span class="hs-identifier hs-var">__IMPOSSIBLE__</span></a></span><span>
