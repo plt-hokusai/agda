@@ -13,93 +13,93 @@
 </span><span id="line-13"></span><span class="hs-comment">-- Simple memoisation in a state monad</span><span>
 </span><span id="line-14"></span><span>
 </span><span id="line-15"></span><span class="hs-comment">-- | Simple, non-reentrant memoisation.</span><span>
-</span><span id="line-16"></span><span id="local-6989586621680464169"><span id="local-6989586621680464170"><span id="local-6989586621680464171"><span class="annot"><a href="Agda.Utils.Memo.html#memo"><span class="hs-identifier hs-type">memo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadState</span></span><span> </span><span class="annot"><a href="#local-6989586621680464171"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464170"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680464169"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680464171"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464170"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464169"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464170"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464169"><span class="hs-identifier hs-type">a</span></a></span></span></span></span><span>
+</span><span id="line-16"></span><span id="local-6989586621680464540"><span id="local-6989586621680464541"><span id="local-6989586621680464542"><span class="annot"><a href="Agda.Utils.Memo.html#memo"><span class="hs-identifier hs-type">memo</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadState</span></span><span> </span><span class="annot"><a href="#local-6989586621680464542"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464541"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680464540"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680464542"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464541"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464540"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464541"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464540"><span class="hs-identifier hs-type">a</span></a></span></span></span></span><span>
 </span><span id="line-17"></span><span id="memo"><span class="annot"><span class="annottext">memo :: Lens' (Maybe a) s -&gt; m a -&gt; m a
-</span><a href="Agda.Utils.Memo.html#memo"><span class="hs-identifier hs-var hs-var">memo</span></a></span></span><span> </span><span id="local-6989586621680464167"><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464167"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464166"><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680464166"><span class="hs-identifier hs-var">compute</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-18"></span><span>  </span><span id="local-6989586621680464165"><span class="annot"><span class="annottext">Maybe a
-</span><a href="#local-6989586621680464165"><span class="hs-identifier hs-var">mv</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; m (Maybe a)
+</span><a href="Agda.Utils.Memo.html#memo"><span class="hs-identifier hs-var hs-var">memo</span></a></span></span><span> </span><span id="local-6989586621680464538"><span class="annot"><span class="annottext">Lens' (Maybe a) s
+</span><a href="#local-6989586621680464538"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464537"><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680464537"><span class="hs-identifier hs-var">compute</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-18"></span><span>  </span><span id="local-6989586621680464536"><span class="annot"><span class="annottext">Maybe a
+</span><a href="#local-6989586621680464536"><span class="hs-identifier hs-var">mv</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; m (Maybe a)
 forall o (m :: * -&gt; *) i. MonadState o m =&gt; Lens' i o -&gt; m i
 </span><a href="Agda.Utils.Lens.html#use"><span class="hs-identifier hs-var">use</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464167"><span class="hs-identifier hs-var">tbl</span></a></span><span>
+</span><a href="#local-6989586621680464538"><span class="hs-identifier hs-var">tbl</span></a></span><span>
 </span><span id="line-19"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Maybe a
-</span><a href="#local-6989586621680464165"><span class="hs-identifier hs-var">mv</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-20"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464163"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464163"><span class="hs-identifier hs-var">x</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
+</span><a href="#local-6989586621680464536"><span class="hs-identifier hs-var">mv</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-20"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464534"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464534"><span class="hs-identifier hs-var">x</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464163"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621680464534"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-21"></span><span>    </span><span class="annot"><span class="annottext">Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-22"></span><span>      </span><span id="local-6989586621680464162"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464162"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680464166"><span class="hs-identifier hs-var">compute</span></a></span><span>
+</span><span id="line-22"></span><span>      </span><span id="local-6989586621680464533"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464533"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680464537"><span class="hs-identifier hs-var">compute</span></a></span><span>
 </span><span id="line-23"></span><span>      </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464162"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; m () -&gt; m a
+</span><a href="#local-6989586621680464533"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; m () -&gt; m a
 forall (f :: * -&gt; *) a b. Functor f =&gt; a -&gt; f b -&gt; f a
 </span><span class="hs-operator hs-var">&lt;$</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464167"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
+</span><a href="#local-6989586621680464538"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
 forall o (m :: * -&gt; *) i. MonadState o m =&gt; Lens' i o -&gt; i -&gt; m ()
 </span><a href="Agda.Utils.Lens.html#.%3D"><span class="hs-operator hs-var">.=</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; Maybe a
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464162"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464533"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-24"></span><span>
 </span><span id="line-25"></span><span class="hs-comment">-- | Recursive memoisation, second argument is the value you get</span><span>
 </span><span id="line-26"></span><span class="hs-comment">--   on recursive calls.</span><span>
-</span><span id="line-27"></span><span id="local-6989586621680464157"><span id="local-6989586621680464158"><span id="local-6989586621680464159"><span class="annot"><a href="Agda.Utils.Memo.html#memoRec"><span class="hs-identifier hs-type">memoRec</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadState</span></span><span> </span><span class="annot"><a href="#local-6989586621680464159"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464158"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680464157"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680464159"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464157"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464158"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464157"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464158"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464157"><span class="hs-identifier hs-type">a</span></a></span></span></span></span><span>
+</span><span id="line-27"></span><span id="local-6989586621680464528"><span id="local-6989586621680464529"><span id="local-6989586621680464530"><span class="annot"><a href="Agda.Utils.Memo.html#memoRec"><span class="hs-identifier hs-type">memoRec</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadState</span></span><span> </span><span class="annot"><a href="#local-6989586621680464530"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464529"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="annot"><a href="#local-6989586621680464528"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="#local-6989586621680464530"><span class="hs-identifier hs-type">s</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464528"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464529"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464528"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464529"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680464528"><span class="hs-identifier hs-type">a</span></a></span></span></span></span><span>
 </span><span id="line-28"></span><span id="memoRec"><span class="annot"><span class="annottext">memoRec :: Lens' (Maybe a) s -&gt; a -&gt; m a -&gt; m a
-</span><a href="Agda.Utils.Memo.html#memoRec"><span class="hs-identifier hs-var hs-var">memoRec</span></a></span></span><span> </span><span id="local-6989586621680464155"><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464155"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464154"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464154"><span class="hs-identifier hs-var">ih</span></a></span></span><span> </span><span id="local-6989586621680464153"><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680464153"><span class="hs-identifier hs-var">compute</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-29"></span><span>  </span><span id="local-6989586621680464152"><span class="annot"><span class="annottext">Maybe a
-</span><a href="#local-6989586621680464152"><span class="hs-identifier hs-var">mv</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; m (Maybe a)
+</span><a href="Agda.Utils.Memo.html#memoRec"><span class="hs-identifier hs-var hs-var">memoRec</span></a></span></span><span> </span><span id="local-6989586621680464526"><span class="annot"><span class="annottext">Lens' (Maybe a) s
+</span><a href="#local-6989586621680464526"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464525"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464525"><span class="hs-identifier hs-var">ih</span></a></span></span><span> </span><span id="local-6989586621680464524"><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680464524"><span class="hs-identifier hs-var">compute</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-29"></span><span>  </span><span id="local-6989586621680464523"><span class="annot"><span class="annottext">Maybe a
+</span><a href="#local-6989586621680464523"><span class="hs-identifier hs-var">mv</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; m (Maybe a)
 forall o (m :: * -&gt; *) i. MonadState o m =&gt; Lens' i o -&gt; m i
 </span><a href="Agda.Utils.Lens.html#use"><span class="hs-identifier hs-var">use</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464155"><span class="hs-identifier hs-var">tbl</span></a></span><span>
+</span><a href="#local-6989586621680464526"><span class="hs-identifier hs-var">tbl</span></a></span><span>
 </span><span id="line-30"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Maybe a
-</span><a href="#local-6989586621680464152"><span class="hs-identifier hs-var">mv</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-31"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464151"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464151"><span class="hs-identifier hs-var">x</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
+</span><a href="#local-6989586621680464523"><span class="hs-identifier hs-var">mv</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-31"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464522"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464522"><span class="hs-identifier hs-var">x</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464151"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621680464522"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-32"></span><span>    </span><span class="annot"><span class="annottext">Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-33"></span><span>      </span><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464155"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
+</span><a href="#local-6989586621680464526"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
 forall o (m :: * -&gt; *) i. MonadState o m =&gt; Lens' i o -&gt; i -&gt; m ()
 </span><a href="Agda.Utils.Lens.html#.%3D"><span class="hs-operator hs-var">.=</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; Maybe a
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464154"><span class="hs-identifier hs-var">ih</span></a></span><span>
-</span><span id="line-34"></span><span>      </span><span id="local-6989586621680464150"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464150"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680464153"><span class="hs-identifier hs-var">compute</span></a></span><span>
+</span><a href="#local-6989586621680464525"><span class="hs-identifier hs-var">ih</span></a></span><span>
+</span><span id="line-34"></span><span>      </span><span id="local-6989586621680464521"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464521"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680464524"><span class="hs-identifier hs-var">compute</span></a></span><span>
 </span><span id="line-35"></span><span>      </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464150"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; m () -&gt; m a
+</span><a href="#local-6989586621680464521"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; m () -&gt; m a
 forall (f :: * -&gt; *) a b. Functor f =&gt; a -&gt; f b -&gt; f a
 </span><span class="hs-operator hs-var">&lt;$</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Lens' (Maybe a) s
-</span><a href="#local-6989586621680464155"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
+</span><a href="#local-6989586621680464526"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Maybe a) s -&gt; Maybe a -&gt; m ()
 forall o (m :: * -&gt; *) i. MonadState o m =&gt; Lens' i o -&gt; i -&gt; m ()
 </span><a href="Agda.Utils.Lens.html#.%3D"><span class="hs-operator hs-var">.=</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; Maybe a
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464150"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464521"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-36"></span><span>
 </span><span id="line-37"></span><span class="hs-pragma">{-# NOINLINE</span><span> </span><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafe"><span class="hs-pragma hs-type">memoUnsafe</span></a></span><span> </span><span class="hs-pragma">#-}</span><span>
-</span><span id="line-38"></span><span id="local-6989586621680464147"><span id="local-6989586621680464148"><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafe"><span class="hs-identifier hs-type">memoUnsafe</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Ord</span></span><span> </span><span class="annot"><a href="#local-6989586621680464148"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464148"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464147"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464148"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464147"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span></span></span><span>
+</span><span id="line-38"></span><span id="local-6989586621680464518"><span id="local-6989586621680464519"><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafe"><span class="hs-identifier hs-type">memoUnsafe</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Ord</span></span><span> </span><span class="annot"><a href="#local-6989586621680464519"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464519"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464518"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464519"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464518"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span></span></span><span>
 </span><span id="line-39"></span><span id="memoUnsafe"><span class="annot"><span class="annottext">memoUnsafe :: (a -&gt; b) -&gt; a -&gt; b
-</span><a href="Agda.Utils.Memo.html#memoUnsafe"><span class="hs-identifier hs-var hs-var">memoUnsafe</span></a></span></span><span> </span><span id="local-6989586621680464146"><span class="annot"><span class="annottext">a -&gt; b
-</span><a href="#local-6989586621680464146"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO (a -&gt; b) -&gt; a -&gt; b
+</span><a href="Agda.Utils.Memo.html#memoUnsafe"><span class="hs-identifier hs-var hs-var">memoUnsafe</span></a></span></span><span> </span><span id="local-6989586621680464517"><span class="annot"><span class="annottext">a -&gt; b
+</span><a href="#local-6989586621680464517"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO (a -&gt; b) -&gt; a -&gt; b
 forall a. IO a -&gt; a
 </span><span class="hs-identifier hs-var">unsafePerformIO</span></span><span> </span><span class="annot"><span class="annottext">(IO (a -&gt; b) -&gt; a -&gt; b) -&gt; IO (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-40"></span><span>  </span><span id="local-6989586621680464144"><span class="annot"><span class="annottext">IORef (Map a b)
-</span><a href="#local-6989586621680464144"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Map a b -&gt; IO (IORef (Map a b))
+</span><span id="line-40"></span><span>  </span><span id="local-6989586621680464515"><span class="annot"><span class="annottext">IORef (Map a b)
+</span><a href="#local-6989586621680464515"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Map a b -&gt; IO (IORef (Map a b))
 forall a. a -&gt; IO (IORef a)
 </span><span class="hs-identifier hs-var">newIORef</span></span><span> </span><span class="annot"><span class="annottext">Map a b
 forall k a. Map k a
@@ -111,59 +111,59 @@ forall a. IO a -&gt; a
 </span><span class="hs-identifier hs-var">unsafePerformIO</span></span><span> </span><span class="annot"><span class="annottext">(IO b -&gt; b) -&gt; (a -&gt; IO b) -&gt; a -&gt; b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">IORef (Map a b) -&gt; a -&gt; IO b
-</span><a href="#local-6989586621680464140"><span class="hs-identifier hs-var">f'</span></a></span><span> </span><span class="annot"><span class="annottext">IORef (Map a b)
-</span><a href="#local-6989586621680464144"><span class="hs-identifier hs-var">tbl</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464511"><span class="hs-identifier hs-var">f'</span></a></span><span> </span><span class="annot"><span class="annottext">IORef (Map a b)
+</span><a href="#local-6989586621680464515"><span class="hs-identifier hs-var">tbl</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-42"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-43"></span><span>    </span><span id="local-6989586621680464140"><span class="annot"><span class="annottext">f' :: IORef (Map a b) -&gt; a -&gt; IO b
-</span><a href="#local-6989586621680464140"><span class="hs-identifier hs-var hs-var">f'</span></a></span></span><span> </span><span id="local-6989586621680464139"><span class="annot"><span class="annottext">IORef (Map a b)
-</span><a href="#local-6989586621680464139"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464138"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464138"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-44"></span><span>      </span><span id="local-6989586621680464137"><span class="annot"><span class="annottext">Map a b
-</span><a href="#local-6989586621680464137"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IORef (Map a b) -&gt; IO (Map a b)
+</span><span id="line-43"></span><span>    </span><span id="local-6989586621680464511"><span class="annot"><span class="annottext">f' :: IORef (Map a b) -&gt; a -&gt; IO b
+</span><a href="#local-6989586621680464511"><span class="hs-identifier hs-var hs-var">f'</span></a></span></span><span> </span><span id="local-6989586621680464510"><span class="annot"><span class="annottext">IORef (Map a b)
+</span><a href="#local-6989586621680464510"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464509"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464509"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-44"></span><span>      </span><span id="local-6989586621680464508"><span class="annot"><span class="annottext">Map a b
+</span><a href="#local-6989586621680464508"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IORef (Map a b) -&gt; IO (Map a b)
 forall a. IORef a -&gt; IO a
 </span><span class="hs-identifier hs-var">readIORef</span></span><span> </span><span class="annot"><span class="annottext">IORef (Map a b)
-</span><a href="#local-6989586621680464139"><span class="hs-identifier hs-var">tbl</span></a></span><span>
+</span><a href="#local-6989586621680464510"><span class="hs-identifier hs-var">tbl</span></a></span><span>
 </span><span id="line-45"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">a -&gt; Map a b -&gt; Maybe b
 forall k a. Ord k =&gt; k -&gt; Map k a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Map.lookup</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464138"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Map a b
-</span><a href="#local-6989586621680464137"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-46"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464134"><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464134"><span class="hs-identifier hs-var">y</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">b -&gt; IO b
+</span><a href="#local-6989586621680464509"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">Map a b
+</span><a href="#local-6989586621680464508"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-46"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464505"><span class="annot"><span class="annottext">b
+</span><a href="#local-6989586621680464505"><span class="hs-identifier hs-var">y</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">b -&gt; IO b
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464134"><span class="hs-identifier hs-var">y</span></a></span><span>
+</span><a href="#local-6989586621680464505"><span class="hs-identifier hs-var">y</span></a></span><span>
 </span><span id="line-47"></span><span>        </span><span class="annot"><span class="annottext">Maybe b
 </span><span class="hs-identifier hs-var">Nothing</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-48"></span><span>          </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680464133"><span class="annot"><span class="annottext">y :: b
-</span><a href="#local-6989586621680464133"><span class="hs-identifier hs-var hs-var">y</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; b
-</span><a href="#local-6989586621680464146"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464138"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-48"></span><span>          </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680464504"><span class="annot"><span class="annottext">y :: b
+</span><a href="#local-6989586621680464504"><span class="hs-identifier hs-var hs-var">y</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; b
+</span><a href="#local-6989586621680464517"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464509"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-49"></span><span>          </span><span class="annot"><span class="annottext">IORef (Map a b) -&gt; Map a b -&gt; IO ()
 forall a. IORef a -&gt; a -&gt; IO ()
 </span><span class="hs-identifier hs-var">writeIORef</span></span><span> </span><span class="annot"><span class="annottext">IORef (Map a b)
-</span><a href="#local-6989586621680464139"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a -&gt; b -&gt; Map a b -&gt; Map a b
+</span><a href="#local-6989586621680464510"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a -&gt; b -&gt; Map a b -&gt; Map a b
 forall k a. Ord k =&gt; k -&gt; a -&gt; Map k a -&gt; Map k a
 </span><span class="hs-identifier hs-var">Map.insert</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464138"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464133"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Map a b
-</span><a href="#local-6989586621680464137"><span class="hs-identifier hs-var">m</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464509"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">b
+</span><a href="#local-6989586621680464504"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">Map a b
+</span><a href="#local-6989586621680464508"><span class="hs-identifier hs-var">m</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-50"></span><span>          </span><span class="annot"><span class="annottext">b -&gt; IO b
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464133"><span class="hs-identifier hs-var">y</span></a></span><span>
+</span><a href="#local-6989586621680464504"><span class="hs-identifier hs-var">y</span></a></span><span>
 </span><span id="line-51"></span><span>
 </span><span id="line-52"></span><span class="hs-pragma">{-# NOINLINE</span><span> </span><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafeH"><span class="hs-pragma hs-type">memoUnsafeH</span></a></span><span> </span><span class="hs-pragma">#-}</span><span>
-</span><span id="line-53"></span><span id="local-6989586621680464128"><span id="local-6989586621680464129"><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafeH"><span class="hs-identifier hs-type">memoUnsafeH</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Eq</span></span><span> </span><span class="annot"><a href="#local-6989586621680464129"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Hashable</span></span><span> </span><span class="annot"><a href="#local-6989586621680464129"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464129"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464128"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464129"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464128"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span></span></span><span>
+</span><span id="line-53"></span><span id="local-6989586621680464499"><span id="local-6989586621680464500"><span class="annot"><a href="Agda.Utils.Memo.html#memoUnsafeH"><span class="hs-identifier hs-type">memoUnsafeH</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Eq</span></span><span> </span><span class="annot"><a href="#local-6989586621680464500"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Hashable</span></span><span> </span><span class="annot"><a href="#local-6989586621680464500"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464500"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464499"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680464500"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680464499"><span class="hs-identifier hs-type">b</span></a></span><span class="hs-special">)</span></span></span><span>
 </span><span id="line-54"></span><span id="memoUnsafeH"><span class="annot"><span class="annottext">memoUnsafeH :: (a -&gt; b) -&gt; a -&gt; b
-</span><a href="Agda.Utils.Memo.html#memoUnsafeH"><span class="hs-identifier hs-var hs-var">memoUnsafeH</span></a></span></span><span> </span><span id="local-6989586621680464127"><span class="annot"><span class="annottext">a -&gt; b
-</span><a href="#local-6989586621680464127"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO (a -&gt; b) -&gt; a -&gt; b
+</span><a href="Agda.Utils.Memo.html#memoUnsafeH"><span class="hs-identifier hs-var hs-var">memoUnsafeH</span></a></span></span><span> </span><span id="local-6989586621680464498"><span class="annot"><span class="annottext">a -&gt; b
+</span><a href="#local-6989586621680464498"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO (a -&gt; b) -&gt; a -&gt; b
 forall a. IO a -&gt; a
 </span><span class="hs-identifier hs-var">unsafePerformIO</span></span><span> </span><span class="annot"><span class="annottext">(IO (a -&gt; b) -&gt; a -&gt; b) -&gt; IO (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-55"></span><span>  </span><span id="local-6989586621680464126"><span class="annot"><span class="annottext">IORef (HashMap a b)
-</span><a href="#local-6989586621680464126"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">HashMap a b -&gt; IO (IORef (HashMap a b))
+</span><span id="line-55"></span><span>  </span><span id="local-6989586621680464497"><span class="annot"><span class="annottext">IORef (HashMap a b)
+</span><a href="#local-6989586621680464497"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">HashMap a b -&gt; IO (IORef (HashMap a b))
 forall a. a -&gt; IO (IORef a)
 </span><span class="hs-identifier hs-var">newIORef</span></span><span> </span><span class="annot"><span class="annottext">HashMap a b
 forall k v. HashMap k v
@@ -175,48 +175,48 @@ forall a. IO a -&gt; a
 </span><span class="hs-identifier hs-var">unsafePerformIO</span></span><span> </span><span class="annot"><span class="annottext">(IO b -&gt; b) -&gt; (a -&gt; IO b) -&gt; a -&gt; b
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b) -&gt; a -&gt; IO b
-</span><a href="#local-6989586621680464124"><span class="hs-identifier hs-var">f'</span></a></span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b)
-</span><a href="#local-6989586621680464126"><span class="hs-identifier hs-var">tbl</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464495"><span class="hs-identifier hs-var">f'</span></a></span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b)
+</span><a href="#local-6989586621680464497"><span class="hs-identifier hs-var">tbl</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-57"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-58"></span><span>    </span><span id="local-6989586621680464124"><span class="annot"><span class="annottext">f' :: IORef (HashMap a b) -&gt; a -&gt; IO b
-</span><a href="#local-6989586621680464124"><span class="hs-identifier hs-var hs-var">f'</span></a></span></span><span> </span><span id="local-6989586621680464123"><span class="annot"><span class="annottext">IORef (HashMap a b)
-</span><a href="#local-6989586621680464123"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464122"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464122"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-59"></span><span>      </span><span id="local-6989586621680464121"><span class="annot"><span class="annottext">HashMap a b
-</span><a href="#local-6989586621680464121"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b) -&gt; IO (HashMap a b)
+</span><span id="line-58"></span><span>    </span><span id="local-6989586621680464495"><span class="annot"><span class="annottext">f' :: IORef (HashMap a b) -&gt; a -&gt; IO b
+</span><a href="#local-6989586621680464495"><span class="hs-identifier hs-var hs-var">f'</span></a></span></span><span> </span><span id="local-6989586621680464494"><span class="annot"><span class="annottext">IORef (HashMap a b)
+</span><a href="#local-6989586621680464494"><span class="hs-identifier hs-var">tbl</span></a></span></span><span> </span><span id="local-6989586621680464493"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464493"><span class="hs-identifier hs-var">x</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-59"></span><span>      </span><span id="local-6989586621680464492"><span class="annot"><span class="annottext">HashMap a b
+</span><a href="#local-6989586621680464492"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b) -&gt; IO (HashMap a b)
 forall a. IORef a -&gt; IO a
 </span><span class="hs-identifier hs-var">readIORef</span></span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b)
-</span><a href="#local-6989586621680464123"><span class="hs-identifier hs-var">tbl</span></a></span><span>
+</span><a href="#local-6989586621680464494"><span class="hs-identifier hs-var">tbl</span></a></span><span>
 </span><span id="line-60"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">a -&gt; HashMap a b -&gt; Maybe b
 forall k v. (Eq k, Hashable k) =&gt; k -&gt; HashMap k v -&gt; Maybe v
 </span><span class="hs-identifier hs-var">HMap.lookup</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464122"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">HashMap a b
-</span><a href="#local-6989586621680464121"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-61"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464119"><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464119"><span class="hs-identifier hs-var">y</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">b -&gt; IO b
+</span><a href="#local-6989586621680464493"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">HashMap a b
+</span><a href="#local-6989586621680464492"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-61"></span><span>        </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680464490"><span class="annot"><span class="annottext">b
+</span><a href="#local-6989586621680464490"><span class="hs-identifier hs-var">y</span></a></span></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">b -&gt; IO b
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464119"><span class="hs-identifier hs-var">y</span></a></span><span>
+</span><a href="#local-6989586621680464490"><span class="hs-identifier hs-var">y</span></a></span><span>
 </span><span id="line-62"></span><span>        </span><span class="annot"><span class="annottext">Maybe b
 </span><span class="hs-identifier hs-var">Nothing</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-63"></span><span>          </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680464118"><span class="annot"><span class="annottext">y :: b
-</span><a href="#local-6989586621680464118"><span class="hs-identifier hs-var hs-var">y</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; b
-</span><a href="#local-6989586621680464127"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464122"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><span id="line-63"></span><span>          </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680464489"><span class="annot"><span class="annottext">y :: b
+</span><a href="#local-6989586621680464489"><span class="hs-identifier hs-var hs-var">y</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; b
+</span><a href="#local-6989586621680464498"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680464493"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-64"></span><span>          </span><span class="annot"><span class="annottext">IORef (HashMap a b) -&gt; HashMap a b -&gt; IO ()
 forall a. IORef a -&gt; a -&gt; IO ()
 </span><span class="hs-identifier hs-var">writeIORef</span></span><span> </span><span class="annot"><span class="annottext">IORef (HashMap a b)
-</span><a href="#local-6989586621680464123"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a -&gt; b -&gt; HashMap a b -&gt; HashMap a b
+</span><a href="#local-6989586621680464494"><span class="hs-identifier hs-var">tbl</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a -&gt; b -&gt; HashMap a b -&gt; HashMap a b
 forall k v.
 (Eq k, Hashable k) =&gt;
 k -&gt; v -&gt; HashMap k v -&gt; HashMap k v
 </span><span class="hs-identifier hs-var">HMap.insert</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680464122"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464118"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">HashMap a b
-</span><a href="#local-6989586621680464121"><span class="hs-identifier hs-var">m</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680464493"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="annot"><span class="annottext">b
+</span><a href="#local-6989586621680464489"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">HashMap a b
+</span><a href="#local-6989586621680464492"><span class="hs-identifier hs-var">m</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-65"></span><span>          </span><span class="annot"><span class="annottext">b -&gt; IO b
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">b
-</span><a href="#local-6989586621680464118"><span class="hs-identifier hs-var">y</span></a></span><span>
+</span><a href="#local-6989586621680464489"><span class="hs-identifier hs-var">y</span></a></span><span>
 </span><span id="line-66"></span><span>
 </span><span id="line-67"></span></pre></body></html>

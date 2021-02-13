@@ -8,28 +8,28 @@
 </span><span id="line-8"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Instances.Highlighting.html"><span class="hs-identifier">Agda.TypeChecking.Serialise.Instances.Highlighting</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-9"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Serialise.Instances.Errors.html"><span class="hs-identifier">Agda.TypeChecking.Serialise.Instances.Errors</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-10"></span><span>
-</span><span id="line-11"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680644205"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-type">Interface</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-12"></span><span>  </span><span id="local-6989586621680644201"><span class="annot"><span class="annottext">icod_ :: Interface -&gt; S Int32
-</span><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-type">Interface</span></a></span><span> </span><span id="local-6989586621680644198"><span class="annot"><span class="annottext">Hash
-</span><a href="#local-6989586621680644198"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680644197"><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621680644197"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680644196"><span class="annot"><span class="annottext">FileType
-</span><a href="#local-6989586621680644196"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680644195"><span class="annot"><span class="annottext">[(ModuleName, Hash)]
-</span><a href="#local-6989586621680644195"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span id="local-6989586621680644194"><span class="annot"><span class="annottext">ModuleName
-</span><a href="#local-6989586621680644194"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621680644193"><span class="annot"><span class="annottext">Map ModuleName Scope
-</span><a href="#local-6989586621680644193"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680644192"><span class="annot"><span class="annottext">ScopeInfo
-</span><a href="#local-6989586621680644192"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621680644191"><span class="annot"><span class="annottext">Signature
-</span><a href="#local-6989586621680644191"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621680644190"><span class="annot"><span class="annottext">DisplayForms
-</span><a href="#local-6989586621680644190"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680644189"><span class="annot"><span class="annottext">Map QName Text
-</span><a href="#local-6989586621680644189"><span class="hs-identifier hs-var">j</span></a></span></span><span> </span><span id="local-6989586621680644188"><span class="annot"><span class="annottext">Maybe Text
-</span><a href="#local-6989586621680644188"><span class="hs-identifier hs-var">k</span></a></span></span><span> </span><span id="local-6989586621680644187"><span class="annot"><span class="annottext">BuiltinThings (String, QName)
-</span><a href="#local-6989586621680644187"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621680644186"><span class="annot"><span class="annottext">Map String [ForeignCode]
-</span><a href="#local-6989586621680644186"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621680644185"><span class="annot"><span class="annottext">HighlightingInfo
-</span><a href="#local-6989586621680644185"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621680644184"><span class="annot"><span class="annottext">[OptionsPragma]
-</span><a href="#local-6989586621680644184"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span id="local-6989586621680644183"><span class="annot"><span class="annottext">PragmaOptions
-</span><a href="#local-6989586621680644183"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621680644182"><span class="annot"><span class="annottext">PatternSynDefns
-</span><a href="#local-6989586621680644182"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span id="local-6989586621680644181"><span class="annot"><span class="annottext">[TCWarning]
-</span><a href="#local-6989586621680644181"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680644180"><span class="annot"><span class="annottext">Set QName
-</span><a href="#local-6989586621680644180"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-11"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680644591"><span class="annot"><a href="Agda.TypeChecking.Serialise.Base.html#EmbPrj"><span class="hs-identifier hs-type">EmbPrj</span></a></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-type">Interface</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-12"></span><span>  </span><span id="local-6989586621680644587"><span class="annot"><span class="annottext">icod_ :: Interface -&gt; S Int32
+</span><a href="Agda.TypeChecking.Serialise.Base.html#icod_"><span class="hs-identifier hs-var hs-var hs-var hs-var">icod_</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-type">Interface</span></a></span><span> </span><span id="local-6989586621680644584"><span class="annot"><span class="annottext">Hash
+</span><a href="#local-6989586621680644584"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680644583"><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621680644583"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span id="local-6989586621680644582"><span class="annot"><span class="annottext">FileType
+</span><a href="#local-6989586621680644582"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680644581"><span class="annot"><span class="annottext">[(ModuleName, Hash)]
+</span><a href="#local-6989586621680644581"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span id="local-6989586621680644580"><span class="annot"><span class="annottext">ModuleName
+</span><a href="#local-6989586621680644580"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span id="local-6989586621680644579"><span class="annot"><span class="annottext">Map ModuleName Scope
+</span><a href="#local-6989586621680644579"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680644578"><span class="annot"><span class="annottext">ScopeInfo
+</span><a href="#local-6989586621680644578"><span class="hs-identifier hs-var">g</span></a></span></span><span> </span><span id="local-6989586621680644577"><span class="annot"><span class="annottext">Signature
+</span><a href="#local-6989586621680644577"><span class="hs-identifier hs-var">h</span></a></span></span><span> </span><span id="local-6989586621680644576"><span class="annot"><span class="annottext">DisplayForms
+</span><a href="#local-6989586621680644576"><span class="hs-identifier hs-var">i</span></a></span></span><span> </span><span id="local-6989586621680644575"><span class="annot"><span class="annottext">Map QName Text
+</span><a href="#local-6989586621680644575"><span class="hs-identifier hs-var">j</span></a></span></span><span> </span><span id="local-6989586621680644574"><span class="annot"><span class="annottext">Maybe Text
+</span><a href="#local-6989586621680644574"><span class="hs-identifier hs-var">k</span></a></span></span><span> </span><span id="local-6989586621680644573"><span class="annot"><span class="annottext">BuiltinThings (String, QName)
+</span><a href="#local-6989586621680644573"><span class="hs-identifier hs-var">l</span></a></span></span><span> </span><span id="local-6989586621680644572"><span class="annot"><span class="annottext">Map String [ForeignCode]
+</span><a href="#local-6989586621680644572"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span id="local-6989586621680644571"><span class="annot"><span class="annottext">HighlightingInfo
+</span><a href="#local-6989586621680644571"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span id="local-6989586621680644570"><span class="annot"><span class="annottext">[OptionsPragma]
+</span><a href="#local-6989586621680644570"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span id="local-6989586621680644569"><span class="annot"><span class="annottext">PragmaOptions
+</span><a href="#local-6989586621680644569"><span class="hs-identifier hs-var">p</span></a></span></span><span> </span><span id="local-6989586621680644568"><span class="annot"><span class="annottext">PatternSynDefns
+</span><a href="#local-6989586621680644568"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span id="local-6989586621680644567"><span class="annot"><span class="annottext">[TCWarning]
+</span><a href="#local-6989586621680644567"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680644566"><span class="annot"><span class="annottext">Set QName
+</span><a href="#local-6989586621680644566"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-13"></span><span>    </span><span class="annot"><span class="annottext">(Hash
  -&gt; Text
  -&gt; FileType
@@ -95,52 +95,52 @@ t -&gt; Arrows (Domains t) (S Int32)
 -&gt; Set QName
 -&gt; Interface
 </span><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-var">Interface</span></a></span><span> </span><span class="annot"><span class="annottext">Hash
-</span><a href="#local-6989586621680644198"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Text
-</span><a href="#local-6989586621680644197"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">FileType
-</span><a href="#local-6989586621680644196"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">[(ModuleName, Hash)]
-</span><a href="#local-6989586621680644195"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">ModuleName
-</span><a href="#local-6989586621680644194"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">Map ModuleName Scope
-</span><a href="#local-6989586621680644193"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">ScopeInfo
-</span><a href="#local-6989586621680644192"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Signature
-</span><a href="#local-6989586621680644191"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">DisplayForms
-</span><a href="#local-6989586621680644190"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Map QName Text
-</span><a href="#local-6989586621680644189"><span class="hs-identifier hs-var">j</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe Text
-</span><a href="#local-6989586621680644188"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">BuiltinThings (String, QName)
-</span><a href="#local-6989586621680644187"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Map String [ForeignCode]
-</span><a href="#local-6989586621680644186"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingInfo
-</span><a href="#local-6989586621680644185"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">[OptionsPragma]
-</span><a href="#local-6989586621680644184"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">PragmaOptions
-</span><a href="#local-6989586621680644183"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="annot"><span class="annottext">PatternSynDefns
-</span><a href="#local-6989586621680644182"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">[TCWarning]
-</span><a href="#local-6989586621680644181"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Set QName
-</span><a href="#local-6989586621680644180"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><a href="#local-6989586621680644584"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Text
+</span><a href="#local-6989586621680644583"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">FileType
+</span><a href="#local-6989586621680644582"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">[(ModuleName, Hash)]
+</span><a href="#local-6989586621680644581"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">ModuleName
+</span><a href="#local-6989586621680644580"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">Map ModuleName Scope
+</span><a href="#local-6989586621680644579"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">ScopeInfo
+</span><a href="#local-6989586621680644578"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Signature
+</span><a href="#local-6989586621680644577"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">DisplayForms
+</span><a href="#local-6989586621680644576"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Map QName Text
+</span><a href="#local-6989586621680644575"><span class="hs-identifier hs-var">j</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe Text
+</span><a href="#local-6989586621680644574"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">BuiltinThings (String, QName)
+</span><a href="#local-6989586621680644573"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Map String [ForeignCode]
+</span><a href="#local-6989586621680644572"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">HighlightingInfo
+</span><a href="#local-6989586621680644571"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">[OptionsPragma]
+</span><a href="#local-6989586621680644570"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">PragmaOptions
+</span><a href="#local-6989586621680644569"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="annot"><span class="annottext">PatternSynDefns
+</span><a href="#local-6989586621680644568"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">[TCWarning]
+</span><a href="#local-6989586621680644567"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Set QName
+</span><a href="#local-6989586621680644566"><span class="hs-identifier hs-var">s</span></a></span><span>
 </span><span id="line-14"></span><span>
-</span><span id="line-15"></span><span>  </span><span id="local-6989586621680644178"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Interface
+</span><span id="line-15"></span><span>  </span><span id="local-6989586621680644564"><span class="annot"><span class="annottext">value :: Int32 -&gt; R Interface
 </span><a href="Agda.TypeChecking.Serialise.Base.html#value"><span class="hs-identifier hs-var hs-var hs-var hs-var">value</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Node -&gt; R Interface) -&gt; Int32 -&gt; R Interface
 forall a. EmbPrj a =&gt; (Node -&gt; R a) -&gt; Int32 -&gt; R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#vcase"><span class="hs-identifier hs-var">vcase</span></a></span><span> </span><span class="annot"><span class="annottext">Node -&gt; R Interface
-</span><a href="#local-6989586621680644175"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-16"></span><span>    </span><span id="local-6989586621680644175"><span class="annot"><span class="annottext">valu :: Node -&gt; R Interface
-</span><a href="#local-6989586621680644175"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621680644174"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644174"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644173"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644173"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644172"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644172"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644171"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644171"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644170"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644170"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644169"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644169"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644168"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644168"><span class="hs-identifier hs-var">g</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644167"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644167"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644166"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644166"><span class="hs-identifier hs-var">i</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644165"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644165"><span class="hs-identifier hs-var">j</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644164"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644164"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644163"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644163"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644162"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644162"><span class="hs-identifier hs-var">m</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644161"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644161"><span class="hs-identifier hs-var">n</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644160"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644160"><span class="hs-identifier hs-var">o</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644159"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644159"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644158"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644158"><span class="hs-identifier hs-var">q</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644157"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644157"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644156"><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644156"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="#local-6989586621680644561"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-16"></span><span>    </span><span id="local-6989586621680644561"><span class="annot"><span class="annottext">valu :: Node -&gt; R Interface
+</span><a href="#local-6989586621680644561"><span class="hs-identifier hs-var hs-var">valu</span></a></span></span><span> </span><span class="hs-special">[</span><span id="local-6989586621680644560"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644560"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644559"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644559"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644558"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644558"><span class="hs-identifier hs-var">c</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644557"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644557"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644556"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644556"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644555"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644555"><span class="hs-identifier hs-var">f</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644554"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644554"><span class="hs-identifier hs-var">g</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644553"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644553"><span class="hs-identifier hs-var">h</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644552"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644552"><span class="hs-identifier hs-var">i</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644551"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644551"><span class="hs-identifier hs-var">j</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644550"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644550"><span class="hs-identifier hs-var">k</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644549"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644549"><span class="hs-identifier hs-var">l</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644548"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644548"><span class="hs-identifier hs-var">m</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644547"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644547"><span class="hs-identifier hs-var">n</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644546"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644546"><span class="hs-identifier hs-var">o</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644545"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644545"><span class="hs-identifier hs-var">p</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644544"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644544"><span class="hs-identifier hs-var">q</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644543"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644543"><span class="hs-identifier hs-var">r</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680644542"><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644542"><span class="hs-identifier hs-var">s</span></a></span></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-17"></span><span>      </span><span class="annot"><span class="annottext">(Hash
  -&gt; Text
  -&gt; FileType
@@ -207,26 +207,26 @@ t -&gt; Arrows (Constant Int32 (Domains t)) (R (CoDomain t))
 -&gt; Set QName
 -&gt; Interface
 </span><a href="Agda.TypeChecking.Monad.Base.html#Interface"><span class="hs-identifier hs-var">Interface</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644174"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644173"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644172"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644171"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644170"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644169"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644168"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644167"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644166"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644165"><span class="hs-identifier hs-var">j</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644164"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644163"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644162"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644161"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644160"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644159"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644158"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644157"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
-</span><a href="#local-6989586621680644156"><span class="hs-identifier hs-var">s</span></a></span><span>
-</span><span id="line-18"></span><span>    </span><span class="annot"><a href="#local-6989586621680644175"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
+</span><a href="#local-6989586621680644560"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644559"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644558"><span class="hs-identifier hs-var">c</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644557"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644556"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644555"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644554"><span class="hs-identifier hs-var">g</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644553"><span class="hs-identifier hs-var">h</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644552"><span class="hs-identifier hs-var">i</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644551"><span class="hs-identifier hs-var">j</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644550"><span class="hs-identifier hs-var">k</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644549"><span class="hs-identifier hs-var">l</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644548"><span class="hs-identifier hs-var">m</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644547"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644546"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644545"><span class="hs-identifier hs-var">p</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644544"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644543"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Int32
+</span><a href="#local-6989586621680644542"><span class="hs-identifier hs-var">s</span></a></span><span>
+</span><span id="line-18"></span><span>    </span><span class="annot"><a href="#local-6989586621680644561"><span class="hs-identifier hs-var">valu</span></a></span><span> </span><span class="annot"><span class="annottext">Node
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">R Interface
 forall a. R a
 </span><a href="Agda.TypeChecking.Serialise.Base.html#malformed"><span class="hs-identifier hs-var">malformed</span></a></span><span>
