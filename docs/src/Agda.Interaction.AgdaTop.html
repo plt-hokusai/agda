@@ -19,10 +19,10 @@
 </span><span id="line-19"></span><span class="hs-comment">-- | 'repl' is a fake ghci interpreter for both the Emacs the JSON frontend</span><span>
 </span><span id="line-20"></span><span class="annot"><a href="Agda.Interaction.AgdaTop.html#repl"><span class="hs-identifier hs-type">repl</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Response.html#InteractionOutputCallback"><span class="hs-identifier hs-type">InteractionOutputCallback</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#TCM"><span class="hs-identifier hs-type">TCM</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-21"></span><span id="repl"><span class="annot"><span class="annottext">repl :: InteractionOutputCallback -&gt; String -&gt; TCM () -&gt; TCM ()
-</span><a href="Agda.Interaction.AgdaTop.html#repl"><span class="hs-identifier hs-var hs-var">repl</span></a></span></span><span> </span><span id="local-6989586621680662010"><span class="annot"><span class="annottext">InteractionOutputCallback
-</span><a href="#local-6989586621680662010"><span class="hs-identifier hs-var">callback</span></a></span></span><span> </span><span id="local-6989586621680662009"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680662009"><span class="hs-identifier hs-var">prompt</span></a></span></span><span> </span><span id="local-6989586621680662008"><span class="annot"><span class="annottext">TCM ()
-</span><a href="#local-6989586621680662008"><span class="hs-identifier hs-var">setup</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><a href="Agda.Interaction.AgdaTop.html#repl"><span class="hs-identifier hs-var hs-var">repl</span></a></span></span><span> </span><span id="local-6989586621680662056"><span class="annot"><span class="annottext">InteractionOutputCallback
+</span><a href="#local-6989586621680662056"><span class="hs-identifier hs-var">callback</span></a></span></span><span> </span><span id="local-6989586621680662055"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680662055"><span class="hs-identifier hs-var">prompt</span></a></span></span><span> </span><span id="local-6989586621680662054"><span class="annot"><span class="annottext">TCM ()
+</span><a href="#local-6989586621680662054"><span class="hs-identifier hs-var">setup</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-22"></span><span>    </span><span class="annot"><span class="annottext">IO () -&gt; TCM ()
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO () -&gt; TCM ()) -&gt; IO () -&gt; TCM ()
@@ -47,17 +47,17 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span id="line-27"></span><span>
 </span><span id="line-28"></span><span>    </span><span class="annot"><span class="annottext">InteractionOutputCallback -&gt; TCM ()
 </span><a href="Agda.TypeChecking.Monad.State.html#setInteractionOutputCallback"><span class="hs-identifier hs-var">setInteractionOutputCallback</span></a></span><span> </span><span class="annot"><span class="annottext">InteractionOutputCallback
-</span><a href="#local-6989586621680662010"><span class="hs-identifier hs-var">callback</span></a></span><span>
+</span><a href="#local-6989586621680662056"><span class="hs-identifier hs-var">callback</span></a></span><span>
 </span><span id="line-29"></span><span>
-</span><span id="line-30"></span><span>    </span><span id="local-6989586621680661999"><span class="annot"><span class="annottext">CommandQueue
-</span><a href="#local-6989586621680661999"><span class="hs-identifier hs-var">commands</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CommandQueue -&gt; TCMT IO CommandQueue
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621680662045"><span class="annot"><span class="annottext">CommandQueue
+</span><a href="#local-6989586621680662045"><span class="hs-identifier hs-var">commands</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CommandQueue -&gt; TCMT IO CommandQueue
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO CommandQueue -&gt; TCMT IO CommandQueue)
 -&gt; IO CommandQueue -&gt; TCMT IO CommandQueue
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">IO Command -&gt; IO CommandQueue
 </span><a href="Agda.Interaction.InteractionTop.html#initialiseCommandQueue"><span class="hs-identifier hs-var">initialiseCommandQueue</span></a></span><span> </span><span class="annot"><span class="annottext">IO Command
-</span><a href="#local-6989586621680661997"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
+</span><a href="#local-6989586621680662043"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
 </span><span id="line-31"></span><span>
 </span><span id="line-32"></span><span>    </span><span class="annot"><span class="annottext">CommandM () -&gt; CommandM ()
 </span><a href="Agda.Interaction.InteractionTop.html#handleCommand_"><span class="hs-identifier hs-var">handleCommand_</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">TCM () -&gt; CommandM ()
@@ -65,40 +65,40 @@ forall (t :: (* -&gt; *) -&gt; * -&gt; *) (m :: * -&gt; *) a.
 (MonadTrans t, Monad m) =&gt;
 m a -&gt; t m a
 </span><span class="hs-identifier hs-var">lift</span></span><span> </span><span class="annot"><span class="annottext">TCM ()
-</span><a href="#local-6989586621680662008"><span class="hs-identifier hs-var">setup</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">CommandM () -&gt; CommandState -&gt; TCM ()
+</span><a href="#local-6989586621680662054"><span class="hs-identifier hs-var">setup</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">CommandM () -&gt; CommandState -&gt; TCM ()
 forall (m :: * -&gt; *) s a. Monad m =&gt; StateT s m a -&gt; s -&gt; m a
 </span><span class="hs-operator hs-var">`evalStateT`</span></span><span> </span><span class="annot"><span class="annottext">CommandQueue -&gt; CommandState
 </span><a href="Agda.Interaction.Base.html#initCommandState"><span class="hs-identifier hs-var">initCommandState</span></a></span><span> </span><span class="annot"><span class="annottext">CommandQueue
-</span><a href="#local-6989586621680661999"><span class="hs-identifier hs-var">commands</span></a></span><span>
+</span><a href="#local-6989586621680662045"><span class="hs-identifier hs-var">commands</span></a></span><span>
 </span><span id="line-33"></span><span>
-</span><span id="line-34"></span><span>    </span><span id="local-6989586621680661992"><span class="annot"><span class="annottext">CommandLineOptions
-</span><a href="#local-6989586621680661992"><span class="hs-identifier hs-var">opts</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">TCMT IO CommandLineOptions
+</span><span id="line-34"></span><span>    </span><span id="local-6989586621680662038"><span class="annot"><span class="annottext">CommandLineOptions
+</span><a href="#local-6989586621680662038"><span class="hs-identifier hs-var">opts</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">TCMT IO CommandLineOptions
 forall (m :: * -&gt; *). HasOptions m =&gt; m CommandLineOptions
 </span><a href="Agda.Interaction.Options.HasOptions.html#commandLineOptions"><span class="hs-identifier hs-var">commandLineOptions</span></a></span><span>
 </span><span id="line-35"></span><span>    </span><span class="annot"><span class="annottext">((), CommandState)
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">CommandM ()
-</span><a href="#local-6989586621680661990"><span class="hs-identifier hs-var">interact'</span></a></span><span> </span><span class="annot"><span class="annottext">CommandM () -&gt; CommandState -&gt; TCM ((), CommandState)
+</span><a href="#local-6989586621680662036"><span class="hs-identifier hs-var">interact'</span></a></span><span> </span><span class="annot"><span class="annottext">CommandM () -&gt; CommandState -&gt; TCM ((), CommandState)
 forall s (m :: * -&gt; *) a. StateT s m a -&gt; s -&gt; m (a, s)
 </span><span class="hs-operator hs-var hs-var">`runStateT`</span></span><span>
 </span><span id="line-36"></span><span>           </span><span class="hs-special">(</span><span class="annot"><span class="annottext">CommandQueue -&gt; CommandState
 </span><a href="Agda.Interaction.Base.html#initCommandState"><span class="hs-identifier hs-var">initCommandState</span></a></span><span> </span><span class="annot"><span class="annottext">CommandQueue
-</span><a href="#local-6989586621680661999"><span class="hs-identifier hs-var">commands</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680662045"><span class="hs-identifier hs-var">commands</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-37"></span><span>             </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">optionsOnReload :: CommandLineOptions
 </span><a href="Agda.Interaction.Base.html#optionsOnReload"><span class="hs-identifier hs-var">optionsOnReload</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">CommandLineOptions
-</span><a href="#local-6989586621680661992"><span class="hs-identifier hs-var">opts</span></a></span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">optAbsoluteIncludePaths :: [AbsolutePath]
+</span><a href="#local-6989586621680662038"><span class="hs-identifier hs-var">opts</span></a></span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">optAbsoluteIncludePaths :: [AbsolutePath]
 </span><a href="Agda.Interaction.Options.Base.html#optAbsoluteIncludePaths"><span class="hs-identifier hs-var">optAbsoluteIncludePaths</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-special">}</span><span> </span><span class="hs-special">}</span><span>
 </span><span id="line-38"></span><span>    </span><span class="annot"><span class="annottext">() -&gt; TCM ()
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-39"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-40"></span><span>  </span><span class="annot"><a href="#local-6989586621680661990"><span class="hs-identifier hs-type">interact'</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Base.html#CommandM"><span class="hs-identifier hs-type">CommandM</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
-</span><span id="line-41"></span><span>  </span><span id="local-6989586621680661990"><span class="annot"><span class="annottext">interact' :: CommandM ()
-</span><a href="#local-6989586621680661990"><span class="hs-identifier hs-var hs-var">interact'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-40"></span><span>  </span><span class="annot"><a href="#local-6989586621680662036"><span class="hs-identifier hs-type">interact'</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Base.html#CommandM"><span class="hs-identifier hs-type">CommandM</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
+</span><span id="line-41"></span><span>  </span><span id="local-6989586621680662036"><span class="annot"><span class="annottext">interact' :: CommandM ()
+</span><a href="#local-6989586621680662036"><span class="hs-identifier hs-var hs-var">interact'</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-42"></span><span>    </span><span class="annot"><span class="annottext">CommandM ()
 forall (m :: * -&gt; *). MonadBench m =&gt; m ()
 </span><a href="Agda.Utils.Benchmark.html#reset"><span class="hs-identifier hs-var">Bench.reset</span></a></span><span>
-</span><span id="line-43"></span><span>    </span><span id="local-6989586621680661985"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680661985"><span class="hs-identifier hs-var">done</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Account (BenchPhase (StateT CommandState TCM))
+</span><span id="line-43"></span><span>    </span><span id="local-6989586621680662031"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680662031"><span class="hs-identifier hs-var">done</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Account (BenchPhase (StateT CommandState TCM))
 -&gt; StateT CommandState TCM Bool -&gt; StateT CommandState TCM Bool
 forall (m :: * -&gt; *) c.
 MonadBench m =&gt;
@@ -115,28 +115,28 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-46"></span><span>        </span><span class="annot"><span class="annottext">String -&gt; IO ()
 </span><span class="hs-identifier hs-var">putStr</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680662009"><span class="hs-identifier hs-var">prompt</span></a></span><span>
+</span><a href="#local-6989586621680662055"><span class="hs-identifier hs-var">prompt</span></a></span><span>
 </span><span id="line-47"></span><span>        </span><span class="annot"><span class="annottext">Handle -&gt; IO ()
 </span><span class="hs-identifier hs-var">hFlush</span></span><span> </span><span class="annot"><span class="annottext">Handle
 </span><span class="hs-identifier hs-var">stdout</span></span><span>
-</span><span id="line-48"></span><span>      </span><span id="local-6989586621680661981"><span class="annot"><span class="annottext">Command' (Maybe ())
-</span><a href="#local-6989586621680661981"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(IOTCM -&gt; CommandM ()) -&gt; CommandM (Command' (Maybe ()))
+</span><span id="line-48"></span><span>      </span><span id="local-6989586621680662027"><span class="annot"><span class="annottext">Command' (Maybe ())
+</span><a href="#local-6989586621680662027"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(IOTCM -&gt; CommandM ()) -&gt; CommandM (Command' (Maybe ()))
 forall a. (IOTCM -&gt; CommandM a) -&gt; CommandM (Command' (Maybe a))
 </span><a href="Agda.Interaction.InteractionTop.html#maybeAbort"><span class="hs-identifier hs-var">maybeAbort</span></a></span><span> </span><span class="annot"><span class="annottext">IOTCM -&gt; CommandM ()
 </span><a href="Agda.Interaction.InteractionTop.html#runInteraction"><span class="hs-identifier hs-var">runInteraction</span></a></span><span>
 </span><span id="line-49"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Command' (Maybe ())
-</span><a href="#local-6989586621680661981"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680662027"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-50"></span><span>        </span><span class="annot"><span class="annottext">Command' (Maybe ())
 </span><a href="Agda.Interaction.Base.html#Done"><span class="hs-identifier hs-var">Done</span></a></span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Bool -&gt; StateT CommandState TCM Bool
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">True</span></span><span> </span><span class="hs-comment">-- Done.</span><span>
-</span><span id="line-51"></span><span>        </span><span class="annot"><a href="Agda.Interaction.Base.html#Error"><span class="hs-identifier hs-type">Error</span></a></span><span> </span><span id="local-6989586621680661976"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661976"><span class="hs-identifier hs-var">s</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; CommandM ()
+</span><span id="line-51"></span><span>        </span><span class="annot"><a href="Agda.Interaction.Base.html#Error"><span class="hs-identifier hs-type">Error</span></a></span><span> </span><span id="local-6989586621680662022"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680662022"><span class="hs-identifier hs-var">s</span></a></span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO () -&gt; CommandM ()
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; IO ()
 </span><span class="hs-identifier hs-var">putStrLn</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661976"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">CommandM ()
+</span><a href="#local-6989586621680662022"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">CommandM ()
 -&gt; StateT CommandState TCM Bool -&gt; StateT CommandState TCM Bool
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; StateT CommandState TCM Bool
@@ -159,27 +159,27 @@ forall (tcm :: * -&gt; *). MonadTCM tcm =&gt; tcm ()
 </span><span id="line-55"></span><span>    </span><span class="annot"><span class="annottext">Bool -&gt; CommandM () -&gt; CommandM ()
 forall (f :: * -&gt; *). Applicative f =&gt; Bool -&gt; f () -&gt; f ()
 </span><span class="hs-identifier hs-var">unless</span></span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680661985"><span class="hs-identifier hs-var">done</span></a></span><span> </span><span class="annot"><span class="annottext">CommandM ()
-</span><a href="#local-6989586621680661990"><span class="hs-identifier hs-var">interact'</span></a></span><span>
+</span><a href="#local-6989586621680662031"><span class="hs-identifier hs-var">done</span></a></span><span> </span><span class="annot"><span class="annottext">CommandM ()
+</span><a href="#local-6989586621680662036"><span class="hs-identifier hs-var">interact'</span></a></span><span>
 </span><span id="line-56"></span><span>
 </span><span id="line-57"></span><span>  </span><span class="hs-comment">-- Reads the next command from stdin.</span><span>
 </span><span id="line-58"></span><span>
-</span><span id="line-59"></span><span>  </span><span class="annot"><a href="#local-6989586621680661997"><span class="hs-identifier hs-type">readCommand</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Base.html#Command"><span class="hs-identifier hs-type">Command</span></a></span><span>
-</span><span id="line-60"></span><span>  </span><span id="local-6989586621680661997"><span class="annot"><span class="annottext">readCommand :: IO Command
-</span><a href="#local-6989586621680661997"><span class="hs-identifier hs-var hs-var">readCommand</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-61"></span><span>    </span><span id="local-6989586621680661971"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680661971"><span class="hs-identifier hs-var">done</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO Bool
+</span><span id="line-59"></span><span>  </span><span class="annot"><a href="#local-6989586621680662043"><span class="hs-identifier hs-type">readCommand</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Base.html#Command"><span class="hs-identifier hs-type">Command</span></a></span><span>
+</span><span id="line-60"></span><span>  </span><span id="local-6989586621680662043"><span class="annot"><span class="annottext">readCommand :: IO Command
+</span><a href="#local-6989586621680662043"><span class="hs-identifier hs-var hs-var">readCommand</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-61"></span><span>    </span><span id="local-6989586621680662017"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680662017"><span class="hs-identifier hs-var">done</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO Bool
 </span><span class="hs-identifier hs-var">isEOF</span></span><span>
 </span><span id="line-62"></span><span>    </span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680661971"><span class="hs-identifier hs-var">done</span></a></span><span> </span><span class="hs-keyword">then</span><span>
+</span><a href="#local-6989586621680662017"><span class="hs-identifier hs-var">done</span></a></span><span> </span><span class="hs-keyword">then</span><span>
 </span><span id="line-63"></span><span>      </span><span class="annot"><span class="annottext">Command -&gt; IO Command
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">Command
 forall a. Command' a
 </span><a href="Agda.Interaction.Base.html#Done"><span class="hs-identifier hs-var">Done</span></a></span><span>
 </span><span id="line-64"></span><span>    </span><span class="hs-keyword">else</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-65"></span><span>      </span><span id="local-6989586621680661969"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661969"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO String
+</span><span id="line-65"></span><span>      </span><span id="local-6989586621680662015"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680662015"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO String
 </span><span class="hs-identifier hs-var">getLine</span></span><span>
 </span><span id="line-66"></span><span>      </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Int -&gt; IO Int
@@ -189,20 +189,20 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$!</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661969"><span class="hs-identifier hs-var">r</span></a></span><span>     </span><span class="hs-comment">-- force to read the full input line</span><span>
+</span><a href="#local-6989586621680662015"><span class="hs-identifier hs-var">r</span></a></span><span>     </span><span class="hs-comment">-- force to read the full input line</span><span>
 </span><span id="line-67"></span><span>      </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">(Char -&gt; Bool) -&gt; String -&gt; String
 forall a. (a -&gt; Bool) -&gt; [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">dropWhile</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Bool
 </span><span class="hs-identifier hs-var">isSpace</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661969"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680662015"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-68"></span><span>        </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span>          </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO Command
-</span><a href="#local-6989586621680661997"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
+</span><a href="#local-6989586621680662043"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
 </span><span id="line-69"></span><span>        </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'-'</span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'-'</span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">IO Command
-</span><a href="#local-6989586621680661997"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
+</span><a href="#local-6989586621680662043"><span class="hs-identifier hs-var">readCommand</span></a></span><span>
 </span><span id="line-70"></span><span>        </span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">_</span></span><span>           </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">[(IOTCM, String)] -&gt; Maybe (IOTCM, String)
 forall a. [a] -&gt; Maybe a
@@ -212,9 +212,9 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">ReadS IOTCM
 forall a. Read a =&gt; ReadS a
 </span><span class="hs-identifier hs-var">reads</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661969"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-71"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680661961"><span class="annot"><span class="annottext">IOTCM
-</span><a href="#local-6989586621680661961"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680662015"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-71"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680662007"><span class="annot"><span class="annottext">IOTCM
+</span><a href="#local-6989586621680662007"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span class="hs-special">)</span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Command -&gt; IO Command
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Command -&gt; IO Command) -&gt; Command -&gt; IO Command
@@ -222,10 +222,10 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">IOTCM -&gt; Command
 forall a. a -&gt; Command' a
 </span><a href="Agda.Interaction.Base.html#Command"><span class="hs-identifier hs-var">Command</span></a></span><span> </span><span class="annot"><span class="annottext">IOTCM
-</span><a href="#local-6989586621680661961"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621680662007"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-72"></span><span>          </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">IOTCM
-</span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680661960"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661960"><span class="hs-identifier hs-var">rem</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Command -&gt; IO Command
+</span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680662006"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680662006"><span class="hs-identifier hs-var">rem</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Command -&gt; IO Command
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Command -&gt; IO Command) -&gt; Command -&gt; IO Command
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -237,7 +237,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-string">&quot;not consumed: &quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661960"><span class="hs-identifier hs-var">rem</span></a></span><span>
+</span><a href="#local-6989586621680662006"><span class="hs-identifier hs-var">rem</span></a></span><span>
 </span><span id="line-73"></span><span>          </span><span class="annot"><span class="annottext">Maybe (IOTCM, String)
 </span><span class="hs-identifier">_</span></span><span>             </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Command -&gt; IO Command
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
@@ -251,5 +251,5 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-string">&quot;cannot read: &quot;</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680661969"><span class="hs-identifier hs-var">r</span></a></span><span>
+</span><a href="#local-6989586621680662015"><span class="hs-identifier hs-var">r</span></a></span><span>
 </span><span id="line-74"></span></pre></body></html>
