@@ -11,10 +11,10 @@
 </span><span id="line-11"></span><span class="hs-comment">-- | Creates a temporary file, writes some stuff, and returns the filepath</span><span>
 </span><span id="line-12"></span><span class="annot"><a href="Agda.Utils.IO.TempFile.html#writeToTempFile"><span class="hs-identifier hs-type">writeToTempFile</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IO</span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">FilePath</span></span><span>
 </span><span id="line-13"></span><span id="writeToTempFile"><span class="annot"><span class="annottext">writeToTempFile :: String -&gt; IO String
-</span><a href="Agda.Utils.IO.TempFile.html#writeToTempFile"><span class="hs-identifier hs-var hs-var">writeToTempFile</span></a></span></span><span> </span><span id="local-6989586621680461848"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461848"><span class="hs-identifier hs-var">content</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-14"></span><span>  </span><span id="local-6989586621680461847"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461847"><span class="hs-identifier hs-var">dir</span></a></span></span><span>      </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO String
+</span><a href="Agda.Utils.IO.TempFile.html#writeToTempFile"><span class="hs-identifier hs-var hs-var">writeToTempFile</span></a></span></span><span> </span><span id="local-6989586621680461868"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680461868"><span class="hs-identifier hs-var">content</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-14"></span><span>  </span><span id="local-6989586621680461867"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680461867"><span class="hs-identifier hs-var">dir</span></a></span></span><span>      </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO String
 </span><span class="hs-identifier hs-var">D.getTemporaryDirectory</span></span><span>
 </span><span id="line-15"></span><span>  </span><span class="annot"><span class="annottext">IO (String, Handle)
 -&gt; ((String, Handle) -&gt; IO ())
@@ -23,7 +23,7 @@
 forall a b c. IO a -&gt; (a -&gt; IO b) -&gt; (a -&gt; IO c) -&gt; IO c
 </span><span class="hs-identifier hs-var">E.bracket</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; String -&gt; IO (String, Handle)
 </span><span class="hs-identifier hs-var">IO.openTempFile</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461847"><span class="hs-identifier hs-var">dir</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680461867"><span class="hs-identifier hs-var">dir</span></a></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;agda2-mode&quot;</span></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Handle -&gt; IO ()
 </span><span class="hs-identifier hs-var">IO.hClose</span></span><span> </span><span class="annot"><span class="annottext">(Handle -&gt; IO ())
 -&gt; ((String, Handle) -&gt; Handle) -&gt; (String, Handle) -&gt; IO ()
@@ -33,19 +33,19 @@ forall a b. (a, b) -&gt; b
 </span><span class="hs-identifier hs-var">snd</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(((String, Handle) -&gt; IO String) -&gt; IO String)
 -&gt; ((String, Handle) -&gt; IO String) -&gt; IO String
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680461841"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461841"><span class="hs-identifier hs-var">filepath</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680461840"><span class="annot"><span class="annottext">Handle
-</span><a href="#local-6989586621680461840"><span class="hs-identifier hs-var">handle</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680461861"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680461861"><span class="hs-identifier hs-var">filepath</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680461860"><span class="annot"><span class="annottext">Handle
+</span><a href="#local-6989586621680461860"><span class="hs-identifier hs-var">handle</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-16"></span><span>    </span><span class="annot"><span class="annottext">Handle -&gt; TextEncoding -&gt; IO ()
 </span><span class="hs-identifier hs-var">IO.hSetEncoding</span></span><span> </span><span class="annot"><span class="annottext">Handle
-</span><a href="#local-6989586621680461840"><span class="hs-identifier hs-var">handle</span></a></span><span> </span><span class="annot"><span class="annottext">TextEncoding
+</span><a href="#local-6989586621680461860"><span class="hs-identifier hs-var">handle</span></a></span><span> </span><span class="annot"><span class="annottext">TextEncoding
 </span><span class="hs-identifier hs-var">IO.utf8</span></span><span>
 </span><span id="line-17"></span><span>    </span><span class="annot"><span class="annottext">Handle -&gt; String -&gt; IO ()
 </span><span class="hs-identifier hs-var">IO.hPutStr</span></span><span> </span><span class="annot"><span class="annottext">Handle
-</span><a href="#local-6989586621680461840"><span class="hs-identifier hs-var">handle</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461848"><span class="hs-identifier hs-var">content</span></a></span><span>
+</span><a href="#local-6989586621680461860"><span class="hs-identifier hs-var">handle</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680461868"><span class="hs-identifier hs-var">content</span></a></span><span>
 </span><span id="line-18"></span><span>    </span><span class="annot"><span class="annottext">String -&gt; IO String
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680461841"><span class="hs-identifier hs-var">filepath</span></a></span><span>
+</span><a href="#local-6989586621680461861"><span class="hs-identifier hs-var">filepath</span></a></span><span>
 </span><span id="line-19"></span></pre></body></html>
