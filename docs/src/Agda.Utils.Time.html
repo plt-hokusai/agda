@@ -36,7 +36,7 @@
 </span><span id="line-34"></span><span class="hs-comment">-- | CPU time in pico (10^-12) seconds.</span><span>
 </span><span id="line-35"></span><span>
 </span><span id="line-36"></span><span class="hs-keyword">newtype</span><span> </span><span id="CPUTime"><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-var">CPUTime</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="CPUTime"><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-var">CPUTime</span></a></span></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span>
-</span><span id="line-37"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680471324"><span id="local-6989586621680471326"><span class="annot"><span class="annottext">CPUTime -&gt; CPUTime -&gt; Bool
+</span><span id="line-37"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680471457"><span id="local-6989586621680471459"><span class="annot"><span class="annottext">CPUTime -&gt; CPUTime -&gt; Bool
 (CPUTime -&gt; CPUTime -&gt; Bool)
 -&gt; (CPUTime -&gt; CPUTime -&gt; Bool) -&gt; Eq CPUTime
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -44,7 +44,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: CPUTime -&gt; CPUTime -&gt; Bool
 == :: CPUTime -&gt; CPUTime -&gt; Bool
 $c== :: CPUTime -&gt; CPUTime -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471317"><span id="local-6989586621680471319"><span id="local-6989586621680471321"><span class="annot"><span class="annottext">Int -&gt; CPUTime -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471450"><span id="local-6989586621680471452"><span id="local-6989586621680471454"><span class="annot"><span class="annottext">Int -&gt; CPUTime -&gt; ShowS
 [CPUTime] -&gt; ShowS
 CPUTime -&gt; String
 (Int -&gt; CPUTime -&gt; ShowS)
@@ -57,7 +57,7 @@ show :: CPUTime -&gt; String
 $cshow :: CPUTime -&gt; String
 showsPrec :: Int -&gt; CPUTime -&gt; ShowS
 $cshowsPrec :: Int -&gt; CPUTime -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471301"><span id="local-6989586621680471303"><span id="local-6989586621680471305"><span id="local-6989586621680471307"><span id="local-6989586621680471309"><span id="local-6989586621680471311"><span id="local-6989586621680471313"><span class="annot"><span class="annottext">Eq CPUTime
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471434"><span id="local-6989586621680471436"><span id="local-6989586621680471438"><span id="local-6989586621680471440"><span id="local-6989586621680471442"><span id="local-6989586621680471444"><span id="local-6989586621680471446"><span class="annot"><span class="annottext">Eq CPUTime
 Eq CPUTime
 -&gt; (CPUTime -&gt; CPUTime -&gt; Ordering)
 -&gt; (CPUTime -&gt; CPUTime -&gt; Bool)
@@ -95,7 +95,7 @@ $c&lt; :: CPUTime -&gt; CPUTime -&gt; Bool
 compare :: CPUTime -&gt; CPUTime -&gt; Ordering
 $ccompare :: CPUTime -&gt; CPUTime -&gt; Ordering
 $cp1Ord :: Eq CPUTime
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471286"><span id="local-6989586621680471288"><span id="local-6989586621680471290"><span id="local-6989586621680471292"><span id="local-6989586621680471294"><span id="local-6989586621680471296"><span id="local-6989586621680471298"><span class="annot"><span class="annottext">Integer -&gt; CPUTime
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471419"><span id="local-6989586621680471421"><span id="local-6989586621680471423"><span id="local-6989586621680471425"><span id="local-6989586621680471427"><span id="local-6989586621680471429"><span id="local-6989586621680471431"><span class="annot"><span class="annottext">Integer -&gt; CPUTime
 CPUTime -&gt; CPUTime
 CPUTime -&gt; CPUTime -&gt; CPUTime
 (CPUTime -&gt; CPUTime -&gt; CPUTime)
@@ -129,7 +129,7 @@ $c* :: CPUTime -&gt; CPUTime -&gt; CPUTime
 $c- :: CPUTime -&gt; CPUTime -&gt; CPUTime
 + :: CPUTime -&gt; CPUTime -&gt; CPUTime
 $c+ :: CPUTime -&gt; CPUTime -&gt; CPUTime
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Num</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471281"><span class="annot"><span class="annottext">Num CPUTime
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Num</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471414"><span class="annot"><span class="annottext">Num CPUTime
 Ord CPUTime
 Num CPUTime -&gt; Ord CPUTime -&gt; (CPUTime -&gt; Rational) -&gt; Real CPUTime
 CPUTime -&gt; Rational
@@ -138,7 +138,7 @@ toRational :: CPUTime -&gt; Rational
 $ctoRational :: CPUTime -&gt; Rational
 $cp2Real :: Ord CPUTime
 $cp1Real :: Num CPUTime
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Real</span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471264"><span id="local-6989586621680471266"><span id="local-6989586621680471268"><span id="local-6989586621680471270"><span id="local-6989586621680471272"><span id="local-6989586621680471274"><span id="local-6989586621680471276"><span id="local-6989586621680471278"><span class="annot"><span class="annottext">Int -&gt; CPUTime
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Real</span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471397"><span id="local-6989586621680471399"><span id="local-6989586621680471401"><span id="local-6989586621680471403"><span id="local-6989586621680471405"><span id="local-6989586621680471407"><span id="local-6989586621680471409"><span id="local-6989586621680471411"><span class="annot"><span class="annottext">Int -&gt; CPUTime
 CPUTime -&gt; Int
 CPUTime -&gt; [CPUTime]
 CPUTime -&gt; CPUTime
@@ -179,7 +179,7 @@ pred :: CPUTime -&gt; CPUTime
 $cpred :: CPUTime -&gt; CPUTime
 succ :: CPUTime -&gt; CPUTime
 $csucc :: CPUTime -&gt; CPUTime
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471247"><span id="local-6989586621680471249"><span id="local-6989586621680471251"><span id="local-6989586621680471253"><span id="local-6989586621680471255"><span id="local-6989586621680471257"><span id="local-6989586621680471259"><span class="annot"><span class="annottext">Enum CPUTime
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680471380"><span id="local-6989586621680471382"><span id="local-6989586621680471384"><span id="local-6989586621680471386"><span id="local-6989586621680471388"><span id="local-6989586621680471390"><span id="local-6989586621680471392"><span class="annot"><span class="annottext">Enum CPUTime
 Real CPUTime
 Real CPUTime
 -&gt; Enum CPUTime
@@ -225,20 +225,20 @@ $cp1Integral :: Real CPUTime
 </span><span id="line-38"></span><span>
 </span><span id="line-39"></span><span class="annot"><a href="Agda.Utils.Time.html#fromMilliseconds"><span class="hs-identifier hs-type">fromMilliseconds</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Integer</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span><span>
 </span><span id="line-40"></span><span id="fromMilliseconds"><span class="annot"><span class="annottext">fromMilliseconds :: Integer -&gt; CPUTime
-</span><a href="Agda.Utils.Time.html#fromMilliseconds"><span class="hs-identifier hs-var hs-var">fromMilliseconds</span></a></span></span><span> </span><span id="local-6989586621680471245"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621680471245"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer -&gt; CPUTime
+</span><a href="Agda.Utils.Time.html#fromMilliseconds"><span class="hs-identifier hs-var hs-var">fromMilliseconds</span></a></span></span><span> </span><span id="local-6989586621680471378"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621680471378"><span class="hs-identifier hs-var">n</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Integer -&gt; CPUTime
 </span><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-var">CPUTime</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621680471245"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
+</span><a href="#local-6989586621680471378"><span class="hs-identifier hs-var">n</span></a></span><span> </span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">*</span></span><span> </span><span class="annot"><span class="annottext">Integer
 </span><span class="hs-number">1000000000</span></span><span class="hs-special">)</span><span>
 </span><span id="line-41"></span><span>
 </span><span id="line-42"></span><span class="hs-comment">-- | Print CPU time in milli (10^-3) seconds.</span><span>
 </span><span id="line-43"></span><span>
-</span><span id="line-44"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680471239"><span id="local-6989586621680471241"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-45"></span><span>  </span><span id="local-6989586621680471237"><span class="annot"><span class="annottext">pretty :: CPUTime -&gt; Doc
-</span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span><span> </span><span id="local-6989586621680471235"><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621680471235"><span class="hs-identifier hs-var">ps</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-44"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680471372"><span id="local-6989586621680471374"><span class="annot"><a href="Agda.Utils.Pretty.html#Pretty"><span class="hs-identifier hs-type">Pretty</span></a></span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-45"></span><span>  </span><span id="local-6989586621680471370"><span class="annot"><span class="annottext">pretty :: CPUTime -&gt; Doc
+</span><a href="Agda.Utils.Pretty.html#pretty"><span class="hs-identifier hs-var hs-var hs-var hs-var">pretty</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span><span> </span><span id="local-6989586621680471368"><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621680471368"><span class="hs-identifier hs-var">ps</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-46"></span><span>    </span><span class="annot"><span class="annottext">String -&gt; Doc
 </span><span class="hs-identifier hs-var">text</span></span><span> </span><span class="annot"><span class="annottext">(String -&gt; Doc) -&gt; String -&gt; Doc
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -247,14 +247,14 @@ forall a. Show a =&gt; a -&gt; String
 </span><a href="Agda.Utils.String.html#showThousandSep"><span class="hs-identifier hs-var">showThousandSep</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Integer -&gt; Integer -&gt; Integer
 forall a. Integral a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">div</span></span><span> </span><span class="annot"><span class="annottext">Integer
-</span><a href="#local-6989586621680471235"><span class="hs-identifier hs-var">ps</span></a></span><span> </span><span class="annot"><span class="annottext">Integer
+</span><a href="#local-6989586621680471368"><span class="hs-identifier hs-var">ps</span></a></span><span> </span><span class="annot"><span class="annottext">Integer
 </span><span class="hs-number">1000000000</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">String -&gt; ShowS
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;ms&quot;</span></span><span>
 </span><span id="line-47"></span><span>
 </span><span id="line-48"></span><span class="hs-pragma">{-# SPECIALIZE</span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#getCPUTime"><span class="hs-pragma hs-type">getCPUTime</span></a></span><span> </span><span class="hs-pragma">::</span><span> </span><span class="annot"><span class="hs-pragma hs-type">IO</span></span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-pragma hs-type">CPUTime</span></a></span><span> </span><span class="hs-pragma">#-}</span><span>
-</span><span id="line-49"></span><span id="local-6989586621680471337"><span class="annot"><a href="Agda.Utils.Time.html#getCPUTime"><span class="hs-identifier hs-type">getCPUTime</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadIO</span></span><span> </span><span class="annot"><a href="#local-6989586621680471337"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471337"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span></span><span>
+</span><span id="line-49"></span><span id="local-6989586621680471470"><span class="annot"><a href="Agda.Utils.Time.html#getCPUTime"><span class="hs-identifier hs-type">getCPUTime</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadIO</span></span><span> </span><span class="annot"><a href="#local-6989586621680471470"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471470"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span></span><span>
 </span><span id="line-50"></span><span id="getCPUTime"><span class="annot"><span class="annottext">getCPUTime :: m CPUTime
 </span><a href="Agda.Utils.Time.html#getCPUTime"><span class="hs-identifier hs-var hs-var">getCPUTime</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">IO CPUTime -&gt; m CPUTime
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
@@ -268,23 +268,23 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span id="line-51"></span><span>
 </span><span id="line-52"></span><span class="hs-comment">-- | Measure the time of a computation.</span><span>
 </span><span id="line-53"></span><span class="hs-comment">--   Of course, does not work with exceptions.</span><span>
-</span><span id="line-54"></span><span id="local-6989586621680471227"><span id="local-6989586621680471228"><span class="annot"><a href="Agda.Utils.Time.html#measureTime"><span class="hs-identifier hs-type">measureTime</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadIO</span></span><span> </span><span class="annot"><a href="#local-6989586621680471228"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471228"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471227"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471228"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680471227"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span><span class="hs-special">)</span></span></span><span>
+</span><span id="line-54"></span><span id="local-6989586621680471360"><span id="local-6989586621680471361"><span class="annot"><a href="Agda.Utils.Time.html#measureTime"><span class="hs-identifier hs-type">measureTime</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">MonadIO</span></span><span> </span><span class="annot"><a href="#local-6989586621680471361"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471361"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680471360"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680471361"><span class="hs-identifier hs-type">m</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="#local-6989586621680471360"><span class="hs-identifier hs-type">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><a href="Agda.Utils.Time.html#CPUTime"><span class="hs-identifier hs-type">CPUTime</span></a></span><span class="hs-special">)</span></span></span><span>
 </span><span id="line-55"></span><span id="measureTime"><span class="annot"><span class="annottext">measureTime :: m a -&gt; m (a, CPUTime)
-</span><a href="Agda.Utils.Time.html#measureTime"><span class="hs-identifier hs-var hs-var">measureTime</span></a></span></span><span> </span><span id="local-6989586621680471226"><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680471226"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-56"></span><span>  </span><span id="local-6989586621680471225"><span class="annot"><span class="annottext">CPUTime
-</span><a href="#local-6989586621680471225"><span class="hs-identifier hs-var">start</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CPUTime -&gt; m CPUTime
+</span><a href="Agda.Utils.Time.html#measureTime"><span class="hs-identifier hs-var hs-var">measureTime</span></a></span></span><span> </span><span id="local-6989586621680471359"><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680471359"><span class="hs-identifier hs-var">m</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-56"></span><span>  </span><span id="local-6989586621680471358"><span class="annot"><span class="annottext">CPUTime
+</span><a href="#local-6989586621680471358"><span class="hs-identifier hs-var">start</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CPUTime -&gt; m CPUTime
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO CPUTime -&gt; m CPUTime) -&gt; IO CPUTime -&gt; m CPUTime
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">IO CPUTime
 forall (m :: * -&gt; *). MonadIO m =&gt; m CPUTime
 </span><a href="Agda.Utils.Time.html#getCPUTime"><span class="hs-identifier hs-var">getCPUTime</span></a></span><span>
-</span><span id="line-57"></span><span>  </span><span id="local-6989586621680471224"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680471224"><span class="hs-identifier hs-var">x</span></a></span></span><span>     </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
-</span><a href="#local-6989586621680471226"><span class="hs-identifier hs-var">m</span></a></span><span>
-</span><span id="line-58"></span><span>  </span><span id="local-6989586621680471223"><span class="annot"><span class="annottext">CPUTime
-</span><a href="#local-6989586621680471223"><span class="hs-identifier hs-var">stop</span></a></span></span><span>  </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CPUTime -&gt; m CPUTime
+</span><span id="line-57"></span><span>  </span><span id="local-6989586621680471357"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680471357"><span class="hs-identifier hs-var">x</span></a></span></span><span>     </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">m a
+</span><a href="#local-6989586621680471359"><span class="hs-identifier hs-var">m</span></a></span><span>
+</span><span id="line-58"></span><span>  </span><span id="local-6989586621680471356"><span class="annot"><span class="annottext">CPUTime
+</span><a href="#local-6989586621680471356"><span class="hs-identifier hs-var">stop</span></a></span></span><span>  </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">IO CPUTime -&gt; m CPUTime
 forall (m :: * -&gt; *) a. MonadIO m =&gt; IO a -&gt; m a
 </span><span class="hs-identifier hs-var">liftIO</span></span><span> </span><span class="annot"><span class="annottext">(IO CPUTime -&gt; m CPUTime) -&gt; IO CPUTime -&gt; m CPUTime
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -294,9 +294,9 @@ forall (m :: * -&gt; *). MonadIO m =&gt; m CPUTime
 </span><span id="line-59"></span><span>  </span><span class="annot"><span class="annottext">(a, CPUTime) -&gt; m (a, CPUTime)
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680471224"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">CPUTime
-</span><a href="#local-6989586621680471223"><span class="hs-identifier hs-var">stop</span></a></span><span> </span><span class="annot"><span class="annottext">CPUTime -&gt; CPUTime -&gt; CPUTime
+</span><a href="#local-6989586621680471357"><span class="hs-identifier hs-var">x</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">CPUTime
+</span><a href="#local-6989586621680471356"><span class="hs-identifier hs-var">stop</span></a></span><span> </span><span class="annot"><span class="annottext">CPUTime -&gt; CPUTime -&gt; CPUTime
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">CPUTime
-</span><a href="#local-6989586621680471225"><span class="hs-identifier hs-var">start</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680471358"><span class="hs-identifier hs-var">start</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-60"></span></pre></body></html>
