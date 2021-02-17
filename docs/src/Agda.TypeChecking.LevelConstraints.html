@@ -27,13 +27,13 @@
 </span><span id="line-27"></span><span>  </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Maybe</span></span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Constraint"><span class="hs-identifier hs-type">Constraint</span></a></span><span class="hs-special">]</span><span>  </span><span class="hs-comment">-- ^ @Just@: list of constraints equal to the original @c@.</span><span>
 </span><span id="line-28"></span><span>                         </span><span class="hs-comment">--   @Nothing@: no simplification possible.</span><span>
 </span><span id="line-29"></span><span id="simplifyLevelConstraint"><span class="annot"><span class="annottext">simplifyLevelConstraint :: Constraint -&gt; [Constraint] -&gt; Maybe [Constraint]
-</span><a href="Agda.TypeChecking.LevelConstraints.html#simplifyLevelConstraint"><span class="hs-identifier hs-var hs-var">simplifyLevelConstraint</span></a></span></span><span> </span><span id="local-6989586621680574367"><span class="annot"><span class="annottext">Constraint
-</span><a href="#local-6989586621680574367"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680574366"><span class="annot"><span class="annottext">[Constraint]
-</span><a href="#local-6989586621680574366"><span class="hs-identifier hs-var">others</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-30"></span><span>    </span><span id="local-6989586621680574365"><span class="annot"><span class="annottext">[Leq]
-</span><a href="#local-6989586621680574365"><span class="hs-identifier hs-var">cs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Constraint -&gt; Maybe [Leq]
+</span><a href="Agda.TypeChecking.LevelConstraints.html#simplifyLevelConstraint"><span class="hs-identifier hs-var hs-var">simplifyLevelConstraint</span></a></span></span><span> </span><span id="local-6989586621680574231"><span class="annot"><span class="annottext">Constraint
+</span><a href="#local-6989586621680574231"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span id="local-6989586621680574230"><span class="annot"><span class="annottext">[Constraint]
+</span><a href="#local-6989586621680574230"><span class="hs-identifier hs-var">others</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621680574229"><span class="annot"><span class="annottext">[Leq]
+</span><a href="#local-6989586621680574229"><span class="hs-identifier hs-var">cs</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Constraint -&gt; Maybe [Leq]
 </span><a href="Agda.TypeChecking.LevelConstraints.html#inequalities"><span class="hs-identifier hs-var">inequalities</span></a></span><span> </span><span class="annot"><span class="annottext">Constraint
-</span><a href="#local-6989586621680574367"><span class="hs-identifier hs-var">c</span></a></span><span>
+</span><a href="#local-6989586621680574231"><span class="hs-identifier hs-var">c</span></a></span><span>
 </span><span id="line-31"></span><span>    </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Change [Constraint] -&gt; ([Constraint], Bool)
 forall a. Change a -&gt; (a, Bool)
 </span><a href="Agda.Utils.Update.html#runChange"><span class="hs-identifier hs-var">runChange</span></a></span><span> </span><span class="annot"><span class="annottext">(Change [Constraint] -&gt; ([Constraint], Bool))
@@ -45,14 +45,14 @@ forall (t :: * -&gt; *) (m :: * -&gt; *) a b.
 (Traversable t, Monad m) =&gt;
 (a -&gt; m b) -&gt; t a -&gt; m (t b)
 </span><span class="hs-identifier hs-var">mapM</span></span><span> </span><span class="annot"><span class="annottext">Leq -&gt; ChangeT Identity Constraint
-</span><a href="#local-6989586621680574361"><span class="hs-identifier hs-var">simpl</span></a></span><span> </span><span class="annot"><span class="annottext">[Leq]
-</span><a href="#local-6989586621680574365"><span class="hs-identifier hs-var">cs</span></a></span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-32"></span><span>      </span><span class="hs-special">(</span><span id="local-6989586621680574360"><span class="annot"><span class="annottext">[Constraint]
-</span><a href="#local-6989586621680574360"><span class="hs-identifier hs-var">cs'</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680574225"><span class="hs-identifier hs-var">simpl</span></a></span><span> </span><span class="annot"><span class="annottext">[Leq]
+</span><a href="#local-6989586621680574229"><span class="hs-identifier hs-var">cs</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-32"></span><span>      </span><span class="hs-special">(</span><span id="local-6989586621680574224"><span class="annot"><span class="annottext">[Constraint]
+</span><a href="#local-6989586621680574224"><span class="hs-identifier hs-var">cs'</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">True</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[Constraint] -&gt; Maybe [Constraint]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">[Constraint]
-</span><a href="#local-6989586621680574360"><span class="hs-identifier hs-var">cs'</span></a></span><span>
+</span><a href="#local-6989586621680574224"><span class="hs-identifier hs-var">cs'</span></a></span><span>
 </span><span id="line-33"></span><span>      </span><span class="hs-special">(</span><span class="annot"><span class="annottext">[Constraint]
 </span><span class="hs-identifier">_</span></span><span class="hs-special">,</span><span>  </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">False</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe [Constraint]
@@ -60,19 +60,19 @@ forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-34"></span><span>
 </span><span id="line-35"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-36"></span><span>    </span><span class="annot"><a href="#local-6989586621680574361"><span class="hs-identifier hs-type">simpl</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#Leq"><span class="hs-identifier hs-type">Leq</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Update.html#Change"><span class="hs-identifier hs-type">Change</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Constraint"><span class="hs-identifier hs-type">Constraint</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-37"></span><span>    </span><span id="local-6989586621680574361"><span class="annot"><span class="annottext">simpl :: Leq -&gt; ChangeT Identity Constraint
-</span><a href="#local-6989586621680574361"><span class="hs-identifier hs-var hs-var">simpl</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574359"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574359"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574357"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574357"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-36"></span><span>    </span><span class="annot"><a href="#local-6989586621680574225"><span class="hs-identifier hs-type">simpl</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#Leq"><span class="hs-identifier hs-type">Leq</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Utils.Update.html#Change"><span class="hs-identifier hs-type">Change</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#Constraint"><span class="hs-identifier hs-type">Constraint</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-37"></span><span>    </span><span id="local-6989586621680574225"><span class="annot"><span class="annottext">simpl :: Leq -&gt; ChangeT Identity Constraint
+</span><a href="#local-6989586621680574225"><span class="hs-identifier hs-var hs-var">simpl</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574223"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574223"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574221"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574221"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-38"></span><span>      </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">(Leq -&gt; Bool) -&gt; [Leq] -&gt; Bool
 forall (t :: * -&gt; *) a. Foldable t =&gt; (a -&gt; Bool) -&gt; t a -&gt; Bool
 </span><span class="hs-identifier hs-var">any</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Leq -&gt; Leq -&gt; Bool
 </span><a href="Agda.TypeChecking.LevelConstraints.html#matchLeq"><span class="hs-identifier hs-var">matchLeq</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574357"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
+</span><a href="#local-6989586621680574221"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
 </span><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-var">:=&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574359"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Leq]
-</span><a href="#local-6989586621680574354"><span class="hs-identifier hs-var">leqs</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">UpdaterT Identity Constraint
+</span><a href="#local-6989586621680574223"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Leq]
+</span><a href="#local-6989586621680574218"><span class="hs-identifier hs-var">leqs</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">UpdaterT Identity Constraint
 forall (m :: * -&gt; *) a. Monad m =&gt; UpdaterT m a
 </span><a href="Agda.Utils.Update.html#dirty"><span class="hs-identifier hs-var">dirty</span></a></span><span>  </span><span class="annot"><span class="annottext">UpdaterT Identity Constraint -&gt; UpdaterT Identity Constraint
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -81,10 +81,10 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="Agda.TypeChecking.Monad.Base.html#CmpEq"><span class="hs-identifier hs-var">CmpEq</span></a></span><span>  </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
 forall t. SingleLevel' t -&gt; Level' t
 </span><a href="Agda.TypeChecking.Level.html#unSingleLevel"><span class="hs-identifier hs-var">unSingleLevel</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574359"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
+</span><a href="#local-6989586621680574223"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
 forall t. SingleLevel' t -&gt; Level' t
 </span><a href="Agda.TypeChecking.Level.html#unSingleLevel"><span class="hs-identifier hs-var">unSingleLevel</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574357"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680574221"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-39"></span><span>      </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span>                     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">UpdaterT Identity Constraint
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
@@ -95,12 +95,12 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><a href="Agda.TypeChecking.Monad.Base.html#CmpLeq"><span class="hs-identifier hs-var">CmpLeq</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
 forall t. SingleLevel' t -&gt; Level' t
 </span><a href="Agda.TypeChecking.Level.html#unSingleLevel"><span class="hs-identifier hs-var">unSingleLevel</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574359"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
+</span><a href="#local-6989586621680574223"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; Level
 forall t. SingleLevel' t -&gt; Level' t
 </span><a href="Agda.TypeChecking.Level.html#unSingleLevel"><span class="hs-identifier hs-var">unSingleLevel</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574357"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-40"></span><span>    </span><span id="local-6989586621680574354"><span class="annot"><span class="annottext">leqs :: [Leq]
-</span><a href="#local-6989586621680574354"><span class="hs-identifier hs-var hs-var">leqs</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[[Leq]] -&gt; [Leq]
+</span><a href="#local-6989586621680574221"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-40"></span><span>    </span><span id="local-6989586621680574218"><span class="annot"><span class="annottext">leqs :: [Leq]
+</span><a href="#local-6989586621680574218"><span class="hs-identifier hs-var hs-var">leqs</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[[Leq]] -&gt; [Leq]
 forall (t :: * -&gt; *) a. Foldable t =&gt; t [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">concat</span></span><span> </span><span class="annot"><span class="annottext">([[Leq]] -&gt; [Leq]) -&gt; [[Leq]] -&gt; [Leq]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -108,10 +108,10 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; Maybe b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">mapMaybe</span></span><span> </span><span class="annot"><span class="annottext">Constraint -&gt; Maybe [Leq]
 </span><a href="Agda.TypeChecking.LevelConstraints.html#inequalities"><span class="hs-identifier hs-var">inequalities</span></a></span><span> </span><span class="annot"><span class="annottext">[Constraint]
-</span><a href="#local-6989586621680574366"><span class="hs-identifier hs-var">others</span></a></span><span>
+</span><a href="#local-6989586621680574230"><span class="hs-identifier hs-var">others</span></a></span><span>
 </span><span id="line-41"></span><span>
 </span><span id="line-42"></span><span class="hs-keyword">data</span><span> </span><span id="Leq"><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#Leq"><span class="hs-identifier hs-var">Leq</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Level.html#SingleLevel"><span class="hs-identifier hs-type">SingleLevel</span></a></span><span> </span><span id="%3A%3D%3C"><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-var">:=&lt;</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.Level.html#SingleLevel"><span class="hs-identifier hs-type">SingleLevel</span></a></span><span>
-</span><span id="line-43"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574341"><span id="local-6989586621680574343"><span id="local-6989586621680574345"><span class="annot"><span class="annottext">Int -&gt; Leq -&gt; ShowS
+</span><span id="line-43"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574205"><span id="local-6989586621680574207"><span id="local-6989586621680574209"><span class="annot"><span class="annottext">Int -&gt; Leq -&gt; ShowS
 [Leq] -&gt; ShowS
 Leq -&gt; String
 (Int -&gt; Leq -&gt; ShowS)
@@ -124,7 +124,7 @@ show :: Leq -&gt; String
 $cshow :: Leq -&gt; String
 showsPrec :: Int -&gt; Leq -&gt; ShowS
 $cshowsPrec :: Int -&gt; Leq -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680574336"><span id="local-6989586621680574338"><span class="annot"><span class="annottext">Leq -&gt; Leq -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680574200"><span id="local-6989586621680574202"><span class="annot"><span class="annottext">Leq -&gt; Leq -&gt; Bool
 (Leq -&gt; Leq -&gt; Bool) -&gt; (Leq -&gt; Leq -&gt; Bool) -&gt; Eq Leq
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 /= :: Leq -&gt; Leq -&gt; Bool
@@ -136,38 +136,38 @@ $c== :: Leq -&gt; Leq -&gt; Bool
 </span><span id="line-45"></span><span class="hs-comment">-- | Check if two inequality constraints are the same up to variable renaming.</span><span>
 </span><span id="line-46"></span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#matchLeq"><span class="hs-identifier hs-type">matchLeq</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#Leq"><span class="hs-identifier hs-type">Leq</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#Leq"><span class="hs-identifier hs-type">Leq</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
 </span><span id="line-47"></span><span id="matchLeq"><span class="annot"><span class="annottext">matchLeq :: Leq -&gt; Leq -&gt; Bool
-</span><a href="Agda.TypeChecking.LevelConstraints.html#matchLeq"><span class="hs-identifier hs-var hs-var">matchLeq</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574334"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574334"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574333"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574333"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574332"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574332"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574331"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574331"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span>
+</span><a href="Agda.TypeChecking.LevelConstraints.html#matchLeq"><span class="hs-identifier hs-var hs-var">matchLeq</span></a></span></span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574198"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574198"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574197"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574197"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680574196"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574196"><span class="hs-identifier hs-var">c</span></a></span></span><span> </span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-type">:=&lt;</span></a></span><span> </span><span id="local-6989586621680574195"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574195"><span class="hs-identifier hs-var">d</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-48"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[Int]
-</span><a href="#local-6989586621680574329"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
+</span><a href="#local-6989586621680574193"><span class="hs-identifier hs-var">xs</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">[Int]
-</span><a href="#local-6989586621680574328"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574334"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574333"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; (SingleLevel, SingleLevel) -&gt; Bool
+</span><a href="#local-6989586621680574192"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574198"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574197"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; (SingleLevel, SingleLevel) -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">Substitution' (SubstArg (SingleLevel, SingleLevel))
 -&gt; (SingleLevel, SingleLevel) -&gt; (SingleLevel, SingleLevel)
 forall a. Subst a =&gt; Substitution' (SubstArg a) -&gt; a -&gt; a
 </span><a href="Agda.TypeChecking.Substitute.Class.html#applySubst"><span class="hs-identifier hs-var">applySubst</span></a></span><span> </span><span class="annot"><span class="annottext">Substitution' Term
 Substitution' (SubstArg (SingleLevel, SingleLevel))
-</span><a href="#local-6989586621680574326"><span class="hs-identifier hs-var">rho</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574332"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574331"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680574190"><span class="hs-identifier hs-var">rho</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574196"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574195"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-49"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span>              </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">False</span></span><span>
 </span><span id="line-50"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-51"></span><span>    </span><span id="local-6989586621680574388"><span class="annot"><a href="#local-6989586621680574325"><span class="hs-identifier hs-type">free</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Free.Lazy.html#Free"><span class="hs-identifier hs-type">Free</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680574388"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680574388"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">]</span></span><span>
-</span><span id="line-52"></span><span>    </span><span id="local-6989586621680574325"><span class="annot"><span class="annottext">free :: a -&gt; [Int]
-</span><a href="#local-6989586621680574325"><span class="hs-identifier hs-var hs-var">free</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; Int) -&gt; [Int] -&gt; [Int]
+</span><span id="line-51"></span><span>    </span><span id="local-6989586621680574252"><span class="annot"><a href="#local-6989586621680574189"><span class="hs-identifier hs-type">free</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.TypeChecking.Free.Lazy.html#Free"><span class="hs-identifier hs-type">Free</span></a></span><span> </span><span class="annot"><a href="#local-6989586621680574252"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">=&gt;</span><span> </span><span class="annot"><a href="#local-6989586621680574252"><span class="hs-identifier hs-type">a</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span class="hs-special">]</span></span><span>
+</span><span id="line-52"></span><span>    </span><span id="local-6989586621680574189"><span class="annot"><span class="annottext">free :: a -&gt; [Int]
+</span><a href="#local-6989586621680574189"><span class="hs-identifier hs-var hs-var">free</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Int -&gt; Int) -&gt; [Int] -&gt; [Int]
 forall b a. Ord b =&gt; (a -&gt; b) -&gt; [a] -&gt; [a]
 </span><a href="Agda.Utils.List.html#nubOn"><span class="hs-identifier hs-var">nubOn</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int
 forall a. a -&gt; a
@@ -181,21 +181,21 @@ SingleVar c -&gt; IgnoreSorts -&gt; t -&gt; c
 forall a. a -&gt; [a] -&gt; [a]
 </span><span class="hs-glyph hs-var">:</span></span><span class="hs-special">[</span><span class="hs-special">]</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">IgnoreSorts
 </span><a href="Agda.TypeChecking.Free.Lazy.html#IgnoreNot"><span class="hs-identifier hs-var">IgnoreNot</span></a></span><span>  </span><span class="hs-comment">-- Note: use a list to preserve order of variables</span><span>
-</span><span id="line-53"></span><span>    </span><span id="local-6989586621680574329"><span class="annot"><span class="annottext">xs :: [Int]
-</span><a href="#local-6989586621680574329"><span class="hs-identifier hs-var hs-var">xs</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; [Int]
+</span><span id="line-53"></span><span>    </span><span id="local-6989586621680574193"><span class="annot"><span class="annottext">xs :: [Int]
+</span><a href="#local-6989586621680574193"><span class="hs-identifier hs-var hs-var">xs</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; [Int]
 forall a. Free a =&gt; a -&gt; [Int]
-</span><a href="#local-6989586621680574325"><span class="hs-identifier hs-var">free</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574334"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574333"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-54"></span><span>    </span><span id="local-6989586621680574328"><span class="annot"><span class="annottext">ys :: [Int]
-</span><a href="#local-6989586621680574328"><span class="hs-identifier hs-var hs-var">ys</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; [Int]
+</span><a href="#local-6989586621680574189"><span class="hs-identifier hs-var">free</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574198"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574197"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-54"></span><span>    </span><span id="local-6989586621680574192"><span class="annot"><span class="annottext">ys :: [Int]
+</span><a href="#local-6989586621680574192"><span class="hs-identifier hs-var hs-var">ys</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(SingleLevel, SingleLevel) -&gt; [Int]
 forall a. Free a =&gt; a -&gt; [Int]
-</span><a href="#local-6989586621680574325"><span class="hs-identifier hs-var">free</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574332"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574331"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-55"></span><span>    </span><span id="local-6989586621680574326"><span class="annot"><span class="annottext">rho :: Substitution' Term
-</span><a href="#local-6989586621680574326"><span class="hs-identifier hs-var hs-var">rho</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574320"><span class="hs-identifier hs-var">mkSub</span></a></span><span> </span><span class="annot"><span class="annottext">([(Int, Int)] -&gt; Substitution' Term)
+</span><a href="#local-6989586621680574189"><span class="hs-identifier hs-var">free</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574196"><span class="hs-identifier hs-var">c</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574195"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-55"></span><span>    </span><span id="local-6989586621680574190"><span class="annot"><span class="annottext">rho :: Substitution' Term
+</span><a href="#local-6989586621680574190"><span class="hs-identifier hs-var hs-var">rho</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; Substitution' Term
+</span><a href="#local-6989586621680574184"><span class="hs-identifier hs-var">mkSub</span></a></span><span> </span><span class="annot"><span class="annottext">([(Int, Int)] -&gt; Substitution' Term)
 -&gt; [(Int, Int)] -&gt; Substitution' Term
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[(Int, Int)] -&gt; [(Int, Int)]
@@ -205,40 +205,40 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; [Int] -&gt; [(Int, Int)]
 forall a b. [a] -&gt; [b] -&gt; [(a, b)]
 </span><span class="hs-identifier hs-var">zip</span></span><span> </span><span class="annot"><span class="annottext">[Int]
-</span><a href="#local-6989586621680574328"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">[Int]
-</span><a href="#local-6989586621680574329"><span class="hs-identifier hs-var">xs</span></a></span><span>
-</span><span id="line-56"></span><span>    </span><span id="local-6989586621680574320"><span class="annot"><span class="annottext">mkSub :: [(Int, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574320"><span class="hs-identifier hs-var hs-var">mkSub</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [(Int, Int)] -&gt; Substitution' Term
+</span><a href="#local-6989586621680574192"><span class="hs-identifier hs-var">ys</span></a></span><span> </span><span class="annot"><span class="annottext">[Int]
+</span><a href="#local-6989586621680574193"><span class="hs-identifier hs-var">xs</span></a></span><span>
+</span><span id="line-56"></span><span>    </span><span id="local-6989586621680574184"><span class="annot"><span class="annottext">mkSub :: [(Int, Int)] -&gt; Substitution' Term
+</span><a href="#local-6989586621680574184"><span class="hs-identifier hs-var hs-var">mkSub</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [(Int, Int)] -&gt; Substitution' Term
 forall a. (Eq a, Num a) =&gt; a -&gt; [(a, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574318"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680574182"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">0</span></span><span>
 </span><span id="line-57"></span><span>      </span><span class="hs-keyword">where</span><span>
-</span><span id="line-58"></span><span>        </span><span id="local-6989586621680574318"><span class="annot"><span class="annottext">go :: a -&gt; [(a, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574318"><span class="hs-identifier hs-var hs-var">go</span></a></span></span><span> </span><span class="annot"><span class="annottext">a
+</span><span id="line-58"></span><span>        </span><span id="local-6989586621680574182"><span class="annot"><span class="annottext">go :: a -&gt; [(a, Int)] -&gt; Substitution' Term
+</span><a href="#local-6989586621680574182"><span class="hs-identifier hs-var hs-var">go</span></a></span></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Substitution' Term
 forall a. Substitution' a
 </span><a href="Agda.Syntax.Internal.html#IdS"><span class="hs-identifier hs-var">IdS</span></a></span><span>
-</span><span id="line-59"></span><span>        </span><span class="annot"><a href="#local-6989586621680574318"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span id="local-6989586621680574316"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574316"><span class="hs-identifier hs-var">y</span></a></span></span><span> </span><span id="local-6989586621680574315"><span class="annot"><span class="annottext">ren0 :: [(a, Int)]
-</span><a href="#local-6989586621680574315"><span class="hs-identifier hs-var">ren0</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="hs-special">(</span><span id="local-6989586621680574314"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574314"><span class="hs-identifier hs-var">y'</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680574313"><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680574313"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574312"><span class="annot"><span class="annottext">[(a, Int)]
-</span><a href="#local-6989586621680574312"><span class="hs-identifier hs-var">ren</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-59"></span><span>        </span><span class="annot"><a href="#local-6989586621680574182"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span id="local-6989586621680574180"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680574180"><span class="hs-identifier hs-var">y</span></a></span></span><span> </span><span id="local-6989586621680574179"><span class="annot"><span class="annottext">ren0 :: [(a, Int)]
+</span><a href="#local-6989586621680574179"><span class="hs-identifier hs-var">ren0</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="hs-special">(</span><span id="local-6989586621680574178"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680574178"><span class="hs-identifier hs-var">y'</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680574177"><span class="annot"><span class="annottext">Int
+</span><a href="#local-6989586621680574177"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574176"><span class="annot"><span class="annottext">[(a, Int)]
+</span><a href="#local-6989586621680574176"><span class="hs-identifier hs-var">ren</span></a></span></span><span class="hs-special">)</span><span>
 </span><span id="line-60"></span><span>          </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574316"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; Bool
+</span><a href="#local-6989586621680574180"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574314"><span class="hs-identifier hs-var">y'</span></a></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Elims -&gt; Term
+</span><a href="#local-6989586621680574178"><span class="hs-identifier hs-var">y'</span></a></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Elims -&gt; Term
 </span><a href="Agda.Syntax.Internal.html#Var"><span class="hs-identifier hs-var">Var</span></a></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680574313"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Term -&gt; Substitution' Term -&gt; Substitution' Term
+</span><a href="#local-6989586621680574177"><span class="hs-identifier hs-var">x</span></a></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">Term -&gt; Substitution' Term -&gt; Substitution' Term
 forall a. a -&gt; Substitution' a -&gt; Substitution' a
 </span><a href="Agda.Syntax.Internal.html#%3A%23"><span class="hs-operator hs-var">:#</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; [(a, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574318"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574316"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; a
+</span><a href="#local-6989586621680574182"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680574180"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; a
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[(a, Int)]
-</span><a href="#local-6989586621680574312"><span class="hs-identifier hs-var">ren</span></a></span><span>
+</span><a href="#local-6989586621680574176"><span class="hs-identifier hs-var">ren</span></a></span><span>
 </span><span id="line-61"></span><span>          </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Empty -&gt; Substitution' Term -&gt; Substitution' Term
 forall a. Empty -&gt; Substitution' a -&gt; Substitution' a
@@ -248,12 +248,12 @@ forall a. HasCallStack =&gt; a
 -&gt; Substitution' Term -&gt; Substitution' Term
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">a -&gt; [(a, Int)] -&gt; Substitution' Term
-</span><a href="#local-6989586621680574318"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680574316"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; a
+</span><a href="#local-6989586621680574182"><span class="hs-identifier hs-var">go</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680574180"><span class="hs-identifier hs-var">y</span></a></span><span> </span><span class="annot"><span class="annottext">a -&gt; a -&gt; a
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">a
 </span><span class="hs-number">1</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[(a, Int)]
-</span><a href="#local-6989586621680574315"><span class="hs-identifier hs-var">ren0</span></a></span><span>
+</span><a href="#local-6989586621680574179"><span class="hs-identifier hs-var">ren0</span></a></span><span>
 </span><span id="line-62"></span><span>
 </span><span id="line-63"></span><span class="hs-comment">-- | Turn a level constraint into a list of inequalities between</span><span>
 </span><span id="line-64"></span><span class="hs-comment">--   single levels, if possible.</span><span>
@@ -262,14 +262,14 @@ forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span id="line-67"></span><span>
 </span><span id="line-68"></span><span id="inequalities"><span class="annot"><span class="annottext">inequalities :: Constraint -&gt; Maybe [Leq]
 </span><a href="Agda.TypeChecking.LevelConstraints.html#inequalities"><span class="hs-identifier hs-var hs-var">inequalities</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#LevelCmp"><span class="hs-identifier hs-type">LevelCmp</span></a></span><span> </span><span class="annot"><span class="annottext">Comparison
-</span><a href="Agda.TypeChecking.Monad.Base.html#CmpLeq"><span class="hs-identifier hs-var">CmpLeq</span></a></span><span> </span><span id="local-6989586621680574306"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574306"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574305"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574305"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
-</span><span id="line-69"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574304"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574304"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
+</span><a href="Agda.TypeChecking.Monad.Base.html#CmpLeq"><span class="hs-identifier hs-var">CmpLeq</span></a></span><span> </span><span id="local-6989586621680574170"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574170"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574169"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574169"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-69"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574168"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574168"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
 forall t. Level' t -&gt; Maybe (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#singleLevelView"><span class="hs-identifier hs-var">singleLevelView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574305"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
+</span><a href="#local-6989586621680574169"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="annot"><span class="annottext">([Leq] -&gt; Maybe [Leq]) -&gt; [Leq] -&gt; Maybe [Leq]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -277,7 +277,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
 </span><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-var">:=&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574304"><span class="hs-identifier hs-var">b'</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([SingleLevel] -&gt; [Leq]) -&gt; [SingleLevel] -&gt; [Leq]
+</span><a href="#local-6989586621680574168"><span class="hs-identifier hs-var">b'</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([SingleLevel] -&gt; [Leq]) -&gt; [SingleLevel] -&gt; [Leq]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">NonEmpty SingleLevel -&gt; [SingleLevel]
 forall a. NonEmpty a -&gt; [a]
@@ -287,7 +287,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Level -&gt; NonEmpty SingleLevel
 forall t. Level' t -&gt; NonEmpty (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#levelMaxView"><span class="hs-identifier hs-var">levelMaxView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574306"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><a href="#local-6989586621680574170"><span class="hs-identifier hs-var">a</span></a></span><span>
 </span><span id="line-70"></span><span>  </span><span class="hs-comment">-- Andreas, 2016-09-28</span><span>
 </span><span id="line-71"></span><span>  </span><span class="hs-comment">-- Why was this most natural case missing?</span><span>
 </span><span id="line-72"></span><span>  </span><span class="hs-comment">-- See test/Succeed/LevelLeqGeq.agda for where it is useful!</span><span>
@@ -296,76 +296,76 @@ forall t. Level' t -&gt; NonEmpty (SingleLevel' t)
 </span><span id="line-75"></span><span class="hs-comment">-- E.g.: a = a &#8852; b &#8852; c --&gt; b &#8804; a &amp; c &#8804; a</span><span>
 </span><span id="line-76"></span><span>
 </span><span id="line-77"></span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#inequalities"><span class="hs-identifier hs-var">inequalities</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#LevelCmp"><span class="hs-identifier hs-type">LevelCmp</span></a></span><span> </span><span class="annot"><span class="annottext">Comparison
-</span><a href="Agda.TypeChecking.Monad.Base.html#CmpEq"><span class="hs-identifier hs-var">CmpEq</span></a></span><span> </span><span id="local-6989586621680574300"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574300"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574299"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574299"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
-</span><span id="line-78"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574298"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574298"><span class="hs-identifier hs-var">a'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
+</span><a href="Agda.TypeChecking.Monad.Base.html#CmpEq"><span class="hs-identifier hs-var">CmpEq</span></a></span><span> </span><span id="local-6989586621680574164"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574164"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574163"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574163"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-78"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574162"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574162"><span class="hs-identifier hs-var">a'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
 forall t. Level' t -&gt; Maybe (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#singleLevelView"><span class="hs-identifier hs-var">singleLevelView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574300"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="#local-6989586621680574164"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-79"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">(SingleLevel -&gt; Bool)
 -&gt; NonEmpty SingleLevel -&gt; ([SingleLevel], [SingleLevel])
 forall a. (a -&gt; Bool) -&gt; NonEmpty a -&gt; ([a], [a])
 </span><span class="hs-identifier hs-var">List1.break</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574298"><span class="hs-identifier hs-var">a'</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Level -&gt; NonEmpty SingleLevel
+</span><a href="#local-6989586621680574162"><span class="hs-identifier hs-var">a'</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Level -&gt; NonEmpty SingleLevel
 forall t. Level' t -&gt; NonEmpty (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#levelMaxView"><span class="hs-identifier hs-var">levelMaxView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574299"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-80"></span><span>    </span><span class="hs-special">(</span><span id="local-6989586621680574296"><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574296"><span class="hs-identifier hs-var">bs0</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574295"><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574295"><span class="hs-identifier hs-var">bs1</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
+</span><a href="#local-6989586621680574163"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-80"></span><span>    </span><span class="hs-special">(</span><span id="local-6989586621680574160"><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574160"><span class="hs-identifier hs-var">bs0</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574159"><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574159"><span class="hs-identifier hs-var">bs1</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574294"><span class="hs-identifier hs-var">b'</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
+</span><a href="#local-6989586621680574158"><span class="hs-identifier hs-var">b'</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
 </span><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-var">:=&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574298"><span class="hs-identifier hs-var">a'</span></a></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680574294"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574294"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574296"><span class="hs-identifier hs-var">bs0</span></a></span><span> </span><span class="annot"><span class="annottext">[SingleLevel] -&gt; [SingleLevel] -&gt; [SingleLevel]
+</span><a href="#local-6989586621680574162"><span class="hs-identifier hs-var">a'</span></a></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680574158"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574158"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574160"><span class="hs-identifier hs-var">bs0</span></a></span><span> </span><span class="annot"><span class="annottext">[SingleLevel] -&gt; [SingleLevel] -&gt; [SingleLevel]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574295"><span class="hs-identifier hs-var">bs1</span></a></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621680574159"><span class="hs-identifier hs-var">bs1</span></a></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-81"></span><span>    </span><span class="annot"><span class="annottext">([SingleLevel], [SingleLevel])
 </span><span class="hs-identifier">_</span></span><span>              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe [Leq]
 forall a. Maybe a
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>
 </span><span id="line-82"></span><span>
 </span><span id="line-83"></span><span class="annot"><a href="Agda.TypeChecking.LevelConstraints.html#inequalities"><span class="hs-identifier hs-var">inequalities</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.TypeChecking.Monad.Base.html#LevelCmp"><span class="hs-identifier hs-type">LevelCmp</span></a></span><span> </span><span class="annot"><span class="annottext">Comparison
-</span><a href="Agda.TypeChecking.Monad.Base.html#CmpEq"><span class="hs-identifier hs-var">CmpEq</span></a></span><span> </span><span id="local-6989586621680574293"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574293"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574292"><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574292"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
-</span><span id="line-84"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574291"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574291"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
+</span><a href="Agda.TypeChecking.Monad.Base.html#CmpEq"><span class="hs-identifier hs-var">CmpEq</span></a></span><span> </span><span id="local-6989586621680574157"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574157"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680574156"><span class="annot"><span class="annottext">Level
+</span><a href="#local-6989586621680574156"><span class="hs-identifier hs-var">b</span></a></span></span><span class="hs-special">)</span><span>
+</span><span id="line-84"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680574155"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574155"><span class="hs-identifier hs-var">b'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Level -&gt; Maybe SingleLevel
 forall t. Level' t -&gt; Maybe (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#singleLevelView"><span class="hs-identifier hs-var">singleLevelView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574292"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-glyph">=</span><span>
+</span><a href="#local-6989586621680574156"><span class="hs-identifier hs-var">b</span></a></span><span> </span><span class="hs-glyph">=</span><span>
 </span><span id="line-85"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">(SingleLevel -&gt; Bool)
 -&gt; NonEmpty SingleLevel -&gt; ([SingleLevel], [SingleLevel])
 forall a. (a -&gt; Bool) -&gt; NonEmpty a -&gt; ([a], [a])
 </span><span class="hs-identifier hs-var">List1.break</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574291"><span class="hs-identifier hs-var">b'</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Level -&gt; NonEmpty SingleLevel
+</span><a href="#local-6989586621680574155"><span class="hs-identifier hs-var">b'</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Level -&gt; NonEmpty SingleLevel
 forall t. Level' t -&gt; NonEmpty (SingleLevel' t)
 </span><a href="Agda.TypeChecking.Level.html#levelMaxView"><span class="hs-identifier hs-var">levelMaxView</span></a></span><span> </span><span class="annot"><span class="annottext">Level
-</span><a href="#local-6989586621680574293"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
-</span><span id="line-86"></span><span>    </span><span class="hs-special">(</span><span id="local-6989586621680574290"><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574290"><span class="hs-identifier hs-var">as0</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574289"><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574289"><span class="hs-identifier hs-var">as1</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
+</span><a href="#local-6989586621680574157"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">of</span><span>
+</span><span id="line-86"></span><span>    </span><span class="hs-special">(</span><span id="local-6989586621680574154"><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574154"><span class="hs-identifier hs-var">as0</span></a></span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">SingleLevel
+</span><span class="hs-identifier">_</span></span><span> </span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span> </span><span id="local-6989586621680574153"><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574153"><span class="hs-identifier hs-var">as1</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[Leq] -&gt; Maybe [Leq]
 forall a. a -&gt; Maybe a
 </span><span class="hs-identifier hs-var">Just</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574288"><span class="hs-identifier hs-var">a'</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
+</span><a href="#local-6989586621680574152"><span class="hs-identifier hs-var">a'</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel -&gt; SingleLevel -&gt; Leq
 </span><a href="Agda.TypeChecking.LevelConstraints.html#%3A%3D%3C"><span class="hs-operator hs-var">:=&lt;</span></a></span><span> </span><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574291"><span class="hs-identifier hs-var">b'</span></a></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680574288"><span class="annot"><span class="annottext">SingleLevel
-</span><a href="#local-6989586621680574288"><span class="hs-identifier hs-var">a'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574290"><span class="hs-identifier hs-var">as0</span></a></span><span> </span><span class="annot"><span class="annottext">[SingleLevel] -&gt; [SingleLevel] -&gt; [SingleLevel]
+</span><a href="#local-6989586621680574155"><span class="hs-identifier hs-var">b'</span></a></span><span> </span><span class="hs-glyph">|</span><span> </span><span id="local-6989586621680574152"><span class="annot"><span class="annottext">SingleLevel
+</span><a href="#local-6989586621680574152"><span class="hs-identifier hs-var">a'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
+</span><a href="#local-6989586621680574154"><span class="hs-identifier hs-var">as0</span></a></span><span> </span><span class="annot"><span class="annottext">[SingleLevel] -&gt; [SingleLevel] -&gt; [SingleLevel]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">[SingleLevel]
-</span><a href="#local-6989586621680574289"><span class="hs-identifier hs-var">as1</span></a></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621680574153"><span class="hs-identifier hs-var">as1</span></a></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-87"></span><span>    </span><span class="annot"><span class="annottext">([SingleLevel], [SingleLevel])
 </span><span class="hs-identifier">_</span></span><span>              </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Maybe [Leq]
 forall a. Maybe a

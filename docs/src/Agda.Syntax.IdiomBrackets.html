@@ -18,71 +18,71 @@
 </span><span id="line-18"></span><span>
 </span><span id="line-19"></span><span class="annot"><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBracketsSeq"><span class="hs-identifier hs-type">parseIdiomBracketsSeq</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">[</span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Scope.Monad.html#ScopeM"><span class="hs-identifier hs-type">ScopeM</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span>
 </span><span id="line-20"></span><span id="parseIdiomBracketsSeq"><span class="annot"><span class="annottext">parseIdiomBracketsSeq :: Range -&gt; [Expr] -&gt; ScopeM Expr
-</span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBracketsSeq"><span class="hs-identifier hs-var hs-var">parseIdiomBracketsSeq</span></a></span></span><span> </span><span id="local-6989586621680622552"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622552"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680622551"><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622551"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-21"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680622550"><span class="annot"><span class="annottext">qEmpty :: QName
-</span><a href="#local-6989586621680622550"><span class="hs-identifier hs-var hs-var">qEmpty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
+</span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBracketsSeq"><span class="hs-identifier hs-var hs-var">parseIdiomBracketsSeq</span></a></span></span><span> </span><span id="local-6989586621680622413"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680622413"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680622412"><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622412"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-21"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680622411"><span class="annot"><span class="annottext">qEmpty :: QName
+</span><a href="#local-6989586621680622411"><span class="hs-identifier hs-var hs-var">qEmpty</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
 </span><a href="Agda.Syntax.Concrete.Name.html#QName"><span class="hs-identifier hs-var">QName</span></a></span><span> </span><span class="annot"><span class="annottext">(Name -&gt; QName) -&gt; Name -&gt; QName
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; Name
 </span><a href="Agda.Syntax.Concrete.Name.html#simpleName"><span class="hs-identifier hs-var">simpleName</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;empty&quot;</span></span><span>
-</span><span id="line-22"></span><span>      </span><span id="local-6989586621680622547"><span class="annot"><span class="annottext">qPlus :: QName
-</span><a href="#local-6989586621680622547"><span class="hs-identifier hs-var hs-var">qPlus</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
+</span><span id="line-22"></span><span>      </span><span id="local-6989586621680622408"><span class="annot"><span class="annottext">qPlus :: QName
+</span><a href="#local-6989586621680622408"><span class="hs-identifier hs-var hs-var">qPlus</span></a></span></span><span>  </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
 </span><a href="Agda.Syntax.Concrete.Name.html#QName"><span class="hs-identifier hs-var">QName</span></a></span><span> </span><span class="annot"><span class="annottext">(Name -&gt; QName) -&gt; Name -&gt; QName
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; Name
 </span><a href="Agda.Syntax.Concrete.Name.html#simpleBinaryOperator"><span class="hs-identifier hs-var">simpleBinaryOperator</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;&lt;|&gt;&quot;</span></span><span>
-</span><span id="line-23"></span><span>      </span><span id="local-6989586621680622545"><span class="annot"><span class="annottext">ePlus :: Expr -&gt; Expr -&gt; Expr
-</span><a href="#local-6989586621680622545"><span class="hs-identifier hs-var hs-var">ePlus</span></a></span></span><span> </span><span id="local-6989586621680622544"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622544"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680622543"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622543"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
+</span><span id="line-23"></span><span>      </span><span id="local-6989586621680622406"><span class="annot"><span class="annottext">ePlus :: Expr -&gt; Expr -&gt; Expr
+</span><a href="#local-6989586621680622406"><span class="hs-identifier hs-var hs-var">ePlus</span></a></span></span><span> </span><span id="local-6989586621680622405"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622405"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680622404"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622404"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-var">App</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622552"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
+</span><a href="#local-6989586621680622413"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-var">App</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622552"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
+</span><a href="#local-6989586621680622413"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#Ident"><span class="hs-identifier hs-var">Ident</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622547"><span class="hs-identifier hs-var">qPlus</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
+</span><a href="#local-6989586621680622408"><span class="hs-identifier hs-var">qPlus</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622544"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
+</span><a href="#local-6989586621680622405"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622543"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680622404"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-24"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622551"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680622412"><span class="hs-identifier hs-var">es</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-25"></span><span>    </span><span class="hs-special">[</span><span class="hs-special">]</span><span>       </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">QName -&gt; ScopeM ()
 </span><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-var">ensureInScope</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622550"><span class="hs-identifier hs-var">qEmpty</span></a></span><span> </span><span class="annot"><span class="annottext">ScopeM () -&gt; ScopeM Expr -&gt; ScopeM Expr
+</span><a href="#local-6989586621680622411"><span class="hs-identifier hs-var">qEmpty</span></a></span><span> </span><span class="annot"><span class="annottext">ScopeM () -&gt; ScopeM Expr -&gt; ScopeM Expr
 forall (m :: * -&gt; *) a b. Monad m =&gt; m a -&gt; m b -&gt; m b
 </span><span class="hs-operator hs-var">&gt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM Expr
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#Ident"><span class="hs-identifier hs-var">Ident</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622550"><span class="hs-identifier hs-var">qEmpty</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-26"></span><span>    </span><span class="hs-special">[</span><span id="local-6989586621680622538"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622538"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">]</span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; ScopeM Expr
+</span><a href="#local-6989586621680622411"><span class="hs-identifier hs-var">qEmpty</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-26"></span><span>    </span><span class="hs-special">[</span><span id="local-6989586621680622399"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622399"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-special">]</span><span>      </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; ScopeM Expr
 </span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBrackets"><span class="hs-identifier hs-var">parseIdiomBrackets</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622552"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622538"><span class="hs-identifier hs-var">e</span></a></span><span>
-</span><span id="line-27"></span><span>    </span><span id="local-6989586621680622536"><span class="annot"><span class="annottext">es :: [Expr]
-</span><a href="#local-6989586621680622536"><span class="hs-identifier hs-var">es</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622413"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622399"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><span id="line-27"></span><span>    </span><span id="local-6989586621680622397"><span class="annot"><span class="annottext">es :: [Expr]
+</span><a href="#local-6989586621680622397"><span class="hs-identifier hs-var">es</span></a></span></span><span class="hs-glyph">@</span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr
 </span><span class="hs-identifier">_</span></span><span class="annot"><span class="hs-glyph hs-type">:</span></span><span class="annot"><span class="annottext">[Expr]
 </span><span class="hs-identifier">_</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
 </span><span id="line-28"></span><span>      </span><span class="annot"><span class="annottext">QName -&gt; ScopeM ()
 </span><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-var">ensureInScope</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622547"><span class="hs-identifier hs-var">qPlus</span></a></span><span>
-</span><span id="line-29"></span><span>      </span><span id="local-6989586621680622535"><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622535"><span class="hs-identifier hs-var">es'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM Expr) -&gt; [Expr] -&gt; TCMT IO [Expr]
+</span><a href="#local-6989586621680622408"><span class="hs-identifier hs-var">qPlus</span></a></span><span>
+</span><span id="line-29"></span><span>      </span><span id="local-6989586621680622396"><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622396"><span class="hs-identifier hs-var">es'</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM Expr) -&gt; [Expr] -&gt; TCMT IO [Expr]
 forall (t :: * -&gt; *) (m :: * -&gt; *) a b.
 (Traversable t, Monad m) =&gt;
 (a -&gt; m b) -&gt; t a -&gt; m (t b)
 </span><span class="hs-identifier hs-var">mapM</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; ScopeM Expr
 </span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBrackets"><span class="hs-identifier hs-var">parseIdiomBrackets</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622552"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622536"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621680622413"><span class="hs-identifier hs-var">r</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622397"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-30"></span><span>      </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM Expr
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM Expr) -&gt; Expr -&gt; ScopeM Expr
@@ -90,76 +90,76 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; Expr -&gt; Expr) -&gt; [Expr] -&gt; Expr
 forall (t :: * -&gt; *) a. Foldable t =&gt; (a -&gt; a -&gt; a) -&gt; t a -&gt; a
 </span><span class="hs-identifier hs-var">foldr1</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; Expr -&gt; Expr
-</span><a href="#local-6989586621680622545"><span class="hs-identifier hs-var">ePlus</span></a></span><span> </span><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622535"><span class="hs-identifier hs-var">es'</span></a></span><span>
+</span><a href="#local-6989586621680622406"><span class="hs-identifier hs-var">ePlus</span></a></span><span> </span><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622396"><span class="hs-identifier hs-var">es'</span></a></span><span>
 </span><span id="line-31"></span><span>
 </span><span id="line-32"></span><span class="annot"><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBrackets"><span class="hs-identifier hs-type">parseIdiomBrackets</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Position.html#Range"><span class="hs-identifier hs-type">Range</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Scope.Monad.html#ScopeM"><span class="hs-identifier hs-type">ScopeM</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span>
 </span><span id="line-33"></span><span id="parseIdiomBrackets"><span class="annot"><span class="annottext">parseIdiomBrackets :: Range -&gt; Expr -&gt; ScopeM Expr
-</span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBrackets"><span class="hs-identifier hs-var hs-var">parseIdiomBrackets</span></a></span></span><span> </span><span id="local-6989586621680622532"><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622532"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680622531"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622531"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-34"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680622530"><span class="annot"><span class="annottext">qPure :: QName
-</span><a href="#local-6989586621680622530"><span class="hs-identifier hs-var hs-var">qPure</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
+</span><a href="Agda.Syntax.IdiomBrackets.html#parseIdiomBrackets"><span class="hs-identifier hs-var hs-var">parseIdiomBrackets</span></a></span></span><span> </span><span id="local-6989586621680622393"><span class="annot"><span class="annottext">Range
+</span><a href="#local-6989586621680622393"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span id="local-6989586621680622392"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622392"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-34"></span><span>  </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680622391"><span class="annot"><span class="annottext">qPure :: QName
+</span><a href="#local-6989586621680622391"><span class="hs-identifier hs-var hs-var">qPure</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
 </span><a href="Agda.Syntax.Concrete.Name.html#QName"><span class="hs-identifier hs-var">QName</span></a></span><span> </span><span class="annot"><span class="annottext">(Name -&gt; QName) -&gt; Name -&gt; QName
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; Name
 </span><a href="Agda.Syntax.Concrete.Name.html#simpleName"><span class="hs-identifier hs-var">simpleName</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;pure&quot;</span></span><span>
-</span><span id="line-35"></span><span>      </span><span id="local-6989586621680622529"><span class="annot"><span class="annottext">qAp :: QName
-</span><a href="#local-6989586621680622529"><span class="hs-identifier hs-var hs-var">qAp</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
+</span><span id="line-35"></span><span>      </span><span id="local-6989586621680622390"><span class="annot"><span class="annottext">qAp :: QName
+</span><a href="#local-6989586621680622390"><span class="hs-identifier hs-var hs-var">qAp</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Name -&gt; QName
 </span><a href="Agda.Syntax.Concrete.Name.html#QName"><span class="hs-identifier hs-var">QName</span></a></span><span> </span><span class="annot"><span class="annottext">(Name -&gt; QName) -&gt; Name -&gt; QName
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; Name
 </span><a href="Agda.Syntax.Concrete.Name.html#simpleBinaryOperator"><span class="hs-identifier hs-var">simpleBinaryOperator</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;&lt;*&gt;&quot;</span></span><span>
-</span><span id="line-36"></span><span>      </span><span id="local-6989586621680622528"><span class="annot"><span class="annottext">ePure :: Expr -&gt; Expr
-</span><a href="#local-6989586621680622528"><span class="hs-identifier hs-var hs-var">ePure</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
+</span><span id="line-36"></span><span>      </span><span id="local-6989586621680622389"><span class="annot"><span class="annottext">ePure :: Expr -&gt; Expr
+</span><a href="#local-6989586621680622389"><span class="hs-identifier hs-var hs-var">ePure</span></a></span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-var">App</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622532"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
+</span><a href="#local-6989586621680622393"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#Ident"><span class="hs-identifier hs-var">Ident</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622530"><span class="hs-identifier hs-var">qPure</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(NamedArg Expr -&gt; Expr) -&gt; (Expr -&gt; NamedArg Expr) -&gt; Expr -&gt; Expr
+</span><a href="#local-6989586621680622391"><span class="hs-identifier hs-var">qPure</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(NamedArg Expr -&gt; Expr) -&gt; (Expr -&gt; NamedArg Expr) -&gt; Expr -&gt; Expr
 forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span>
-</span><span id="line-37"></span><span>      </span><span id="local-6989586621680622526"><span class="annot"><span class="annottext">eAp :: Expr -&gt; Expr -&gt; Expr
-</span><a href="#local-6989586621680622526"><span class="hs-identifier hs-var hs-var">eAp</span></a></span></span><span> </span><span id="local-6989586621680622525"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622525"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680622524"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622524"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
+</span><span id="line-37"></span><span>      </span><span id="local-6989586621680622387"><span class="annot"><span class="annottext">eAp :: Expr -&gt; Expr -&gt; Expr
+</span><a href="#local-6989586621680622387"><span class="hs-identifier hs-var hs-var">eAp</span></a></span></span><span> </span><span id="local-6989586621680622386"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622386"><span class="hs-identifier hs-var">a</span></a></span></span><span> </span><span id="local-6989586621680622385"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622385"><span class="hs-identifier hs-var">b</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-var">App</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622532"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
+</span><a href="#local-6989586621680622393"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Range -&gt; Expr -&gt; NamedArg Expr -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-var">App</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><a href="#local-6989586621680622532"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
+</span><a href="#local-6989586621680622393"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#Ident"><span class="hs-identifier hs-var">Ident</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622529"><span class="hs-identifier hs-var">qAp</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
+</span><a href="#local-6989586621680622390"><span class="hs-identifier hs-var">qAp</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622525"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
+</span><a href="#local-6989586621680622386"><span class="hs-identifier hs-var">a</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; NamedArg Expr
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622524"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680622385"><span class="hs-identifier hs-var">b</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-38"></span><span>  </span><span class="annot"><span class="annottext">(QName -&gt; ScopeM ()) -&gt; [QName] -&gt; ScopeM ()
 forall (t :: * -&gt; *) (m :: * -&gt; *) a b.
 (Foldable t, Monad m) =&gt;
 (a -&gt; m b) -&gt; t a -&gt; m ()
 </span><span class="hs-identifier hs-var">mapM_</span></span><span> </span><span class="annot"><span class="annottext">QName -&gt; ScopeM ()
 </span><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-var">ensureInScope</span></a></span><span> </span><span class="hs-special">[</span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622530"><span class="hs-identifier hs-var">qPure</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622529"><span class="hs-identifier hs-var">qAp</span></a></span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621680622391"><span class="hs-identifier hs-var">qPure</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680622390"><span class="hs-identifier hs-var">qAp</span></a></span><span class="hs-special">]</span><span>
 </span><span id="line-39"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622531"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680622392"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-40"></span><span>    </span><span class="annot"><a href="Agda.Syntax.Concrete.html#RawApp"><span class="hs-identifier hs-type">RawApp</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622521"><span class="annot"><span class="annottext">List2 Expr
-</span><a href="#local-6989586621680622521"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-41"></span><span>      </span><span id="local-6989586621680622520"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622520"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="annot"><span class="hs-operator hs-type">:|</span></span><span> </span><span id="local-6989586621680622519"><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622519"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM (NonEmpty Expr)
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622382"><span class="annot"><span class="annottext">List2 Expr
+</span><a href="#local-6989586621680622382"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-41"></span><span>      </span><span id="local-6989586621680622381"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622381"><span class="hs-identifier hs-var">e</span></a></span></span><span> </span><span class="annot"><span class="hs-operator hs-type">:|</span></span><span> </span><span id="local-6989586621680622380"><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622380"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM (NonEmpty Expr)
 </span><a href="Agda.Syntax.IdiomBrackets.html#appViewM"><span class="hs-identifier hs-var">appViewM</span></a></span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM (NonEmpty Expr))
 -&gt; ScopeM Expr -&gt; ScopeM (NonEmpty Expr)
 forall (m :: * -&gt; *) a b. Monad m =&gt; (a -&gt; m b) -&gt; m a -&gt; m b
 </span><span class="hs-operator hs-var">=&lt;&lt;</span></span><span> </span><span class="annot"><span class="annottext">List2 Expr -&gt; ScopeM Expr
 </span><a href="Agda.Syntax.Concrete.Operators.html#parseApplication"><span class="hs-identifier hs-var">parseApplication</span></a></span><span> </span><span class="annot"><span class="annottext">List2 Expr
-</span><a href="#local-6989586621680622521"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621680622382"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-42"></span><span>      </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM Expr
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM Expr) -&gt; Expr -&gt; ScopeM Expr
@@ -169,29 +169,29 @@ forall (t :: * -&gt; *) b a.
 Foldable t =&gt;
 (b -&gt; a -&gt; b) -&gt; b -&gt; t a -&gt; b
 </span><span class="hs-identifier hs-var">foldl</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; Expr -&gt; Expr
-</span><a href="#local-6989586621680622526"><span class="hs-identifier hs-var">eAp</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; Expr
-</span><a href="#local-6989586621680622528"><span class="hs-identifier hs-var">ePure</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622520"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Expr]
-</span><a href="#local-6989586621680622519"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621680622387"><span class="hs-identifier hs-var">eAp</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr -&gt; Expr
+</span><a href="#local-6989586621680622389"><span class="hs-identifier hs-var">ePure</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622381"><span class="hs-identifier hs-var">e</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[Expr]
+</span><a href="#local-6989586621680622380"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-43"></span><span>    </span><span class="annot"><span class="annottext">Expr
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">Expr -&gt; ScopeM Expr
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(Expr -&gt; ScopeM Expr) -&gt; Expr -&gt; ScopeM Expr
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; Expr
-</span><a href="#local-6989586621680622528"><span class="hs-identifier hs-var">ePure</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622531"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><a href="#local-6989586621680622389"><span class="hs-identifier hs-var">ePure</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622392"><span class="hs-identifier hs-var">e</span></a></span><span>
 </span><span id="line-44"></span><span>
 </span><span id="line-45"></span><span class="annot"><a href="Agda.Syntax.IdiomBrackets.html#appViewM"><span class="hs-identifier hs-type">appViewM</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Scope.Monad.html#ScopeM"><span class="hs-identifier hs-type">ScopeM</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Utils.List1.html#List1"><span class="hs-identifier hs-type">List1</span></a></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#Expr"><span class="hs-identifier hs-type">Expr</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-46"></span><span id="appViewM"><span class="annot"><span class="annottext">appViewM :: Expr -&gt; ScopeM (NonEmpty Expr)
 </span><a href="Agda.Syntax.IdiomBrackets.html#appViewM"><span class="hs-identifier hs-var hs-var">appViewM</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
-</span><span id="line-47"></span><span>    </span><span id="local-6989586621680622514"><span class="annot"><span class="annottext">e :: Expr
-</span><a href="#local-6989586621680622514"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-type">App</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span>         </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">let</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#AppView"><span class="hs-identifier hs-type">AppView</span></a></span><span> </span><span id="local-6989586621680622512"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622512"><span class="hs-identifier hs-var">e'</span></a></span></span><span> </span><span id="local-6989586621680622511"><span class="annot"><span class="annottext">[NamedArg Expr]
-</span><a href="#local-6989586621680622511"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Expr -&gt; AppView
+</span><span id="line-47"></span><span>    </span><span id="local-6989586621680622375"><span class="annot"><span class="annottext">e :: Expr
+</span><a href="#local-6989586621680622375"><span class="hs-identifier hs-var">e</span></a></span></span><span class="hs-glyph">@</span><span class="annot"><a href="Agda.Syntax.Concrete.html#App"><span class="hs-identifier hs-type">App</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span>         </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">let</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.html#AppView"><span class="hs-identifier hs-type">AppView</span></a></span><span> </span><span id="local-6989586621680622373"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622373"><span class="hs-identifier hs-var">e'</span></a></span></span><span> </span><span id="local-6989586621680622372"><span class="annot"><span class="annottext">[NamedArg Expr]
+</span><a href="#local-6989586621680622372"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Expr -&gt; AppView
 </span><a href="Agda.Syntax.Concrete.html#appView"><span class="hs-identifier hs-var">appView</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622514"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622512"><span class="hs-identifier hs-var">e'</span></a></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; [Expr] -&gt; NonEmpty Expr
+</span><a href="#local-6989586621680622375"><span class="hs-identifier hs-var">e</span></a></span><span> </span><span class="hs-keyword">in</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622373"><span class="hs-identifier hs-var">e'</span></a></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; [Expr] -&gt; NonEmpty Expr
 forall a. a -&gt; [a] -&gt; NonEmpty a
 </span><span class="hs-operator hs-var">:|</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([Expr] -&gt; NonEmpty Expr)
 -&gt; TCMT IO [Expr] -&gt; ScopeM (NonEmpty Expr)
@@ -204,15 +204,15 @@ forall (t :: * -&gt; *) (m :: * -&gt; *) a b.
 forall (m :: * -&gt; *) a.
 (MonadTCEnv m, ReadTCState m, MonadError TCErr m) =&gt;
 Arg (Named NamedName a) -&gt; m a
-</span><a href="#local-6989586621680622508"><span class="hs-identifier hs-var">onlyVisible</span></a></span><span> </span><span class="annot"><span class="annottext">[NamedArg Expr]
-</span><a href="#local-6989586621680622511"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><a href="#local-6989586621680622369"><span class="hs-identifier hs-var">onlyVisible</span></a></span><span> </span><span class="annot"><span class="annottext">[NamedArg Expr]
+</span><a href="#local-6989586621680622372"><span class="hs-identifier hs-var">es</span></a></span><span>
 </span><span id="line-48"></span><span>    </span><span class="annot"><a href="Agda.Syntax.Concrete.html#OpApp"><span class="hs-identifier hs-type">OpApp</span></a></span><span> </span><span class="annot"><span class="annottext">Range
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622506"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622506"><span class="hs-identifier hs-var">op</span></a></span></span><span> </span><span class="annot"><span class="annottext">Set Name
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622505"><span class="annot"><span class="annottext">OpAppArgs
-</span><a href="#local-6989586621680622505"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622367"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680622367"><span class="hs-identifier hs-var">op</span></a></span></span><span> </span><span class="annot"><span class="annottext">Set Name
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622366"><span class="annot"><span class="annottext">OpAppArgs
+</span><a href="#local-6989586621680622366"><span class="hs-identifier hs-var">es</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">QName -&gt; Expr
 </span><a href="Agda.Syntax.Concrete.html#Ident"><span class="hs-identifier hs-var">Ident</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622506"><span class="hs-identifier hs-var">op</span></a></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; [Expr] -&gt; NonEmpty Expr
+</span><a href="#local-6989586621680622367"><span class="hs-identifier hs-var">op</span></a></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; [Expr] -&gt; NonEmpty Expr
 forall a. a -&gt; [a] -&gt; NonEmpty a
 </span><span class="hs-operator hs-var">:|</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">([Expr] -&gt; NonEmpty Expr)
 -&gt; TCMT IO [Expr] -&gt; ScopeM (NonEmpty Expr)
@@ -227,7 +227,7 @@ forall (t :: * -&gt; *) (m :: * -&gt; *) a b.
 forall (m :: * -&gt; *) a.
 (MonadTCEnv m, ReadTCState m, MonadError TCErr m) =&gt;
 OpApp a -&gt; m a
-</span><a href="#local-6989586621680622504"><span class="hs-identifier hs-var">ordinary</span></a></span><span> </span><span class="annot"><span class="annottext">(OpApp Expr -&gt; ScopeM Expr)
+</span><a href="#local-6989586621680622365"><span class="hs-identifier hs-var">ordinary</span></a></span><span> </span><span class="annot"><span class="annottext">(OpApp Expr -&gt; ScopeM Expr)
 -&gt; (Arg (Named NamedName (MaybePlaceholder (OpApp Expr)))
     -&gt; TCMT IO (OpApp Expr))
 -&gt; Arg (Named NamedName (MaybePlaceholder (OpApp Expr)))
@@ -239,7 +239,7 @@ Monad m =&gt;
 forall (m :: * -&gt; *) a.
 (MonadTCEnv m, ReadTCState m, MonadError TCErr m) =&gt;
 MaybePlaceholder a -&gt; m a
-</span><a href="#local-6989586621680622502"><span class="hs-identifier hs-var">noPlaceholder</span></a></span><span> </span><span class="annot"><span class="annottext">(MaybePlaceholder (OpApp Expr) -&gt; TCMT IO (OpApp Expr))
+</span><a href="#local-6989586621680622363"><span class="hs-identifier hs-var">noPlaceholder</span></a></span><span> </span><span class="annot"><span class="annottext">(MaybePlaceholder (OpApp Expr) -&gt; TCMT IO (OpApp Expr))
 -&gt; (Arg (Named NamedName (MaybePlaceholder (OpApp Expr)))
     -&gt; TCMT IO (MaybePlaceholder (OpApp Expr)))
 -&gt; Arg (Named NamedName (MaybePlaceholder (OpApp Expr)))
@@ -252,10 +252,10 @@ Monad m =&gt;
 forall (m :: * -&gt; *) a.
 (MonadTCEnv m, ReadTCState m, MonadError TCErr m) =&gt;
 Arg (Named NamedName a) -&gt; m a
-</span><a href="#local-6989586621680622508"><span class="hs-identifier hs-var">onlyVisible</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">OpAppArgs
-</span><a href="#local-6989586621680622505"><span class="hs-identifier hs-var">es</span></a></span><span>
-</span><span id="line-49"></span><span>    </span><span id="local-6989586621680622501"><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622501"><span class="hs-identifier hs-var">e</span></a></span></span><span>               </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">NonEmpty Expr -&gt; ScopeM (NonEmpty Expr)
+</span><a href="#local-6989586621680622369"><span class="hs-identifier hs-var">onlyVisible</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">OpAppArgs
+</span><a href="#local-6989586621680622366"><span class="hs-identifier hs-var">es</span></a></span><span>
+</span><span id="line-49"></span><span>    </span><span id="local-6989586621680622362"><span class="annot"><span class="annottext">Expr
+</span><a href="#local-6989586621680622362"><span class="hs-identifier hs-var">e</span></a></span></span><span>               </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">NonEmpty Expr -&gt; ScopeM (NonEmpty Expr)
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(NonEmpty Expr -&gt; ScopeM (NonEmpty Expr))
 -&gt; NonEmpty Expr -&gt; ScopeM (NonEmpty Expr)
@@ -263,11 +263,11 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Expr -&gt; NonEmpty Expr
 forall el coll. Singleton el coll =&gt; el -&gt; coll
 </span><a href="Agda.Utils.Singleton.html#singleton"><span class="hs-identifier hs-var">singleton</span></a></span><span> </span><span class="annot"><span class="annottext">Expr
-</span><a href="#local-6989586621680622501"><span class="hs-identifier hs-var">e</span></a></span><span>
+</span><a href="#local-6989586621680622362"><span class="hs-identifier hs-var">e</span></a></span><span>
 </span><span id="line-50"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-51"></span><span>    </span><span id="local-6989586621680622508"><span class="annot"><span class="annottext">onlyVisible :: Arg (Named NamedName a) -&gt; m a
-</span><a href="#local-6989586621680622508"><span class="hs-identifier hs-var hs-var">onlyVisible</span></a></span></span><span> </span><span id="local-6989586621680622499"><span class="annot"><span class="annottext">Arg (Named NamedName a)
-</span><a href="#local-6989586621680622499"><span class="hs-identifier hs-var">a</span></a></span></span><span>
+</span><span id="line-51"></span><span>    </span><span id="local-6989586621680622369"><span class="annot"><span class="annottext">onlyVisible :: Arg (Named NamedName a) -&gt; m a
+</span><a href="#local-6989586621680622369"><span class="hs-identifier hs-var hs-var">onlyVisible</span></a></span></span><span> </span><span id="local-6989586621680622360"><span class="annot"><span class="annottext">Arg (Named NamedName a)
+</span><a href="#local-6989586621680622360"><span class="hs-identifier hs-var">a</span></a></span></span><span>
 </span><span id="line-52"></span><span>      </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">() -&gt; NamedArg ()
 forall a. a -&gt; NamedArg a
 </span><a href="Agda.Syntax.Common.html#defaultNamedArg"><span class="hs-identifier hs-var">defaultNamedArg</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">NamedArg () -&gt; NamedArg () -&gt; Bool
@@ -278,14 +278,14 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="hs-special">(</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">() -&gt; Named NamedName a -&gt; Named NamedName ()
 forall (f :: * -&gt; *) a b. Functor f =&gt; a -&gt; f b -&gt; f a
 </span><span class="hs-operator hs-var">&lt;$</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Arg (Named NamedName a)
-</span><a href="#local-6989586621680622499"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
+</span><a href="#local-6989586621680622360"><span class="hs-identifier hs-var">a</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">(a -&gt; m a) -&gt; a -&gt; m a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">Arg (Named NamedName a) -&gt; a
 forall a. NamedArg a -&gt; a
 </span><a href="Agda.Syntax.Common.html#namedArg"><span class="hs-identifier hs-var">namedArg</span></a></span><span> </span><span class="annot"><span class="annottext">Arg (Named NamedName a)
-</span><a href="#local-6989586621680622499"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><a href="#local-6989586621680622360"><span class="hs-identifier hs-var">a</span></a></span><span>
 </span><span id="line-53"></span><span>      </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">otherwise</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">RawName -&gt; m a
 forall (m :: * -&gt; *) a.
@@ -293,27 +293,27 @@ forall (m :: * -&gt; *) a.
 RawName -&gt; m a
 </span><a href="Agda.TypeChecking.Monad.Base.html#genericError"><span class="hs-identifier hs-var">genericError</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;Only regular arguments are allowed in idiom brackets (no implicit or instance arguments)&quot;</span></span><span>
-</span><span id="line-54"></span><span>    </span><span id="local-6989586621680622502"><span class="annot"><span class="annottext">noPlaceholder :: MaybePlaceholder a -&gt; m a
-</span><a href="#local-6989586621680622502"><span class="hs-identifier hs-var hs-var">noPlaceholder</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Placeholder"><span class="hs-identifier hs-type">Placeholder</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">RawName -&gt; m a
+</span><span id="line-54"></span><span>    </span><span id="local-6989586621680622363"><span class="annot"><span class="annottext">noPlaceholder :: MaybePlaceholder a -&gt; m a
+</span><a href="#local-6989586621680622363"><span class="hs-identifier hs-var hs-var">noPlaceholder</span></a></span></span><span> </span><span class="annot"><a href="Agda.Syntax.Common.html#Placeholder"><span class="hs-identifier hs-type">Placeholder</span></a></span><span class="hs-special">{</span><span class="hs-special">}</span><span>       </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">RawName -&gt; m a
 forall (m :: * -&gt; *) a.
 (HasCallStack, MonadTCError m) =&gt;
 RawName -&gt; m a
 </span><a href="Agda.TypeChecking.Monad.Base.html#genericError"><span class="hs-identifier hs-var">genericError</span></a></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot;Naked sections are not allowed in idiom brackets&quot;</span></span><span>
-</span><span id="line-55"></span><span>    </span><span class="annot"><a href="#local-6989586621680622502"><span class="hs-identifier hs-var">noPlaceholder</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Common.html#NoPlaceholder"><span class="hs-identifier hs-type">NoPlaceholder</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe PositionInName
-</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622493"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680622493"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
+</span><span id="line-55"></span><span>    </span><span class="annot"><a href="#local-6989586621680622363"><span class="hs-identifier hs-var">noPlaceholder</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Common.html#NoPlaceholder"><span class="hs-identifier hs-type">NoPlaceholder</span></a></span><span> </span><span class="annot"><span class="annottext">Maybe PositionInName
+</span><span class="hs-identifier">_</span></span><span> </span><span id="local-6989586621680622354"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680622354"><span class="hs-identifier hs-var">x</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680622493"><span class="hs-identifier hs-var">x</span></a></span><span>
+</span><a href="#local-6989586621680622354"><span class="hs-identifier hs-var">x</span></a></span><span>
 </span><span id="line-56"></span><span>
-</span><span id="line-57"></span><span>    </span><span id="local-6989586621680622504"><span class="annot"><span class="annottext">ordinary :: OpApp a -&gt; m a
-</span><a href="#local-6989586621680622504"><span class="hs-identifier hs-var hs-var">ordinary</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Concrete.html#Ordinary"><span class="hs-identifier hs-type">Ordinary</span></a></span><span> </span><span id="local-6989586621680622491"><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680622491"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
+</span><span id="line-57"></span><span>    </span><span id="local-6989586621680622365"><span class="annot"><span class="annottext">ordinary :: OpApp a -&gt; m a
+</span><a href="#local-6989586621680622365"><span class="hs-identifier hs-var hs-var">ordinary</span></a></span></span><span> </span><span class="hs-special">(</span><span class="annot"><a href="Agda.Syntax.Concrete.html#Ordinary"><span class="hs-identifier hs-type">Ordinary</span></a></span><span> </span><span id="local-6989586621680622352"><span class="annot"><span class="annottext">a
+</span><a href="#local-6989586621680622352"><span class="hs-identifier hs-var">a</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">a -&gt; m a
 forall (m :: * -&gt; *) a. Monad m =&gt; a -&gt; m a
 </span><span class="hs-identifier hs-var">return</span></span><span> </span><span class="annot"><span class="annottext">a
-</span><a href="#local-6989586621680622491"><span class="hs-identifier hs-var">a</span></a></span><span>
-</span><span id="line-58"></span><span>    </span><span class="annot"><a href="#local-6989586621680622504"><span class="hs-identifier hs-var">ordinary</span></a></span><span> </span><span class="annot"><span class="annottext">OpApp a
+</span><a href="#local-6989586621680622352"><span class="hs-identifier hs-var">a</span></a></span><span>
+</span><span id="line-58"></span><span>    </span><span class="annot"><a href="#local-6989586621680622365"><span class="hs-identifier hs-var">ordinary</span></a></span><span> </span><span class="annot"><span class="annottext">OpApp a
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">RawName -&gt; m a
 forall (m :: * -&gt; *) a.
 (HasCallStack, MonadTCError m) =&gt;
@@ -323,14 +323,14 @@ RawName -&gt; m a
 </span><span id="line-59"></span><span>
 </span><span id="line-60"></span><span class="annot"><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-type">ensureInScope</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Name.html#QName"><span class="hs-identifier hs-type">QName</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><a href="Agda.Syntax.Scope.Monad.html#ScopeM"><span class="hs-identifier hs-type">ScopeM</span></a></span><span> </span><span class="hs-special">(</span><span class="hs-special">)</span><span>
 </span><span id="line-61"></span><span id="ensureInScope"><span class="annot"><span class="annottext">ensureInScope :: QName -&gt; ScopeM ()
-</span><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-var hs-var">ensureInScope</span></a></span></span><span> </span><span id="local-6989586621680622490"><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622490"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-62"></span><span>  </span><span id="local-6989586621680622489"><span class="annot"><span class="annottext">ResolvedName
-</span><a href="#local-6989586621680622489"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">QName -&gt; ScopeM ResolvedName
+</span><a href="Agda.Syntax.IdiomBrackets.html#ensureInScope"><span class="hs-identifier hs-var hs-var">ensureInScope</span></a></span></span><span> </span><span id="local-6989586621680622351"><span class="annot"><span class="annottext">QName
+</span><a href="#local-6989586621680622351"><span class="hs-identifier hs-var">q</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-62"></span><span>  </span><span id="local-6989586621680622350"><span class="annot"><span class="annottext">ResolvedName
+</span><a href="#local-6989586621680622350"><span class="hs-identifier hs-var">r</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">QName -&gt; ScopeM ResolvedName
 </span><a href="Agda.Syntax.Scope.Monad.html#resolveName"><span class="hs-identifier hs-var">resolveName</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622490"><span class="hs-identifier hs-var">q</span></a></span><span>
+</span><a href="#local-6989586621680622351"><span class="hs-identifier hs-var">q</span></a></span><span>
 </span><span id="line-63"></span><span>  </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">ResolvedName
-</span><a href="#local-6989586621680622489"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680622350"><span class="hs-identifier hs-var">r</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-64"></span><span>    </span><span class="annot"><span class="annottext">ResolvedName
 </span><a href="Agda.Syntax.Scope.Base.html#UnknownName"><span class="hs-identifier hs-var">UnknownName</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">RawName -&gt; ScopeM ()
 forall (m :: * -&gt; *) a.
@@ -342,7 +342,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span id="line-65"></span><span>      </span><span class="annot"><span class="annottext">QName -&gt; RawName
 forall a. Pretty a =&gt; a -&gt; RawName
 </span><a href="Agda.Utils.Pretty.html#prettyShow"><span class="hs-identifier hs-var">prettyShow</span></a></span><span> </span><span class="annot"><span class="annottext">QName
-</span><a href="#local-6989586621680622490"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; RawName -&gt; RawName
+</span><a href="#local-6989586621680622351"><span class="hs-identifier hs-var">q</span></a></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; RawName -&gt; RawName
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">RawName
 </span><span class="hs-string">&quot; needs to be in scope to use idiom brackets &quot;</span></span><span> </span><span class="annot"><span class="annottext">RawName -&gt; RawName -&gt; RawName
