@@ -42,12 +42,12 @@
 </span><span id="line-42"></span><span>
 </span><span id="line-43"></span><span class="hs-comment">-- | A @WarningMode@ has two components: a set of warnings to be displayed</span><span>
 </span><span id="line-44"></span><span class="hs-comment">-- and a flag stating whether warnings should be turned into fatal errors.</span><span>
-</span><span id="line-45"></span><span id="local-6989586621680604459"><span id="local-6989586621680604460"></span></span><span class="hs-keyword">data</span><span> </span><span id="WarningMode"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-var">WarningMode</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="WarningMode"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-var">WarningMode</span></a></span></span><span>
+</span><span id="line-45"></span><span id="local-6989586621680604497"><span id="local-6989586621680604498"></span></span><span class="hs-keyword">data</span><span> </span><span id="WarningMode"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-var">WarningMode</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="WarningMode"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-var">WarningMode</span></a></span></span><span>
 </span><span id="line-46"></span><span>  </span><span class="hs-special">{</span><span> </span><span id="_warningSet"><span class="annot"><span class="annottext">WarningMode -&gt; Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#_warningSet"><span class="hs-identifier hs-var hs-var">_warningSet</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Set</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-type">WarningName</span></a></span><span>
 </span><span id="line-47"></span><span>  </span><span class="hs-special">,</span><span> </span><span id="_warn2Error"><span class="annot"><span class="annottext">WarningMode -&gt; Bool
 </span><a href="Agda.Interaction.Options.Warnings.html#_warn2Error"><span class="hs-identifier hs-var hs-var">_warn2Error</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span>
-</span><span id="line-48"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604452"><span id="local-6989586621680604454"><span class="annot"><span class="annottext">WarningMode -&gt; WarningMode -&gt; Bool
+</span><span id="line-48"></span><span>  </span><span class="hs-special">}</span><span> </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604490"><span id="local-6989586621680604492"><span class="annot"><span class="annottext">WarningMode -&gt; WarningMode -&gt; Bool
 (WarningMode -&gt; WarningMode -&gt; Bool)
 -&gt; (WarningMode -&gt; WarningMode -&gt; Bool) -&gt; Eq WarningMode
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -55,7 +55,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: WarningMode -&gt; WarningMode -&gt; Bool
 == :: WarningMode -&gt; WarningMode -&gt; Bool
 $c== :: WarningMode -&gt; WarningMode -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604445"><span id="local-6989586621680604447"><span id="local-6989586621680604449"><span class="annot"><span class="annottext">Int -&gt; WarningMode -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604483"><span id="local-6989586621680604485"><span id="local-6989586621680604487"><span class="annot"><span class="annottext">Int -&gt; WarningMode -&gt; ShowS
 [WarningMode] -&gt; ShowS
 WarningMode -&gt; String
 (Int -&gt; WarningMode -&gt; ShowS)
@@ -81,39 +81,39 @@ $cto :: forall x. Rep WarningMode x -&gt; WarningMode
 $cfrom :: forall x. WarningMode -&gt; Rep WarningMode x
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">Generic</span></span><span class="hs-special">)</span><span>
 </span><span id="line-49"></span><span>
-</span><span id="line-50"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680604439"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-type">WarningMode</span></a></span></span><span>
+</span><span id="line-50"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680604477"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-type">WarningMode</span></a></span></span><span>
 </span><span id="line-51"></span><span>
 </span><span id="line-52"></span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#warningSet"><span class="hs-identifier hs-type">warningSet</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">Set</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-type">WarningName</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-type">WarningMode</span></a></span><span>
 </span><span id="line-53"></span><span id="warningSet"><span class="annot"><span class="annottext">warningSet :: (Set WarningName -&gt; f (Set WarningName))
 -&gt; WarningMode -&gt; f WarningMode
-</span><a href="Agda.Interaction.Options.Warnings.html#warningSet"><span class="hs-identifier hs-var hs-var">warningSet</span></a></span></span><span> </span><span id="local-6989586621680604437"><span class="annot"><span class="annottext">Set WarningName -&gt; f (Set WarningName)
-</span><a href="#local-6989586621680604437"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680604436"><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604436"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604435"><span class="annot"><span class="annottext">Set WarningName
-</span><a href="#local-6989586621680604435"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604436"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">_warningSet :: Set WarningName
+</span><a href="Agda.Interaction.Options.Warnings.html#warningSet"><span class="hs-identifier hs-var hs-var">warningSet</span></a></span></span><span> </span><span id="local-6989586621680604475"><span class="annot"><span class="annottext">Set WarningName -&gt; f (Set WarningName)
+</span><a href="#local-6989586621680604475"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680604474"><span class="annot"><span class="annottext">WarningMode
+</span><a href="#local-6989586621680604474"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604473"><span class="annot"><span class="annottext">Set WarningName
+</span><a href="#local-6989586621680604473"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningMode
+</span><a href="#local-6989586621680604474"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">_warningSet :: Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#_warningSet"><span class="hs-identifier hs-var">_warningSet</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Set WarningName
-</span><a href="#local-6989586621680604435"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Set WarningName -&gt; WarningMode)
+</span><a href="#local-6989586621680604473"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Set WarningName -&gt; WarningMode)
 -&gt; f (Set WarningName) -&gt; f WarningMode
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Set WarningName -&gt; f (Set WarningName)
-</span><a href="#local-6989586621680604437"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningMode -&gt; Set WarningName
+</span><a href="#local-6989586621680604475"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningMode -&gt; Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#_warningSet"><span class="hs-identifier hs-var hs-var">_warningSet</span></a></span><span> </span><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604436"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604474"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-54"></span><span>
 </span><span id="line-55"></span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#warn2Error"><span class="hs-identifier hs-type">warn2Error</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Utils.Lens.html#Lens%27"><span class="hs-identifier hs-type">Lens'</span></a></span><span> </span><span class="annot"><span class="hs-identifier hs-type">Bool</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-type">WarningMode</span></a></span><span>
 </span><span id="line-56"></span><span id="warn2Error"><span class="annot"><span class="annottext">warn2Error :: (Bool -&gt; f Bool) -&gt; WarningMode -&gt; f WarningMode
-</span><a href="Agda.Interaction.Options.Warnings.html#warn2Error"><span class="hs-identifier hs-var hs-var">warn2Error</span></a></span></span><span> </span><span id="local-6989586621680604433"><span class="annot"><span class="annottext">Bool -&gt; f Bool
-</span><a href="#local-6989586621680604433"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680604432"><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604432"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604431"><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680604431"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604432"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">_warn2Error :: Bool
+</span><a href="Agda.Interaction.Options.Warnings.html#warn2Error"><span class="hs-identifier hs-var hs-var">warn2Error</span></a></span></span><span> </span><span id="local-6989586621680604471"><span class="annot"><span class="annottext">Bool -&gt; f Bool
+</span><a href="#local-6989586621680604471"><span class="hs-identifier hs-var">f</span></a></span></span><span> </span><span id="local-6989586621680604470"><span class="annot"><span class="annottext">WarningMode
+</span><a href="#local-6989586621680604470"><span class="hs-identifier hs-var">o</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604469"><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680604469"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningMode
+</span><a href="#local-6989586621680604470"><span class="hs-identifier hs-var">o</span></a></span><span> </span><span class="hs-special">{</span><span> </span><span class="annot"><span class="annottext">_warn2Error :: Bool
 </span><a href="Agda.Interaction.Options.Warnings.html#_warn2Error"><span class="hs-identifier hs-var">_warn2Error</span></a></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Bool
-</span><a href="#local-6989586621680604431"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Bool -&gt; WarningMode) -&gt; f Bool -&gt; f WarningMode
+</span><a href="#local-6989586621680604469"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="hs-special">}</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(Bool -&gt; WarningMode) -&gt; f Bool -&gt; f WarningMode
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-operator hs-var">&lt;$&gt;</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; f Bool
-</span><a href="#local-6989586621680604433"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningMode -&gt; Bool
+</span><a href="#local-6989586621680604471"><span class="hs-identifier hs-var">f</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningMode -&gt; Bool
 </span><a href="Agda.Interaction.Options.Warnings.html#_warn2Error"><span class="hs-identifier hs-var hs-var">_warn2Error</span></a></span><span> </span><span class="annot"><span class="annottext">WarningMode
-</span><a href="#local-6989586621680604432"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604470"><span class="hs-identifier hs-var">o</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-57"></span><span>
 </span><span id="line-58"></span><span class="hs-comment">-- | The @defaultWarningMode@ is a curated set of warnings covering non-fatal</span><span>
 </span><span id="line-59"></span><span class="hs-comment">-- errors and disabling style-related ones</span><span>
@@ -127,10 +127,10 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span id="line-65"></span><span id="defaultWarningMode"><span class="annot"><span class="annottext">defaultWarningMode :: WarningMode
 </span><a href="Agda.Interaction.Options.Warnings.html#defaultWarningMode"><span class="hs-identifier hs-var hs-var">defaultWarningMode</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Set WarningName -&gt; Bool -&gt; WarningMode
 </span><a href="Agda.Interaction.Options.Warnings.html#WarningMode"><span class="hs-identifier hs-var">WarningMode</span></a></span><span> </span><span class="annot"><span class="annottext">Set WarningName
-</span><a href="#local-6989586621680604430"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
+</span><a href="#local-6989586621680604468"><span class="hs-identifier hs-var">ws</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">False</span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-66"></span><span>  </span><span id="local-6989586621680604430"><span class="annot"><span class="annottext">ws :: Set WarningName
-</span><a href="#local-6989586621680604430"><span class="hs-identifier hs-var hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Set WarningName, String) -&gt; Set WarningName
+</span><span id="line-66"></span><span>  </span><span id="local-6989586621680604468"><span class="annot"><span class="annottext">ws :: Set WarningName
+</span><a href="#local-6989586621680604468"><span class="hs-identifier hs-var hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">(Set WarningName, String) -&gt; Set WarningName
 forall a b. (a, b) -&gt; a
 </span><span class="hs-identifier hs-var">fst</span></span><span> </span><span class="annot"><span class="annottext">((Set WarningName, String) -&gt; Set WarningName)
 -&gt; (Set WarningName, String) -&gt; Set WarningName
@@ -157,20 +157,20 @@ forall a b. Eq a =&gt; a -&gt; [(a, b)] -&gt; Maybe b
 </span><span id="line-71"></span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#prettyWarningModeError"><span class="hs-identifier hs-type">prettyWarningModeError</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningModeError"><span class="hs-identifier hs-type">WarningModeError</span></a></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
 </span><span id="line-72"></span><span id="prettyWarningModeError"><span class="annot"><span class="annottext">prettyWarningModeError :: WarningModeError -&gt; String
 </span><a href="Agda.Interaction.Options.Warnings.html#prettyWarningModeError"><span class="hs-identifier hs-var hs-var">prettyWarningModeError</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-glyph">\</span><span class="hs-glyph">case</span><span>
-</span><span id="line-73"></span><span>  </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#Unknown"><span class="hs-identifier hs-type">Unknown</span></a></span><span> </span><span id="local-6989586621680604424"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604424"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; String
+</span><span id="line-73"></span><span>  </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#Unknown"><span class="hs-identifier hs-type">Unknown</span></a></span><span> </span><span id="local-6989586621680604462"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604462"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; String
 forall (t :: * -&gt; *) a. Foldable t =&gt; t [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">concat</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;Unknown warning flag: &quot;</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604424"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604462"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;.&quot;</span></span><span> </span><span class="hs-special">]</span><span>
-</span><span id="line-74"></span><span>  </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#NoNoError"><span class="hs-identifier hs-type">NoNoError</span></a></span><span> </span><span id="local-6989586621680604422"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604422"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; String
+</span><span id="line-74"></span><span>  </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#NoNoError"><span class="hs-identifier hs-type">NoNoError</span></a></span><span> </span><span id="local-6989586621680604460"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604460"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">[String] -&gt; String
 forall (t :: * -&gt; *) a. Foldable t =&gt; t [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">concat</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;You may only turn off benign warnings. The warning &quot;</span></span><span>
 </span><span id="line-75"></span><span>                          </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604422"><span class="hs-identifier hs-var">str</span></a></span><span>
+</span><a href="#local-6989586621680604460"><span class="hs-identifier hs-var">str</span></a></span><span>
 </span><span id="line-76"></span><span>                          </span><span class="hs-special">,</span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot; is a non-fatal error and thus cannot be ignored.&quot;</span></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-77"></span><span>
@@ -183,9 +183,9 @@ forall (t :: * -&gt; *) a. Foldable t =&gt; t [a] -&gt; [a]
 </span><span id="line-84"></span><span>
 </span><span id="line-85"></span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#warningModeUpdate"><span class="hs-identifier hs-type">warningModeUpdate</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Either</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningModeError"><span class="hs-identifier hs-type">WarningModeError</span></a></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningModeUpdate"><span class="hs-identifier hs-type">WarningModeUpdate</span></a></span><span>
 </span><span id="line-86"></span><span id="warningModeUpdate"><span class="annot"><span class="annottext">warningModeUpdate :: String -&gt; Either WarningModeError WarningModeUpdate
-</span><a href="Agda.Interaction.Options.Warnings.html#warningModeUpdate"><span class="hs-identifier hs-var hs-var">warningModeUpdate</span></a></span></span><span> </span><span id="local-6989586621680604421"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="Agda.Interaction.Options.Warnings.html#warningModeUpdate"><span class="hs-identifier hs-var hs-var">warningModeUpdate</span></a></span></span><span> </span><span id="local-6989586621680604459"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-87"></span><span>  </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;error&quot;</span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningModeUpdate -&gt; Either WarningModeError WarningModeUpdate
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
@@ -209,8 +209,8 @@ forall i o. Lens' i o -&gt; LensSet i o
 </span><a href="Agda.Interaction.Options.Warnings.html#warn2Error"><span class="hs-identifier hs-var">warn2Error</span></a></span><span> </span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">False</span></span><span>
 </span><span id="line-89"></span><span>  </span><span class="annot"><span class="annottext">String
-</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680604419"><span class="annot"><span class="annottext">Set WarningName
-</span><a href="#local-6989586621680604419"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Set WarningName, String) -&gt; Set WarningName
+</span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680604457"><span class="annot"><span class="annottext">Set WarningName
+</span><a href="#local-6989586621680604457"><span class="hs-identifier hs-var">ws</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">(Set WarningName, String) -&gt; Set WarningName
 forall a b. (a, b) -&gt; a
 </span><span class="hs-identifier hs-var">fst</span></span><span> </span><span class="annot"><span class="annottext">((Set WarningName, String) -&gt; Set WarningName)
 -&gt; Maybe (Set WarningName, String) -&gt; Maybe (Set WarningName)
@@ -220,7 +220,7 @@ forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 -&gt; Maybe (Set WarningName, String)
 forall a b. Eq a =&gt; a -&gt; [(a, b)] -&gt; Maybe b
 </span><span class="hs-identifier hs-var">lookup</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="annot"><span class="annottext">[(String, (Set WarningName, String))]
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="annot"><span class="annottext">[(String, (Set WarningName, String))]
 </span><a href="Agda.Interaction.Options.Warnings.html#warningSets"><span class="hs-identifier hs-var">warningSets</span></a></span><span>
 </span><span id="line-90"></span><span>            </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="annottext">WarningModeUpdate -&gt; Either WarningModeError WarningModeUpdate
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
@@ -232,17 +232,17 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 forall i o. Lens' i o -&gt; LensSet i o
 </span><a href="Agda.Utils.Lens.html#set"><span class="hs-identifier hs-var">set</span></a></span><span> </span><span class="annot"><span class="annottext">Lens' (Set WarningName) WarningMode
 </span><a href="Agda.Interaction.Options.Warnings.html#warningSet"><span class="hs-identifier hs-var">warningSet</span></a></span><span> </span><span class="annot"><span class="annottext">Set WarningName
-</span><a href="#local-6989586621680604419"><span class="hs-identifier hs-var">ws</span></a></span><span>
+</span><a href="#local-6989586621680604457"><span class="hs-identifier hs-var">ws</span></a></span><span>
 </span><span id="line-91"></span><span>  </span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">_</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">case</span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; Maybe String
 forall a. Eq a =&gt; [a] -&gt; [a] -&gt; Maybe [a]
 </span><span class="hs-identifier hs-var">stripPrefix</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;no&quot;</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span><span> </span><span class="hs-keyword">of</span><span>
 </span><span id="line-92"></span><span>    </span><span class="annot"><span class="annottext">Maybe String
 </span><span class="hs-identifier hs-var">Nothing</span></span><span>   </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-93"></span><span>      </span><span id="local-6989586621680604418"><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604418"><span class="hs-identifier hs-var">wname</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Either WarningModeError WarningName
+</span><span id="line-93"></span><span>      </span><span id="local-6989586621680604456"><span class="annot"><span class="annottext">WarningName
+</span><a href="#local-6989586621680604456"><span class="hs-identifier hs-var">wname</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Either WarningModeError WarningName
 -&gt; (WarningName -&gt; Either WarningModeError WarningName)
 -&gt; Maybe WarningName
 -&gt; Either WarningModeError WarningName
@@ -251,11 +251,11 @@ forall b a. b -&gt; (a -&gt; b) -&gt; Maybe a -&gt; b
 forall a b. a -&gt; Either a b
 </span><span class="hs-identifier hs-var">Left</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; WarningModeError
 </span><a href="Agda.Interaction.Options.Warnings.html#Unknown"><span class="hs-identifier hs-var">Unknown</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Either WarningModeError WarningName
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Either WarningModeError WarningName
 forall a b. b -&gt; Either a b
 </span><span class="hs-identifier hs-var">Right</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Maybe WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#string2WarningName"><span class="hs-identifier hs-var">string2WarningName</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604421"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604459"><span class="hs-identifier hs-var">str</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-94"></span><span>      </span><span class="annot"><span class="annottext">WarningModeUpdate -&gt; Either WarningModeError WarningModeUpdate
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Lens' (Set WarningName) WarningMode
@@ -268,11 +268,11 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Set WarningName
 forall a. Ord a =&gt; a -&gt; Set a -&gt; Set a
 </span><span class="hs-identifier hs-var">Set.insert</span></span><span> </span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604418"><span class="hs-identifier hs-var">wname</span></a></span><span class="hs-special">)</span><span>
-</span><span id="line-95"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680604414"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604414"><span class="hs-identifier hs-var">str'</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
-</span><span id="line-96"></span><span>      </span><span id="local-6989586621680604413"><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604413"><span class="hs-identifier hs-var">wname</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Either WarningModeError WarningName
+</span><a href="#local-6989586621680604456"><span class="hs-identifier hs-var">wname</span></a></span><span class="hs-special">)</span><span>
+</span><span id="line-95"></span><span>    </span><span class="annot"><span class="hs-identifier hs-type">Just</span></span><span> </span><span id="local-6989586621680604452"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604452"><span class="hs-identifier hs-var">str'</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="hs-keyword">do</span><span>
+</span><span id="line-96"></span><span>      </span><span id="local-6989586621680604451"><span class="annot"><span class="annottext">WarningName
+</span><a href="#local-6989586621680604451"><span class="hs-identifier hs-var">wname</span></a></span></span><span> </span><span class="hs-glyph">&lt;-</span><span> </span><span class="annot"><span class="annottext">Either WarningModeError WarningName
 -&gt; (WarningName -&gt; Either WarningModeError WarningName)
 -&gt; Maybe WarningName
 -&gt; Either WarningModeError WarningName
@@ -281,22 +281,22 @@ forall b a. b -&gt; (a -&gt; b) -&gt; Maybe a -&gt; b
 forall a b. a -&gt; Either a b
 </span><span class="hs-identifier hs-var">Left</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; WarningModeError
 </span><a href="Agda.Interaction.Options.Warnings.html#Unknown"><span class="hs-identifier hs-var">Unknown</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604414"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Either WarningModeError WarningName
+</span><a href="#local-6989586621680604452"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Either WarningModeError WarningName
 forall a b. b -&gt; Either a b
 </span><span class="hs-identifier hs-var">Right</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Maybe WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#string2WarningName"><span class="hs-identifier hs-var">string2WarningName</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604414"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604452"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-97"></span><span>      </span><span class="annot"><span class="annottext">Bool -&gt; Either WarningModeError () -&gt; Either WarningModeError ()
 forall (f :: * -&gt; *). Applicative f =&gt; Bool -&gt; f () -&gt; f ()
 </span><span class="hs-identifier hs-var">when</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604413"><span class="hs-identifier hs-var">wname</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
+</span><a href="#local-6989586621680604451"><span class="hs-identifier hs-var">wname</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
 forall (t :: * -&gt; *) a. (Foldable t, Eq a) =&gt; a -&gt; t a -&gt; Bool
 </span><span class="hs-operator hs-var">`elem`</span></span><span> </span><span class="annot"><span class="annottext">Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#errorWarnings"><span class="hs-identifier hs-var">errorWarnings</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningModeError -&gt; Either WarningModeError ()
 forall a b. a -&gt; Either a b
 </span><span class="hs-identifier hs-var">Left</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; WarningModeError
 </span><a href="Agda.Interaction.Options.Warnings.html#NoNoError"><span class="hs-identifier hs-var">NoNoError</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604414"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604452"><span class="hs-identifier hs-var">str'</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-98"></span><span>      </span><span class="annot"><span class="annottext">WarningModeUpdate -&gt; Either WarningModeError WarningModeUpdate
 forall (f :: * -&gt; *) a. Applicative f =&gt; a -&gt; f a
 </span><span class="hs-identifier hs-var">pure</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Lens' (Set WarningName) WarningMode
@@ -309,7 +309,7 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Set WarningName
 forall a. Ord a =&gt; a -&gt; Set a -&gt; Set a
 </span><span class="hs-identifier hs-var">Set.delete</span></span><span> </span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604413"><span class="hs-identifier hs-var">wname</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604451"><span class="hs-identifier hs-var">wname</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-99"></span><span>
 </span><span id="line-100"></span><span class="hs-comment">-- | Common sets of warnings</span><span>
 </span><span id="line-101"></span><span>
@@ -451,7 +451,7 @@ forall a. Ord a =&gt; [a] -&gt; Set a
 </span><span id="line-165"></span><span class="hs-comment">-- | The @WarningName@ data enumeration is meant to have a one-to-one correspondance</span><span>
 </span><span id="line-166"></span><span class="hs-comment">-- to existing warnings in the codebase.</span><span>
 </span><span id="line-167"></span><span>
-</span><span id="line-168"></span><span id="local-6989586621680604371"><span id="local-6989586621680604372"></span></span><span class="hs-keyword">data</span><span> </span><span id="WarningName"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-var">WarningName</span></a></span></span><span>
+</span><span id="line-168"></span><span id="local-6989586621680604409"><span id="local-6989586621680604410"></span></span><span class="hs-keyword">data</span><span> </span><span id="WarningName"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-var">WarningName</span></a></span></span><span>
 </span><span id="line-169"></span><span>  </span><span class="hs-glyph">=</span><span>
 </span><span id="line-170"></span><span>  </span><span class="hs-comment">-- Parser Warnings</span><span>
 </span><span id="line-171"></span><span>    </span><span id="OverlappingTokensWarning_"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#OverlappingTokensWarning_"><span class="hs-identifier hs-var">OverlappingTokensWarning_</span></a></span></span><span>
@@ -551,7 +551,7 @@ forall a. Ord a =&gt; [a] -&gt; Set a
 </span><span id="line-265"></span><span>  </span><span class="hs-comment">-- System call warnings</span><span>
 </span><span id="line-266"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="ExeNotFoundWarning_"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#ExeNotFoundWarning_"><span class="hs-identifier hs-var">ExeNotFoundWarning_</span></a></span></span><span>
 </span><span id="line-267"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="ExeNotExecutableWarning_"><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#ExeNotExecutableWarning_"><span class="hs-identifier hs-var">ExeNotExecutableWarning_</span></a></span></span><span>
-</span><span id="line-268"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604309"><span id="local-6989586621680604311"><span class="annot"><span class="annottext">WarningName -&gt; WarningName -&gt; Bool
+</span><span id="line-268"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604347"><span id="local-6989586621680604349"><span class="annot"><span class="annottext">WarningName -&gt; WarningName -&gt; Bool
 (WarningName -&gt; WarningName -&gt; Bool)
 -&gt; (WarningName -&gt; WarningName -&gt; Bool) -&gt; Eq WarningName
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -559,7 +559,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: WarningName -&gt; WarningName -&gt; Bool
 == :: WarningName -&gt; WarningName -&gt; Bool
 $c== :: WarningName -&gt; WarningName -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604294"><span id="local-6989586621680604296"><span id="local-6989586621680604298"><span id="local-6989586621680604300"><span id="local-6989586621680604302"><span id="local-6989586621680604304"><span id="local-6989586621680604306"><span class="annot"><span class="annottext">Eq WarningName
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604332"><span id="local-6989586621680604334"><span id="local-6989586621680604336"><span id="local-6989586621680604338"><span id="local-6989586621680604340"><span id="local-6989586621680604342"><span id="local-6989586621680604344"><span class="annot"><span class="annottext">Eq WarningName
 Eq WarningName
 -&gt; (WarningName -&gt; WarningName -&gt; Ordering)
 -&gt; (WarningName -&gt; WarningName -&gt; Bool)
@@ -597,7 +597,7 @@ $c&lt; :: WarningName -&gt; WarningName -&gt; Bool
 compare :: WarningName -&gt; WarningName -&gt; Ordering
 $ccompare :: WarningName -&gt; WarningName -&gt; Ordering
 $cp1Ord :: Eq WarningName
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604287"><span id="local-6989586621680604289"><span id="local-6989586621680604291"><span class="annot"><span class="annottext">Int -&gt; WarningName -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604325"><span id="local-6989586621680604327"><span id="local-6989586621680604329"><span class="annot"><span class="annottext">Int -&gt; WarningName -&gt; ShowS
 [WarningName] -&gt; ShowS
 WarningName -&gt; String
 (Int -&gt; WarningName -&gt; ShowS)
@@ -612,7 +612,7 @@ show :: WarningName -&gt; String
 $cshow :: WarningName -&gt; String
 showsPrec :: Int -&gt; WarningName -&gt; ShowS
 $cshowsPrec :: Int -&gt; WarningName -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604279"><span id="local-6989586621680604281"><span id="local-6989586621680604283"><span id="local-6989586621680604285"><span class="annot"><span class="annottext">ReadPrec [WarningName]
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604317"><span id="local-6989586621680604319"><span id="local-6989586621680604321"><span id="local-6989586621680604323"><span class="annot"><span class="annottext">ReadPrec [WarningName]
 ReadPrec WarningName
 Int -&gt; ReadS WarningName
 ReadS [WarningName]
@@ -632,7 +632,7 @@ readList :: ReadS [WarningName]
 $creadList :: ReadS [WarningName]
 readsPrec :: Int -&gt; ReadS WarningName
 $creadsPrec :: Int -&gt; ReadS WarningName
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Read</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604262"><span id="local-6989586621680604264"><span id="local-6989586621680604266"><span id="local-6989586621680604268"><span id="local-6989586621680604270"><span id="local-6989586621680604272"><span id="local-6989586621680604274"><span id="local-6989586621680604276"><span class="annot"><span class="annottext">Int -&gt; WarningName
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Read</span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604300"><span id="local-6989586621680604302"><span id="local-6989586621680604304"><span id="local-6989586621680604306"><span id="local-6989586621680604308"><span id="local-6989586621680604310"><span id="local-6989586621680604312"><span id="local-6989586621680604314"><span class="annot"><span class="annottext">Int -&gt; WarningName
 WarningName -&gt; Int
 WarningName -&gt; [WarningName]
 WarningName -&gt; WarningName
@@ -673,7 +673,7 @@ pred :: WarningName -&gt; WarningName
 $cpred :: WarningName -&gt; WarningName
 succ :: WarningName -&gt; WarningName
 $csucc :: WarningName -&gt; WarningName
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604257"><span id="local-6989586621680604259"><span class="annot"><span class="annottext">WarningName
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604295"><span id="local-6989586621680604297"><span class="annot"><span class="annottext">WarningName
 WarningName -&gt; WarningName -&gt; Bounded WarningName
 forall a. a -&gt; a -&gt; Bounded a
 maxBound :: WarningName
@@ -691,7 +691,7 @@ $cto :: forall x. Rep WarningName x -&gt; WarningName
 $cfrom :: forall x. WarningName -&gt; Rep WarningName x
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">Generic</span></span><span class="hs-special">)</span><span>
 </span><span id="line-269"></span><span>
-</span><span id="line-270"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680604252"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-type">WarningName</span></a></span></span><span>
+</span><span id="line-270"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680604290"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Interaction.Options.Warnings.html#WarningName"><span class="hs-identifier hs-type">WarningName</span></a></span></span><span>
 </span><span id="line-271"></span><span>
 </span><span id="line-272"></span><span class="hs-comment">-- | The flag corresponding to a warning is precisely the name of the constructor</span><span>
 </span><span id="line-273"></span><span class="hs-comment">-- minus the trailing underscore.</span><span>
@@ -740,7 +740,7 @@ forall a. [a] -&gt; [[a]] -&gt; [a]
 </span><span id="line-293"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span>
 </span><span id="line-294"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[(String, String)] -&gt; String
-</span><a href="#local-6989586621680604248"><span class="hs-identifier hs-var">untable</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">((String, (Set WarningName, String)) -&gt; (String, String))
+</span><a href="#local-6989586621680604286"><span class="hs-identifier hs-var">untable</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">((String, (Set WarningName, String)) -&gt; (String, String))
 -&gt; [(String, (Set WarningName, String))] -&gt; [(String, String)]
 forall (f :: * -&gt; *) a b. Functor f =&gt; (a -&gt; b) -&gt; f a -&gt; f b
 </span><span class="hs-identifier hs-var">fmap</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">(String, (Set WarningName, String)) -&gt; String
@@ -772,7 +772,7 @@ forall a b. (a, b) -&gt; b
 </span><span id="line-299"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;&quot;</span></span><span>
 </span><span id="line-300"></span><span>  </span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">[(String, String)] -&gt; String
-</span><a href="#local-6989586621680604248"><span class="hs-identifier hs-var">untable</span></a></span><span> </span><span class="annot"><span class="annottext">([(String, String)] -&gt; String) -&gt; [(String, String)] -&gt; String
+</span><a href="#local-6989586621680604286"><span class="hs-identifier hs-var">untable</span></a></span><span> </span><span class="annot"><span class="annottext">([(String, String)] -&gt; String) -&gt; [(String, String)] -&gt; String
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">[WarningName]
 -&gt; (WarningName -&gt; Maybe (String, String)) -&gt; [(String, String)]
@@ -784,17 +784,17 @@ forall a. Bounded a =&gt; a
 </span><span class="hs-identifier hs-var">maxBound</span></span><span class="hs-special">]</span><span> </span><span class="annot"><span class="annottext">((WarningName -&gt; Maybe (String, String)) -&gt; [(String, String)])
 -&gt; (WarningName -&gt; Maybe (String, String)) -&gt; [(String, String)]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604246"><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604246"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
-</span><span id="line-301"></span><span>    </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680604245"><span class="annot"><span class="annottext">wnd :: String
-</span><a href="#local-6989586621680604245"><span class="hs-identifier hs-var hs-var">wnd</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; String
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680604284"><span class="annot"><span class="annottext">WarningName
+</span><a href="#local-6989586621680604284"><span class="hs-identifier hs-var">w</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span id="line-301"></span><span>    </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680604283"><span class="annot"><span class="annottext">wnd :: String
+</span><a href="#local-6989586621680604283"><span class="hs-identifier hs-var hs-var">wnd</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; String
 </span><a href="Agda.Interaction.Options.Warnings.html#warningNameDescription"><span class="hs-identifier hs-var">warningNameDescription</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604246"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="hs-keyword">in</span><span>
+</span><a href="#local-6989586621680604284"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="hs-keyword">in</span><span>
 </span><span id="line-302"></span><span>    </span><span class="hs-special">(</span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; String
 </span><a href="Agda.Interaction.Options.Warnings.html#warningName2String"><span class="hs-identifier hs-var">warningName2String</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604246"><span class="hs-identifier hs-var">w</span></a></span><span>
+</span><a href="#local-6989586621680604284"><span class="hs-identifier hs-var">w</span></a></span><span>
 </span><span id="line-303"></span><span>    </span><span class="hs-special">,</span><span> </span><span class="hs-special">(</span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604246"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
+</span><a href="#local-6989586621680604284"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
 forall a. Ord a =&gt; a -&gt; Set a -&gt; Bool
 </span><span class="hs-operator hs-var">`Set.member`</span></span><span> </span><span class="annot"><span class="annottext">Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#usualWarnings"><span class="hs-identifier hs-var">usualWarnings</span></a></span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">String
@@ -804,7 +804,7 @@ forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span>
 </span><span id="line-304"></span><span>      </span><span class="hs-special">(</span><span class="hs-keyword">if</span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Bool
 </span><span class="hs-identifier hs-var">not</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">WarningName
-</span><a href="#local-6989586621680604246"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
+</span><a href="#local-6989586621680604284"><span class="hs-identifier hs-var">w</span></a></span><span> </span><span class="annot"><span class="annottext">WarningName -&gt; Set WarningName -&gt; Bool
 forall a. Ord a =&gt; a -&gt; Set a -&gt; Bool
 </span><span class="hs-operator hs-var">`Set.member`</span></span><span> </span><span class="annot"><span class="annottext">Set WarningName
 </span><a href="Agda.Interaction.Options.Warnings.html#errorWarnings"><span class="hs-identifier hs-var">errorWarnings</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">then</span><span> </span><span class="annot"><span class="annottext">String
@@ -817,7 +817,7 @@ forall a. [a] -&gt; [a] -&gt; [a]
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span>
 </span><span id="line-306"></span><span>      </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604245"><span class="hs-identifier hs-var">wnd</span></a></span><span>
+</span><a href="#local-6989586621680604283"><span class="hs-identifier hs-var">wnd</span></a></span><span>
 </span><span id="line-307"></span><span>    </span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">(String, String) -&gt; Maybe () -&gt; Maybe (String, String)
 forall (f :: * -&gt; *) a b. Functor f =&gt; a -&gt; f b -&gt; f a
 </span><span class="hs-operator hs-var">&lt;$</span></span><span> </span><span class="annot"><span class="annottext">Bool -&gt; Maybe ()
@@ -828,17 +828,17 @@ forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Bool
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Bool
 </span><span class="hs-identifier hs-var">null</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604245"><span class="hs-identifier hs-var">wnd</span></a></span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680604283"><span class="hs-identifier hs-var">wnd</span></a></span><span class="hs-special">)</span><span>
 </span><span id="line-308"></span><span>  </span><span class="hs-special">]</span><span>
 </span><span id="line-309"></span><span>
 </span><span id="line-310"></span><span>  </span><span class="hs-keyword">where</span><span>
 </span><span id="line-311"></span><span>
-</span><span id="line-312"></span><span>    </span><span class="annot"><a href="#local-6989586621680604248"><span class="hs-identifier hs-type">untable</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
-</span><span id="line-313"></span><span>    </span><span id="local-6989586621680604248"><span class="annot"><span class="annottext">untable :: [(String, String)] -&gt; String
-</span><a href="#local-6989586621680604248"><span class="hs-identifier hs-var hs-var">untable</span></a></span></span><span> </span><span id="local-6989586621680604239"><span class="annot"><span class="annottext">[(String, String)]
-</span><a href="#local-6989586621680604239"><span class="hs-identifier hs-var">rows</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
-</span><span id="line-314"></span><span>      </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680604238"><span class="annot"><span class="annottext">len :: Int
-</span><a href="#local-6989586621680604238"><span class="hs-identifier hs-var hs-var">len</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
+</span><span id="line-312"></span><span>    </span><span class="annot"><a href="#local-6989586621680604286"><span class="hs-identifier hs-type">untable</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-special">[</span><span class="hs-special">(</span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span class="hs-special">)</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">String</span></span><span>
+</span><span id="line-313"></span><span>    </span><span id="local-6989586621680604286"><span class="annot"><span class="annottext">untable :: [(String, String)] -&gt; String
+</span><a href="#local-6989586621680604286"><span class="hs-identifier hs-var hs-var">untable</span></a></span></span><span> </span><span id="local-6989586621680604277"><span class="annot"><span class="annottext">[(String, String)]
+</span><a href="#local-6989586621680604277"><span class="hs-identifier hs-var">rows</span></a></span></span><span> </span><span class="hs-glyph">=</span><span>
+</span><span id="line-314"></span><span>      </span><span class="hs-keyword">let</span><span> </span><span id="local-6989586621680604276"><span class="annot"><span class="annottext">len :: Int
+</span><a href="#local-6989586621680604276"><span class="hs-identifier hs-var hs-var">len</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[Int] -&gt; Int
 forall (t :: * -&gt; *) a. (Foldable t, Ord a) =&gt; t a -&gt; a
 </span><span class="hs-identifier hs-var">maximum</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">((String, String) -&gt; Int) -&gt; [(String, String)] -&gt; [Int]
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
@@ -850,7 +850,7 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span class="hs-operator hs-var">.</span></span><span> </span><span class="annot"><span class="annottext">(String, String) -&gt; String
 forall a b. (a, b) -&gt; a
 </span><span class="hs-identifier hs-var">fst</span></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">[(String, String)]
-</span><a href="#local-6989586621680604239"><span class="hs-identifier hs-var">rows</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">in</span><span>
+</span><a href="#local-6989586621680604277"><span class="hs-identifier hs-var">rows</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-keyword">in</span><span>
 </span><span id="line-315"></span><span>      </span><span class="annot"><span class="annottext">[String] -&gt; String
 </span><span class="hs-identifier hs-var">unlines</span></span><span> </span><span class="annot"><span class="annottext">([String] -&gt; String) -&gt; [String] -&gt; String
 forall a b. (a -&gt; b) -&gt; a -&gt; b
@@ -860,29 +860,29 @@ forall a b c. (a -&gt; b -&gt; c) -&gt; b -&gt; a -&gt; c
 </span><span class="hs-identifier hs-var">flip</span></span><span> </span><span class="annot"><span class="annottext">((String, String) -&gt; String) -&gt; [(String, String)] -&gt; [String]
 forall a b. (a -&gt; b) -&gt; [a] -&gt; [b]
 </span><span class="hs-identifier hs-var">map</span></span><span> </span><span class="annot"><span class="annottext">[(String, String)]
-</span><a href="#local-6989586621680604239"><span class="hs-identifier hs-var">rows</span></a></span><span> </span><span class="annot"><span class="annottext">(((String, String) -&gt; String) -&gt; [String])
+</span><a href="#local-6989586621680604277"><span class="hs-identifier hs-var">rows</span></a></span><span> </span><span class="annot"><span class="annottext">(((String, String) -&gt; String) -&gt; [String])
 -&gt; ((String, String) -&gt; String) -&gt; [String]
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604233"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604233"><span class="hs-identifier hs-var">hdr</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604232"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604232"><span class="hs-identifier hs-var">cnt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680604271"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604271"><span class="hs-identifier hs-var">hdr</span></a></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680604270"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680604270"><span class="hs-identifier hs-var">cnt</span></a></span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-316"></span><span>        </span><span class="annot"><span class="annottext">[String] -&gt; String
 forall (t :: * -&gt; *) a. Foldable t =&gt; t [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">concat</span></span><span> </span><span class="hs-special">[</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604233"><span class="hs-identifier hs-var">hdr</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
+</span><a href="#local-6989586621680604271"><span class="hs-identifier hs-var">hdr</span></a></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">Int -&gt; Char -&gt; String
 forall a. Int -&gt; a -&gt; [a]
 </span><span class="hs-identifier hs-var">replicate</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">1</span></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">+</span></span><span> </span><span class="annot"><span class="annottext">Int
-</span><a href="#local-6989586621680604238"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
+</span><a href="#local-6989586621680604276"><span class="hs-identifier hs-var">len</span></a></span><span> </span><span class="annot"><span class="annottext">Int -&gt; Int -&gt; Int
 forall a. Num a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-glyph hs-var">-</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; Int
 forall (t :: * -&gt; *) a. Foldable t =&gt; t a -&gt; Int
 </span><span class="hs-identifier hs-var">length</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604233"><span class="hs-identifier hs-var">hdr</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Char
+</span><a href="#local-6989586621680604271"><span class="hs-identifier hs-var">hdr</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">' '</span></span><span class="hs-special">,</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680604232"><span class="hs-identifier hs-var">cnt</span></a></span><span> </span><span class="hs-special">]</span><span>
+</span><a href="#local-6989586621680604270"><span class="hs-identifier hs-var">cnt</span></a></span><span> </span><span class="hs-special">]</span><span>
 </span><span id="line-317"></span><span>
 </span><span id="line-318"></span><span class="hs-comment">-- | @WarningName@ descriptions used for generating usage information</span><span>
 </span><span id="line-319"></span><span class="hs-comment">-- Leave String empty to skip that name.</span><span>
