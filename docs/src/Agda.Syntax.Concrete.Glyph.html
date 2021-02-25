@@ -22,10 +22,10 @@
 </span><span id="line-22"></span><span class="hs-keyword">import</span><span> </span><span class="annot"><a href="Agda.Utils.Pretty.html"><span class="hs-identifier">Agda.Utils.Pretty</span></a></span><span>
 </span><span id="line-23"></span><span>
 </span><span id="line-24"></span><span class="hs-comment">-- | We want to know whether we are allowed to insert unicode characters or not.</span><span>
-</span><span id="line-25"></span><span id="local-6989586621680612116"><span id="local-6989586621680612117"></span></span><span class="hs-keyword">data</span><span> </span><span id="UnicodeOrAscii"><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOrAscii"><span class="hs-identifier hs-var">UnicodeOrAscii</span></a></span></span><span>
+</span><span id="line-25"></span><span id="local-6989586621680612643"><span id="local-6989586621680612644"></span></span><span class="hs-keyword">data</span><span> </span><span id="UnicodeOrAscii"><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOrAscii"><span class="hs-identifier hs-var">UnicodeOrAscii</span></a></span></span><span>
 </span><span id="line-26"></span><span>  </span><span class="hs-glyph">=</span><span> </span><span id="UnicodeOk"><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOk"><span class="hs-identifier hs-var">UnicodeOk</span></a></span></span><span>
 </span><span id="line-27"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span id="AsciiOnly"><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#AsciiOnly"><span class="hs-identifier hs-var">AsciiOnly</span></a></span></span><span>
-</span><span id="line-28"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680612108"><span id="local-6989586621680612110"><span id="local-6989586621680612112"><span class="annot"><span class="annottext">Int -&gt; UnicodeOrAscii -&gt; ShowS
+</span><span id="line-28"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680612635"><span id="local-6989586621680612637"><span id="local-6989586621680612639"><span class="annot"><span class="annottext">Int -&gt; UnicodeOrAscii -&gt; ShowS
 [UnicodeOrAscii] -&gt; ShowS
 UnicodeOrAscii -&gt; String
 (Int -&gt; UnicodeOrAscii -&gt; ShowS)
@@ -40,7 +40,7 @@ show :: UnicodeOrAscii -&gt; String
 $cshow :: UnicodeOrAscii -&gt; String
 showsPrec :: Int -&gt; UnicodeOrAscii -&gt; ShowS
 $cshowsPrec :: Int -&gt; UnicodeOrAscii -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612103"><span id="local-6989586621680612105"><span class="annot"><span class="annottext">UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612630"><span id="local-6989586621680612632"><span class="annot"><span class="annottext">UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool
 (UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool)
 -&gt; (UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool) -&gt; Eq UnicodeOrAscii
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -48,7 +48,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool
 == :: UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool
 $c== :: UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612086"><span id="local-6989586621680612088"><span id="local-6989586621680612090"><span id="local-6989586621680612092"><span id="local-6989586621680612094"><span id="local-6989586621680612096"><span id="local-6989586621680612098"><span id="local-6989586621680612100"><span class="annot"><span class="annottext">Int -&gt; UnicodeOrAscii
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612613"><span id="local-6989586621680612615"><span id="local-6989586621680612617"><span id="local-6989586621680612619"><span id="local-6989586621680612621"><span id="local-6989586621680612623"><span id="local-6989586621680612625"><span id="local-6989586621680612627"><span class="annot"><span class="annottext">Int -&gt; UnicodeOrAscii
 UnicodeOrAscii -&gt; Int
 UnicodeOrAscii -&gt; [UnicodeOrAscii]
 UnicodeOrAscii -&gt; UnicodeOrAscii
@@ -93,7 +93,7 @@ pred :: UnicodeOrAscii -&gt; UnicodeOrAscii
 $cpred :: UnicodeOrAscii -&gt; UnicodeOrAscii
 succ :: UnicodeOrAscii -&gt; UnicodeOrAscii
 $csucc :: UnicodeOrAscii -&gt; UnicodeOrAscii
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612081"><span id="local-6989586621680612083"><span class="annot"><span class="annottext">UnicodeOrAscii
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680612608"><span id="local-6989586621680612610"><span class="annot"><span class="annottext">UnicodeOrAscii
 UnicodeOrAscii -&gt; UnicodeOrAscii -&gt; Bounded UnicodeOrAscii
 forall a. a -&gt; a -&gt; Bounded a
 maxBound :: UnicodeOrAscii
@@ -111,7 +111,7 @@ $cto :: forall x. Rep UnicodeOrAscii x -&gt; UnicodeOrAscii
 $cfrom :: forall x. UnicodeOrAscii -&gt; Rep UnicodeOrAscii x
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">Generic</span></span><span class="hs-special">)</span><span>
 </span><span id="line-29"></span><span>
-</span><span id="line-30"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680612075"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOrAscii"><span class="hs-identifier hs-type">UnicodeOrAscii</span></a></span></span><span>
+</span><span id="line-30"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680612602"><span class="annot"><span class="hs-identifier hs-type">NFData</span></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOrAscii"><span class="hs-identifier hs-type">UnicodeOrAscii</span></a></span></span><span>
 </span><span id="line-31"></span><span>
 </span><span id="line-32"></span><span class="hs-pragma">{-# NOINLINE</span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#unsafeUnicodeOrAsciiIORef"><span class="hs-pragma hs-type">unsafeUnicodeOrAsciiIORef</span></a></span><span> </span><span class="hs-pragma">#-}</span><span>
 </span><span id="line-33"></span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#unsafeUnicodeOrAsciiIORef"><span class="hs-identifier hs-type">unsafeUnicodeOrAsciiIORef</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">IORef</span></span><span> </span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#UnicodeOrAscii"><span class="hs-identifier hs-type">UnicodeOrAscii</span></a></span><span>
@@ -251,42 +251,42 @@ forall b c a. (b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
 </span><span id="line-89"></span><span>
 </span><span id="line-90"></span><span class="annot"><a href="Agda.Syntax.Concrete.Glyph.html#braces%27"><span class="hs-identifier hs-type">braces'</span></a></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Doc</span></span><span> </span><span class="hs-glyph">-&gt;</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Doc</span></span><span>
 </span><span id="line-91"></span><span id="braces%27"><span class="annot"><span class="annottext">braces' :: Doc -&gt; Doc
-</span><a href="Agda.Syntax.Concrete.Glyph.html#braces%27"><span class="hs-identifier hs-var hs-var">braces'</span></a></span></span><span> </span><span id="local-6989586621680612058"><span class="annot"><span class="annottext">Doc
-</span><a href="#local-6989586621680612058"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Doc -&gt; (String -&gt; Doc) -&gt; Doc
+</span><a href="Agda.Syntax.Concrete.Glyph.html#braces%27"><span class="hs-identifier hs-var hs-var">braces'</span></a></span></span><span> </span><span id="local-6989586621680612585"><span class="annot"><span class="annottext">Doc
+</span><a href="#local-6989586621680612585"><span class="hs-identifier hs-var">d</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String -&gt; Doc -&gt; (String -&gt; Doc) -&gt; Doc
 forall a b. Null a =&gt; a -&gt; b -&gt; (a -&gt; b) -&gt; b
 </span><a href="Agda.Utils.Null.html#ifNull"><span class="hs-identifier hs-var">ifNull</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Doc -&gt; String
 </span><span class="hs-identifier hs-var">render</span></span><span> </span><span class="annot"><span class="annottext">Doc
-</span><a href="#local-6989586621680612058"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Doc -&gt; Doc
+</span><a href="#local-6989586621680612585"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Doc -&gt; Doc
 </span><span class="hs-identifier hs-var">braces</span></span><span> </span><span class="annot"><span class="annottext">Doc
-</span><a href="#local-6989586621680612058"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-comment">{-else-}</span><span> </span><span class="annot"><span class="annottext">((String -&gt; Doc) -&gt; Doc) -&gt; (String -&gt; Doc) -&gt; Doc
+</span><a href="#local-6989586621680612585"><span class="hs-identifier hs-var">d</span></a></span><span class="hs-special">)</span><span> </span><span class="hs-comment">{-else-}</span><span> </span><span class="annot"><span class="annottext">((String -&gt; Doc) -&gt; Doc) -&gt; (String -&gt; Doc) -&gt; Doc
 forall a b. (a -&gt; b) -&gt; a -&gt; b
-</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680612055"><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680612055"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
+</span><span class="hs-operator hs-var">$</span></span><span> </span><span class="hs-glyph">\</span><span> </span><span id="local-6989586621680612582"><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680612582"><span class="hs-identifier hs-var">s</span></a></span></span><span> </span><span class="hs-glyph">-&gt;</span><span>
 </span><span id="line-92"></span><span>  </span><span class="annot"><span class="annottext">Doc -&gt; Doc
 </span><span class="hs-identifier hs-var">braces</span></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">Char -&gt; Doc
 forall p. (IsString p, Null p) =&gt; Char -&gt; p
-</span><a href="#local-6989586621680612054"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Char
+</span><a href="#local-6989586621680612581"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Char
 forall a. [a] -&gt; a
 </span><span class="hs-identifier hs-var">head</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680612055"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
+</span><a href="#local-6989586621680612582"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Doc
-</span><a href="#local-6989586621680612058"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
+</span><a href="#local-6989586621680612585"><span class="hs-identifier hs-var">d</span></a></span><span> </span><span class="annot"><span class="annottext">Doc -&gt; Doc -&gt; Doc
 forall a. Semigroup a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-operator hs-var">&lt;&gt;</span></span><span> </span><span class="annot"><span class="annottext">Char -&gt; Doc
 forall p. (IsString p, Null p) =&gt; Char -&gt; p
-</span><a href="#local-6989586621680612054"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Char
+</span><a href="#local-6989586621680612581"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="hs-special">(</span><span class="annot"><span class="annottext">String -&gt; Char
 forall a. [a] -&gt; a
 </span><span class="hs-identifier hs-var">last</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680612055"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
+</span><a href="#local-6989586621680612582"><span class="hs-identifier hs-var">s</span></a></span><span class="hs-special">)</span><span class="hs-special">)</span><span>
 </span><span id="line-93"></span><span>  </span><span class="hs-comment">-- Add space to avoid starting a comment (Ulf, 2010-09-13, #269)</span><span>
 </span><span id="line-94"></span><span>  </span><span class="hs-comment">-- Andreas, 2018-07-21, #3161: Also avoid ending a comment</span><span>
 </span><span id="line-95"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-96"></span><span>  </span><span id="local-6989586621680612054"><span class="annot"><span class="annottext">spaceIfDash :: Char -&gt; p
-</span><a href="#local-6989586621680612054"><span class="hs-identifier hs-var hs-var">spaceIfDash</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span id="line-96"></span><span>  </span><span id="local-6989586621680612581"><span class="annot"><span class="annottext">spaceIfDash :: Char -&gt; p
+</span><a href="#local-6989586621680612581"><span class="hs-identifier hs-var hs-var">spaceIfDash</span></a></span></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-char">'-'</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">p
 </span><span class="hs-string">&quot; &quot;</span></span><span>
-</span><span id="line-97"></span><span>  </span><span class="annot"><a href="#local-6989586621680612054"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="annot"><span class="annottext">Char
+</span><span id="line-97"></span><span>  </span><span class="annot"><a href="#local-6989586621680612581"><span class="hs-identifier hs-var">spaceIfDash</span></a></span><span> </span><span class="annot"><span class="annottext">Char
 </span><span class="hs-identifier">_</span></span><span>   </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">p
 forall a. Null a =&gt; a
 </span><a href="Agda.Utils.Null.html#empty"><span class="hs-identifier hs-var">empty</span></a></span><span>

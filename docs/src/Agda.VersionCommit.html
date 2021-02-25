@@ -30,7 +30,7 @@ forall a. [a] -&gt; [a] -&gt; [a]
 </span><span id="line-19"></span><span id="commitInfo"><span class="annot"><span class="annottext">commitInfo :: Maybe String
 </span><a href="Agda.VersionCommit.html#commitInfo"><span class="hs-identifier hs-var hs-var">commitInfo</span></a></span></span><span>
 </span><span id="line-20"></span><span>  </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680678453"><span class="hs-identifier hs-var">hash</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; Bool
+</span><a href="#local-6989586621680678980"><span class="hs-identifier hs-var">hash</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; Bool
 forall a. Eq a =&gt; a -&gt; a -&gt; Bool
 </span><span class="hs-operator hs-var">==</span></span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;UNKNOWN&quot;</span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Maybe String
@@ -43,19 +43,19 @@ forall a. a -&gt; Maybe a
 forall a b. (a -&gt; b) -&gt; a -&gt; b
 </span><span class="hs-operator hs-var">$</span></span><span> </span><span class="annot"><span class="annottext">String -&gt; String
 forall a. [a] -&gt; [a]
-</span><a href="#local-6989586621680678452"><span class="hs-identifier hs-var">abbrev</span></a></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680678453"><span class="hs-identifier hs-var">hash</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
+</span><a href="#local-6989586621680678979"><span class="hs-identifier hs-var">abbrev</span></a></span><span> </span><span class="annot"><span class="annottext">String
+</span><a href="#local-6989586621680678980"><span class="hs-identifier hs-var">hash</span></a></span><span> </span><span class="annot"><span class="annottext">String -&gt; String -&gt; String
 forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-operator hs-var">++</span></span><span> </span><span class="annot"><span class="annottext">String
-</span><a href="#local-6989586621680678451"><span class="hs-identifier hs-var">dirty</span></a></span><span>
+</span><a href="#local-6989586621680678978"><span class="hs-identifier hs-var">dirty</span></a></span><span>
 </span><span id="line-22"></span><span>  </span><span class="hs-keyword">where</span><span>
-</span><span id="line-23"></span><span>    </span><span id="local-6989586621680678453"><span class="annot"><span class="annottext">hash :: String
-</span><a href="#local-6989586621680678453"><span class="hs-identifier hs-var hs-var">hash</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">$(</span><span class="annot"><span class="annottext">String
+</span><span id="line-23"></span><span>    </span><span id="local-6989586621680678980"><span class="annot"><span class="annottext">hash :: String
+</span><a href="#local-6989586621680678980"><span class="hs-identifier hs-var hs-var">hash</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">$(</span><span class="annot"><span class="annottext">String
 </span><span class="hs-identifier">gitHash</span></span><span class="hs-special">)</span><span>
 </span><span id="line-24"></span><span>
 </span><span id="line-25"></span><span>    </span><span class="hs-comment">-- | Check if any tracked files have uncommitted changes</span><span>
-</span><span id="line-26"></span><span>    </span><span id="local-6989586621680678451"><span class="annot"><span class="annottext">dirty :: String
-</span><a href="#local-6989586621680678451"><span class="hs-identifier hs-var hs-var">dirty</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="hs-special">$(</span><span class="annot"><span class="annottext">Bool
+</span><span id="line-26"></span><span>    </span><span id="local-6989586621680678978"><span class="annot"><span class="annottext">dirty :: String
+</span><a href="#local-6989586621680678978"><span class="hs-identifier hs-var hs-var">dirty</span></a></span></span><span> </span><span class="hs-glyph">|</span><span> </span><span class="hs-special">$(</span><span class="annot"><span class="annottext">Bool
 </span><span class="hs-identifier hs-var">gitDirtyTracked</span></span><span class="hs-special">)</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">String
 </span><span class="hs-string">&quot;-dirty&quot;</span></span><span>
 </span><span id="line-27"></span><span>          </span><span class="hs-glyph">|</span><span> </span><span class="annot"><span class="annottext">Bool
@@ -63,8 +63,8 @@ forall a. [a] -&gt; [a] -&gt; [a]
 </span><span class="hs-string">&quot;&quot;</span></span><span>
 </span><span id="line-28"></span><span>
 </span><span id="line-29"></span><span>    </span><span class="hs-comment">-- | Abbreviate a commit hash while keeping it unambiguous</span><span>
-</span><span id="line-30"></span><span>    </span><span id="local-6989586621680678452"><span class="annot"><span class="annottext">abbrev :: [a] -&gt; [a]
-</span><a href="#local-6989586621680678452"><span class="hs-identifier hs-var hs-var">abbrev</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [a] -&gt; [a]
+</span><span id="line-30"></span><span>    </span><span id="local-6989586621680678979"><span class="annot"><span class="annottext">abbrev :: [a] -&gt; [a]
+</span><a href="#local-6989586621680678979"><span class="hs-identifier hs-var hs-var">abbrev</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">Int -&gt; [a] -&gt; [a]
 forall a. Int -&gt; [a] -&gt; [a]
 </span><span class="hs-identifier hs-var">take</span></span><span> </span><span class="annot"><span class="annottext">Int
 </span><span class="hs-number">7</span></span><span>
