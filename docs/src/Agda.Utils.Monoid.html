@@ -13,7 +13,7 @@
 </span><span id="line-13"></span><span>
 </span><span id="line-14"></span><span class="hs-keyword">newtype</span><span> </span><span id="MaxNat"><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-var">MaxNat</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span id="MaxNat"><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-var">MaxNat</span></a></span></span><span> </span><span class="hs-special">{</span><span> </span><span id="getMaxNat"><span class="annot"><span class="annottext">MaxNat -&gt; Int
 </span><a href="Agda.Utils.Monoid.html#getMaxNat"><span class="hs-identifier hs-var hs-var">getMaxNat</span></a></span></span><span> </span><span class="hs-glyph">::</span><span> </span><span class="annot"><span class="hs-identifier hs-type">Int</span></span><span> </span><span class="hs-special">}</span><span>
-</span><span id="line-15"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680605378"><span id="local-6989586621680605380"><span id="local-6989586621680605382"><span id="local-6989586621680605384"><span id="local-6989586621680605386"><span id="local-6989586621680605388"><span id="local-6989586621680605390"><span class="annot"><span class="annottext">Integer -&gt; MaxNat
+</span><span id="line-15"></span><span>  </span><span class="hs-keyword">deriving</span><span> </span><span class="hs-special">(</span><span id="local-6989586621680605393"><span id="local-6989586621680605395"><span id="local-6989586621680605397"><span id="local-6989586621680605399"><span id="local-6989586621680605401"><span id="local-6989586621680605403"><span id="local-6989586621680605405"><span class="annot"><span class="annottext">Integer -&gt; MaxNat
 MaxNat -&gt; MaxNat
 MaxNat -&gt; MaxNat -&gt; MaxNat
 (MaxNat -&gt; MaxNat -&gt; MaxNat)
@@ -47,7 +47,7 @@ $c* :: MaxNat -&gt; MaxNat -&gt; MaxNat
 $c- :: MaxNat -&gt; MaxNat -&gt; MaxNat
 + :: MaxNat -&gt; MaxNat -&gt; MaxNat
 $c+ :: MaxNat -&gt; MaxNat -&gt; MaxNat
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Num</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605373"><span id="local-6989586621680605375"><span class="annot"><span class="annottext">MaxNat -&gt; MaxNat -&gt; Bool
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Num</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605388"><span id="local-6989586621680605390"><span class="annot"><span class="annottext">MaxNat -&gt; MaxNat -&gt; Bool
 (MaxNat -&gt; MaxNat -&gt; Bool)
 -&gt; (MaxNat -&gt; MaxNat -&gt; Bool) -&gt; Eq MaxNat
 forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
@@ -55,7 +55,7 @@ forall a. (a -&gt; a -&gt; Bool) -&gt; (a -&gt; a -&gt; Bool) -&gt; Eq a
 $c/= :: MaxNat -&gt; MaxNat -&gt; Bool
 == :: MaxNat -&gt; MaxNat -&gt; Bool
 $c== :: MaxNat -&gt; MaxNat -&gt; Bool
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605357"><span id="local-6989586621680605359"><span id="local-6989586621680605361"><span id="local-6989586621680605363"><span id="local-6989586621680605365"><span id="local-6989586621680605367"><span id="local-6989586621680605369"><span class="annot"><span class="annottext">Eq MaxNat
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var">Eq</span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605372"><span id="local-6989586621680605374"><span id="local-6989586621680605376"><span id="local-6989586621680605378"><span id="local-6989586621680605380"><span id="local-6989586621680605382"><span id="local-6989586621680605384"><span class="annot"><span class="annottext">Eq MaxNat
 Eq MaxNat
 -&gt; (MaxNat -&gt; MaxNat -&gt; Ordering)
 -&gt; (MaxNat -&gt; MaxNat -&gt; Bool)
@@ -93,7 +93,7 @@ $c&lt; :: MaxNat -&gt; MaxNat -&gt; Bool
 compare :: MaxNat -&gt; MaxNat -&gt; Ordering
 $ccompare :: MaxNat -&gt; MaxNat -&gt; Ordering
 $cp1Ord :: Eq MaxNat
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605350"><span id="local-6989586621680605352"><span id="local-6989586621680605354"><span class="annot"><span class="annottext">Int -&gt; MaxNat -&gt; ShowS
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Ord</span></span></span></span></span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605365"><span id="local-6989586621680605367"><span id="local-6989586621680605369"><span class="annot"><span class="annottext">Int -&gt; MaxNat -&gt; ShowS
 [MaxNat] -&gt; ShowS
 MaxNat -&gt; String
 (Int -&gt; MaxNat -&gt; ShowS)
@@ -106,7 +106,7 @@ show :: MaxNat -&gt; String
 $cshow :: MaxNat -&gt; String
 showsPrec :: Int -&gt; MaxNat -&gt; ShowS
 $cshowsPrec :: Int -&gt; MaxNat -&gt; ShowS
-</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605333"><span id="local-6989586621680605335"><span id="local-6989586621680605337"><span id="local-6989586621680605339"><span id="local-6989586621680605341"><span id="local-6989586621680605343"><span id="local-6989586621680605345"><span id="local-6989586621680605347"><span class="annot"><span class="annottext">Int -&gt; MaxNat
+</span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Show</span></span></span></span></span><span class="hs-special">,</span><span> </span><span id="local-6989586621680605348"><span id="local-6989586621680605350"><span id="local-6989586621680605352"><span id="local-6989586621680605354"><span id="local-6989586621680605356"><span id="local-6989586621680605358"><span id="local-6989586621680605360"><span id="local-6989586621680605362"><span class="annot"><span class="annottext">Int -&gt; MaxNat
 MaxNat -&gt; Int
 MaxNat -&gt; [MaxNat]
 MaxNat -&gt; MaxNat
@@ -149,25 +149,25 @@ succ :: MaxNat -&gt; MaxNat
 $csucc :: MaxNat -&gt; MaxNat
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var hs-var">Enum</span></span></span></span></span></span></span></span></span></span><span class="hs-special">)</span><span>
 </span><span id="line-16"></span><span>
-</span><span id="line-17"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680605327"><span id="local-6989586621680605329"><span class="annot"><span class="hs-identifier hs-type">Semigroup</span></span><span> </span><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-type">MaxNat</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-18"></span><span>  </span><span id="local-6989586621680605325"><span class="annot"><span class="annottext">&lt;&gt; :: MaxNat -&gt; MaxNat -&gt; MaxNat
+</span><span id="line-17"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680605342"><span id="local-6989586621680605344"><span class="annot"><span class="hs-identifier hs-type">Semigroup</span></span><span> </span><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-type">MaxNat</span></a></span></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-18"></span><span>  </span><span id="local-6989586621680605340"><span class="annot"><span class="annottext">&lt;&gt; :: MaxNat -&gt; MaxNat -&gt; MaxNat
 </span><span class="hs-operator hs-var hs-var hs-var hs-var">(&lt;&gt;)</span></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MaxNat -&gt; MaxNat -&gt; MaxNat
 forall a. Ord a =&gt; a -&gt; a -&gt; a
 </span><span class="hs-identifier hs-var">max</span></span><span>
 </span><span id="line-19"></span><span>
-</span><span id="line-20"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680605320"><span class="annot"><span class="hs-identifier hs-type">Monoid</span></span><span> </span><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-type">MaxNat</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
-</span><span id="line-21"></span><span>  </span><span id="local-6989586621680605317"><span class="annot"><span class="annottext">mempty :: MaxNat
+</span><span id="line-20"></span><span class="hs-keyword">instance</span><span> </span><span id="local-6989586621680605335"><span class="annot"><span class="hs-identifier hs-type">Monoid</span></span><span> </span><span class="annot"><a href="Agda.Utils.Monoid.html#MaxNat"><span class="hs-identifier hs-type">MaxNat</span></a></span></span><span> </span><span class="hs-keyword">where</span><span>
+</span><span id="line-21"></span><span>  </span><span id="local-6989586621680605332"><span class="annot"><span class="annottext">mempty :: MaxNat
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">mempty</span></span></span><span>     </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MaxNat
 </span><span class="hs-number">0</span></span><span class="hs-cpp">
 #if !(MIN_VERSION_base(4,11,0))
 </span><span>  </span><span class="hs-identifier">mappend</span><span>    </span><span class="hs-glyph">=</span><span> </span><span class="hs-special">(</span><span class="hs-operator">&lt;&gt;</span><span class="hs-special">)</span><span class="hs-cpp">
 #endif
-</span><span>  </span><span id="local-6989586621680605316"><span class="annot"><span class="annottext">mconcat :: [MaxNat] -&gt; MaxNat
+</span><span>  </span><span id="local-6989586621680605331"><span class="annot"><span class="annottext">mconcat :: [MaxNat] -&gt; MaxNat
 </span><span class="hs-identifier hs-var hs-var hs-var hs-var">mconcat</span></span></span><span> </span><span class="hs-special">[</span><span class="hs-special">]</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">MaxNat
 </span><span class="hs-number">0</span></span><span>
-</span><span id="line-26"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">mconcat</span></span><span> </span><span id="local-6989586621680605315"><span class="annot"><span class="annottext">[MaxNat]
-</span><a href="#local-6989586621680605315"><span class="hs-identifier hs-var">ms</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[MaxNat] -&gt; MaxNat
+</span><span id="line-26"></span><span>  </span><span class="annot"><span class="hs-identifier hs-var">mconcat</span></span><span> </span><span id="local-6989586621680605330"><span class="annot"><span class="annottext">[MaxNat]
+</span><a href="#local-6989586621680605330"><span class="hs-identifier hs-var">ms</span></a></span></span><span> </span><span class="hs-glyph">=</span><span> </span><span class="annot"><span class="annottext">[MaxNat] -&gt; MaxNat
 forall (t :: * -&gt; *) a. (Foldable t, Ord a) =&gt; t a -&gt; a
 </span><span class="hs-identifier hs-var">maximum</span></span><span> </span><span class="annot"><span class="annottext">[MaxNat]
-</span><a href="#local-6989586621680605315"><span class="hs-identifier hs-var">ms</span></a></span><span>
+</span><a href="#local-6989586621680605330"><span class="hs-identifier hs-var">ms</span></a></span><span>
 </span><span id="line-27"></span></pre></body></html>
